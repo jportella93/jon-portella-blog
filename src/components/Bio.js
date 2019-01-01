@@ -38,7 +38,7 @@ function Bio() {
                 GitHub
               </a>
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
+              <a href={`https://www.linkedin.com/in/jonportella/`}>
                 LinkedIn
               </a>
             </p>

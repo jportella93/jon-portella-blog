@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Jon Portella's Blog`,
+    author: `Jon Portella`,
+    description: `Articles and resources written by a web developer.`,
+    siteUrl: `https://jonportella.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `jportella93`
     },
   },
   plugins: [
@@ -50,20 +50,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-120945642-3`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Jon Portella's Blog`,
+        short_name: `JonPortella`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/alien.png`,
       },
     },
     `gatsby-plugin-offline`,

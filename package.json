@@ -1,14 +1,15 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "jon-portella-blog",
+  "private": false,
+  "description": "Jon Portella's blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jon Portella <jportella93@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/jportella93/jon-portella-blog/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.76",
+    "gatsby-cli": "^2.4.8",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
@@ -40,15 +41,15 @@
     "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://jonportella.com",
   "keywords": [
-    "gatsby"
+    "gatsby", "blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/jportella93/jon-portella-blog.git"
   },
   "scripts": {
     "dev": "gatsby develop",

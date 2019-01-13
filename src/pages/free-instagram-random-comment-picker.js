@@ -18,7 +18,7 @@ class FreeInstagramRandomCommentPicker extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Free Instagram Comment Picker"
+          title="Free Instagram Random Comment Picker"
           keywords={[`free`, `instagram`, `random`, `comment`, `picker`, `prize`, `select`, `winner`, `picture`, `contest`, `raffle`]}
         />
 

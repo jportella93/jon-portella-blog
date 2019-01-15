@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticQuery, graphql } from 'gatsby'
-
-// import ig from 'src/'
+import { graphql } from 'gatsby'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'

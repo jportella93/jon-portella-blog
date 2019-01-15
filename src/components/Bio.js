@@ -30,15 +30,15 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong>.<br />
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
+              <a href="http://bit.ly/jportella-twitter">
                 Twitter
               </a>
               {` `}
-              <a href={`https://github.com/${social.twitter}`}>
+              <a href="http://bit.ly/jportella-github">
                 GitHub
               </a>
               {` `}
-              <a href={`https://www.linkedin.com/in/jonportella/`}>
+              <a href="http://bit.ly/jportella-linkedin">
                 LinkedIn
               </a>
             </p>

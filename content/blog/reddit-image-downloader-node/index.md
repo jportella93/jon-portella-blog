@@ -1,9 +1,9 @@
 ---
-title: Building a Reddit Image Downloader in Node.js
+title: Downloading Reddit Images in Bulk
 date: '2019-01-29T15:12:03.284Z'
 ---
 
-There are some cool wallpapers on [r/wallpapers]('https://www.reddit.com/r/wallpapers'). Earlier this year, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion.
+There are some cool wallpapers on [r/wallpapers](https://www.reddit.com/r/wallpapers). Earlier this year, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion.
 
 This picking and downloading process was kind of tedious, so I've built a small Node.js program to automate it.
 

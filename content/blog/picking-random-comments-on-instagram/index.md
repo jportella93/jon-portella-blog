@@ -1,11 +1,13 @@
 ---
 title: Picking Random Comments On Instagram
+spoiler: A web app to make Instagram contests suck less.
 date: '2019-01-15T15:12:03.284Z'
 ---
 
 So this friend of mine, who is a personal trainer, has a bussiness Instagram account. He did a contest where any follower could comment a picture of his to have a chance to win a pack of training equipment.
 
 The comment needed to:
+
 - Include the phrase 'I participate'.
 - Mention 3 other users.
 - Also, only one comment per user was allowed.

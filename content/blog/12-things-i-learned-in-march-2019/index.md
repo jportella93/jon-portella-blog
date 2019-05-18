@@ -63,7 +63,7 @@ Inside this directory you want 3 directories `pages`, `components` and `lib`.
 Inside each of these directories you want to create 3 folders, `v1`, `v2` and `v3`.
 
 ```bash
-mkdir -p src/{pages,components,lib}/{v1,v2,v3}
+$ mkdir -p src/{pages,components,lib}/{v1,v2,v3}
 
 # Results in this folder structure:
 #|-src
@@ -86,9 +86,9 @@ Each word inside the `{}` will be an iteration.
 Also you can do it with numbers, creating a range:
 
 ```bash
-touch foo_{1..5}
-
-# ls => hello_1 hello_2 hello_3 hello_4 hello_5
+$ touch foo_{1..5}
+$ ls
+-> foo_1 foo_2 foo_3 foo_4 foo_5
 ```
 
 ## 9. How to save on bed blankets.

@@ -61,7 +61,7 @@ module.exports = {
         short_name: `JonPortella`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#090b4d`,
+        theme_color: `#358ccb`,
         display: `minimal-ui`,
         icon: `content/assets/alien.png`,
       },

@@ -4,6 +4,10 @@ spoiler: A web app to make Instagram contests suck less.
 date: '2019-01-15T15:12:03.284Z'
 ---
 
+![](./images/i-loor-nicolas.jpg)
+
+<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
+
 So this friend of mine, who is a personal trainer, has a bussiness Instagram account. He did a contest where any follower could comment a picture of his to have a chance to win a pack of training equipment.
 
 The comment needed to:

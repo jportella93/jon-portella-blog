@@ -3,7 +3,7 @@ module.exports = {
     title: `Jon Portella's Blog`,
     author: `Jon Portella`,
     description: `Articles and resources written by a web developer.`,
-    siteUrl: `https://jonportella.com/`,
+    siteUrl: `https://jonportella.com`,
     social: {
       twitter: `jportella93`
     },

@@ -4,6 +4,10 @@ spoiler: Tips and tricks including but not limited to Pandas, JavaScript sliders
 date: '2019-03-31T19:38:03.284Z'
 ---
 
+![](./images/t-loor-nicolas.jpg)
+
+<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
+
 ## 1. How to count occurrences of a data cell in a .cvs (Python and Pandas).
 
 I had a big .cvs file with a log of e-mails sent. The columns included e-mail address, timestamp, state, subject, etc. All mails were using some template from a set of 10 or so templates.

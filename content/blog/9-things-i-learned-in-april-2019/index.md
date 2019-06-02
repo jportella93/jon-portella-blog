@@ -4,6 +4,10 @@ spoiler: This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, 
 date: '2019-04-30T19:38:03.284Z'
 ---
 
+![](./images/9-loor-nicolas.jpg)
+
+<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
+
 ## 1. How to use CSS Modules in create-react-app.
 
 With CSS Modules you can make CSS classes with a component scope. This allows to use simple class names and avoid name collisions between components. Following the [Create React App docs](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet):

@@ -4,6 +4,10 @@ spoiler: Stop listening.
 date: '2019-05-15T19:38:03.284Z'
 ---
 
+![](./images/x-loor-nicolas.jpg)
+
+<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
+
 Will this code work?
 
 ```javascript

@@ -5,13 +5,16 @@ import Layout from '../components/Layout'
 import Bio from '../components/Bio'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import moment from 'moment';
 
 const BlogPostTemplate = ({ data, location, pageContext }) => {
   const { html: postHtml, frontmatter } = data.markdownRemark;
   const { title: postTitle, spoiler, date } = frontmatter;
 
-  const { title: siteTitle, siteUrl } = data.site.siteMetadata
+  const { title: siteTitle, description: siteDescription, siteUrl } = data.site.siteMetadata
   const postUrl = siteUrl + location.pathname;
+
+  const postDescriptionMetaTag = `${spoiler} - ${siteTitle} - ${siteDescription}`
 
   const { previous, next } = pageContext
 
@@ -23,7 +26,7 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={postTitle} description={spoiler} url={postUrl} image={imageUrl} type={"article"} />
+      <SEO title={postTitle} description={postDescriptionMetaTag} url={postUrl} image={imageUrl} type={"article"} publishedTime={date} />
       <h1>{postTitle}</h1>
       <p
         style={{
@@ -33,7 +36,7 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
           marginTop: rhythm(-1),
         }}
       >
-        {date}
+        {moment(date).format('MMMM DD, YYYY')}
       </p>
       <div dangerouslySetInnerHTML={{ __html: postHtml }} />
       <hr
@@ -80,6 +83,7 @@ export const pageQuery = graphql`
         title
         author
         siteUrl
+        description
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -88,7 +92,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
         spoiler
       }
     }

@@ -15,9 +15,15 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
 
   const { previous, next } = pageContext
 
+  // TODO: Pass image URL directly into SEO component rather than doing this trick.
+  const [ imageUrl, setImageUrl ] = React.useState('');
+  React.useEffect(() => {
+    setImageUrl(document.querySelector('img').src)
+  }, [])
+
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={postTitle} description={spoiler} url={postUrl} />
+      <SEO title={postTitle} description={spoiler} url={postUrl} image={imageUrl} type={"article"} />
       <h1>{postTitle}</h1>
       <p
         style={{

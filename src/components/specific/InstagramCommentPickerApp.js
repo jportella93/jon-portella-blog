@@ -1,5 +1,10 @@
 import React from 'react'
 
+const CONFIG = {
+  loadMoreCommentsBtnSelector: "#react-root > section > main > div > div > article > div > div > ul > li > div > button > span",
+  comentNodeSelector: '#react-root > section > main > div > div > article > div.eo2As > div > ul > ul > div > li > div > div > div:nth-child(2)',
+}
+
 function InstagramCommentPickerConversation(
   { rules, phase, increasePhase, goToPhase,
   copyCodeToClipboard, addRule, deleteRule, allowDuplicatedUsers}
@@ -214,7 +219,24 @@ class InstagramCommentPickerApp extends React.Component {
     this.setState({phaseCounter: phaseNumber})
   }
 
-  generateScript(rules) {
+  /** Test rules:
+      const rules = [{
+        "key": "allowDuplicatedUsers",
+        "value": true,
+        "message": "Multiple comments per user are allowed"
+      }, {
+        "key": "keyword",
+        "word": "@",
+        "message": "Comment mentions 3 or more users",
+        "caseSensitive": false,
+        "times": "3"
+      }, {
+        "key": "keyword",
+        "word": "participo",
+        "message": "Comment includes: participo"
+      }];
+   */
+  generateScript({rules, loadMoreCommentsBtnSelector, comentNodeSelector}) {
     let script = `
     try {
     const rules = {{rules}};
@@ -230,15 +252,13 @@ class InstagramCommentPickerApp extends React.Component {
 
         function next() {
           return new Promise(async(resolve) => {
-            const btn = document.querySelector('#react-root > section > main > div > div > article > div > div > ul > li > button');
-            if (btn) {
+            let btn = document.querySelector("{{loadMoreCommentsBtnSelector}}");
+            while (btn) {
               btn.click();
-              await sleep(200);
-              await next();
-              resolve();
-            } else {
-              resolve();
+              await sleep(1000);
+              btn = document.querySelector("{{loadMoreCommentsBtnSelector}}");
             }
+            resolve();
           });
         }
 
@@ -246,8 +266,7 @@ class InstagramCommentPickerApp extends React.Component {
 
         await next();
 
-        const commentNodes = Array.from(
-          document.querySelectorAll('#react-root > section > main > div > div > article > div > div > ul > li > div > div > div')).slice(1);
+        const commentNodes = Array.from(document.querySelectorAll("{{comentNodeSelector}}"));
 
         const comments = commentNodes.map((comment) => ({
           name: comment.children[0].outerText,
@@ -363,7 +382,10 @@ class InstagramCommentPickerApp extends React.Component {
       }
       `
 
-    script = script.replace('{{rules}}', JSON.stringify(rules))
+    script = script
+      .replace(/{{rules}}/g, JSON.stringify(rules))
+      .replace(/{{loadMoreCommentsBtnSelector}}/g, loadMoreCommentsBtnSelector)
+      .replace(/{{comentNodeSelector}}/g, comentNodeSelector)
 
     return script
 
@@ -404,6 +426,7 @@ class InstagramCommentPickerApp extends React.Component {
   render() {
     const { phaseCounter, rules } = this.state
     const phase = this.phases[phaseCounter]
+    const {loadMoreCommentsBtnSelector, comentNodeSelector} = CONFIG;
 
     return (
       <>
@@ -425,7 +448,7 @@ class InstagramCommentPickerApp extends React.Component {
               style={{position:'absolute', opacity:0}}
               id="scriptHolder"
               onChange={() => null}
-              value={this.generateScript(this.state.rules)}
+              value={this.generateScript({rules, loadMoreCommentsBtnSelector, comentNodeSelector})}
             >
             </input>
           </>

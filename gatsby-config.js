@@ -86,5 +86,13 @@ module.exports = {
         sv: 6
       },
     },
+    {
+      resolve: `gatsby-plugin-github-ribbon`,
+      options: {
+        project: `https://github.com/jportella93/jon-portella-blog`,
+        color: `darkblue`,
+        position: `right`,
+      }
+    }
   ],
 }

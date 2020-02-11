@@ -79,5 +79,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1683987,
+        sv: 6
+      },
+    },
   ],
 }

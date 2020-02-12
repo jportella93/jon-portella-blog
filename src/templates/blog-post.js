@@ -39,6 +39,29 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
         {moment(date).format('MMMM DD, YYYY')}
       </p>
       <div dangerouslySetInnerHTML={{ __html: postHtml }} />
+
+      <form
+        style={{
+          maxWidth: '350px',
+          margin: '80px auto',
+          border: 'gray 2px solid',
+          borderRadius: '5px',
+          padding: '16px 16px',
+        }}
+        action="https://buttondown.email/api/emails/embed-subscribe/jportella93"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.email/jportella93', 'popupwindow')"
+        class="embeddable-buttondown-form"
+      >
+        <label for="bd-email">
+          Did you find this interesting?<br/>
+          Drop your email and I'll let you know the next time I write!<br/>
+        </label>
+        <input type="email" name="email" id="bd-email" />
+        <input type="hidden" value="1" name="embed" />
+        <input type="submit" value="Subscribe" />
+      </form>
       <hr
         style={{
           marginBottom: rhythm(1),

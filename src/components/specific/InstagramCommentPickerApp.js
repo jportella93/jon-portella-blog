@@ -26,6 +26,10 @@ function InstagramCommentPickerConversation(
     padding: '5px 20px',
   },
   infoTitleStyle = {},
+  emojisStyle = {
+    marginTop: '1rem',
+    marginBottom: '1rem'
+  },
   answerBtnContainerStyle = {},
   answerBtnStyle = {
     margin: '0 20px',
@@ -41,6 +45,12 @@ function InstagramCommentPickerConversation(
         return (
           <>
             <h2 style={infoTitleStyle}>Free Instagram Random Comment Picker</h2>
+            <h2 style={emojisStyle}>✅ 🖥 💻 </h2>
+            <h2 style={emojisStyle}>❌ 📱  </h2>
+            <small style={infoTitleStyle}><b>Note: This comment picker needs to be run from a computer.</b><br/>
+            If you are viewing this from your smartphone or tablet, please open this website from a desktop or laptop computer. <br/>
+            Otherwise you won't be able to pick your random comment! :)</small>
+            <br /><br />
             <div style={answerBtnContainerStyle}>
               <button style={answerBtnStyle} onClick={() => increasePhase()}>Start</button>
             </div>

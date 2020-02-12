@@ -186,7 +186,7 @@ function InstagramCommentPickerConversation(
               <li>Open the JavaScript console. (Cmd + Alt + c) in Safari, (Cmd + Alt + j) in Chrome or check <a target="_blank" href="https://code-maven.com/open-javascript-console">this</a> for other browsers or Windows.</li>
               <li>Paste the code in the console and press enter.</li>
             </ol>
-            <p>Something not working? <a href="mailto:ion11811@gmail.com?subject=Instagram comment picker not working">Let me know.</a></p>
+            <p>Something not working? <a href="https://surveys.hotjar.com/s?siteId=1683987&surveyId=151480" target="_blank">Let me know.</a></p>
           </>
         )
       default: null;

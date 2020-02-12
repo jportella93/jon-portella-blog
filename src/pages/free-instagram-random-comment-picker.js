@@ -19,7 +19,6 @@ class FreeInstagramRandomCommentPicker extends React.Component {
           title="Free Instagram Random Comment Picker"
           keywords={[`free`, `instagram`, `random`, `comment`, `picker`, `prize`, `select`, `winner`, `picture`, `contest`, `raffle`]}
         />
-
         <hr style={{marginBottom: rhythm(2),}}/>
         <App />
         <Bio />

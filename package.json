@@ -8,6 +8,7 @@
     "url": "https://github.com/jportella93/jon-portella-blog/issues"
   },
   "dependencies": {
+    "@isamrish/gatsby-plugin-google-adsense": "^1.2.0",
     "gatsby": "^2.5.5",
     "gatsby-cli": "^2.5.15",
     "gatsby-image": "^2.1.0",

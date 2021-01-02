@@ -93,6 +93,13 @@ module.exports = {
         color: `darkblue`,
         position: `right`,
       }
+    },
+    {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: "ca-pub-2561526787962851",
+        head: true
+      }
     }
   ],
 }

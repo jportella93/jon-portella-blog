@@ -1,4 +1,6 @@
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import React from 'react'
+import Kofi from '../Kofi'
 
 const CONFIG = {
   loadMoreCommentsBtnSelector: "#react-root > section > main > div > div > article > div > div > ul > li > div > button > span",
@@ -52,7 +54,13 @@ function InstagramCommentPickerConversation(
             Otherwise you won't be able to pick your random comment! :)</small>
             <br /><br />
             <div style={answerBtnContainerStyle}>
-              <button style={answerBtnStyle} onClick={() => increasePhase()}>Start</button>
+              <button style={answerBtnStyle} onClick={() => {
+                increasePhase()
+                trackCustomEvent({
+                  category: "Comment Picker - start",
+                  action: "Click",
+                })
+                }}>Start</button>
             </div>
           </>
         )}
@@ -186,7 +194,56 @@ function InstagramCommentPickerConversation(
               <li>Open the JavaScript console. (Cmd + Alt + c) in Safari, (Cmd + Alt + j) in Chrome or check <a target="_blank" href="https://code-maven.com/open-javascript-console">this</a> for other browsers or Windows.</li>
               <li>Paste the code in the console and press enter.</li>
             </ol>
-            <p>Something not working? <a href="https://surveys.hotjar.com/s?siteId=1683987&surveyId=151480" target="_blank">Let me know.</a></p>
+            <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+              <button style={{minWidth: '250px', color: 'white', borderRadius: '4px', background: 'limegreen'}} onClick={() => {
+                goToPhase('didWork')
+                trackCustomEvent({
+                  category: "Comment Picker - worked",
+                  action: "Click",
+                })
+                }}>It worked!</button>
+              <button style={{minWidth: '250px', color: 'white', borderRadius: '4px', background: 'red'}} onClick={() => {
+                goToPhase('didNotWork')
+                trackCustomEvent({
+                  category: "Comment Picker - not worked",
+                  action: "Click",
+                })
+                }}>Didn't work...</button>
+            </div>
+          </>
+        )
+      case 'didWork':
+        return (
+          <>
+            <button style={backBtnStyle} onClick={() => goToPhase('useExplanation')}>Back</button>
+            <h2 style={infoTitleStyle}>Hooray!</h2>
+            <p>This is a free utility that I built in my free time, if you found it useful consider inviting me to a coffee so I can build more useful tools! :)</p>
+            <button style={{
+              background: 'transparent',
+              border: 'none',
+              width: '142px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              height: '0px'
+            }}
+            onClick={() => {
+              trackCustomEvent({
+                category: "Comment Picker - koffi",
+                action: "Click",
+              })
+            }}>
+            <Kofi/>
+            </button>
+          </>
+        )
+      case 'didNotWork':
+        return (
+          <>
+            <button style={backBtnStyle} onClick={() => goToPhase('useExplanation')}>Back</button>
+            <h2 style={infoTitleStyle}>Is something wrong?</h2>
+            <p>
+              Please tell me your problem in the following <a href="https://surveys.hotjar.com/s?siteId=1683987&surveyId=151480" target="_blank">form</a> so I can fix it! :)
+            </p>
           </>
         )
       default: null;
@@ -213,6 +270,8 @@ class InstagramCommentPickerApp extends React.Component {
       'confirmRules',
       'finished',
       'useExplanation',
+      'didWork',
+      'didNotWork'
       ]
     this.state = {
       rules: [],

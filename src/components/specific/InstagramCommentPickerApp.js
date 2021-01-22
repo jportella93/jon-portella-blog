@@ -342,8 +342,6 @@ class InstagramCommentPickerApp extends React.Component {
           comment: comment.children[1].outerText
         }));
 
-        console.log('Total comments: ' + comments.length);
-
         let filterByRulesFlag;
 
         function filterCommentsByRules(arr, rulesToFilter) {
@@ -371,6 +369,9 @@ class InstagramCommentPickerApp extends React.Component {
             });
           });
         }
+
+        await sleep(sleepTime);
+        console.log('✅ All comments loaded!');
 
         const filteredByRules = filterCommentsByRules(comments, rules);
 
@@ -413,25 +414,22 @@ class InstagramCommentPickerApp extends React.Component {
 
         const filteredByDuplicate = filterDuplicateUsers(filteredByRules);
 
-        if (filterDuplicate !== undefined) {
-          await sleep(sleepTime);
-          console.log('Comments after removing duplicate users: ' + filteredByDuplicate.length);
-        }
-
-        await sleep(sleepTime);
-        console.log('Selecting a random number between 0 and ' + filteredByDuplicate.length);
-
         const rand = Math.floor(Math.random() * filteredByDuplicate.length + 1);
 
         const winnerName = filteredByDuplicate[rand].name;
         const winnerComment = filteredByDuplicate[rand].comment;
 
         await sleep(sleepTime);
-        console.log('Selected number is %c' + (rand + 1), 'color:red;');
+        console.log('And the winner is...');
 
+        await sleep(300);
+        console.log('🥁');
 
-        await sleep(sleepTime);
-        console.log('Comment number %c' + (rand + 1), 'color: red;', ' is...');
+        await sleep(300);
+        console.log('  🥁');
+
+        await sleep(300);
+        console.log('    🥁');
 
         await sleep(sleepTime + sleepTime * 0.5);
         const winnerMessage = '@' + winnerName;

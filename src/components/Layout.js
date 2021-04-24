@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Header from '../components/Header'
+import BlogWrapper from './BlogWrapper'
 import { rhythm } from '../utils/typography'
+import Navbar from './Navbar'
 
 class Layout extends React.Component {
   render() {
@@ -14,14 +15,11 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(32),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
       >
-        <Header location={location} rootPath={rootPath} text={'<>'} />
+        <Navbar location={location}/>
         {children}
-        <footer>
-          <Header location={location} rootPath={rootPath} text={'</>'} />
-        </footer>
       </div>
     )
   }

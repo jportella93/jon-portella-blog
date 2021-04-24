@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Jon Portella's Blog`,
+    title: `Jon Portella - Full Stack Developer`,
     author: `Jon Portella`,
-    description: `Articles and resources written by a web developer.`,
+    description: `Welcome to my website! Here you'll find articles and resources written by a Full Stack Developer.`,
     siteUrl: `https://jonportella.com`,
     social: {
       twitter: `jportella93`
@@ -86,14 +86,14 @@ module.exports = {
         sv: 6
       },
     },
-    {
-      resolve: `gatsby-plugin-github-ribbon`,
-      options: {
-        project: `https://github.com/jportella93/jon-portella-blog`,
-        color: `darkblue`,
-        position: `right`,
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-github-ribbon`,
+    //   options: {
+    //     project: `https://github.com/jportella93/jon-portella-blog`,
+    //     color: `darkblue`,
+    //     position: `left`,
+    //   }
+    // },
     // {
     //   resolve: `@isamrish/gatsby-plugin-google-adsense`,
     //   options: {

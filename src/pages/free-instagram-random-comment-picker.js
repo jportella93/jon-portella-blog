@@ -21,7 +21,7 @@ class FreeInstagramRandomCommentPicker extends React.Component {
         />
         <hr style={{marginBottom: rhythm(2),}}/>
         <App />
-        <Bio />
+        <Bio writtenByText />
       </Layout>
     )
   }

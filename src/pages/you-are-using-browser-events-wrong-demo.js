@@ -56,7 +56,7 @@ export default () => {
   const eventHandlerStore = new EventHandlerStore();
 
   // Example function that changes the text of the page with current scroll position.
-  const logScroll = () => document.querySelector('#scrollDisplay').textContent = `${window.scrollY}px`;
+  const logScroll = () => document.querySelector('#scrollDisplay').textContent = `${window.scrollY.toFixed()}px`;
 
   // Log the scroll only if the screen is large.
   const logScrollOnLargeScreens = () => {

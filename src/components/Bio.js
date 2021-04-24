@@ -4,9 +4,9 @@ import Image from 'gatsby-image'
 
 import { rhythm } from '../utils/typography'
 
-function Bio() {
+function Bio({ writtenByText }) {
 
-  const [ containerStyle, setContainerStyle ] = React.useState({
+  const [containerStyle, setContainerStyle] = React.useState({
     display: `flex`,
     flexDirection: `column`,
     alignItems: `center`,
@@ -17,11 +17,26 @@ function Bio() {
     if (window.innerWidth > 450) {
       setContainerStyle({
         ...containerStyle,
-        flexDirection: `row`,
-        alignItems: `initial`
+        flexDirection: `column`,
+        alignItems: `center`
       })
     }
   }, [])
+
+  const links = [
+    {
+      url: "http://bit.ly/jportella-linkedin",
+      label: "LinkedIn"
+    },
+    {
+      url: "http://bit.ly/jportella-github",
+      label: "GitHub"
+    },
+    {
+      url: "http://bit.ly/jportella-twitter",
+      label: "Twitter"
+    },
+  ]
 
   return (
     <StaticQuery
@@ -42,27 +57,22 @@ function Bio() {
                 borderRadius: `100%`,
               }}
             />
-            <div style={{
-              display: `flex`
-            }}>
-              <p style={{
-                margin: `auto 0`
+            <div style={{ margin: `${rhythm(1)} 0`, textAlign: 'center' }}>
+              {writtenByText && <p>Written by <strong>{author}</strong>.<br /></p>}
+              <nav style={{
+                margin: `${rhythm(1)} 0`
               }}>
-                Written by <strong>{author}</strong>.<br />
-                {` `}
-                <a href="http://bit.ly/jportella-twitter">
-                  Twitter
-                </a>
-                {` `}
-                <a href="http://bit.ly/jportella-github">
-                  GitHub
-                </a>
-                {` `}
-                <a href="http://bit.ly/jportella-linkedin">
-                  LinkedIn
-                </a>
-              </p>
-
+                <ul style={{ display: 'flex', margin: 0 }}>
+                  {links.map(({ label, url }) => (
+                    <li key={url}
+                      style={{ listStyle: 'none', marginRight: rhythm(1) }}>
+                      <a target="_blank" href={url} rel="noopener">
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             </div>
           </div>
         )

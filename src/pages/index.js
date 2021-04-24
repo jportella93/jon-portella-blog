@@ -1,49 +1,77 @@
+import { graphql } from 'gatsby'
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-
-import Bio from '../components/Bio'
+import Fade from 'react-reveal/Fade';
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
-import { rhythm } from '../utils/typography'
+import { Stickyroll } from '@stickyroll/stickyroll';
 
-class BlogIndex extends React.Component {
+const content = [
+  {
+    title: "Hello, there",
+    subtitle: ""
+  },
+  {
+    title: "I'm Jon Portella,",
+    subtitle: "A Full Stack Developer from Vancouver, Canada."
+  },
+  {
+    title: "Welcome to my website!",
+    subtitle: "Check my work and contact info at the top."
+  }
+]
+
+
+class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { show: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState({ show: !this.state.show });
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[ `blog`, `gatsby`, `javascript`, `react` ]}
-        />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+      <Stickyroll pages={content}>
+        {({ page, pageIndex, pages, progress }) => {
+          const { title, subtitle } = content[pageIndex]
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }} />
-            </div>
-          )
-        })}
-        <hr style={{ marginBottom: rhythm(1), }} />
-        <Bio />
-      </Layout>
+            <Layout location={this.props.location} title={siteTitle}>
+              <SEO
+                title="Home"
+                keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+              />
+              <div style={{
+                minHeight: '80vh',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+                <Fade bottom opposite when={pageIndex === 0 || (progress > 0.2 && progress < 0.8)}>
+                  <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexDirection: 'column'
+                  }}>
+                    {title && <h1 style={{ fontSize: '3rem' }}>{title}</h1>}
+                    {subtitle && <h3 style={{ fontSize: '1.5rem' }}>{subtitle}</h3>}
+                  </div>
+                </Fade>
+              </div>
+            </Layout>
+          );
+        }}
+      </Stickyroll>
     )
   }
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {

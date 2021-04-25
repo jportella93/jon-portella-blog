@@ -1,14 +1,14 @@
 import React from 'react';
 
 const oneLineScrollerStyle = {
-  overflow: 'hidden'
-}
+  overflow: 'hidden',
+};
 
 const oneLineScrollerChildrenWrapperStyle = {
   whiteSpace: 'nowrap',
   overflow: 'auto',
   display: 'block',
-}
+};
 
 const OneLineScroller = ({ children }) => (
   <span style={oneLineScrollerStyle}>

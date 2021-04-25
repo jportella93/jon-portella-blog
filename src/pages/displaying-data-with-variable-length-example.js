@@ -8,31 +8,31 @@ const wrapperStyle = {
   minHeight: '100vh',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '2rem'
-}
+  padding: '2rem',
+};
 
 const examples = [
   {
     description:
     `Here we have a card with a fixed width of ${holderStyle.width}.
     It looks good with the user used for the designs, but when we load user 2...
-    Hmmm it seems like the text is overflowing. We didn't take this into account.`
+    Hmmm it seems like the text is overflowing. We didn't take this into account.`,
   },
   {
     description:
     `Here we have wrapped every variable text field with our OneLineScroller.
     Now it doesn't overflow and our UI stays intact, hooray!`,
-    withScrollers: true
+    withScrollers: true,
   },
-]
+];
 
 export default () => (
   <div style={wrapperStyle}>
     {examples.map((exampleProps, i) => (
       <>
-        <Example {...exampleProps} title={`Example ${i+1}`}/>
+        <Example {...exampleProps} title={`Example ${i + 1}`} />
         <Separator height="10rem" />
       </>
     ))}
   </div>
-)
+);

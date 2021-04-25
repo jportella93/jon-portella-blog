@@ -1,48 +1,47 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../utils/typography';
 
 function Bio({ writtenByText }) {
-
   const [containerStyle, setContainerStyle] = React.useState({
-    display: `flex`,
-    flexDirection: `column`,
-    alignItems: `center`,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     marginBottom: rhythm(2.5),
-  })
+  });
 
   React.useEffect(() => {
     if (window.innerWidth > 450) {
       setContainerStyle({
         ...containerStyle,
-        flexDirection: `column`,
-        alignItems: `center`
-      })
+        flexDirection: 'column',
+        alignItems: 'center',
+      });
     }
-  }, [])
+  }, []);
 
   const links = [
     {
-      url: "http://bit.ly/jportella-linkedin",
-      label: "LinkedIn"
+      url: 'http://bit.ly/jportella-linkedin',
+      label: 'LinkedIn',
     },
     {
-      url: "http://bit.ly/jportella-github",
-      label: "GitHub"
+      url: 'http://bit.ly/jportella-github',
+      label: 'GitHub',
     },
     {
-      url: "http://bit.ly/jportella-twitter",
-      label: "Twitter"
+      url: 'http://bit.ly/jportella-twitter',
+      label: 'Twitter',
     },
-  ]
+  ];
 
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
+      render={(data) => {
+        const { author, social } = data.site.siteMetadata;
         return (
           <div
             style={containerStyle}
@@ -54,19 +53,29 @@ function Bio({ writtenByText }) {
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`,
+                borderRadius: '100%',
               }}
             />
             <div style={{ margin: `${rhythm(1)} 0`, textAlign: 'center' }}>
-              {writtenByText && <p>Written by <strong>{author}</strong>.<br /></p>}
+              {writtenByText && (
+              <p>
+                Written by
+                <strong>{author}</strong>
+                .
+                <br />
+              </p>
+              )}
               <nav style={{
-                margin: `${rhythm(1)} 0`
-              }}>
+                margin: `${rhythm(1)} 0`,
+              }}
+              >
                 <ul style={{ display: 'flex', margin: 0 }}>
                   {links.map(({ label, url }) => (
-                    <li key={url}
-                      style={{ listStyle: 'none', marginRight: rhythm(1) }}>
-                      <a target="_blank" href={url} rel="noopener">
+                    <li
+                      key={url}
+                      style={{ listStyle: 'none', marginRight: rhythm(1) }}
+                    >
+                      <a target="_blank" href={url} rel="noopener noreferrer">
                         {label}
                       </a>
                     </li>
@@ -75,10 +84,10 @@ function Bio({ writtenByText }) {
               </nav>
             </div>
           </div>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 const bioQuery = graphql`
@@ -99,6 +108,6 @@ const bioQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Bio
+export default Bio;

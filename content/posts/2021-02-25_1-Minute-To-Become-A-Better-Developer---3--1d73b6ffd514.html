@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>1 Minute To Become A Better Developer (#3)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">1 Minute To Become A Better Developer (#3)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Welcome to issue #3 of this series, were you become a more successful developer by reading short nuggets of knowledge, one minute at a…
+</section>
+<section data-field="body" class="e-content">
+<section name="94d9" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="39de" id="39de" class="graf graf--h3 graf--leading graf--title">OMBD#3: Quick Refactor: Keep Casing in VSCode Search + Replace</h3><h4 name="7129" id="7129" class="graf graf--h4 graf-after--h3 graf--subtitle">A simple Visual Studio Code trick to save precious time while refactoring</h4><p name="4767" id="4767" class="graf graf--p graf-after--h4">Welcome to issue #3 of <strong class="markup--strong markup--p-strong">O</strong>ne <strong class="markup--strong markup--p-strong">M</strong>inute <strong class="markup--strong markup--p-strong">B</strong>etter <strong class="markup--strong markup--p-strong">D</strong>eveloper, where you become a more successful software developer by reading short nuggets of knowledge, one minute at a time.</p><h4 name="ba20" id="ba20" class="graf graf--h4 graf-after--p"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--h4-strong">⏮</strong></a><strong class="markup--strong markup--h4-strong">️</strong><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--h4-strong"> 🔛</strong></a><strong class="markup--strong markup--h4-strong"> </strong><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--h4-strong">⏭</strong></a><strong class="markup--strong markup--h4-strong">️</strong></h4><figure name="fe17" id="fe17" class="graf graf--figure graf-after--h4 graf--trailing"><img class="graf-image" data-image-id="1*lqTxnrYrOi2BbV6MqAHhdA.jpeg" data-width="1080" data-height="1080" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*lqTxnrYrOi2BbV6MqAHhdA.jpeg"><figcaption class="imageCaption">Illustration by my buddy <a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener nofollow noopener noopener" target="_blank">Loor Nicolas</a></figcaption></figure></div></div></section><section name="21b8" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="03a2" id="03a2" class="graf graf--h4 graf--leading">THE PROBLEM</h4><p name="3669" id="3669" class="graf graf--p graf-after--h4">We have a <code class="markup--code markup--p-code">pet</code> object, whose value under the key of <code class="markup--code markup--p-code">name</code> we are changing. We are saving a reference to the old value that the key <code class="markup--code markup--p-code">name</code> pointed to for logging purposes.</p><figure name="f8d7" id="f8d7" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*2aK8gA6fFW_htELJD4pbmw.png" data-width="1332" data-height="570" src="https://cdn-images-1.medium.com/max/800/1*2aK8gA6fFW_htELJD4pbmw.png"></figure><p name="c319" id="c319" class="graf graf--p graf-after--figure">Now we realize that we’d like to rename the key <code class="markup--code markup--p-code">name</code> to <code class="markup--code markup--p-code">alias</code>. A refactoring is in order. So we pull up the find and replace feature by pressing ctrl/cmd + f.</p><figure name="e65e" id="e65e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*3ZABQlqKr6izNqQzA8LxiA.png" data-width="1314" data-height="552" src="https://cdn-images-1.medium.com/max/800/1*3ZABQlqKr6izNqQzA8LxiA.png"></figure><p name="b442" id="b442" class="graf graf--p graf-after--figure">But oops! as they key <code class="markup--code markup--p-code">name</code> is also used in camelCase as part of other variables names <code class="markup--code markup--p-code">newPetName</code> and <code class="markup--code markup--p-code">oldPetName</code> , we get a casing mismatch after replacing. <code class="markup--code markup--p-code">newPetalias</code> and <code class="markup--code markup--p-code">oldPetalias</code> don’t look so good…</p><figure name="4a9c" id="4a9c" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*lkKWGLnMCeXlj-b7YEG3mg.png" data-width="1368" data-height="746" src="https://cdn-images-1.medium.com/max/800/1*lkKWGLnMCeXlj-b7YEG3mg.png"></figure><h4 name="a437" id="a437" class="graf graf--h4 graf-after--figure">A SOLUTION</h4><p name="294c" id="294c" class="graf graf--p graf-after--h4">We are going to undo this change and repeat it using the <a href="https://code.visualstudio.com/docs/editor/codebasics#_advanced-find-and-replace-options" data-href="https://code.visualstudio.com/docs/editor/codebasics#_advanced-find-and-replace-options" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">preserve case option on the find and replace feature</a> by pressing the <code class="markup--code markup--p-code">AB</code> button.</p><figure name="fc53" id="fc53" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*ykPGC3W95W8KXPRqzZAwPA.png" data-width="1761" data-height="536" src="https://cdn-images-1.medium.com/max/800/1*ykPGC3W95W8KXPRqzZAwPA.png"></figure><p name="c88d" id="c88d" class="graf graf--p graf-after--figure">Now we’ve saved time refactoring and our pets are happy with their aliases!</p><figure name="b029" id="b029" class="graf graf--figure graf-after--p graf--trailing"><img class="graf-image" data-image-id="1*ZihinXQ0UXjMkxlSopRiAg.png" data-width="1270" data-height="546" src="https://cdn-images-1.medium.com/max/800/1*ZihinXQ0UXjMkxlSopRiAg.png"></figure></div></div></section><section name="1f9d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="7d50" id="7d50" class="graf graf--h4 graf--leading">If you liked this article, you may also like:</h4><div name="9405" id="9405" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#2)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #2 of this new series, where you become a more successful developer by reading short nuggets of…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="81ee7b52c9435f30995cf95d2064b77e" data-thumbnail-img-id="1*Vg2-ZCA9uR59Cs8na_s5zg.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*Vg2-ZCA9uR59Cs8na_s5zg.jpeg);"></a></div><div name="5afb" id="5afb" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#4)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #4 of this series, where you become a more successful developer by reading short nuggets of knowledge…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="1b1437c1596f7b81dadefc19a58beee5" data-thumbnail-img-id="1*nswCyZ90OsnJhJBpLqefgA.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*nswCyZ90OsnJhJBpLqefgA.jpeg);"></a></div><h4 name="8cb4" id="8cb4" class="graf graf--h4 graf-after--mixtapeEmbed graf--trailing"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮</a>️<a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭</a>️</h4></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/1d73b6ffd514"><time class="dt-published" datetime="2021-02-25T13:32:08.096Z">February 25, 2021</time></a>.</p><p><a href="https://medium.com/@jportella93/1-minute-to-become-a-better-developer-3-1d73b6ffd514" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

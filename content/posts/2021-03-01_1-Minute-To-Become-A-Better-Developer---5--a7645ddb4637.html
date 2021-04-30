@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>1 Minute To Become A Better Developer (#5)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">1 Minute To Become A Better Developer (#5)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Welcome to issue #5 of this series, where you become a more successful developer by reading short nuggets of knowledge, one minute at a…
+</section>
+<section data-field="body" class="e-content">
+<section name="eca5" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c8c1" id="c8c1" class="graf graf--h3 graf--leading graf--title">OMBD#5: The Right Way To Log Objects in Node.js</h3><h4 name="6157" id="6157" class="graf graf--h4 graf-after--h3 graf--subtitle">And a few other methods that you can also use, but beware of the caveats!</h4><p name="fe73" id="fe73" class="graf graf--p graf-after--h4">Welcome to issue #5 of <strong class="markup--strong markup--p-strong">O</strong>ne <strong class="markup--strong markup--p-strong">M</strong>inute <strong class="markup--strong markup--p-strong">B</strong>etter <strong class="markup--strong markup--p-strong">D</strong>eveloper, where you become a more successful software developer by reading short nuggets of knowledge, one minute at a time.</p><h4 name="242c" id="242c" class="graf graf--h4 graf-after--p"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--h4-strong">⏮</strong></a><strong class="markup--strong markup--h4-strong">️</strong><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--h4-strong"> 🔛</strong></a><strong class="markup--strong markup--h4-strong"> </strong><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--h4-strong">⏭</strong></a><strong class="markup--strong markup--h4-strong">️</strong></h4><figure name="c2fe" id="c2fe" class="graf graf--figure graf-after--h4 graf--trailing"><img class="graf-image" data-image-id="1*2A70iBh7l5LouVsLW3s4gA.jpeg" data-width="1080" data-height="1350" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*2A70iBh7l5LouVsLW3s4gA.jpeg"><figcaption class="imageCaption">Illustration by my buddy <a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener nofollow noopener noopener" target="_blank">Loor Nicolas</a></figcaption></figure></div></div></section><section name="22ac" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="a3b2" id="a3b2" class="graf graf--h4 graf--leading">The problem</h4><p name="1c95" id="1c95" class="graf graf--p graf-after--h4">We want to log in to the console this deeply nested JavaScript Object:</p><figure name="bf99" id="bf99" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/jportella93/7e7ec9f8bd13fec4eeed9135bdb6f7c0.js"></script></figure><h4 name="a592" id="a592" class="graf graf--h4 graf-after--figure">A Naive Solution</h4><p name="0c27" id="0c27" class="graf graf--p graf-after--h4">The common beginner mistake is to just put it through the most basic logging tool that the language provides: <code class="markup--code markup--p-code">console.log</code>. However, we have limited depth logging, making<code class="markup--code markup--p-code">friend</code> on the third level just appear as <code class="markup--code markup--p-code">[Object]</code> :</p><figure name="77d8" id="77d8" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*DzEOm1FzPTvBNmNOOqafhw.png" data-width="928" data-height="342" src="https://cdn-images-1.medium.com/max/800/1*DzEOm1FzPTvBNmNOOqafhw.png"><figcaption class="imageCaption">Console.log: Hidden third level as <code class="markup--code markup--figure-code">friend: [Object].</code></figcaption></figure><h4 name="dd7b" id="dd7b" class="graf graf--h4 graf-after--figure">A Hacky Solution</h4><p name="35dc" id="35dc" class="graf graf--p graf-after--h4">A trick I’ve used in the past is to put it through JSON.stringify with two extra arguments: <code class="markup--code markup--p-code">console.log(JSON.stringify(person, null, 2))</code> . You can read about what these do in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" data-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">MDN</a>.</p><p name="ed6d" id="ed6d" class="graf graf--p graf-after--p">But this approach carries some problems:</p><ol class="postList"><li name="f706" id="f706" class="graf graf--li graf-after--p">Functions will disappear from the output.</li><li name="c06c" id="c06c" class="graf graf--li graf-after--li">You won’t get syntax highlighting, as you’re basically logging a formatted string.</li></ol><figure name="ec4c" id="ec4c" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*aDvl2u748DqYPUoZqRrpag.png" data-width="538" data-height="664" src="https://cdn-images-1.medium.com/max/800/1*aDvl2u748DqYPUoZqRrpag.png"><figcaption class="imageCaption">JSON.stringify: no colors and… where’s is sayHi()??</figcaption></figure><h4 name="b7fb" id="b7fb" class="graf graf--h4 graf-after--figure"><strong class="markup--strong markup--h4-strong">A (BETTER) SOLUTION</strong></h4><p name="ce76" id="ce76" class="graf graf--p graf-after--h4">Use <code class="markup--code markup--p-code">console.dir(person, {depth: null})</code>, that will show all nested objects, including functions, with syntax highlighting.</p><figure name="5bf3" id="5bf3" class="graf graf--figure graf-after--p graf--trailing"><img class="graf-image" data-image-id="1*5cbi2eHG7p7tZPx0x9bGlQ.png" data-width="1254" data-height="474" src="https://cdn-images-1.medium.com/max/800/1*5cbi2eHG7p7tZPx0x9bGlQ.png"><figcaption class="imageCaption">Console.dir(person, {depth: null})</figcaption></figure></div></div></section><section name="7fd5" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="feff" id="feff" class="graf graf--h4 graf--leading">If you liked this article, you may also like:</h4><div name="d7c1" id="d7c1" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#4)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #4 of this series, where you become a more successful developer by reading short nuggets of knowledge…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="1b1437c1596f7b81dadefc19a58beee5" data-thumbnail-img-id="1*nswCyZ90OsnJhJBpLqefgA.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*nswCyZ90OsnJhJBpLqefgA.jpeg);"></a></div><div name="abc1" id="abc1" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#6)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #6 of this series, where you become a more successful developer by reading short nuggets of knowledge…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="ea638102b642307fd0faac8e5f1f2a56" data-thumbnail-img-id="1*_JJlaCV1VCOHmWAMzLOiGw.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*_JJlaCV1VCOHmWAMzLOiGw.jpeg);"></a></div><h4 name="6d78" id="6d78" class="graf graf--h4 graf-after--mixtapeEmbed graf--trailing"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-4-aeabd6586396" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮</a>️<a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭</a>️</h4></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/a7645ddb4637"><time class="dt-published" datetime="2021-03-01T13:47:00.110Z">March 1, 2021</time></a>.</p><p><a href="https://medium.com/@jportella93/1-minute-to-become-a-better-developer-5-a7645ddb4637" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

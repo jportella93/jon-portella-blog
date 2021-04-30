@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The One Thing You Need to Know To Avoid CSS Overflow</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The One Thing You Need to Know To Avoid CSS Overflow</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+THE PROBLEM
+</section>
+<section data-field="body" class="e-content">
+<section name="c32f" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="801d" id="801d" class="graf graf--h3 graf--leading graf--title">The One Thing You Need To Know To Avoid CSS Multiline Wrapping</h3><h4 name="d9bd" id="d9bd" class="graf graf--h4 graf-after--h3 graf--subtitle">10 lines of code to make your text always span one line, and save you from countless headaches</h4><figure name="605b" id="605b" class="graf graf--figure graf-after--h4 graf--trailing"><img class="graf-image" data-image-id="1*4gsEKLWJE6O6K-d_92sSGQ.jpeg" data-width="1080" data-height="1303" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*4gsEKLWJE6O6K-d_92sSGQ.jpeg"><figcaption class="imageCaption">Illustration by <a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">loornicolas</a></figcaption></figure></div></div></section><section name="d9c0" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4794" id="4794" class="graf graf--h3 graf--leading">THE PROBLEM</h3><p name="bb31" id="bb31" class="graf graf--p graf-after--h3">So imagine you have a component that shows some user information like name, surname, and e-mail. The design shows a nice layout where all lines take the same space.</p><figure name="0cd8" id="0cd8" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*uK8F9M38Virqf6ibKVmkHA.png" data-width="455" data-height="257" src="https://cdn-images-1.medium.com/max/800/1*uK8F9M38Virqf6ibKVmkHA.png"></figure><p name="0ed0" id="0ed0" class="graf graf--p graf-after--figure">Easy enough, you implement the design and release it into the wild. But then you realize that this UI can break with a person with a longer name.</p><figure name="808b" id="808b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*xCx7LInK4NvKKil00siZSg.png" data-width="468" data-height="297" src="https://cdn-images-1.medium.com/max/800/1*xCx7LInK4NvKKil00siZSg.png"></figure><p name="621b" id="621b" class="graf graf--p graf-after--figure">That’s because the data being shown has <strong class="markup--strong markup--p-strong">variable length</strong> and you should account for all the cases where it will be used. <a href="https://www.jonportella.com/displaying-data-with-variable-length-example#example-1" data-href="https://www.jonportella.com/displaying-data-with-variable-length-example#example-1" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Here is a demo with the example.</a></p><p name="4607" id="4607" class="graf graf--p graf-after--p graf--trailing">There will be users with super long names, e-mail addresses, and what not and this shouldn’t break your UI.</p></div></div></section><section name="1041" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="cc7a" id="cc7a" class="graf graf--h3 graf--leading">THE SOLUTION</h3><p name="91db" id="91db" class="graf graf--p graf-after--h3">One approach to prevent this would be to create a wrapper component for variable length text which is expected to be shown in a single line. All overflowing text can be scrolled to the side if needed.</p><h4 name="d7e1" id="d7e1" class="graf graf--h4 graf-after--p"><em class="markup--em markup--h4-em">OneLineScroller.jsx</em></h4><figure name="2636" id="2636" class="graf graf--figure graf--iframe graf-after--h4"><script src="https://gist.github.com/jportella93/fea3731a24970edb448bf1f073c26bb7.js.js"></script></figure><p name="8745" id="8745" class="graf graf--p graf-after--figure">Wrapping your text fields with this component makes them span exactly one line. <a href="https://www.jonportella.com/displaying-data-with-variable-length-example#example-2" data-href="https://www.jonportella.com/displaying-data-with-variable-length-example#example-2" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Check example #2 with the OneLineScroller</a>.</p><p name="4152" id="4152" class="graf graf--p graf-after--p graf--trailing">Thanks for reading! Take care, <em class="markup--em markup--p-em">Jon Portella</em>.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/9554b40aa797"><time class="dt-published" datetime="2020-09-25T22:10:17.438Z">September 25, 2020</time></a>.</p><p><a href="https://medium.com/@jportella93/the-one-thing-you-need-to-know-to-avoid-css-overflow-9554b40aa797" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

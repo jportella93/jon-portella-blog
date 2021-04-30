@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>1 Minute To Become A Better Developer (#1)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">1 Minute To Become A Better Developer (#1)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Welcome to this new series, were you’ll become a more successful developer by reading short nuggets of knowledge, one minute per day.
+</section>
+<section data-field="body" class="e-content">
+<section name="d122" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c1b1" id="c1b1" class="graf graf--h3 graf--leading graf--title">OMBD#1: Using JavaScript To Test Browser Support for a CSS Pseudo-Class</h3><h4 name="e33e" id="e33e" class="graf graf--h4 graf-after--h3 graf--subtitle">An obscure (but effective) way to do CSS feature detection with JavaScript. In the example, we test for a feature that only Microsoft browsers have.</h4><p name="0a76" id="0a76" class="graf graf--p graf-after--h4">Welcome to issue #1 of <strong class="markup--strong markup--p-strong">O</strong>ne <strong class="markup--strong markup--p-strong">M</strong>inute <strong class="markup--strong markup--p-strong">B</strong>etter <strong class="markup--strong markup--p-strong">D</strong>eveloper, where you become a more successful software developer by reading short nuggets of knowledge, one minute at a time.</p><h4 name="819a" id="819a" class="graf graf--h4 graf-after--p"><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">🔛</a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭️</a></h4><figure name="97d1" id="97d1" class="graf graf--figure graf-after--h4 graf--trailing"><img class="graf-image" data-image-id="1*iwIZkwqFni6W9KM4Prmciw.jpeg" data-width="1080" data-height="1080" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*iwIZkwqFni6W9KM4Prmciw.jpeg"><figcaption class="imageCaption">Illustration by my buddy <a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Loor Nicolas</a></figcaption></figure></div></div></section><section name="b55a" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="30ed" id="30ed" class="graf graf--h4 graf--leading">THE PROBLEM</h4><p name="634c" id="634c" class="graf graf--p graf-after--h4">Some browsers have native support for pseudo-elements that others don’t. This is the case, for example, of <code class="markup--code markup--p-code">::ms-reveal</code> , the little eye that appears to show/hide password input fields in Microsoft browsers (Internet Explorer and Edge).</p><figure name="fefb" id="fefb" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*XmHcvDrQ8OIC0xwDvJtpPg.png" data-width="1100" data-height="256" src="https://cdn-images-1.medium.com/max/800/1*XmHcvDrQ8OIC0xwDvJtpPg.png"><figcaption class="imageCaption">Edge’s native password reveal feature.</figcaption></figure><p name="618f" id="618f" class="graf graf--p graf-after--figure">The problem with this native feature is that if your front-end has its own password reveal feature, you could end up with a layout like this one:</p><figure name="6ef2" id="6ef2" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*uoIDOVcZf89XgV23fE4caA.png" data-width="1404" data-height="346" src="https://cdn-images-1.medium.com/max/800/1*uoIDOVcZf89XgV23fE4caA.png"><figcaption class="imageCaption">Oops! Edge’s native password reveal feature and our own’s.</figcaption></figure><h4 name="627c" id="627c" class="graf graf--h4 graf-after--figure">A SOLUTION</h4><p name="7782" id="7782" class="graf graf--p graf-after--h4">A quick fix would be to just hide the native reveal password:</p><figure name="9a84" id="9a84" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/jportella93/9d8816b030cc5956c3e3833bebaab761.js.js"></script></figure><p name="977e" id="977e" class="graf graf--p graf-after--figure">But why are we so quick to discard a native feature? They’re great! In the end, those are the ones that have been developed and tested to work flawlessly by the same team that has built the browser.</p><h4 name="7335" id="7335" class="graf graf--h4 graf-after--p">A (NATIVE FRIENDLY) SOLUTION</h4><p name="4f06" id="4f06" class="graf graf--p graf-after--h4">So in this case, a good approach would be to test if the browser has the<code class="markup--code markup--p-code">::ms-reveal</code> feature, and only show our own if it doesn’t.</p><figure name="c82c" id="c82c" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/jportella93/99035d636203f9498bbd44778b26736a.js.js"></script></figure><p name="e1f6" id="e1f6" class="graf graf--p graf-after--figure">Now you can just check for <code class="markup--code markup--p-code">::ms-reveal</code> and roll your own if it doesn’t exist!</p><figure name="0540" id="0540" class="graf graf--figure graf--iframe graf-after--p graf--trailing"><script src="https://gist.github.com/jportella93/28bffe390a29e481ed1f6731197152c6.js.js"></script></figure></div></div></section><section name="6152" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="7281" id="7281" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">If you liked this article, you may also like:</strong></p><div name="9405" id="9405" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#2)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #2 of this new series, where you become a more successful developer by reading short nuggets of…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="81ee7b52c9435f30995cf95d2064b77e" data-thumbnail-img-id="1*Vg2-ZCA9uR59Cs8na_s5zg.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*Vg2-ZCA9uR59Cs8na_s5zg.jpeg);"></a></div><h3 name="ec12" id="ec12" class="graf graf--h3 graf-after--mixtapeEmbed graf--trailing"><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h3-anchor" rel="noopener" target="_blank">🔛</a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="markup--anchor markup--h3-anchor" rel="noopener" target="_blank">⏭️</a></h3></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/54f1fa9db73f"><time class="dt-published" datetime="2021-02-23T13:47:47.254Z">February 23, 2021</time></a>.</p><p><a href="https://medium.com/@jportella93/1-minute-to-become-a-better-developer-1-54f1fa9db73f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

@@ -10,7 +10,7 @@ const ChooseDifficluty = () => {
     <>
       <label htmlFor={selectId}>
         Select difficulty
-        <select value={difficulty} name={selectId} id={selectId} onChange={({ target: { value } }) => set('difficulty', value)}>
+        <select value={difficulty || ''} name={selectId} id={selectId} onChange={({ target: { value } }) => set('difficulty', value)}>
           {[...gameDifficulties.entries()].map(([id, { label }]) => (
             <option key={id} value={id}>{label}</option>
           ))}

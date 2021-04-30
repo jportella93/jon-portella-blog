@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5 Remarkable Git Commands That Will Boost Your Coding Productivity</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">5 Remarkable Git Commands That Will Boost Your Coding Productivity</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…
+</section>
+<section data-field="body" class="e-content">
+<section name="0e62" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6afa" id="6afa" class="graf graf--h3 graf--leading graf--title">5 Remarkable Git Commands That Will Boost Your Coding Productivity</h3><p name="48dd" id="48dd" class="graf graf--p graf-after--h3">These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…</p><figure name="b6d1" id="b6d1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*vYyOMvpNyGZ0prjHuKk4AA.jpeg" data-width="1080" data-height="1350" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*vYyOMvpNyGZ0prjHuKk4AA.jpeg"><figcaption class="imageCaption">Illustration by <a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener nofollow noopener" target="_blank">loornicolas</a></figcaption></figure><h3 name="ad7e" id="ad7e" class="graf graf--h3 graf-after--figure">1. Git Commit Work In Progess — gwip</h3><p name="cd8a" id="cd8a" class="graf graf--p graf-after--h3">This command will stage all current changes and commit them with a default message.</p><p name="90da" id="90da" class="graf graf--p graf-after--p">It’s very useful for saving your current work and checking another branch and then coming back to it.</p><p name="425f" id="425f" class="graf graf--p graf-after--p">Also to save your current work for the day and push it to the remote, just in case your computer breaks until the next time you open the code. It adds a commit message such as <code class="markup--code markup--p-code">--wip-- [skip ci]</code> so your CI can be configured to skip this commit.</p><p name="c26b" id="c26b" class="graf graf--p graf-after--p">It comes with <a href="https://ohmyz.sh/" data-href="https://ohmyz.sh/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ohmyzsh</a> but can also be added manually by adding this line in <code class="markup--code markup--p-code">~/.bashrc</code></p><pre name="b9c7" id="b9c7" class="graf graf--pre graf-after--p graf--trailing">alias gwip=&#39;git add -A; git rm $(git ls-files --deleted) 2&gt; /dev/null; git commit --no-verify --no-gpg-sign -m &quot;--wip-- [skip ci]&quot;&#39;</pre></div></div></section><section name="b7b2" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="abe9" id="abe9" class="graf graf--h3 graf--leading">2. Git Uncommit Work In Progess — gunwip 🔫</h3><p name="d484" id="d484" class="graf graf--p graf-after--h3">It’s the twin of #1 <code class="markup--code markup--p-code">gwip</code> .It resets the last commit created by <code class="markup--code markup--p-code">gwip</code> leaving your work in the state it was before running <code class="markup--code markup--p-code">gwip</code>.</p><p name="a75a" id="a75a" class="graf graf--p graf-after--p">It also comes with <a href="https://ohmyz.sh/" data-href="https://ohmyz.sh/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ohmyzsh</a> but can also be added manually by adding this line in <code class="markup--code markup--p-code">~/.bashrc</code></p><pre name="cf50" id="cf50" class="graf graf--pre graf-after--p graf--trailing">alias gunwip=&#39;git log -n 1 | grep -q -c &quot;\-\-wip\-\-&quot; &amp;&amp; git reset HEAD~1&#39;</pre></div></div></section><section name="1a2c" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="67a0" id="67a0" class="graf graf--h3 graf--leading">3. Git Stash Staged — gsts</h3><p name="6a59" id="6a59" class="graf graf--p graf-after--h3">You are trying to find a bug in your current set of changed files but you are not sure which file causes it.</p><p name="8d57" id="8d57" class="graf graf--p graf-after--p">A good approach for debugging this could be stashing files that might cause it (so they would temporarily be back to their state in the previous commit) and check if the bug is still there.</p><p name="98cf" id="98cf" class="graf graf--p graf-after--p">Use the <a href="https://code.visualstudio.com/Docs/editor/versioncontrol#_git-support" data-href="https://code.visualstudio.com/Docs/editor/versioncontrol#_git-support" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">VSCode source control tab</a> (or the CLI) to see which files have changes and stage the ones you think could be causing the bug. Then run this command and check if the bug is still there. If the bug is still there, go back to the previous state by running <code class="markup--code markup--p-code">git stash pop</code> and try again with other files.</p><p name="9fe8" id="9fe8" class="graf graf--p graf-after--p">Use this command by adding this line in <code class="markup--code markup--p-code">~/.bashrc</code></p><pre name="8ac2" id="8ac2" class="graf graf--pre graf-after--p graf--trailing">alias gsts=&#39;git stash -- $(git diff --staged --name-only)&#39;</pre></div></div></section><section name="aa8a" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="5cfb" id="5cfb" class="graf graf--h3 graf--leading">4. Git Move — gmove</h3><p name="eb50" id="eb50" class="graf graf--p graf-after--h3">You are working in a feature when you happen to discover a bug completely unrelated to the feature. You can easily fix this bug. What do you do?</p><p name="bc39" id="bc39" class="graf graf--p graf-after--p">You have two options:</p><ol class="postList"><li name="cb76" id="cb76" class="graf graf--li graf-after--p">Fixing the bug and adding a commit in the feature branch. This is a bad idea since it mixes two unrelated things in the branch. What if the feature is reverted or never released? The bug would reappear.</li><li name="459b" id="459b" class="graf graf--li graf-after--li">Adding a ticket for the bug and sending it to the backlog. That would be a good idea if the bug could potentially take a long time to fix. But <a href="https://en.wikipedia.org/wiki/Getting_Things_Done" data-href="https://en.wikipedia.org/wiki/Getting_Things_Done" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">as David Allen says in Getting Things Done</a>, “If you can do it in less than two minutes, do it now”. So what do you do?</li></ol><h4 name="fc48" id="fc48" class="graf graf--h4 graf-after--li"><strong class="markup--strong markup--h4-strong">Solution: gmove</strong></h4><p name="de3f" id="de3f" class="graf graf--p graf-after--h4">You fix the bug, stage only the changes related to the bug and execute</p><pre name="a6e3" id="a6e3" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">gmove bugfix master</code></pre><p name="6d34" id="6d34" class="graf graf--p graf-after--pre">This will create a branch called <code class="markup--code markup--p-code">bugfix</code> based off <code class="markup--code markup--p-code">master</code> with only the bug fix.</p><p name="10dc" id="10dc" class="graf graf--p graf-after--p">This way you can quickly separate concerns between your branches and also make reviewers happy!</p><p name="31cf" id="31cf" class="graf graf--p graf-after--p">You can have this command by adding this lines to <code class="markup--code markup--p-code">~/.bashrc</code></p><pre name="bf60" id="bf60" class="graf graf--pre graf-after--p">gmove() {</pre><pre name="bdb1" id="bdb1" class="graf graf--pre graf-after--pre">  git stash -- $(git diff --staged --name-only) &amp;&amp;</pre><pre name="9736" id="9736" class="graf graf--pre graf-after--pre">  gwip ;</pre><pre name="fb5d" id="fb5d" class="graf graf--pre graf-after--pre">  git branch $1 $2 &amp;&amp;</pre><pre name="d38d" id="d38d" class="graf graf--pre graf-after--pre">  git checkout $1 &amp;&amp;</pre><pre name="4d70" id="4d70" class="graf graf--pre graf-after--pre">  git stash pop</pre><pre name="4748" id="4748" class="graf graf--pre graf-after--pre">}</pre><p name="6162" id="6162" class="graf graf--p graf-after--pre graf--trailing">Note that this command is depending on command #1 <code class="markup--code markup--p-code">gwip</code> on this page. Also, when coming back to your branch, you can use command #2 <code class="markup--code markup--p-code">gunwip </code>to reset your working state.</p></div></div></section><section name="b842" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8d7a" id="8d7a" class="graf graf--h3 graf--leading">5. BONUS: Git Push Origin Head</h3><p name="6919" id="6919" class="graf graf--p graf-after--h3">Did you ever do <code class="markup--code markup--p-code">git push</code> and had git yell to you this?</p><pre name="fff5" id="fff5" class="graf graf--pre graf-after--p">fatal: The current branch test has no upstream branch.<br>To push the current branch and set the remote as upstream, use</pre><pre name="b360" id="b360" class="graf graf--pre graf-after--pre">git push --set-upstream origin my-branch</pre><p name="5a6f" id="5a6f" class="graf graf--p graf-after--pre">Avoiding this is as easy as setting this two aliases in <code class="markup--code markup--p-code">~/.bashrc</code></p><pre name="c537" id="c537" class="graf graf--pre graf-after--p">alias gpsh=&quot;git push origin HEAD&quot;</pre><pre name="dc81" id="dc81" class="graf graf--pre graf-after--pre">alias gpshf=&quot;git push -f origin HEAD&quot;</pre><p name="dd4f" id="dd4f" class="graf graf--p graf-after--pre graf--trailing">This will automatically push your branch to a branch with the same name on the remote, or create it if it doesn’t exist.</p></div></div></section><section name="859c" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="be38" id="be38" class="graf graf--p graf--leading graf--trailing">I’m publishing tips regularly, <strong class="markup--strong markup--p-strong">smash that follow button</strong> and <a href="https://buttondown.email/jportella93" data-href="https://buttondown.email/jportella93" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">join my mailing list</a> to avoid missing them!</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/e8635b20b4bf"><time class="dt-published" datetime="2020-09-29T08:24:58.322Z">September 29, 2020</time></a>.</p><p><a href="https://medium.com/@jportella93/5-remarkable-git-commands-that-will-boost-your-coding-productivity-e8635b20b4bf" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

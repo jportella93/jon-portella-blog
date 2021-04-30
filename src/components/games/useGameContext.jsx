@@ -4,8 +4,16 @@ import { GameContext, gameDifficulties } from './GameContext';
 const useGameContext = () => {
   const [state, setState] = useContext(GameContext);
 
+  const resetQueuedStates = () => ({
+    queuedNarratorAction: false,
+  });
+
   function set(path, value) {
-    setState((currentState) => ({ ...currentState, [path]: value }));
+    setState((currentState) => ({
+      ...currentState,
+      [path]: value,
+      ...(path === 'gameState' ? resetQueuedStates() : {}),
+    }));
   }
 
   function getDifficultyIndex() {
@@ -14,7 +22,7 @@ const useGameContext = () => {
   }
 
   return {
-    gameState: state.gameState,
+    ...state,
     set,
     difficultyIndex: getDifficultyIndex(),
   };

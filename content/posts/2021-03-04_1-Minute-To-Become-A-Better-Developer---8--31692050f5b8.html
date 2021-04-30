@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>1 Minute To Become A Better Developer (#8)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">1 Minute To Become A Better Developer (#8)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Learn how to find out our public IP address and country from the command line, in 1 minute.
+</section>
+<section data-field="body" class="e-content">
+<section name="3ed0" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a589" id="a589" class="graf graf--h3 graf--leading graf--title">OMBD#8: Find Out Our Public IP Address and Country From the Command Line</h3><h4 name="a824" id="a824" class="graf graf--h4 graf-after--h3 graf--subtitle">A quick explanation and a couple of handy one-liners</h4><p name="c68f" id="c68f" class="graf graf--p graf-after--h4">Welcome to issue #8 of <strong class="markup--strong markup--p-strong">O</strong>ne <strong class="markup--strong markup--p-strong">M</strong>inute <strong class="markup--strong markup--p-strong">B</strong>etter <strong class="markup--strong markup--p-strong">D</strong>eveloper, where you become a more successful software developer by reading short nuggets of knowledge, one minute at a time.</p><h4 name="7209" id="7209" class="graf graf--h4 graf-after--p"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮</a>️ <a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--h4-strong">🔛</strong></a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭</a>️<strong class="markup--strong markup--h4-strong">️</strong></h4><figure name="4ad2" id="4ad2" class="graf graf--figure graf-after--h4 graf--trailing"><img class="graf-image" data-image-id="1*bbrotj1VkcciQzCu407mDA.jpeg" data-width="1080" data-height="1080" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*bbrotj1VkcciQzCu407mDA.jpeg"><figcaption class="imageCaption">Art by my buddy <a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener nofollow noopener noopener" target="_blank">Loor Nicolas</a></figcaption></figure></div></div></section><section name="ce6b" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="4533" id="4533" class="graf graf--h4 graf--leading">THE PROBLEM</h4><p name="9145" id="9145" class="graf graf--p graf-after--h4">Every device connected to the Internet has an assigned IP Address (Internet Protocol Address), which is made up of 4 numbers in the following format: <code class="markup--code markup--p-code">&lt;number&gt;.&lt;number&gt;.&lt;number&gt;.&lt;number&gt;</code>. Each number can be in the range of 0–255. e.g. <code class="markup--code markup--p-code">184.152.81.47</code> .</p><p name="34f1" id="34f1" class="graf graf--p graf-after--p">When computers communicate with each other over the Internet or via a local network, the information sharing is done through IP addresses. Like physical addresses, they offer a location to send information to.</p><p name="1031" id="1031" class="graf graf--p graf-after--p">Your <strong class="markup--strong markup--p-strong">public IP address</strong> is an external-facing IP Address that’s provided by your Internet Service Provider (ISP).</p><p name="dead" id="dead" class="graf graf--p graf-after--p">So we are sharing this valuable piece of information with every website we interact on the Internet, which can be used to identify us and our country of origin…</p><p name="42cc" id="42cc" class="graf graf--p graf-after--p">But, how can we<strong class="markup--strong markup--p-strong"> find out our Public IP address from the command line</strong>?</p><h4 name="9421" id="9421" class="graf graf--h4 graf-after--p">A SOLUTION</h4><p name="4f14" id="4f14" class="graf graf--p graf-after--h4">Here’s a one-liner using the free service from <code class="markup--code markup--p-code">api.ipify.org</code>:</p><pre name="93b9" id="93b9" class="graf graf--pre graf-after--p">curl -w &quot;\n&quot; -s <a href="https://api.ipify.org" data-href="https://api.ipify.org" class="markup--anchor markup--pre-anchor" rel="nofollow noopener" target="_blank">https://api.ipify.org</a><br># 116.164.32.81</pre><p name="1714" id="1714" class="graf graf--p graf-after--pre">For our comfort, let’s save this in an <a href="https://www.unixtutorial.org/create-alias-in-unix-shell/" data-href="https://www.unixtutorial.org/create-alias-in-unix-shell/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">alias</a> our or <code class="markup--code markup--p-code">~/.bashrc</code> or <code class="markup--code markup--p-code">~/.zshrc</code>:</p><pre name="4166" id="4166" class="graf graf--pre graf-after--p">alias whatsmyip=&#39;curl -w &quot;\n&quot; -s <a href="https://api.ipify.org%27" data-href="https://api.ipify.org&#39;" class="markup--anchor markup--pre-anchor" rel="nofollow noopener" target="_blank">https://api.ipify.org&#39;</a></pre><p name="b591" id="b591" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">Now that we know our public IP address, let’s find out its country of origin.</strong> We can pipe the alias result to another free service <code class="markup--code markup--p-code">ipinfo.io</code> that does a geo lookup:</p><pre name="ea36" id="ea36" class="graf graf--pre graf-after--p">curl ipinfo.io/$(whatsmyip)</pre><p name="78d3" id="78d3" class="graf graf--p graf-after--pre">Even better, also save an alias for this:</p><pre name="13e6" id="13e6" class="graf graf--pre graf-after--p">alias whatsmycountry=&#39;curl ipinfo.io/`whatsmyip`&#39;</pre><p name="b77f" id="b77f" class="graf graf--p graf-after--pre">Now that we know this information, it would be great if we could hide it or even change it… <strong class="markup--strong markup--p-strong">For privacy reasons</strong> or for example,<strong class="markup--strong markup--p-strong"> to make it seem like we are in another country</strong>!</p><p name="1c9b" id="1c9b" class="graf graf--p graf-after--p">Here’s a story on how to do that:</p><div name="6566" id="6566" class="graf graf--mixtapeEmbed graf-after--p graf--trailing"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#10)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Learn how to change public your public IP address, in one minute.</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="de997b922efa26fd0076e246fa34f5d7" data-thumbnail-img-id="1*4iix5Y4zfxLtIC6LTG58Tg.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*4iix5Y4zfxLtIC6LTG58Tg.jpeg);"></a></div></div></div></section><section name="c309" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="2588" id="2588" class="graf graf--h4 graf--leading">If you liked this article, you may also like:</h4><div name="8294" id="8294" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#7)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #7 of this series, where you become a more successful developer by reading short nuggets of knowledge…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="07c30f5def430f53ad0e318c42dca593" data-thumbnail-img-id="1*oLHUtVBD-0UmBajCjS42xA.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*oLHUtVBD-0UmBajCjS42xA.jpeg);"></a></div><div name="ec50" id="ec50" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#9)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Learn how to prevent your custom aliases to be lost in oblivion, in one minute.</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="5bd74961a0372b3c3b1298b539fc6eed" data-thumbnail-img-id="1*kXQg5MwxlPmOsIvfaMeFuA.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*kXQg5MwxlPmOsIvfaMeFuA.jpeg);"></a></div><h4 name="167f" id="167f" class="graf graf--h4 graf-after--mixtapeEmbed graf--trailing"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-7-6c9c9fa67a9c" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮</a>️ <a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">🔛</a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-9-43ce61662d72" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭</a></h4></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/31692050f5b8"><time class="dt-published" datetime="2021-03-04T13:53:57.939Z">March 4, 2021</time></a>.</p><p><a href="https://medium.com/@jportella93/1-minute-to-become-a-better-developer-8-31692050f5b8" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

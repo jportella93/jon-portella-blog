@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Master Git Diff With These Not-So-Known Commands</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Master Git Diff With These Not-So-Known Commands</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Save time while reviewing your own pull requests
+</section>
+<section data-field="body" class="e-content">
+<section name="0392" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4785" id="4785" class="graf graf--h3 graf--leading graf--title">OMBD#21: Master Git Diff With These Not-So-Known Commands</h3><h4 name="793a" id="793a" class="graf graf--h4 graf-after--h3 graf--subtitle">Spot errors before pushing to save time while reviewing your own pull requests</h4><p name="39ce" id="39ce" class="graf graf--p graf-after--h4">Welcome to issue #21 of <strong class="markup--strong markup--p-strong">O</strong>ne <strong class="markup--strong markup--p-strong">M</strong>inute <strong class="markup--strong markup--p-strong">B</strong>etter <strong class="markup--strong markup--p-strong">D</strong>eveloper, where you become a more successful software developer by reading short nuggets of knowledge, one minute at a time.</p><h4 name="b118" id="b118" class="graf graf--h4 graf-after--p"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮️</a><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" data-href="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" class="markup--anchor markup--h4-anchor" target="_blank">⏭️</a></h4><figure name="4ab1" id="4ab1" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*V9ndOxCf0ALnBYgmxVCkWw.jpeg" data-width="1080" data-height="864" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*V9ndOxCf0ALnBYgmxVCkWw.jpeg"><figcaption class="imageCaption">Art by my buddy <a href="https://www.instagram.com/" data-href="https://www.instagram.com/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Loor Nicolas</a></figcaption></figure><h4 name="0b27" id="0b27" class="graf graf--h4 graf-after--figure">THE PROBLEM</h4><p name="c16d" id="c16d" class="graf graf--p graf-after--h4">You spend a lot of time reviewing your own pull request on Github before asking for a review and you always find stuff that needs to be changed. So you need to add/edit commits, losing lots of time.</p><h4 name="48dc" id="48dc" class="graf graf--h4 graf-after--p">A SOLUTION</h4><p name="ef99" id="ef99" class="graf graf--p graf-after--h4">Before committing, make good use of <code class="markup--code markup--p-code">git diff</code>, so you avoid having to change code later.</p><p name="07d8" id="07d8" class="graf graf--p graf-after--p">Here are some not-so-known git tips, sorted from more common to more uncommon:</p><h4 name="35e1" id="35e1" class="graf graf--h4 graf-after--p">Changes on staged or unstaged files</h4><ol class="postList"><li name="b23b" id="b23b" class="graf graf--li graf-after--h4">Show all <strong class="markup--strong markup--li-strong">unstaged</strong> changes since the last commit:</li></ol><pre name="f177" id="f177" class="graf graf--pre graf-after--li">git diff</pre><p name="fc1a" id="fc1a" class="graf graf--p graf-after--pre">2. Show all <strong class="markup--strong markup--p-strong">staged</strong> changes since the last commit:</p><pre name="af73" id="af73" class="graf graf--pre graf-after--p">git diff --cached</pre><p name="6151" id="6151" class="graf graf--p graf-after--pre">3. Show all <strong class="markup--strong markup--p-strong">staged and unstaged</strong> changes since the last commit:</p><pre name="b538" id="b538" class="graf graf--pre graf-after--p">git diff HEAD</pre><h4 name="3f69" id="3f69" class="graf graf--h4 graf-after--pre">Revision targeting</h4><ol class="postList"><li name="29e9" id="29e9" class="graf graf--li graf-after--h4">Show changes <strong class="markup--strong markup--li-strong">since a specific commit</strong>:</li></ol><pre name="a8db" id="a8db" class="graf graf--pre graf-after--li">git log --oneline<br># 4833545 cleanup<br># c3a1ee6 add navbar<br># <strong class="markup--strong markup--pre-strong">ca2f968</strong> initial commit</pre><pre name="c999" id="c999" class="graf graf--pre graf-after--pre">git diff <strong class="markup--strong markup--pre-strong">ca2f968</strong></pre><p name="2e6e" id="2e6e" class="graf graf--p graf-after--pre">2. Show changes<strong class="markup--strong markup--p-strong"> since the last n commits</strong>, e.g. 2:</p><pre name="c2ca" id="c2ca" class="graf graf--pre graf-after--p">git diff HEAD~2</pre><h4 name="d42a" id="d42a" class="graf graf--h4 graf-after--pre">Single file</h4><ol class="postList"><li name="8ae5" id="8ae5" class="graf graf--li graf-after--h4">Show changes on a <strong class="markup--strong markup--li-strong">single file since the last commit</strong>:</li></ol><pre name="9372" id="9372" class="graf graf--pre graf-after--li">git diff script.js</pre><p name="d49b" id="d49b" class="graf graf--p graf-after--pre">2. Show changes on a <strong class="markup--strong markup--p-strong">single file since a specific commit</strong>:</p><pre name="09aa" id="09aa" class="graf graf--pre graf-after--p">git log --oneline<br># 4833545 cleanup<br># c3a1ee6 add navbar<br># <strong class="markup--strong markup--pre-strong">ca2f968</strong> initial commit</pre><pre name="6ab5" id="6ab5" class="graf graf--pre graf-after--pre">git diff <strong class="markup--strong markup--pre-strong">ca2f968 </strong>script.js</pre><h4 name="e0ef" id="e0ef" class="graf graf--h4 graf-after--pre">Summary of changes</h4><p name="155b" id="155b" class="graf graf--p graf-after--h4">To be run from your feature branch.</p><ol class="postList"><li name="4b93" id="4b93" class="graf graf--li graf-after--p">Show all changes over a specific branch (<strong class="markup--strong markup--li-strong">GitHub PR diff</strong>):</li></ol><pre name="d32d" id="d32d" class="graf graf--pre graf-after--li">git diff master</pre><p name="a46b" id="a46b" class="graf graf--p graf-after--pre">2. Show <strong class="markup--strong markup--p-strong">changed files with a number of changed lines</strong> over a specific branch:</p><pre name="e277" id="e277" class="graf graf--pre graf-after--p">git diff master --stat</pre><p name="03a7" id="03a7" class="graf graf--p graf-after--pre">3. Show a <strong class="markup--strong markup--p-strong">one-line summary of the changes </strong>over a specific branch:</p><pre name="e0ed" id="e0ed" class="graf graf--pre graf-after--p">git diff master --shortstat</pre><h4 name="7979" id="7979" class="graf graf--h4 graf-after--pre">BONUS</h4><p name="4512" id="4512" class="graf graf--p graf-after--h4">Finally, here’s a neat trick by <a href="https://shime.sh/til/git-diff-tips-and-tricks" data-href="https://shime.sh/til/git-diff-tips-and-tricks" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Shime.sh</a>, to make your diffs more readable by removing the <code class="markup--code markup--p-code">+</code> and <code class="markup--code markup--p-code">-</code> symbols, since they are colored anyway!</p><pre name="fc5a" id="fc5a" class="graf graf--pre graf-after--p">git config --global pager.diff &#39;sed &quot;s/^\([^-+ ]*\)[-+ ]/\\1/&quot;&#39;</pre><h4 name="e721" id="e721" class="graf graf--h4 graf-after--pre">If you liked this story, you might also like</h4><div name="9096" id="9096" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#20)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Learn how to lazy load images, in one minute.</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="ea75d554d6e0c54ebac33ae42b814305" data-thumbnail-img-id="0*vx5VXb2ow9Nym3Yu" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*vx5VXb2ow9Nym3Yu);"></a></div><div name="68a3" id="68a3" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" data-href="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31"><strong class="markup--strong markup--mixtapeEmbed-strong">A Snazzy Trick: How To Style Your console.log() Messages</strong><br><em class="markup--em markup--mixtapeEmbed-em">A quick guide (with examples) on applying CSS to log messages in the browser’s console</em>medium.com</a><a href="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="9d91c4d4a14b9ba481e923febbe8ea80" data-thumbnail-img-id="1*zONROaYj-u969muwWhn19w.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*zONROaYj-u969muwWhn19w.jpeg);"></a></div><h4 name="ff6f" id="ff6f" class="graf graf--h4 graf-after--mixtapeEmbed graf--trailing"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-20-a6f93db2c180" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮️</a><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" data-href="https://medium.com/codex/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" class="markup--anchor markup--h4-anchor" target="_blank">⏭️</a></h4></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/9fecfa3006d0"><time class="dt-published" datetime="2021-03-24T13:59:13.304Z">March 24, 2021</time></a>.</p><p><a href="https://medium.com/@jportella93/master-git-diff-with-these-not-so-known-commands-9fecfa3006d0" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

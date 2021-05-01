@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
   }, [])
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} maxWidth={rhythm(22)}>
       <BlogLayout>
         <SEO title={postTitle} description={postDescriptionMetaTag} url={postUrl} image={imageUrl} type={"article"} publishedTime={date} />
         <h1>{postTitle}</h1>

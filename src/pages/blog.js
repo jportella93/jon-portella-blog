@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location}>
+      <Layout location={this.props.location} maxWidth={rhythm(22)}>
         <BlogLayout location={this.props.location} title={siteTitle}>
           <SEO
             title="Blog"

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>1 Minute To Become A Better Developer (#11)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">1 Minute To Become A Better Developer (#11)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Learn how to use Regex’s Negative Lookahead, in one minute.
+</section>
+<section data-field="body" class="e-content">
+<section name="6a22" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="3aa2" id="3aa2" class="graf graf--h3 graf--leading graf--title">OMBD#11: Supercharge Your Regex With the Negative Lookahead Assertion</h3><h4 name="892a" id="892a" class="graf graf--h4 graf-after--h3 graf--subtitle">Make faster refactors in JavaScript, VSCode, or in your favourite place to run regular expressions</h4><p name="4dfa" id="4dfa" class="graf graf--p graf-after--h4">Welcome to issue #11 of <strong class="markup--strong markup--p-strong">O</strong>ne <strong class="markup--strong markup--p-strong">M</strong>inute <strong class="markup--strong markup--p-strong">B</strong>etter <strong class="markup--strong markup--p-strong">D</strong>eveloper, where you become a more successful software developer by reading short nuggets of knowledge, one minute at a time.</p><h4 name="cb0f" id="cb0f" class="graf graf--h4 graf-after--p"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮</a>️<a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭️</a></h4><figure name="7085" id="7085" class="graf graf--figure graf-after--h4 graf--trailing"><img class="graf-image" data-image-id="1*uaTTY0a2zwL_MYBw2TumGA.jpeg" data-width="1080" data-height="1080" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*uaTTY0a2zwL_MYBw2TumGA.jpeg"><figcaption class="imageCaption">Art by my buddy<a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank"> Loor Nicolas</a></figcaption></figure></div></div></section><section name="a7f8" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="f3f2" id="f3f2" class="graf graf--h4 graf--leading">THE PROBLEM</h4><p name="8ed7" id="8ed7" class="graf graf--p graf-after--h4">We have a list of images, some of them being requested via the HTTP protocol and some others via the HTTPS protocol.</p><figure name="6662" id="6662" class="graf graf--figure graf--iframe graf-after--p"><iframe src="https://jsfiddle.net/txqbrep5/embedded/" width="600" height="400" frameborder="0" scrolling="no"></iframe><figcaption class="imageCaption">A list of images with mixed HTTP and HTTPS.</figcaption></figure><p name="360c" id="360c" class="graf graf--p graf-after--figure">We want all of them to use HTTPS.</p><p name="7b01" id="7b01" class="graf graf--p graf-after--p">How can we accomplish this? Just replacing <code class="markup--code markup--p-code">http</code> for <code class="markup--code markup--p-code">https</code> results in undesired <code class="markup--code markup--p-code">httpss</code> .</p><figure name="b0dd" id="b0dd" class="graf graf--figure graf--iframe graf-after--p"><iframe src="https://jsfiddle.net/j356em1L/embedded/" width="600" height="400" frameborder="0" scrolling="no"></iframe><figcaption class="imageCaption">Just replacing <code class="markup--code markup--figure-code">http for https produces httpss.</code></figcaption></figure><p name="029e" id="029e" class="graf graf--p graf-after--figure">So we only want to match and update <code class="markup--code markup--p-code">http</code> that is not followed by an <code class="markup--code markup--p-code">s</code> . How do we do that?</p><h4 name="504f" id="504f" class="graf graf--h4 graf-after--p">A SOLUTION</h4><p name="a939" id="a939" class="graf graf--p graf-after--h4">Enter <strong class="markup--strong markup--p-strong">Regex’s Negative Lookahead</strong>. The syntax is simple:</p><pre name="3aa3" id="3aa3" class="graf graf--pre graf-after--p">http(?!s)</pre><p name="f7ef" id="f7ef" class="graf graf--p graf-after--pre">Where:</p><ul class="postList"><li name="6bbf" id="6bbf" class="graf graf--li graf-after--p">The parentheses followed by a question mark and exclamation point <code class="markup--code markup--li-code">(?!)</code> is the construct for the Negative Lookahead.</li><li name="ec94" id="ec94" class="graf graf--li graf-after--li">Characters between the exclamation point and the closing parentheses are the ones negated. In this case, we are only negating the character <code class="markup--code markup--li-code">s</code> .</li></ul><p name="3dbe" id="3dbe" class="graf graf--p graf-after--li">Here’s a demo on <a href="http://regexr.com/5o95i" data-href="http://regexr.com/5o95i" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">RegExr</a>.</p><p name="e75f" id="e75f" class="graf graf--p graf-after--p">So our solution would be:</p><figure name="90f5" id="90f5" class="graf graf--figure graf--iframe graf-after--p graf--trailing"><iframe src="https://jsfiddle.net/pzgvk4mt/embedded/" width="600" height="400" frameborder="0" scrolling="no"></iframe><figcaption class="imageCaption">Using Regex’s Negative Lookahead, we can match http and not https.</figcaption></figure></div></div></section><section name="bf24" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="8fc2" id="8fc2" class="graf graf--h4 graf--leading">If you liked this story, you may also like:</h4><div name="4b50" id="4b50" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#10)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Learn how to change public your public IP address, in one minute.</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="de997b922efa26fd0076e246fa34f5d7" data-thumbnail-img-id="1*4iix5Y4zfxLtIC6LTG58Tg.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*4iix5Y4zfxLtIC6LTG58Tg.jpeg);"></a></div><div name="9990" id="9990" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#12)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Learn how to leverage window.IntersectionObserver to find out how many visitors see your content, in one minute.</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="5eff18a081bfd218f3a90ef5a8f20036" data-thumbnail-img-id="1*BbDoWPZKx_NWd-cv6bRJkw.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*BbDoWPZKx_NWd-cv6bRJkw.jpeg);"></a></div><h4 name="cb8e" id="cb8e" class="graf graf--h4 graf-after--mixtapeEmbed graf--trailing"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮</a>️<a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-12-3eb093c1ef21" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭️</a></h4></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/3327bf20881f"><time class="dt-published" datetime="2021-03-09T13:51:16.857Z">March 9, 2021</time></a>.</p><p><a href="https://medium.com/@jportella93/1-minute-to-become-a-better-developer-11-3327bf20881f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

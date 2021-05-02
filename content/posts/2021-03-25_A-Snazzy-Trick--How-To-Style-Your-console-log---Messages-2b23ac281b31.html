@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>A Snazzy Trick: How To Style Your console.log() Messages</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">A Snazzy Trick: How To Style Your console.log() Messages</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+A quick guide (with examples) on applying CSS to log messages in the browser’s console
+</section>
+<section data-field="body" class="e-content">
+<section name="25e3" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="c474" id="c474" class="graf graf--h4 graf--leading graf--kicker"><a href="http://medium.com/codex" data-href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a></h4><h3 name="6448" id="6448" class="graf graf--h3 graf-after--h4 graf--title">OMBD#22: A Snazzy Trick: How To Style Your console.log() Messages</h3><h4 name="343d" id="343d" class="graf graf--h4 graf-after--h3 graf--subtitle">A quick guide (with examples) on applying CSS to log messages in the browser’s console.</h4><p name="b33e" id="b33e" class="graf graf--p graf-after--h4">Welcome to issue #22 of <strong class="markup--strong markup--p-strong">O</strong>ne <strong class="markup--strong markup--p-strong">M</strong>inute <strong class="markup--strong markup--p-strong">B</strong>etter <strong class="markup--strong markup--p-strong">D</strong>eveloper, where you become a more successful software developer by reading short nuggets of knowledge, one minute at a time.</p><h4 name="a442" id="a442" class="graf graf--h4 graf-after--p"><a href="https://itnext.io/master-git-diff-with-these-not-so-known-commands-9fecfa3006d0" data-href="https://itnext.io/master-git-diff-with-these-not-so-known-commands-9fecfa3006d0" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮️</a><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://levelup.gitconnected.com/time-traveling-in-git-meet-git-reflog-ff216419e564" data-href="https://levelup.gitconnected.com/time-traveling-in-git-meet-git-reflog-ff216419e564" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭️</a></h4><figure name="f22d" id="f22d" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*zONROaYj-u969muwWhn19w.jpeg" data-width="1080" data-height="1080" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*zONROaYj-u969muwWhn19w.jpeg"><figcaption class="imageCaption">Art by my buddy <a href="https://www.instagram.com/loornicolas/" data-href="https://www.instagram.com/loornicolas/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Loor Nicolas</a></figcaption></figure><h4 name="434d" id="434d" class="graf graf--h4 graf-after--figure">THE PROBLEM</h4><p name="4dc7" id="4dc7" class="graf graf--p graf-after--h4">Our console messages don’t grab users’ attention.</p><figure name="0500" id="0500" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*ttB5wT2hI0E7Mp0B97tHhw.png" data-width="412" data-height="92" src="https://cdn-images-1.medium.com/max/800/1*ttB5wT2hI0E7Mp0B97tHhw.png"><figcaption class="imageCaption">A basic console.log message.</figcaption></figure><p name="b5ed" id="b5ed" class="graf graf--p graf-after--figure">How can we make them more engaging?</p><h4 name="e6a9" id="e6a9" class="graf graf--h4 graf-after--p">A SOLUTION</h4><p name="f663" id="f663" class="graf graf--p graf-after--h4">By including a <code class="markup--code markup--p-code">%c</code> in <code class="markup--code markup--p-code">console.log</code>’s first argument, and passing some CSS declarations as the second argument, we can style the message on the browser’s console.</p><figure name="930a" id="930a" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*JXXHnnpj2mEYgLVL2O5fCw.png" data-width="1154" data-height="292" src="https://cdn-images-1.medium.com/max/800/1*JXXHnnpj2mEYgLVL2O5fCw.png"><figcaption class="imageCaption">A styled console log message! 🌈</figcaption></figure><h4 name="47aa" id="47aa" class="graf graf--h4 graf-after--figure">Here are some ideas</h4><figure name="8dcf" id="8dcf" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*AQXEKkI8SIR931MdJxo6iQ.png" data-width="732" data-height="89" src="https://cdn-images-1.medium.com/max/800/1*AQXEKkI8SIR931MdJxo6iQ.png"><figcaption class="imageCaption">Change color in your browser’s console.</figcaption></figure><figure name="364d" id="364d" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*dzMwWlZkyBjr3yr_BdWJpg.png" data-width="1056" data-height="201" src="https://cdn-images-1.medium.com/max/800/1*dzMwWlZkyBjr3yr_BdWJpg.png"><figcaption class="imageCaption">Change font-family and font-size in your browser’s console.</figcaption></figure><figure name="e258" id="e258" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*fMwfR-WG818lNokxIZK41g.png" data-width="1149" data-height="183" src="https://cdn-images-1.medium.com/max/800/1*fMwfR-WG818lNokxIZK41g.png"><figcaption class="imageCaption">Apply several styles to the same string.</figcaption></figure><figure name="bf51" id="bf51" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*YkpD6kG1nEqHZaZfd6vGlQ.png" data-width="816" data-height="423" src="https://cdn-images-1.medium.com/max/800/1*YkpD6kG1nEqHZaZfd6vGlQ.png"><figcaption class="imageCaption">Reuse console.log styles.</figcaption></figure><p name="f124" id="f124" class="graf graf--p graf-after--figure">Many websites use this trick to grab the curious developers&#39; attention or to prevent non-technical users to run code on the console. Some of them are Facebook, Pinterest, and Gmail.</p><p name="d4fa" id="d4fa" class="graf graf--p graf-after--p graf--trailing">Thanks for reading! Take care, <em class="markup--em markup--p-em">Jon Portella.</em></p></div></div></section><section name="b395" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="7924" id="7924" class="graf graf--h4 graf--leading">If you enjoyed this story, you may also like</h4><div name="2613" id="2613" class="graf graf--mixtapeEmbed graf-after--h4"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#2)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #2 of this new series, where you become a more successful developer by reading short nuggets of…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="81ee7b52c9435f30995cf95d2064b77e" data-thumbnail-img-id="1*Vg2-ZCA9uR59Cs8na_s5zg.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*Vg2-ZCA9uR59Cs8na_s5zg.jpeg);"></a></div><div name="7bf1" id="7bf1" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" data-href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670"><strong class="markup--strong markup--mixtapeEmbed-strong">1 Minute To Become A Better Developer (#6)</strong><br><em class="markup--em markup--mixtapeEmbed-em">Welcome to issue #6 of this series, where you become a more successful developer by reading short nuggets of knowledge…</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="ea638102b642307fd0faac8e5f1f2a56" data-thumbnail-img-id="1*_JJlaCV1VCOHmWAMzLOiGw.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*_JJlaCV1VCOHmWAMzLOiGw.jpeg);"></a></div><h4 name="d531" id="d531" class="graf graf--h4 graf-after--mixtapeEmbed graf--trailing"><a href="https://itnext.io/master-git-diff-with-these-not-so-known-commands-9fecfa3006d0" data-href="https://itnext.io/master-git-diff-with-these-not-so-known-commands-9fecfa3006d0" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏮️</a><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" data-href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"> 🔛</a> <a href="https://levelup.gitconnected.com/time-traveling-in-git-meet-git-reflog-ff216419e564" data-href="https://levelup.gitconnected.com/time-traveling-in-git-meet-git-reflog-ff216419e564" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">⏭️</a></h4></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@jportella93" class="p-author h-card">Jon Portella</a> on <a href="https://medium.com/p/2b23ac281b31"><time class="dt-published" datetime="2021-03-25T13:59:01.112Z">March 25, 2021</time></a>.</p><p><a href="https://medium.com/@jportella93/a-snazzy-trick-how-to-style-your-console-log-messages-2b23ac281b31" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 30, 2021.</p></footer></article></body></html>

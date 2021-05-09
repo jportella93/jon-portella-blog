@@ -5,7 +5,8 @@ import React, {
   useLayoutEffect,
   useState,
 } from 'react';
-import { GAME_STATE_JUST_WON } from '../GameContext';
+import Fade from 'react-reveal/Fade';
+import { GAME_STATE_JUST_WON, GAME_STATE_STARTED, GAME_STATE_WAITING_FOR_START } from '../GameContext';
 import useGameContext from '../useGameContext';
 
 /**
@@ -35,7 +36,7 @@ const difficultyModifiers = [
 ];
 
 const Name = ({ position }) => {
-  const { difficultyIndex, set } = useGameContext();
+  const { difficultyIndex, set, gameState } = useGameContext();
   const { transitionMod, refreshMod } = difficultyModifiers[difficultyIndex]
       || new DifficultyModifier();
 
@@ -86,12 +87,16 @@ const Name = ({ position }) => {
     ...propSelectableStyles[position],
   };
 
+  const name = new Set([GAME_STATE_WAITING_FOR_START, GAME_STATE_STARTED]).has(gameState)
+    ? 'My name'
+    : 'Jon Portella';
+
   return (
     <span
       style={styles}
-      onClick={() => set('gameState', GAME_STATE_JUST_WON)}
+      onClick={() => position === 'random' && set('gameState', GAME_STATE_JUST_WON)}
     >
-      My name
+      <Fade>{name}</Fade>
     </span>
   );
 };

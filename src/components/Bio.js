@@ -13,7 +13,7 @@ function Bio({ writtenByText }) {
     marginBottom: rhythm(2.5),
   })
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (window.innerWidth > 450) {
       setContainerStyle({
         ...containerStyle,

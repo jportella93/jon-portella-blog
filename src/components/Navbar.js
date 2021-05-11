@@ -14,6 +14,10 @@ class Navbar extends React.Component {
                 url: '/'
             },
             {
+                label: 'CV',
+                url: '/curriculum'
+            },
+            {
                 label: 'Blog',
                 url: '/blog'
             },

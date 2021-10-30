@@ -55,7 +55,8 @@ function InstagramCommentPickerConversation(
             <small style={infoTitleStyle}><b>Note: This comment picker needs to be run from a computer.</b><br/>
             If you are viewing this from your smartphone or tablet, please open this website from a desktop or laptop computer. <br/>
             Otherwise you won't be able to pick your random comment! :)</small>
-            <br /><br />
+            <br />
+            <p><a href="https://youtu.be/0x2O-_BgDe8" target="_blank">Tutorial on YouTube</a></p>
             <div style={answerBtnContainerStyle}>
               <button style={answerBtnStyle} onClick={() => {
                 increasePhase()
@@ -65,6 +66,7 @@ function InstagramCommentPickerConversation(
                 })
                 }}>Start</button>
             </div>
+            <br /><br />
           </>
         )}
       case 'questionDuplicate':

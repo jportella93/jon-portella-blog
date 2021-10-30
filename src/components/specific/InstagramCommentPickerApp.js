@@ -3,8 +3,11 @@ import React from 'react'
 import Kofi from '../Kofi'
 
 const CONFIG = {
-  loadMoreCommentsBtnSelector: "#react-root > section > main > div > div > article > div > div > ul > li > div > button > span",
-  comentNodeSelector: '#react-root > section > main > div > div > article > div.eo2As > div > ul > ul > div > li > div > div > div:nth-child(2)',
+  LOAD_COMMENTS_BTN_PATH: "article ul > li > div > button",
+  COMMENT_CONTAINER_PATH: "article > div ul",
+  COMMENT_PATH: "article ul > ul",
+  MAX_LOADING_COMMENTS_TIME: 1000 * 5, // 5 seconds
+  SLEEP_TIME: 2000, // 2 seconds
 }
 
 function InstagramCommentPickerConversation(
@@ -38,12 +41,12 @@ function InstagramCommentPickerConversation(
     borderRadius: '10px',
     padding: '5px 20px',
   },
-  areThereMoreKeywordRules = () => rules.find(rule => rule.key === 'keyword' && rule.word !== '@')
+  areThereMoreKeywordRules = () => rules.find(rule => rule.type === 'keyword' && rule.word !== '@')
 
   function renderConversationByPhase(phase) {
     switch (phase) {
       case 'readyToStart':{
-        deleteRule({key: 'deleteAllRules'})
+        deleteRule({type: 'deleteAllRules'})
         return (
           <>
             <h2 style={infoTitleStyle}>Free Instagram Random Comment Picker</h2>
@@ -65,7 +68,7 @@ function InstagramCommentPickerConversation(
           </>
         )}
       case 'questionDuplicate':
-        deleteRule({ key: 'allowDuplicatedUsers'})
+        deleteRule({ type: 'allowDuplicatedUsers'})
         return (
           <>
             <button style={backBtnStyle} onClick={() => goToPhase('readyToStart')}>Back</button>
@@ -92,7 +95,7 @@ function InstagramCommentPickerConversation(
           deleteRule({word: '@'}) // Clean any previous rule like this first
           const usersToMention = document.querySelector('#users-to-mention').value
           addRule({
-            key: 'keyword',
+            type: 'keyword',
             word: '@',
             caseSensitive: false,
             times: usersToMention,
@@ -127,7 +130,7 @@ function InstagramCommentPickerConversation(
         function handleSubmit() {
           const word = document.querySelector('#word').value
           word ? addRule({
-            key: 'keyword',
+            type: 'keyword',
             word,
             message: `Comment includes: ${word}`
             }) : null;
@@ -274,9 +277,9 @@ class InstagramCommentPickerApp extends React.Component {
       'didNotWork'
       ]
     this.state = {
-      rules: [],
       phaseCounter: 0,
     }
+    this.rules = []
   }
 
   increasePhase = (num = 1) => this.setState({phaseCounter: this.state.phaseCounter + num})
@@ -290,172 +293,162 @@ class InstagramCommentPickerApp extends React.Component {
 
   /** Test rules:
       const rules = [{
-        "key": "allowDuplicatedUsers",
+        "type": "allowDuplicatedUsers",
         "value": true,
         "message": "Multiple comments per user are allowed"
       }, {
-        "key": "keyword",
+        "type": "keyword",
         "word": "@",
         "message": "Comment mentions 3 or more users",
         "caseSensitive": false,
         "times": "3"
       }, {
-        "key": "keyword",
+        "type": "keyword",
         "word": "participo",
         "message": "Comment includes: participo"
       }];
    */
-  generateScript({rules, loadMoreCommentsBtnSelector, comentNodeSelector}) {
+  generateScript({rules}) {
     let script = `
     try {
-    const rules = {{rules}};
+      /* debugger; */
+      /* const LOAD_COMMENTS_BTN_PATH = "article ul > li > div > button" */
+      /* const COMMENT_CONTAINER_PATH = "article > div ul" */
+      /* const COMMENT_PATH = "article ul > ul" */
+      /* const MAX_LOADING_COMMENTS_TIME = 1000 * 5; // 5 seconds */
+      /* const SLEEP_TIME = 2000; // 2 seconds */
+      const rules = {{rules}};
+      const LOAD_COMMENTS_BTN_PATH = {{LOAD_COMMENTS_BTN_PATH}};
+      const COMMENT_CONTAINER_PATH = {{COMMENT_CONTAINER_PATH}};
+      const COMMENT_PATH = {{COMMENT_PATH}};
+      const MAX_LOADING_COMMENTS_TIME = {{MAX_LOADING_COMMENTS_TIME}};
+      const SLEEP_TIME = {{SLEEP_TIME}};
+
+      function sleep(ms) {
+        if (ms < 0)
+          ms = 0;
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      };
+
+      async function wait(times = 1) {
+        await sleep(SLEEP_TIME * times);
+      };
+
+      async function log(message = '', style = '', waitTime = 1, clear = true) {
+        if (clear) console.clear();
+        console.log('%c' + message, \`font-family: helvetica, sans-serif;font-size:20px;font-weight:bold;\${style}\`);
+        await wait(waitTime)
+      };
+
+      async function loadComments() {
+        const startTime = Date.now();
+        const getBtn = () => document.querySelector(LOAD_COMMENTS_BTN_PATH);
+        while (getBtn() && Date.now() - startTime < MAX_LOADING_COMMENTS_TIME) {
+          getBtn().click();
+          await wait(0.5);
+        }
+      };
+
+      function setBorderColor($el) {
+        const style = '3px solid red';
+        $el.style.borderTop = style;
+        $el.style.borderLeft = style;
+      };
+
+      function extractCommentInfo($comments) {
+        return Array.from($comments).map((comment) => ({
+          userName: comment.querySelector('h3').outerText,
+          message: comment.querySelector('h3 + span').outerText
+        }));
+      };
+
+      function filterCommentsByRules(comments, rules = []) {
+        let filteredComments = comments;
+
+        rules.forEach(({type, value, caseSensitive, word, times}) => {
+
+          if (type === 'allowDuplicatedUsers' && value === false) {
+            const seen = {};
+            filteredComments = filteredComments.map((comment) => {
+              const { userName } = comment;
+              if (seen[userName]) return null;
+              seen[userName] = true;
+              return comment;
+            }).filter(Boolean);
+          } else if (type === 'keyword') {
+            const re = new RegExp(word, 'gi');
+            filteredComments = filteredComments.map((comment) => {
+              const match = comment.message.match(re);
+              if (!match) return null;
+              if (!times) return comment;
+              if (times && match.length == times) return comment;
+              return null
+            }).filter(Boolean);
+          }
+        });
+
+        return filteredComments;
+      };
+
+      async function logDrumRoll() {
+        await log('And the winner is...', '', 0.3);
+        await log('🥁', '', 0.3);
+        await log('🥁🥁', '', 0.3);
+        await log('🥁🥁🥁', '', 0.3);
+        await wait(1.5);
+      };
+
       async function pickComment() {
         console.clear();
-        console.log('%c' + 'Starting comment picker', 'color: red;font-family: helvetica, sans-serif;font-size:20px;');
-        const sleepTime = 2000;
-
-        function sleep(ms) {
-          if (ms < 0) ms = 0;
-          return new Promise((resolve) => setTimeout(resolve, ms));
-        }
-
-        function next() {
-          return new Promise(async(resolve) => {
-            let btn = document.querySelector("{{loadMoreCommentsBtnSelector}}");
-            while (btn) {
-              btn.click();
-              await sleep(1000);
-              btn = document.querySelector("{{loadMoreCommentsBtnSelector}}");
-            }
-            resolve();
+        await log('Starting comment picker', 'color: red');
+        await log('⏳ Loading comments...');
+        /* const $commentContainer = document.querySelector(COMMENT_CONTAINER_PATH); */
+        /* setBorderColor($commentContainer); */
+        await loadComments();
+        const $comments = document.querySelectorAll(COMMENT_PATH);
+        let comments = extractCommentInfo($comments);
+        await log('✅ Comments loaded!');
+        /* await log(comments.length); */
+        if (Object.keys(rules).length > 0) {
+          await log('Comment rules are:');
+          Object.values(rules).forEach((ruleProps, i) => {
+            log(\` \${i+1}. \${ruleProps.message}\`, '', 1, false);
           });
-        }
-
-        console.log('⏳ Loading comments...');
-
-        await next();
-
-        const commentNodes = Array.from(document.querySelectorAll("{{comentNodeSelector}}"));
-
-        const comments = commentNodes.map((comment) => ({
-          name: comment.children[0].outerText,
-          comment: comment.children[1].outerText
-        }));
-
-        let filterByRulesFlag;
-
-        function filterCommentsByRules(arr, rulesToFilter) {
-          rulesToFilter = rulesToFilter.filter(rule => rule.key === 'keyword');
-          if (rulesToFilter.length === 0) {
-            filterByRulesFlag = false;
-            return arr
-          }
-          filterByRulesFlag = true;
-          return arr.filter((el) => {
-            return rulesToFilter.every((rule) => {
-              const re = new RegExp(rule.word, 'gi');
-
-              const match = el.comment.match(re);
-
-              if (!match) return false;
-
-              if (!rule.times) return true;
-
-              if (rule.times && match.length == rule.times) {
-                return true;
-              }
-
-              return false
-            });
-          });
-        }
-
-        await sleep(sleepTime);
-        console.log('✅ All comments loaded!');
-
-        const filteredByRules = filterCommentsByRules(comments, rules);
-
-        await sleep(sleepTime);
-        console.log('Comment rules are:');
-        for (let rule of rules) {
-          await sleep(sleepTime - sleepTime * 0.5);
-          console.log(rule.message);
-        }
-
-        if (filterByRulesFlag) {
-          await sleep(sleepTime);
-          console.log('Comments after filtering by rules: ' + filteredByRules.length);
-        }
-
-        if (filteredByRules.length === 0) {
-          console.log('There are no comments that match all the rules');
-          return;
-        }
-
-        let filterDuplicate;
-
-        function filterDuplicateUsers(arr) {
-          const seen = {};
-          const duplicateUsersRule = rules.find(rule => rule.key === 'allowDuplicatedUsers');
-          filterDuplicate = duplicateUsersRule.value;
-          return filterDuplicate
-            ? arr
-            : arr.map((el) => {
-              const {
-                name
-              } = el;
-              if (seen[name]) return;
-
-                seen[name] = true;
-                return el;
-
-            }).filter((el) => el);
-        }
-
-        const filteredByDuplicate = filterDuplicateUsers(filteredByRules);
-
-        const rand = Math.floor(Math.random() * filteredByDuplicate.length + 1);
-
-        const winnerName = filteredByDuplicate[rand].name;
-        const winnerComment = filteredByDuplicate[rand].comment;
-
-        await sleep(sleepTime);
-        console.log('And the winner is...');
-
-        await sleep(300);
-        console.log('🥁');
-
-        await sleep(300);
-        console.log('  🥁');
-
-        await sleep(300);
-        console.log('    🥁');
-
-        await sleep(sleepTime + sleepTime * 0.5);
-        const winnerMessage = '@' + winnerName;
-        console.log('%c' + winnerMessage, 'color: red;font-family: impact, sans-serif;font-size:30px;');
-        const winnerMessageComment = '"' + winnerComment + '"';
-        console.log('%c' + winnerMessageComment, 'color: red;font-family: helvetica, sans-serif;font-size:20px;');
-
-        const winnerNode = Array.from(document.querySelectorAll('li')).find(el =>
-          el.outerText.includes(winnerName) && el.outerText.includes(winnerComment));
-
-        winnerNode.style.backgroundColor = 'orange';
-        winnerNode.scrollIntoViewIfNeeded();
+          await wait(1);
+          /* await log('Filtering comments by rules'); */
+          comments = filterCommentsByRules(comments, rules);
+          if (comments.length === 0) {
+            await log('There are no comments that match all the rules');
+            return;
+          } else {
+            /* await log(\`Comments after filtering by rules: \${comments.length}\`); */
+          };
+        };
+        /* await log('Picking a random number'); */
+        const rand = Math.floor(Math.random() * comments.length + 1);
+        /* await log(\`Random number is: \${rand}\`); */
+        const winnerComment = comments.length === 1 ? comments[0] : comments[rand];
+        await logDrumRoll();
+        await log(\`@\${winnerComment.userName}\`, 'color: red;font-family: impact, sans-serif;font-size:30px;', 0);
+        await log(\`Comment: "\${winnerComment.message}"\`, 'color: red;font-family: impact, sans-serif;font-size:30px;', 0, false);
+        const $winnerComment = Array.from(document.querySelectorAll('li')).find(el => el.outerText.includes(winnerComment.userName) && el.outerText.includes(winnerComment.message));
+        $winnerComment.style.backgroundColor = 'orange';
+        $winnerComment.scrollIntoViewIfNeeded();
       }
+
       pickComment(rules);
       } catch (e) {
-        console.log('Something went wrong, please contact the administrator.')
+      console.error('Something went wrong with the comment picker, please contact the administrator.');
       }
       `
 
-    script = script
-      .replace(/{{rules}}/g, JSON.stringify(rules))
-      .replace(/{{loadMoreCommentsBtnSelector}}/g, loadMoreCommentsBtnSelector)
-      .replace(/{{comentNodeSelector}}/g, comentNodeSelector)
+    Object.entries(CONFIG).forEach(([key, value]) => {
+      script = script.replace(new RegExp(`{{${key}}}`, 'g'), JSON.stringify(value))
+    })
+    script = script.replace(/{{rules}}/g, JSON.stringify(rules || {}))
+    script = script.replace(/\s\s|\n/g, '')
 
     return script
-
   }
 
   copyCodeToClipboard() {
@@ -474,26 +467,26 @@ class InstagramCommentPickerApp extends React.Component {
 
   allowDuplicatedUsers = (bool) =>
     this.addRule({
-      key: 'allowDuplicatedUsers',
+      type: 'allowDuplicatedUsers',
       message: `Multiple comments per user are ${bool ? 'allowed' : 'not allowed'}`,
       value: bool
     })
 
-  addRule = ({key, word, value, message, caseSensitive, times}) =>
-    this.state.rules.push({ key, word, value, message, caseSensitive, times})
+  addRule = ({type, word, value, message, caseSensitive, times}) =>
+    this.rules.push({ type, word, value, message, caseSensitive, times})
 
-  deleteRule = ({key = null, word = null, value = null}) => {
-    if (this.state.rules.length === 0) return
-    if (key === 'deleteAllRules') this.state.rules = []
+  deleteRule = ({type = null, word = null, value = null}) => {
+    if (this.rules.length === 0) return
+    if (type === 'deleteAllRules') this.rules = []
 
-    this.state.rules = this.state.rules.filter(rule =>
-      rule.word !== word && rule.key !== key && rule.value !== value)
+    this.rules = this.rules.filter(rule =>
+      rule.word !== word && rule.type !== type && rule.value !== value)
   }
 
   render() {
-    const { phaseCounter, rules } = this.state
+    const { phaseCounter } = this.state
+    const {rules} = this
     const phase = this.phases[phaseCounter]
-    const {loadMoreCommentsBtnSelector, comentNodeSelector} = CONFIG;
 
     return (
       <>
@@ -515,7 +508,7 @@ class InstagramCommentPickerApp extends React.Component {
               style={{position:'absolute', opacity:0}}
               id="scriptHolder"
               onChange={() => null}
-              value={this.generateScript({rules, loadMoreCommentsBtnSelector, comentNodeSelector})}
+              value={this.generateScript({rules})}
             >
             </input>
           </>

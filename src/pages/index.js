@@ -12,7 +12,7 @@ const content = [
   },
   {
     title: "I'm Jon Portella,",
-    subtitle: "A Full Stack Developer from Vancouver, Canada."
+    subtitle: "Software Engineer, currently working at Pinterest in Toronto, Canada."
   },
   {
     title: "Welcome to my website!",

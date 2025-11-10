@@ -10,7 +10,6 @@ date: 2021-04-21T13:06:03.465Z
 
 ![](images/0.png)
 
-Art by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
 
 In my experience, that’s easy to implement if you follow some simple steps. Keep on reading to know how to exactly how.
 

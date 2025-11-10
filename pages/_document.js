@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Head, Html, Main, NextScript } from 'next/document';
 import typography from '../lib/typography';
 
 export default function Document() {
@@ -12,6 +12,27 @@ export default function Document() {
         <link rel="stylesheet" href={cssPath} />
       </Head>
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme') || 'system';
+                  const root = document.documentElement;
+                  
+                  if (theme === 'system') {
+                    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    root.classList.add(systemTheme);
+                  } else {
+                    root.classList.add(theme);
+                  }
+                } catch (e) {
+                  // Ignore errors
+                }
+              })();
+            `,
+          }}
+        />
         <Main />
         <NextScript />
       </body>

@@ -1,19 +1,18 @@
 ---
 title: Use gist-paste to Save Text Files as GitHub Gists From the Command Line
 spoiler: A quick tip to save time on saving and sharing documents
-date: 2021-03-03T14:00:40.463Z
+date: 2021-04-20T15:19:33.764Z
 ---
 
-![](images/0.png)
+# Use gist-paste to Save Text Files as GitHub Gists From the Command Line
 
+## A quick tip to save time on saving and sharing documents
 
----
-
-#### THE PROBLEM
+### THE PROBLEM
 
 You are saving [Github Gists](https://gist.github.com/) often but you spend too much time on their UI.
 
-#### A SOLUTION
+### A SOLUTION
 
 Let’s do it from our CLI!
 
@@ -25,21 +24,17 @@ sudo apt install gist
 
 2. Go to the [tokens section in GitHub](https://github.com/settings/tokens) and press on “Generate new token”. Input your password in the next screen:
 
-![](images/1.png)
+T[okens section in GitHub](https://github.com/settings/tokens).
 
 3. Set a name for your token and make sure to check the `gist` and `user:email` permissions:
 
-![](images/2.png)
-
-Set a name for your token like `gist.`
-
-![](images/3.png)
+Set a name for your token like `gist.`
 
 Check **gist** and **user:email** permissions.
 
 4. Copy your generated token:
 
-![](images/4.png)
+Generated token.
 
 5. Save the token in `~/.gist`. The `umask` ensures that the file is only accessible from your user account:
 
@@ -55,10 +50,8 @@ cat ~/.gist
 
 7. Now we can create gists from the command line!
 
-> Note that in Ubuntu/Debian the `gist` command is renamed to `gist-paste` to avoid conflicts, if you are using a different system like MacOS just replace `gist-paste` for `gist` in the next snippet.
+>Note that in Ubuntu/Debian the `gist` command is renamed to `gist-paste` to avoid conflicts, if you are using a different system like MacOS just replace` gist-paste` for `gist` in the next snippet.
 
 ```shell
-echo "hello gist" >> gist.txt
-gist-paste gist.txt
-# Returns URL of newly created gist https://gist.github.com/eb36806673aca3c63686078d584e2a2e
+echo "hello gist" >> gist.txtgist-paste gist.txt# Returns URL of newly created gist https://gist.github.com/eb36806673aca3c63686078d584e2a2e
 ```

@@ -6,7 +6,6 @@ date: 2021-03-02T13:47:41.548Z
 
 ![](images/0.png)
 
-Illustration by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
 
 #### THE PROBLEM
 

@@ -6,7 +6,6 @@ date: '2019-03-31T19:38:03.284Z'
 
 ![](./images/t-loor-nicolas.jpg)
 
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 
 ## 1. How to count occurrences of a data cell in a .cvs (Python and Pandas).
 

@@ -6,7 +6,6 @@ date: '2019-04-30T19:38:03.284Z'
 
 ![](./images/9-loor-nicolas.jpg)
 
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 
 ## 1. How to use CSS Modules in create-react-app.
 
@@ -71,8 +70,6 @@ This nice little package called [Fuse.js](https://fusejs.io/) made it a breeze. 
 There's a [long list of hacks](http://webagility.com/posts/the-ultimate-list-of-hacks-for-chromes-forced-yellow-background-on-autocompleted-inputs) to fight Chrome input field autocomplete styling. However, my problem was that I had to execute some JavaScript when this action triggered. But Chrome just adds a class to the autocompleted element, it doesn't trigger any event when autocompletes, so I didn't know how to detect it without polling.
 
 After some research, I finally found a smart hack to plug into this event: It turns out you can listen for CSS animations events. So the trick is adding an empty CSS animation to the Chrome autocomplete class and listen for an animation start event with a JavaScript event listener. Then use it as a hook for whatever you need it. Really smart!
-
-Check the original -and better worded- explanation [here](https://medium.com/@brunn/detecting-autofilled-fields-in-javascript-aed598d25da7).
 
 ## 5. How to git ignore momentarily.
 
@@ -151,7 +148,7 @@ $ cat non_existing.txt && echo 'success!'
 
 Using the `\` operator, you can split your command in multiple lines for readability.
 
-```
+```bash
 $ echo \
 $ hello world
 -> hello world

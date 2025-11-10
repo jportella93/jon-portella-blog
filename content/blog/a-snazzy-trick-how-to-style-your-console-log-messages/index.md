@@ -4,19 +4,20 @@ spoiler: A quick guide (with examples) on applying CSS to log messages in the br
 date: 2021-03-25T13:59:01.112Z
 ---
 
-#### [CODEX](http://medium.com/codex)
+#### A quick guide (with examples) on applying CSS to log messages in the browser's console.
 
-#### A quick guide (with examples) on applying CSS to log messages in the browser’s console.
-
-![](images/0.png)
-
-Art by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
+```javascript
+// Styling console.log messages with CSS
+console.log("%cHello World!", "color: blue; font-size: 20px;");
+```
 
 #### THE PROBLEM
 
-Our console messages don’t grab users’ attention.
+Our console messages don't grab users' attention.
 
-![](images/1.png)
+```javascript
+console.log("Hello World!");
+```
 
 A basic console.log message.
 
@@ -24,39 +25,58 @@ How can we make them more engaging?
 
 #### A SOLUTION
 
-By including a `%c` in `console.log`’s first argument, and passing some CSS declarations as the second argument, we can style the message on the browser’s console.
+By including a `%c` in `console.log`'s first argument, and passing some CSS declarations as the second argument, we can style the message on the browser's console.
 
-![](images/2.png)
+```javascript
+console.log(
+  "%cHello World!",
+  "color: blue; font-size: 20px; font-weight: bold;"
+);
+```
 
-A styled console log message! 🌈
+A styled console log message! 🌈
 
-#### Here are some ideas
+#### Here are some ideas
 
-![](images/3.png)
+```javascript
+console.log("%cRed text!", "color: red;");
+console.log("%cBlue text!", "color: blue;");
+console.log("%cGreen text!", "color: green;");
+```
 
-Change color in your browser’s console.
+Change color in your browser's console.
 
-![](images/4.png)
+```javascript
+console.log(
+  "%cLarge Comic Sans!",
+  "font-family: Comic Sans MS; font-size: 30px;"
+);
+console.log("%cSmall Monospace!", "font-family: monospace; font-size: 12px;");
+```
 
-Change font-family and font-size in your browser’s console.
+Change font-family and font-size in your browser's console.
 
-![](images/5.png)
+```javascript
+console.log(
+  "%cRed %cBlue %cGreen",
+  "color: red; font-weight: bold;",
+  "color: blue; font-size: 20px;",
+  "color: green; text-decoration: underline;"
+);
+```
 
-Apply several styles to the same string.
+Apply several styles to the same string.
 
-![](images/6.png)
+```javascript
+const style =
+  "background: #222; color: #bada55; padding: 10px; border-radius: 5px;";
+console.log("%cReusable style!", style);
+console.log("%cAnother message!", style);
+console.log("%cAnd another!", style);
+```
 
 Reuse console.log styles.
 
 Many websites use this trick to grab the curious developers' attention or to prevent non-technical users to run code on the console. Some of them are Facebook, Pinterest, and Gmail.
 
-Thanks for reading! Take care, *Jon Portella.*
-
----
-
-#### If you enjoyed this story, you may also like
-
-[**1 Minute To Become A Better Developer (#2)***Welcome to issue #2 of this new series, where you become a more successful developer by reading short nuggets of…*jportella93.medium.com](https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a)[](https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a)
-
-[**1 Minute To Become A Better Developer (#6)***Welcome to issue #6 of this series, where you become a more successful developer by reading short nuggets of knowledge…*jportella93.medium.com](https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670)[](https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670)
-
+Thanks for reading! Take care, _Jon Portella._

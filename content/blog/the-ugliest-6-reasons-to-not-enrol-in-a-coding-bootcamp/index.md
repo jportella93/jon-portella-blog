@@ -10,7 +10,6 @@ date: 2020-10-02T10:03:34.981Z
 
 ![](images/0.png)
 
-Illustration by [loornicolas](https://www.instagram.com/loornicolas/)
 
 There are some ugly partsof coding boot camps that people don’t talk about.
 

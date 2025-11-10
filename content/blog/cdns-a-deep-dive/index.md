@@ -16,7 +16,7 @@ Single server versus Content Delivery Network (CDN) by [Kanoha](https://en.wikip
 
 A **Content Distribution **(or Delivery) **Network **(**CDN**) is a group of servers distributed geographically with the purpose of providing fast delivery of Internet content.
 
-The CDN’s servers act as [reverse proxies](https://jportella93.medium.com/1-minute-to-become-a-better-developer-17-75fd019f407c) for your origin servers, where the content is hosted.
+The CDN's servers act as reverse proxies for your origin servers, where the content is hosted.
 
 Servers are contained in facilities called **Points of Presence** (**PoP**), which are spread around the globe.
 

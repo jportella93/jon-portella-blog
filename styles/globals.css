@@ -9,6 +9,7 @@ body {
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 * {
@@ -20,8 +21,50 @@ body {
 a {
   color: #358ccb;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Dark mode styles */
+html.dark body {
+  color: #e0e0e0 !important;
+  background: #1a1a1a !important;
+}
+
+html.dark a {
+  color: #5ba3d3 !important;
+}
+
+/* System preference - only apply when no explicit theme class is set */
+@media (prefers-color-scheme: dark) {
+  html:not(.light):not(.dark) body {
+    color: #e0e0e0 !important;
+    background: #1a1a1a !important;
+  }
+
+  html:not(.light):not(.dark) a {
+    color: #5ba3d3 !important;
+  }
+}
+
+/* Theme icon styles */
+.theme-icon {
+  transition: transform 0.2s ease;
+}
+
+.theme-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Make moon icon light colored in dark mode for visibility */
+html.dark .theme-icon-moon-dark {
+  fill: #e0e0e0 !important;
+}
+
+/* Make star light colored in dark mode for visibility */
+html.dark .theme-icon-star-dark {
+  fill: #e0e0e0 !important;
 }

@@ -8,7 +8,6 @@ date: 2021-03-24T13:59:13.304Z
 
 ![](images/0.png)
 
-Art by my buddy [Loor Nicolas](https://www.instagram.com/)
 
 #### THE PROBLEM
 
@@ -24,19 +23,19 @@ Here are some not-so-known git tips, sorted from more common to more uncommon:
 
 1. Show all **unstaged** changes since the last commit:
 
-```
+```shell
 git diff
 ```
 
 2. Show all **staged** changes since the last commit:
 
-```
+```shell
 git diff --cached
 ```
 
 3. Show all **staged and unstaged** changes since the last commit:
 
-```
+```shell
 git diff HEAD
 ```
 
@@ -44,17 +43,17 @@ git diff HEAD
 
 1. Show changes **since a specific commit**:
 
-```
+```shell
 git log --oneline# 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit
 ```
 
-```
+```shell
 git diff ca2f968
 ```
 
 2. Show changes** since the last n commits**, e.g. 2:
 
-```
+```shell
 git diff HEAD~2
 ```
 
@@ -62,17 +61,17 @@ git diff HEAD~2
 
 1. Show changes on a **single file since the last commit**:
 
-```
+```javascript
 git diff script.js
 ```
 
 2. Show changes on a **single file since a specific commit**:
 
-```
+```shell
 git log --oneline# 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit
 ```
 
-```
+```javascript
 git diff ca2f968 script.js
 ```
 
@@ -82,19 +81,19 @@ To be run from your feature branch.
 
 1. Show all changes over a specific branch (**GitHub PR diff**):
 
-```
+```shell
 git diff master
 ```
 
 2. Show **changed files with a number of changed lines** over a specific branch:
 
-```
+```shell
 git diff master --stat
 ```
 
 3. Show a **one-line summary of the changes **over a specific branch:
 
-```
+```shell
 git diff master --shortstat
 ```
 
@@ -102,7 +101,7 @@ git diff master --shortstat
 
 Finally, here’s a neat trick by [Shime.sh](https://shime.sh/til/git-diff-tips-and-tricks), to make your diffs more readable by removing the `+` and `-` symbols, since they are colored anyway!
 
-```
+```shell
 git config --global pager.diff 'sed "s/^\([^-+ ]*\)[-+ ]/\\1/"'
 ```
 

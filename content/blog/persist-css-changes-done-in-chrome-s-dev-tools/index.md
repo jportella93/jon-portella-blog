@@ -6,7 +6,6 @@ date: 2021-02-24T13:38:12.609Z
 
 ![](images/0.png)
 
-Illustration by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
 
 ---
 

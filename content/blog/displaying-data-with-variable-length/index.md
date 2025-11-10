@@ -6,7 +6,6 @@ date: '2020-01-15T19:38:03.284Z'
 
 ![](./images/road-loor-nicolas.jpg)
 
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 
 So imagine you have a component that shows some user information like name, surname and e-mail. The design shows a nice layout where all lines take the same space.
 

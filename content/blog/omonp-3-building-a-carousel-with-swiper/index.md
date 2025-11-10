@@ -1,12 +1,11 @@
 ---
-title: "OMONP#3: Building a carousel with Swiper"
+title: "Building a carousel with Swiper"
 spoiler: Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.
 date: 2021-04-06T01:28:57.384Z
 ---
 
 ![](images/0.png)
 
-Photo by [AltumCode](https://unsplash.com/@altumcode?utm_sourcemedium&utm_mediumreferral) on [Unsplash](https://unsplash.com?utm_sourcemedium&utm_mediumreferral)
 
 #### Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.
 
@@ -56,12 +55,12 @@ Lazy-loading image swiper with navigation and pagination
 
 ---
 
-```com/jportella93/dc854e8d5a5e9b7616f90c318b7fb0d4/raw/
+```html
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 ```
 
-```com/jportella93/8ded46bd20030c57e18cf5d4556cb667/raw/
+```html
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -99,7 +98,7 @@ Lazy-loading image swiper with navigation and pagination
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 ```
 
-```com/jportella93/375a6fad87988f9dde54aca330bec14e/raw/
+```javascript
 const swiper = new Swiper(".swiper-container", {
   loop: true,
   lazy: {

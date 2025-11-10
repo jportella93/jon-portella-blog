@@ -1,5 +1,5 @@
 ---
-title: "OMBD#14: How To Call a Function When a User Stops Typing"
+title: "How To Call a Function When a User Stops Typing"
 spoiler: We’ll learn how to implement a browser auto-saving draft system in JavaScript
 date: 2021-04-21T13:12:45.974Z
 ---
@@ -8,7 +8,6 @@ date: 2021-04-21T13:12:45.974Z
 
 ![](images/0.png)
 
-Art by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
 
 #### THE PROBLEM
 
@@ -24,7 +23,7 @@ Here’s a demo on CodePen:
 
 Call function when the user stops typing.
 
-```com/jportella93/9ada2d8a681551a6e3827ca587759a36/raw/
+```javascript
 // Declare a new variable that will get reassigned later with the timeout id
 let timerId
 

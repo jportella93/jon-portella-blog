@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { rhythm } from '../lib/typography';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Navbar({ location }) {
   const links = [
@@ -22,7 +23,7 @@ export default function Navbar({ location }) {
   ];
 
   return (
-    <nav>
+    <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <ul style={{ display: 'flex', margin: 0 }}>
         {links.map(({ label, url }) => (
           <li key={url} style={{ listStyle: 'none', marginRight: rhythm(0.5) }}>
@@ -37,6 +38,7 @@ export default function Navbar({ location }) {
           </li>
         ))}
       </ul>
+      <ThemeSwitcher />
     </nav>
   );
 }

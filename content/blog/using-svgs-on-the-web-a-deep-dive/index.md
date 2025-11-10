@@ -49,7 +49,7 @@ Now that we know which features we may have or not depending on how we embed our
 They can be divided into two groups by methodology:
 
 1. **Methods related to pointing the browser to the URL of the SVG file**. These generally can benefit from browser caching but have limited options for interactivity.
-2. **Methods related to hardcoding the SVG inside a static asset such as HTML, CSS, or JS file**. These can’t be cached separately as they are embedded in the file, but for this reason, we save HTTP requests, which is interesting since[ browsers not using HTTP2 can only do a limited number of concurrent requests](https://ishwar-rimal.medium.com/why-does-your-browser-limit-the-number-of-concurrent-network-calls-1ae5d50863dd). Also, they are best for reacting to user interaction.
+2. **Methods related to hardcoding the SVG inside a static asset such as HTML, CSS, or JS file**. These can't be cached separately as they are embedded in the file, but for this reason, we save HTTP requests, which is interesting since browsers not using HTTP2 can only do a limited number of concurrent requests. Also, they are best for reacting to user interaction.
 
 ### 1. SVG implementation methods related to pointing the browser to the URL of the SVG file.
 

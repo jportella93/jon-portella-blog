@@ -1,8 +1,10 @@
 ---
-title: How To Use a VPN to Change Your Public IP Address From the Command Line
-spoiler: A tutorial on setting a VPN and using it from the CLI to hide our IP and location
+title: How to Use a VPN to Change Your Public IP Address From the Command Line
+spoiler: Learn how to change your public IP address using a VPN from the command line.
 date: 2021-03-08T14:03:39.417Z
 ---
+
+#### A tutorial on setting a VPN and using it from the CLI to hide our IP and location
 
 ![](images/0.png)
 
@@ -11,7 +13,9 @@ date: 2021-03-08T14:03:39.417Z
 
 #### THE PROBLEM
 
-You may already know which location information are we sharing with websites when we interact with them, such our IP Address. So, wouldn't it be great if we could hide it or even change it?
+If you read issue #8, you already know which location information are we sharing with websites when we interact with them. If you didn't, take a quick read first.
+
+So following up, now that we know about our public IP Address, it would be great if we could hide it or even change it.
 
 Why? here’s a handful of use cases:
 
@@ -30,7 +34,7 @@ There are several VPN providers out there, it’s a growing market. I’m going 
 1. Go to [Windscribe](https://windscribe.com/) and create a free account. If you want, you can use my [referral link](https://windscribe.com/yo/kocmap80) so we both get 1GB/month for free.
 2. To install the CLI in MacOS you can use [homebrew](https://formulae.brew.sh/cask/windscribe) and skip to step #5. To do it in Ubuntu add the Windscribe signing key to apt:
 
-```shell
+```css
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
 ```
 
@@ -58,11 +62,8 @@ windscribe login
 windscribe connect
 ```
 
-```shell
-# Connecting to US East New York Empire (UDP:443)
-# Firewall Enabled
-# Connected to US East New York Empire
-# Your IP changed from xxx.xxx.xxx.xxx to 77.81.136.80
+```bash
+# Connecting to US East New York Empire (UDP:443)# Firewall Enabled# Connected to US East New York Empire# Your IP changed from xxx.xxx.xxx.xxx to 77.81.136.80
 ```
 
 Now we are set! We are using the VPN and our IP has changed. To disconnect just type `windscribe disconnect`.
@@ -83,4 +84,15 @@ windscribe locations
 windscribe connect "No Vampires"
 ```
 
-3. We can double-check it with any ip geolocation service such as https://ipinfo.io/.
+3. We can double-check using the alias `whatsmycountry` that I shared with you in issue #8.
+
+```shell
+whatsmycountry
+```
+
+```bash
+# {#   "ip": "89.46.103.236",#   "hostname": "mx-pool236.jvlists.com",#   "city": "Bucharest",#   "region": "Bucureşti",#   "country": "RO",#   "loc": "44.4323,26.1063",#   "org": "AS9009 M247 Ltd",#   "postal": "020011",#   "timezone": "Europe/Bucharest",#   "readme": "https://ipinfo.io/missingauth"# }
+```
+
+---
+

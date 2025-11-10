@@ -1,6 +1,6 @@
 ---
 title: The One Thing You Need to Know To Avoid CSS Overflow
-spoiler: THE PROBLEM
+spoiler: Learn how to prevent CSS overflow with variable-length text using a simple wrapper component that keeps text on one line.
 date: 2021-03-25T12:55:11.037Z
 ---
 
@@ -8,7 +8,6 @@ date: 2021-03-25T12:55:11.037Z
 
 ## 10 lines of code to make your text always span one line, and save you from countless headaches
 
-Illustration by [loornicolas](https://www.instagram.com/loornicolas/)
 
 ## THE PROBLEM
 

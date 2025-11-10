@@ -8,7 +8,6 @@ These are custom made, they don’t appear in the Git docs! Saved me countless h
 
 ![](images/0.png)
 
-Illustration by [loornicolas](https://www.instagram.com/loornicolas/)
 
 ### 1. Git Commit Work In Progess — gwip
 

@@ -8,8 +8,8 @@ import Layout from '../../components/Layout';
 import SEO from '../../components/SEO';
 import { getAllPostsMetadata } from '../../lib/getAllPosts';
 import { getPostBySlug } from '../../lib/markdown';
-import { rhythm, scale } from '../../lib/typography';
 import { siteMetadata } from '../../lib/siteMetadata.js';
+import { rhythm, scale } from '../../lib/typography';
 
 export default function BlogPost({ post, previous, next }) {
   const router = useRouter();
@@ -59,87 +59,6 @@ export default function BlogPost({ post, previous, next }) {
           {date ? moment(date).format('MMMM DD, YYYY') : ''}
         </p>
         <div dangerouslySetInnerHTML={{ __html: contentWithoutFirstH1 }} />
-        <form
-          style={{
-            maxWidth: '450px',
-            margin: `${rhythm(3)} auto`,
-            border: `2px solid #358ccb`,
-            borderRadius: '8px',
-            padding: `${rhythm(1.5)} ${rhythm(1)}`,
-          }}
-          action="https://buttondown.email/api/emails/embed-subscribe/jportella93"
-          method="post"
-          target="popupwindow"
-          onSubmit={(e) => {
-            e.preventDefault();
-            window.open('https://buttondown.email/jportella93', 'popupwindow');
-            e.target.submit();
-          }}
-          className="embeddable-buttondown-form"
-        >
-          <label 
-            htmlFor="bd-email"
-            style={{
-              display: 'block',
-              marginBottom: rhythm(1),
-              ...scale(0),
-              lineHeight: 1.5,
-              textAlign: 'center',
-            }}
-          >
-            Did you find this interesting?<br/>
-            Drop your email and I'll let you know the next time I write!
-          </label>
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: rhythm(0.75),
-          }}>
-            <input 
-              type="email" 
-              name="email" 
-              id="bd-email"
-              placeholder="Enter your email"
-              required
-              style={{
-                padding: `${rhythm(0.5)} ${rhythm(0.75)}`,
-                border: `1px solid #2B303A`,
-                borderRadius: '4px',
-                fontSize: scale(0).fontSize,
-                outline: 'none',
-              }}
-              onFocus={(e) => {
-                e.target.style.borderColor = '#358ccb';
-              }}
-              onBlur={(e) => {
-                e.target.style.borderColor = '#2B303A';
-              }}
-            />
-            <input type="hidden" value="1" name="embed" />
-            <input 
-              type="submit" 
-              value="Subscribe" 
-              style={{
-                padding: `${rhythm(0.5)} ${rhythm(1)}`,
-                border: `2px solid #358ccb`,
-                borderRadius: '4px',
-                background: 'transparent',
-                color: '#358ccb',
-                fontSize: scale(0).fontSize,
-                cursor: 'pointer',
-                textDecoration: 'none',
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.background = '#358ccb';
-                e.target.style.color = 'white';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.background = 'transparent';
-                e.target.style.color = '#358ccb';
-              }}
-            />
-          </div>
-        </form>
         <hr
           style={{
             marginBottom: rhythm(1),

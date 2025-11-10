@@ -6,7 +6,6 @@ date: 2020-09-25T22:52:57.672Z
 
 ![](images/0.png)
 
-Illustration by [loornicolas](https://www.instagram.com/loornicolas/)
 
 ### 1. Update your NPM modules with one command
 

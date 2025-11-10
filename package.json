@@ -4,14 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --webpack",
+    "dev": "next dev",
     "build": "node scripts/generate-rss.mjs && next build && node scripts/create-nojekyll.mjs",
     "start": "next start",
-    "deploy": "npm run build && gh-pages -d out",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "feed": "^5.1.0",
@@ -28,12 +24,5 @@
     "remark-rehype": "^11.1.2",
     "typography": "^0.16.24",
     "typography-theme-wordpress-2016": "^0.16.19"
-  },
-  "devDependencies": {
-    "eslint": "^9.39.1",
-    "eslint-config-next": "^16.0.1",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
-    "prettier": "^3.6.2"
   }
 }

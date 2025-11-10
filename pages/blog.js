@@ -5,7 +5,10 @@ import BlogLayout from '../components/BlogLayout';
 import SEO from '../components/SEO';
 import { rhythm } from '../lib/typography';
 import { getAllPostsMetadata } from '../lib/getAllPosts';
-import { siteMetadata } from '../lib/siteMetadata.js';
+
+const siteMetadata = {
+  title: 'Jon Portella - Full Stack Developer',
+};
 
 export default function BlogIndex({ posts }) {
   return (

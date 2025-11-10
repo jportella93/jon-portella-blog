@@ -44,12 +44,12 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#9)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-9</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-9</guid>
+            <title><![CDATA[Autosave Your Shell Config in a GitHub Gist]]></title>
+            <link>https://jportella93.github.io/blog/autosave-your-shell-config-in-a-github-gist</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/autosave-your-shell-config-in-a-github-gist</guid>
             <pubDate>Thu, 29 Apr 2021 13:23:46 GMT</pubDate>
             <description><![CDATA[Learn how to prevent your custom aliases to be lost in oblivion, in one minute.]]></description>
-            <content:encoded><![CDATA[<h1>OMBD#9: Autosave Your Shell Config in a GitHub Gist</h1>
+            <content:encoded><![CDATA[<h1>Autosave Your Shell Config in a GitHub Gist</h1>
 <h2>Don’t lose your aliases again when switching computers!</h2>
 <h3>THE PROBLEM</h3>
 <p>You get a new computer, you back up all your files but…</p>
@@ -122,7 +122,7 @@
 <p>They can be divided into two groups by methodology:</p>
 <ol>
 <li><strong>Methods related to pointing the browser to the URL of the SVG file</strong>. These generally can benefit from browser caching but have limited options for interactivity.</li>
-<li><strong>Methods related to hardcoding the SVG inside a static asset such as HTML, CSS, or JS file</strong>. These can’t be cached separately as they are embedded in the file, but for this reason, we save HTTP requests, which is interesting since<a href="https://ishwar-rimal.medium.com/why-does-your-browser-limit-the-number-of-concurrent-network-calls-1ae5d50863dd"> browsers not using HTTP2 can only do a limited number of concurrent requests</a>. Also, they are best for reacting to user interaction.</li>
+<li><strong>Methods related to hardcoding the SVG inside a static asset such as HTML, CSS, or JS file</strong>. These can't be cached separately as they are embedded in the file, but for this reason, we save HTTP requests, which is interesting since browsers not using HTTP2 can only do a limited number of concurrent requests. Also, they are best for reacting to user interaction.</li>
 </ol>
 <h3>1. SVG implementation methods related to pointing the browser to the URL of the SVG file.</h3>
 <h3>1.1 As an  src</h3>
@@ -287,12 +287,12 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#6)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-6</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-6</guid>
+            <title><![CDATA[Running Code Snippets on Chrome's Console]]></title>
+            <link>https://jportella93.github.io/blog/running-code-snippets-on-chrome-s-console-2</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/running-code-snippets-on-chrome-s-console-2</guid>
             <pubDate>Fri, 23 Apr 2021 13:58:02 GMT</pubDate>
-            <description><![CDATA[Welcome to issue]]></description>
-            <content:encoded><![CDATA[<h1>OMBD#6: Running Code Snippets on Chrome’s Console</h1>
+            <description><![CDATA[Learn how to store and run JavaScript code snippets in Chrome's DevTools for faster testing and debugging.]]></description>
+            <content:encoded><![CDATA[<h1>Running Code Snippets on Chrome's Console</h1>
 <h2>A quick guide for web developers on this great time-saver when executing JavaScript on the go.</h2>
 <h3>THE PROBLEM</h3>
 <p>You want to test a registration form on a website. Instead of filling it up manually every time, you may come up with a snippet like this that does it automatically for you:</p>
@@ -334,7 +334,7 @@
 <p>Single server versus Content Delivery Network (CDN) by <a href="https://en.wikipedia.org/wiki/File:NCDN_-_CDN.png">Kanoha</a> on Wikimedia Commons</p>
 <h3>What is a CDN?</h3>
 <p>A **Content Distribution **(or Delivery) **Network **(<strong>CDN</strong>) is a group of servers distributed geographically with the purpose of providing fast delivery of Internet content.</p>
-<p>The CDN’s servers act as <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-17-75fd019f407c">reverse proxies</a> for your origin servers, where the content is hosted.</p>
+<p>The CDN's servers act as reverse proxies for your origin servers, where the content is hosted.</p>
 <p>Servers are contained in facilities called <strong>Points of Presence</strong> (<strong>PoP</strong>), which are spread around the globe.</p>
 <h3>How does a CDN work?</h3>
 <p>Servers in a CDN can help provide a better user experience by caching content closer to the user and delivering it instead of the origin server.</p>
@@ -391,14 +391,13 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[OMBD#14: How To Call a Function When a User Stops Typing]]></title>
+            <title><![CDATA[How To Call a Function When a User Stops Typing]]></title>
             <link>https://jportella93.github.io/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing</link>
             <guid isPermaLink="false">https://jportella93.github.io/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing</guid>
             <pubDate>Wed, 21 Apr 2021 13:12:45 GMT</pubDate>
             <description><![CDATA[We’ll learn how to implement a browser auto-saving draft system in JavaScript]]></description>
             <content:encoded><![CDATA[<h4>We’ll learn how to implement a browser auto-saving draft system in JavaScript</h4>
 <p><img src="/content/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <h4>THE PROBLEM</h4>
 <p>We are implementing a text editor with a Google-Docs-like draft system, where content gets saved server-side when the user stops typing for a second.</p>
 <h4>A SOLUTION</h4>
@@ -406,22 +405,23 @@
 <p>The key to this snippet is that the <code>timerId</code> has to be set declared in the scope of the <code>keyup</code> callback, in order to be reassigned to the new timeout id every time the <code>keyup</code> callback is fired again.</p>
 <p>Here’s a demo on CodePen:</p>
 <p>Call function when the user stops typing.</p>
-<div class="remark-highlight"><pre class="language-com"><code class="language-com">// Declare a new variable that will get reassigned later with the timeout id
-let timerId
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Declare a new variable that will get reassigned later with the timeout id</span>
+<span class="token keyword">let</span> timerId
 
-// Get the DOM Node of the input area and listen for a keyup event
-document.querySelector(&#x26;#39;textarea&#x26;#39;).addEventListener(&#x26;#39;keyup&#x26;#39;, () =&#x26;gt; {
-  // Clear timeout to callback, doesn&#x26;#39;t do anything on first run since timerId is undefined
-  clearTimeout(timerId)
-  // Set timerId to fire callback in one second, unless another keyup event is triggered
-  timerId = window.setTimeout(renderCurrentTime, 1000)
-})
+<span class="token comment">// Get the DOM Node of the input area and listen for a keyup event</span>
+<span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">'textarea'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'keyup'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// Clear timeout to callback, doesn't do anything on first run since timerId is undefined</span>
+  <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timerId<span class="token punctuation">)</span>
+  <span class="token comment">// Set timerId to fire callback in one second, unless another keyup event is triggered</span>
+  timerId <span class="token operator">=</span> <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">setTimeout</span><span class="token punctuation">(</span>renderCurrentTime<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 
-// Callback that will get fired 1s after typing
-function renderCurrentTime () {
-  // TODO: Save note to server
-  document.querySelector(&#x26;#39;time&#x26;#39;).textContent = new Date().toLocaleString()
-}</code></pre></div>
+<span class="token comment">// Callback that will get fired 1s after typing</span>
+<span class="token keyword">function</span> <span class="token function">renderCurrentTime</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// TODO: Save note to server</span>
+  <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">'time'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token property-access">textContent</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toLocaleString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
@@ -433,7 +433,6 @@ function renderCurrentTime () {
             <content:encoded><![CDATA[<h3>Trying To Write Every Day? Here’s How To Stick to It</h3>
 <h4>Many people struggle to build a writing habit. I did too, but I solved it with this simple mantra</h4>
 <p><img src="/content/blog/trying-to-write-every-day-heres-how-to-stick-to-it/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <p>In my experience, that’s easy to implement if you follow some simple steps. Keep on reading to know how to exactly how.</p>
 <h4>Tip #1: write short-form stories.</h4>
 <p>In the beginning, I was writing long-form articles, which took me between 2 to 3 hours to write.</p>
@@ -480,12 +479,12 @@ function renderCurrentTime () {
         </item>
         <item>
             <title><![CDATA[Use gist-paste to Save Text Files as GitHub Gists From the Command Line]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-7</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-7</guid>
+            <link>https://jportella93.github.io/blog/use-gist-paste-to-save-text-files-as-github-gists-from-the-command-line</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/use-gist-paste-to-save-text-files-as-github-gists-from-the-command-line</guid>
             <pubDate>Tue, 20 Apr 2021 15:19:33 GMT</pubDate>
-            <description><![CDATA[OMBD]]></description>
+            <description><![CDATA[A quick tip to save time on saving and sharing documents]]></description>
             <content:encoded><![CDATA[<h1>Use gist-paste to Save Text Files as GitHub Gists From the Command Line</h1>
-<h2>OMBD #7: A quick tip to save time on saving and sharing documents</h2>
+<h2>A quick tip to save time on saving and sharing documents</h2>
 <h3>THE PROBLEM</h3>
 <p>You are saving <a href="https://gist.github.com/">Github Gists</a> often but you spend too much time on their UI.</p>
 <h3>A SOLUTION</h3>
@@ -493,7 +492,8 @@ function renderCurrentTime () {
 <ol>
 <li>Install <a href="https://github.com/defunkt/gist">Gist</a> following the <a href="https://github.com/defunkt/gist#installation">instructions for your system</a>. In my case is Ubuntu so:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">sudo apt install gist</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> gist
+</code></pre></div>
 <ol start="2">
 <li>Go to the <a href="https://github.com/settings/tokens">tokens section in GitHub</a> and press on “Generate new token”. Input your password in the next screen:</li>
 </ol>
@@ -510,18 +510,21 @@ function renderCurrentTime () {
 <ol start="5">
 <li>Save the token in <code>~/.gist</code>. The <code>umask</code> ensures that the file is only accessible from your user account:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">(umask 0077 &#x26;amp;&#x26;amp; echo MY_SECRET_TOKEN &#x26;gt; ~/.gist)</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token punctuation">(</span>umask 0077 <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> MY_SECRET_TOKEN <span class="token operator">></span> ~/.gist<span class="token punctuation">)</span>
+</code></pre></div>
 <ol start="6">
 <li>Check that it has been saved correctly:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">cat ~/.gist</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">cat</span> ~/.gist
+</code></pre></div>
 <ol start="7">
 <li>Now we can create gists from the command line!</li>
 </ol>
 <blockquote>
 <p>Note that in Ubuntu/Debian the <code>gist</code> command is renamed to <code>gist-paste</code> to avoid conflicts, if you are using a different system like MacOS just replace<code> gist-paste</code> for <code>gist</code> in the next snippet.</p>
 </blockquote>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">echo &#x26;quot;hello gist&#x26;quot; &#x26;gt;&#x26;gt; gist.txtgist-paste gist.txt# Returns URL of newly created gist https://gist.github.com/eb36806673aca3c63686078d584e2a2e</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">echo</span> <span class="token string">"hello gist"</span> <span class="token operator">>></span> gist.txtgist-paste gist.txt<span class="token comment"># Returns URL of newly created gist https://gist.github.com/eb36806673aca3c63686078d584e2a2e</span>
+</code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
@@ -532,7 +535,6 @@ function renderCurrentTime () {
             <description><![CDATA[Let’s learn to use the power of this advanced tool for Git disaster‑saving]]></description>
             <content:encoded><![CDATA[<h4>Let’s learn to use the power of this advanced tool for Git disaster‑saving</h4>
 <p><img src="/content/blog/time-traveling-in-git-meet-git-reflog/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <h4>THE PROBLEM</h4>
 <p>A local branch deleted by accident, squashed commits that we would like to be un-squashed… when a catastrophe occurs, wouldn’t it be great if we could <strong>time-travel in Git</strong>?</p>
 <h4>A SOLUTION</h4>
@@ -543,39 +545,37 @@ function renderCurrentTime () {
 <p>Let’s put it into practice.</p>
 <h4>Recovering a locally deleted branch</h4>
 <p>We’ve deleted a local branch, how can we recover it?</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git branch -D navbar-feature</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> branch <span class="token parameter variable">-D</span> navbar-feature
+</code></pre></div>
 <p>We can use <code>git reflog</code> to find a point in history to time‑travel to. We see that one move ago we did the last commit on that branch that we just deleted.</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">3b7a6fdb (HEAD -&#x26;gt; master) HEAD@{0}: checkout: moving from navbar-feature to master9a07e99f HEAD@{1}: commit: feat: add Navbar3b7a6fdb (HEAD -&#x26;gt; master) HEAD@{2}: checkout: moving from master to navbar-feature</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">3b7a6fdb (HEAD -&#x26;gt; master) HEAD@{0}: checkout: moving from navbar-feature to master9a07e99f HEAD@{1}: commit: feat: add Navbar3b7a6fdb (HEAD -&#x26;gt; master) HEAD@{2}: checkout: moving from master to navbar-feature</code></pre></div>
 <p>So we can just create a new branch with the content of that point in history:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git checkout -b navbar-feature HEAD@{1}</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> checkout <span class="token parameter variable">-b</span> navbar-feature HEAD@<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>
+</code></pre></div>
 <p>Fantastic, we have recovered our branch and its commits!</p>
 <h4>Recovering squashed commits</h4>
 <p>We have 3 commits:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">747ef1e feat: add Button19d9327 feat: add Navbareffb3b4 initial commit</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">747ef1e feat: add Button19d9327 feat: add Navbareffb3b4 initial commit</code></pre></div>
 <p>We realize that we forget to add something on the Navbar commit, so we add those changes and we commit with a fixup <code>git commit --fixup 19d9327</code>. Our history now:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">c2149d1 fixup! feat: add Navbar747ef1e feat: add Button19d9327 feat: add Navbareffb3b4 initial commit</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">c2149d1 fixup! feat: add Navbar747ef1e feat: add Button19d9327 feat: add Navbareffb3b4 initial commit</code></pre></div>
 <p>And now, to clean up our history by squashing this last commit with its reference, we use<code>git rebase --autosquash --interactive HEAD~4</code>. Our history is clean now:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">de1e9de feat: add Buttonb3b4932 feat: add Navbareffb3b4 initial commit</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">de1e9de feat: add Buttonb3b4932 feat: add Navbareffb3b4 initial commit</code></pre></div>
 <p>However, how can we go back to our history pre‑rebase? <code>git reflog</code> shows that when we committed that fix was 4 moves ago <code>HEAD@{4}</code> , while the most recent moves are part of the rebase.</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">4610b383 HEAD@{0}: rebase -i (finish): returning to refs/heads/master4610b383 HEAD@{1}: rebase -i (pick): feat: add Navbar52d0c48c HEAD@{2}: rebase -i (fixup): feat: add Navbar07097c96 HEAD@{3}: rebase -i (start): checkout HEAD~4c2149d1 HEAD@{4}: commit: fixup! feat: add Navbar</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">4610b383 HEAD@{0}: rebase -i (finish): returning to refs/heads/master4610b383 HEAD@{1}: rebase -i (pick): feat: add Navbar52d0c48c HEAD@{2}: rebase -i (fixup): feat: add Navbar07097c96 HEAD@{3}: rebase -i (start): checkout HEAD~4c2149d1 HEAD@{4}: commit: fixup! feat: add Navbar</code></pre></div>
 <p>So we can just <code>git reset HEAD@{4}</code> and we have recovered our history pre-squash! This is what <code>git log</code> shows now:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">c2149d1 fixup! feat: add Navbar747ef1e feat: add Button19d9327 feat: add Navbareffb3b4 initial commit</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">c2149d1 fixup! feat: add Navbar747ef1e feat: add Button19d9327 feat: add Navbareffb3b4 initial commit</code></pre></div>
 <h4>Thanks for reading! Keep learning, and don’t stop coding 😊</h4>
 <hr>
 <p><strong>Resources</strong><a href="https://git-scm.com/docs/git-reflog">https://git-scm.com/docs/git-reflog</a><a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog">https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog</a><a href="https://www.edureka.co/blog/git-reflog/">https://www.edureka.co/blog/git-reflog/</a></p>
-<h4>If you enjoyed this story, you may also like:</h4>
-<p><a href="https://towardsdev.com/5-remarkable-git-commands-that-will-boost-your-coding-productivity-e8635b20b4bf"><strong>5 Remarkable Git Commands That Will Boost Your Coding Productivity</strong>*These are custom-made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…*towardsdev.com</a><a href="https://towardsdev.com/5-remarkable-git-commands-that-will-boost-your-coding-productivity-e8635b20b4bf"></a></p>
-<p><a href="https://jportella93.medium.com/master-git-diff-with-these-not-so-known-commands-9fecfa3006d0"><strong>Master Git Diff With These Not-So-Known Commands</strong><em>Save time while reviewing your own pull requests</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/master-git-diff-with-these-not-so-known-commands-9fecfa3006d0"></a></p>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[OMONP#3: Building a carousel with Swiper]]></title>
+            <title><![CDATA[Building a carousel with Swiper]]></title>
             <link>https://jportella93.github.io/blog/omonp-3-building-a-carousel-with-swiper</link>
             <guid isPermaLink="false">https://jportella93.github.io/blog/omonp-3-building-a-carousel-with-swiper</guid>
             <pubDate>Tue, 06 Apr 2021 01:28:57 GMT</pubDate>
             <description><![CDATA[Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/omonp-3-building-a-carousel-with-swiper/images/0.png" alt=""></p>
-<p>Photo by <a href="https://unsplash.com/@altumcode?utm_sourcemedium&#x26;utm_mediumreferral">AltumCode</a> on <a href="https://unsplash.com?utm_sourcemedium&#x26;utm_mediumreferral">Unsplash</a></p>
 <h4>Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.</h4>
 <p><img src="/content/blog/omonp-3-building-a-carousel-with-swiper/images/1.png" alt=""></p>
 <p><a href="https://codepen.io/jportella93/pen/PoWjaaG">What we will build</a></p>
@@ -610,83 +610,70 @@ function renderCurrentTime () {
 <p>Here’s a quick demo on CodePen. You can check the network tab on the browser’s DevTools and you’ll see image requests being done on-demand as you swipe!</p>
 <p>Lazy-loading image swiper with navigation and pagination</p>
 <hr>
-<div class="remark-highlight"><pre class="language-com"><code class="language-com">&#x26;lt;link rel=&#x26;quot;stylesheet&#x26;quot; href=&#x26;quot;https://unpkg.com/swiper/swiper-bundle.min.css&#x26;quot;&#x26;gt;
-&#x26;lt;script src=&#x26;quot;https://unpkg.com/swiper/swiper-bundle.min.js&#x26;quot;&#x26;gt;&#x26;lt;/script&#x26;gt;</code></pre></div>
-<div class="remark-highlight"><pre class="language-com"><code class="language-com">&#x26;lt;div class=&#x26;quot;swiper-container&#x26;quot;&#x26;gt;
-  &#x26;lt;div class=&#x26;quot;swiper-wrapper&#x26;quot;&#x26;gt;
-    &#x26;lt;div class=&#x26;quot;swiper-slide&#x26;quot;&#x26;gt;
-      &#x26;lt;!-- Required swiper-lazy class and image source specified in data-src attribute --&#x26;gt;
-      &#x26;lt;img data-src=&#x26;quot;https://picsum.photos/id/81/200&#x26;quot; class=&#x26;quot;swiper-lazy&#x26;quot;&#x26;gt;
-      &#x26;lt;!-- Preloader image --&#x26;gt;
-      &#x26;lt;div class=&#x26;quot;swiper-lazy-preloader&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-    &#x26;lt;/div&#x26;gt;
-    &#x26;lt;div class=&#x26;quot;swiper-slide&#x26;quot;&#x26;gt;
-      &#x26;lt;img data-src=&#x26;quot;https://picsum.photos/id/82/200&#x26;quot; class=&#x26;quot;swiper-lazy&#x26;quot;&#x26;gt;
-      &#x26;lt;div class=&#x26;quot;swiper-lazy-preloader&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-    &#x26;lt;/div&#x26;gt;
-    &#x26;lt;div class=&#x26;quot;swiper-slide&#x26;quot;&#x26;gt;
-      &#x26;lt;img data-src=&#x26;quot;https://picsum.photos/id/83/200&#x26;quot; class=&#x26;quot;swiper-lazy&#x26;quot;&#x26;gt;
-      &#x26;lt;div class=&#x26;quot;swiper-lazy-preloader&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-    &#x26;lt;/div&#x26;gt;
-    &#x26;lt;div class=&#x26;quot;swiper-slide&#x26;quot;&#x26;gt;
-      &#x26;lt;img data-src=&#x26;quot;https://picsum.photos/id/84/200&#x26;quot; class=&#x26;quot;swiper-lazy&#x26;quot;&#x26;gt;
-      &#x26;lt;div class=&#x26;quot;swiper-lazy-preloader&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-    &#x26;lt;/div&#x26;gt;
-    &#x26;lt;div class=&#x26;quot;swiper-slide&#x26;quot;&#x26;gt;
-      &#x26;lt;img data-src=&#x26;quot;https://picsum.photos/id/95/200&#x26;quot; class=&#x26;quot;swiper-lazy&#x26;quot;&#x26;gt;
-      &#x26;lt;div class=&#x26;quot;swiper-lazy-preloader&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-    &#x26;lt;/div&#x26;gt;
-  &#x26;lt;/div&#x26;gt;
-  &#x26;lt;!-- Add Pagination --&#x26;gt;
-  &#x26;lt;div class=&#x26;quot;swiper-pagination&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-  &#x26;lt;!-- Navigation --&#x26;gt;
-  &#x26;lt;div class=&#x26;quot;swiper-button-next&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-  &#x26;lt;div class=&#x26;quot;swiper-button-prev&#x26;quot;&#x26;gt;&#x26;lt;/div&#x26;gt;
-&#x26;lt;/div&#x26;gt;
+<div class="remark-highlight"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/swiper/swiper-bundle.min.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/swiper/swiper-bundle.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>script</span><span class="token punctuation">></span></span>
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token comment">&#x3C;!-- Required swiper-lazy class and image source specified in data-src attribute --></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://picsum.photos/id/81/200<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token comment">&#x3C;!-- Preloader image --></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy-preloader<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://picsum.photos/id/82/200<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy-preloader<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://picsum.photos/id/83/200<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy-preloader<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://picsum.photos/id/84/200<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy-preloader<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://picsum.photos/id/95/200<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-lazy-preloader<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token comment">&#x3C;!-- Add Pagination --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-pagination<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token comment">&#x3C;!-- Navigation --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-button-next<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>swiper-button-prev<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
 
-&#x26;lt;!-- Swiper imports --&#x26;gt;
-&#x26;lt;link rel=&#x26;quot;stylesheet&#x26;quot; href=&#x26;quot;https://unpkg.com/swiper/swiper-bundle.min.css&#x26;quot;&#x26;gt;
-&#x26;lt;script src=&#x26;quot;https://unpkg.com/swiper/swiper-bundle.min.js&#x26;quot;&#x26;gt;&#x26;lt;/script&#x26;gt;</code></pre></div>
-<div class="remark-highlight"><pre class="language-com"><code class="language-com">const swiper = new Swiper(&#x26;quot;.swiper-container&#x26;quot;, {
-  loop: true,
-  lazy: {
-    loadPrevNext: true
-  },
-  pagination: {
-    el: &#x26;quot;.swiper-pagination&#x26;quot;,
-    clickable: true
-  },
-  navigation: {
-    nextEl: &#x26;quot;.swiper-button-next&#x26;quot;,
-    prevEl: &#x26;quot;.swiper-button-prev&#x26;quot;
-  }
-});
+<span class="token comment">&#x3C;!-- Swiper imports --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/swiper/swiper-bundle.min.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/swiper/swiper-bundle.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>script</span><span class="token punctuation">></span></span>
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> swiper <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Swiper</span><span class="token punctuation">(</span><span class="token string">".swiper-container"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">loop</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">lazy</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">loadPrevNext</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">pagination</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">".swiper-pagination"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">clickable</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">navigation</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">nextEl</span><span class="token operator">:</span> <span class="token string">".swiper-button-next"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">prevEl</span><span class="token operator">:</span> <span class="token string">".swiper-button-prev"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
 </code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Welcome to Jon Portella’s Medium profile]]></title>
-            <link>https://jportella93.github.io/blog/welcome-to-jon-portellas-medium-profile</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/welcome-to-jon-portellas-medium-profile</guid>
-            <pubDate>Sun, 28 Mar 2021 17:36:18 GMT</pubDate>
-            <description><![CDATA[Ready to learn?]]></description>
-            <content:encoded><![CDATA[<h3>Welcome to Jon Portella’s Medium profile</h3>
-<h4>Ready to learn?</h4>
-<p>Time is a precious commodity, that’s why I write <strong>short</strong> articles to make developers better at what they do.</p>
-<p>Nevertheless, sometimes I’ll **deep dive **into crucial topics and share my research in synthesized articles.</p>
-<p>Hence, this knowledge is grouped in thematic series:</p>
-<p><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e">**OMBD — One Minute To Become a Better Developer ***Become a more successful software developer by reading short nuggets of knowledge, one minute at a time.*jportella93.medium.com</a><a href="https://jportella93.medium.com/one-minute-to-become-a-better-developer-ombd-5b1a1d37468e"></a></p>
-<p><a href="https://jportella93.medium.com/dd-deep-dives-adb717e0709e"><strong>DD — Deep Dives</strong>*Gain in-depth knowledge about a topic through simple explanations.*jportella93.medium.com</a><a href="https://jportella93.medium.com/dd-deep-dives-adb717e0709e"></a></p>
-<p><a href="https://jportella93.medium.com/omonp-one-minute-one-npm-package-bea2c9c3636"><strong>OMONP — One Minute, One NPM Package</strong><em>Discover cool NPM packages and how to use them in one minute</em>jportella93.medium.com</a><a href="https://jportella93.medium.com/omonp-one-minute-one-npm-package-bea2c9c3636"></a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#3)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-3</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-3</guid>
+            <title><![CDATA[Quick Refactor: Keep Casing in VSCode Search + Replace]]></title>
+            <link>https://jportella93.github.io/blog/quick-refactor-keep-casing-in-vscode-search-replace</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/quick-refactor-keep-casing-in-vscode-search-replace</guid>
             <pubDate>Sun, 28 Mar 2021 15:50:52 GMT</pubDate>
-            <description><![CDATA[Welcome to issue]]></description>
-            <content:encoded><![CDATA[<h1>OMBD#3: Quick Refactor: Keep Casing in VSCode Search + Replace</h1>
+            <description><![CDATA[Learn how to preserve casing when refactoring variable names in VSCode search and replace.]]></description>
+            <content:encoded><![CDATA[<h1>Quick Refactor: Keep Casing in VSCode Search + Replace</h1>
 <h2>A simple Visual Studio Code trick to save precious time while refactoring</h2>
 <h3>THE PROBLEM</h3>
 <p>We have a <code>pet</code> object, whose value under the key of <code>name</code> we are changing. We are saving a reference to the old value that the key <code>name</code> pointed to for logging purposes.</p>
@@ -703,34 +690,54 @@ function renderCurrentTime () {
             <guid isPermaLink="false">https://jportella93.github.io/blog/a-snazzy-trick-how-to-style-your-console-log-messages</guid>
             <pubDate>Thu, 25 Mar 2021 13:59:01 GMT</pubDate>
             <description><![CDATA[A quick guide (with examples) on applying CSS to log messages in the browser’s console]]></description>
-            <content:encoded><![CDATA[<h4><a href="http://medium.com/codex">CODEX</a></h4>
-<h4>A quick guide (with examples) on applying CSS to log messages in the browser’s console.</h4>
-<p><img src="/content/blog/a-snazzy-trick-how-to-style-your-console-log-messages/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
+            <content:encoded><![CDATA[<h4>A quick guide (with examples) on applying CSS to log messages in the browser's console.</h4>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Styling console.log messages with CSS</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cHello World!"</span><span class="token punctuation">,</span> <span class="token string">"color: blue; font-size: 20px;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
 <h4>THE PROBLEM</h4>
-<p>Our console messages don’t grab users’ attention.</p>
-<p><img src="/content/blog/a-snazzy-trick-how-to-style-your-console-log-messages/images/1.png" alt=""></p>
+<p>Our console messages don't grab users' attention.</p>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
 <p>A basic console.log message.</p>
 <p>How can we make them more engaging?</p>
 <h4>A SOLUTION</h4>
-<p>By including a <code>%c</code> in <code>console.log</code>’s first argument, and passing some CSS declarations as the second argument, we can style the message on the browser’s console.</p>
-<p><img src="/content/blog/a-snazzy-trick-how-to-style-your-console-log-messages/images/2.png" alt=""></p>
-<p>A styled console log message! 🌈</p>
-<h4>Here are some ideas</h4>
-<p><img src="/content/blog/a-snazzy-trick-how-to-style-your-console-log-messages/images/3.png" alt=""></p>
-<p>Change color in your browser’s console.</p>
-<p><img src="/content/blog/a-snazzy-trick-how-to-style-your-console-log-messages/images/4.png" alt=""></p>
-<p>Change font-family and font-size in your browser’s console.</p>
-<p><img src="/content/blog/a-snazzy-trick-how-to-style-your-console-log-messages/images/5.png" alt=""></p>
-<p>Apply several styles to the same string.</p>
-<p><img src="/content/blog/a-snazzy-trick-how-to-style-your-console-log-messages/images/6.png" alt=""></p>
+<p>By including a <code>%c</code> in <code>console.log</code>'s first argument, and passing some CSS declarations as the second argument, we can style the message on the browser's console.</p>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>
+  <span class="token string">"%cHello World!"</span><span class="token punctuation">,</span>
+  <span class="token string">"color: blue; font-size: 20px; font-weight: bold;"</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>A styled console log message! 🌈</p>
+<h4>Here are some ideas</h4>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cRed text!"</span><span class="token punctuation">,</span> <span class="token string">"color: red;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cBlue text!"</span><span class="token punctuation">,</span> <span class="token string">"color: blue;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cGreen text!"</span><span class="token punctuation">,</span> <span class="token string">"color: green;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Change color in your browser's console.</p>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>
+  <span class="token string">"%cLarge Comic Sans!"</span><span class="token punctuation">,</span>
+  <span class="token string">"font-family: Comic Sans MS; font-size: 30px;"</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cSmall Monospace!"</span><span class="token punctuation">,</span> <span class="token string">"font-family: monospace; font-size: 12px;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Change font-family and font-size in your browser's console.</p>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>
+  <span class="token string">"%cRed %cBlue %cGreen"</span><span class="token punctuation">,</span>
+  <span class="token string">"color: red; font-weight: bold;"</span><span class="token punctuation">,</span>
+  <span class="token string">"color: blue; font-size: 20px;"</span><span class="token punctuation">,</span>
+  <span class="token string">"color: green; text-decoration: underline;"</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Apply several styles to the same string.</p>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> style <span class="token operator">=</span>
+  <span class="token string">"background: #222; color: #bada55; padding: 10px; border-radius: 5px;"</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cReusable style!"</span><span class="token punctuation">,</span> style<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cAnother message!"</span><span class="token punctuation">,</span> style<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"%cAnd another!"</span><span class="token punctuation">,</span> style<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
 <p>Reuse console.log styles.</p>
 <p>Many websites use this trick to grab the curious developers' attention or to prevent non-technical users to run code on the console. Some of them are Facebook, Pinterest, and Gmail.</p>
 <p>Thanks for reading! Take care, <em>Jon Portella.</em></p>
-<hr>
-<h4>If you enjoyed this story, you may also like</h4>
-<p><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a">**1 Minute To Become A Better Developer (#2)***Welcome to issue #2 of this new series, where you become a more successful developer by reading short nuggets of…*jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-2-5db2e35a7c4a"></a></p>
-<p><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670">**1 Minute To Become A Better Developer (#6)***Welcome to issue #6 of this series, where you become a more successful developer by reading short nuggets of knowledge…*jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-6-a732cf1e6670"></a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -738,10 +745,9 @@ function renderCurrentTime () {
             <link>https://jportella93.github.io/blog/the-one-thing-you-need-to-know-to-avoid-css-overflow</link>
             <guid isPermaLink="false">https://jportella93.github.io/blog/the-one-thing-you-need-to-know-to-avoid-css-overflow</guid>
             <pubDate>Thu, 25 Mar 2021 12:55:11 GMT</pubDate>
-            <description><![CDATA[THE PROBLEM]]></description>
+            <description><![CDATA[Learn how to prevent CSS overflow with variable-length text using a simple wrapper component that keeps text on one line.]]></description>
             <content:encoded><![CDATA[<h1>The One Thing You Need To Know To Avoid CSS Multiline Wrapping</h1>
 <h2>10 lines of code to make your text always span one line, and save you from countless headaches</h2>
-<p>Illustration by <a href="https://www.instagram.com/loornicolas/">loornicolas</a></p>
 <h2>THE PROBLEM</h2>
 <p>So imagine you have a component that shows some user information like name, surname, and e-mail. The design shows a nice layout where all lines take the same space.</p>
 <p>Easy enough, you implement the design and release it into the wild. But then you realize that this UI can break with a person with a longer name.</p>
@@ -762,7 +768,6 @@ function renderCurrentTime () {
             <description><![CDATA[Save time while reviewing your own pull requests]]></description>
             <content:encoded><![CDATA[<h4>Spot errors before pushing to save time while reviewing your own pull requests</h4>
 <p><img src="/content/blog/master-git-diff-with-these-not-so-known-commands/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/">Loor Nicolas</a></p>
 <h4>THE PROBLEM</h4>
 <p>You spend a lot of time reviewing your own pull request on Github before asking for a review and you always find stuff that needs to be changed. So you need to add/edit commits, losing lots of time.</p>
 <h4>A SOLUTION</h4>
@@ -772,63 +777,75 @@ function renderCurrentTime () {
 <ol>
 <li>Show all <strong>unstaged</strong> changes since the last commit:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span>
+</code></pre></div>
 <ol start="2">
 <li>Show all <strong>staged</strong> changes since the last commit:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff --cached</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span> <span class="token parameter variable">--cached</span>
+</code></pre></div>
 <ol start="3">
 <li>Show all <strong>staged and unstaged</strong> changes since the last commit:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff HEAD</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span> HEAD
+</code></pre></div>
 <h4>Revision targeting</h4>
 <ol>
 <li>Show changes <strong>since a specific commit</strong>:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git log --oneline# 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff ca2f968</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> log <span class="token parameter variable">--oneline</span><span class="token comment"># 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit</span>
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span> ca2f968
+</code></pre></div>
 <ol start="2">
 <li>Show changes** since the last n commits**, e.g. 2:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff HEAD~2</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span> HEAD~2
+</code></pre></div>
 <h4>Single file</h4>
 <ol>
 <li>Show changes on a <strong>single file since the last commit</strong>:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff script.js</code></pre></div>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript">git diff script<span class="token punctuation">.</span><span class="token property-access">js</span>
+</code></pre></div>
 <ol start="2">
 <li>Show changes on a <strong>single file since a specific commit</strong>:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git log --oneline# 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff ca2f968 script.js</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> log <span class="token parameter variable">--oneline</span><span class="token comment"># 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit</span>
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript">git diff ca2f968 script<span class="token punctuation">.</span><span class="token property-access">js</span>
+</code></pre></div>
 <h4>Summary of changes</h4>
 <p>To be run from your feature branch.</p>
 <ol>
 <li>Show all changes over a specific branch (<strong>GitHub PR diff</strong>):</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff master</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span> master
+</code></pre></div>
 <ol start="2">
 <li>Show <strong>changed files with a number of changed lines</strong> over a specific branch:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff master --stat</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span> master <span class="token parameter variable">--stat</span>
+</code></pre></div>
 <ol start="3">
 <li>Show a **one-line summary of the changes **over a specific branch:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git diff master --shortstat</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">diff</span> master <span class="token parameter variable">--shortstat</span>
+</code></pre></div>
 <h4>BONUS</h4>
 <p>Finally, here’s a neat trick by <a href="https://shime.sh/til/git-diff-tips-and-tricks">Shime.sh</a>, to make your diffs more readable by removing the <code>+</code> and <code>-</code> symbols, since they are colored anyway!</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git config --global pager.diff &#x26;#39;sed &#x26;quot;s/^\([^-+ ]*\)[-+ ]/\\1/&#x26;quot;&#x26;#39;</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> config <span class="token parameter variable">--global</span> pager.diff <span class="token string">'sed "s/^\([^-+ ]*\)[-+ ]/\\1/"'</span>
+</code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#20)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-20</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-20</guid>
+            <title><![CDATA[Lazy Load Images with LazySizes]]></title>
+            <link>https://jportella93.github.io/blog/lazy-load-images-with-lazysizes</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/lazy-load-images-with-lazysizes</guid>
             <pubDate>Tue, 23 Mar 2021 14:17:37 GMT</pubDate>
             <description><![CDATA[Learn how to lazy load images, in one minute.]]></description>
-            <content:encoded><![CDATA[<h4><a href="http://medium.com/codex">CODEX</a></h4>
-<h4>A quick introduction to a library that has better browser support than the loading=”lazy” attribute.</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-20/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<h4>A quick introduction to a library that has better browser support than the loading="lazy" attribute.</h4>
+<p><img src="/content/blog/lazy-load-images-with-lazysizes/images/0.png" alt=""></p>
 <p><a href="https://codepen.io/jportella93/pen/MWJYeLj">What we will build</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
@@ -847,42 +864,44 @@ function renderCurrentTime () {
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#19)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-19</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-19</guid>
+            <title><![CDATA[Use RegEx Lazy Quantifier to Match Alt Tags]]></title>
+            <link>https://jportella93.github.io/blog/use-regex-lazy-quantifier-to-match-alt-tags</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/use-regex-lazy-quantifier-to-match-alt-tags</guid>
             <pubDate>Fri, 19 Mar 2021 13:26:48 GMT</pubDate>
             <description><![CDATA[Learn how to use RegEx Lazy Quantifier, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Save refactor time with one character — Regular expressions on JavaScript or any other language made easier</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-19/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>We have a block of HTML code, including a set of images.</p>
 <p>All of them have an alt tag, but <strong>we want to add a full stop to every tag</strong>, to make screen readers pause for a bit when reading the tag.</p>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-19/images/1.png" alt=""></p>
-<p>A set of images with alt tags without full stops.</p>
-<p>We could just capture everything between <code>“”</code>. However, that would also target the <code>src</code> tag of the first image, since, <strong>by default, RegEx quantifiers aregreedy</strong>, so we are capturing until the last occurrence of <code>“</code> in the line.</p>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-19/images/2.png" alt=""></p>
-<p>We wrongly target the src tag of the first image.</p>
+<div class="remark-highlight"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>A beautiful sunset<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Mountain landscape<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image3.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Ocean waves<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+</code></pre></div>
+<p>A set of images with alt tags without full stops.</p>
+<p>We could just capture everything between <code>""</code>. However, that would also target the <code>src</code> tag of the first image, since, <strong>by default, RegEx quantifiers aregreedy</strong>, so we are capturing until the last occurrence of <code>"</code> in the line.</p>
+<div class="remark-highlight"><pre class="language-regex"><code class="language-regex">alt="<span class="token char-set class-name">.</span><span class="token quantifier number">*</span>"
+</code></pre></div>
+<p>We wrongly target the src tag of the first image.</p>
 <p>How can we do it?</p>
 <h4>A SOLUTION</h4>
 <p>We are going to use a **RegEx Lazy (or Non-Greedy) Quantifier **to match only the alt tags and add them back with a full stop.</p>
-<p>We only need to add a <code>?</code> after the quantifier.</p>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-19/images/3.png" alt=""></p>
-<p>Lazy Quantifier allows us to only target the alt tag.</p>
+<p>We only need to add a <code>?</code> after the quantifier.</p>
+<div class="remark-highlight"><pre class="language-regex"><code class="language-regex">alt="<span class="token char-set class-name">.</span><span class="token quantifier number">*?</span>"
+</code></pre></div>
+<p>Lazy Quantifier allows us to only target the alt tag.</p>
 <p>Here’s a demo on CodePen. Also <a href="https://regexr.com/5ov22">here’s a demo on RegExr.</a></p>
 <hr>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#18)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-18</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-18</guid>
+            <title><![CDATA[Prevent Hyphen Line-Breaks with Non-Breaking Hyphen]]></title>
+            <link>https://jportella93.github.io/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen</guid>
             <pubDate>Thu, 18 Mar 2021 14:27:15 GMT</pubDate>
             <description><![CDATA[Learn how to avoid hyphen line-breaks, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Learn to dominate your hyphens and control where your content line breaks</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-18/images/0.png" alt=""></p>
-<p>Art by my buddy<a href="https://www.instagram.com/loornicolas/"> Loor Nicolas</a></p>
+<p><img src="/content/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Let’s say our company is called Astro-Team, or whatever name with a hyphen.</p>
@@ -898,20 +917,19 @@ function renderCurrentTime () {
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Forward Proxy vs. Reverse Proxy: OMBD #17]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-17</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-17</guid>
+            <title><![CDATA[Forward Proxy vs. Reverse Proxy]]></title>
+            <link>https://jportella93.github.io/blog/forward-proxy-vs-reverse-proxy</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/forward-proxy-vs-reverse-proxy</guid>
             <pubDate>Wed, 17 Mar 2021 13:47:39 GMT</pubDate>
-            <description><![CDATA[1 Minute To Become A Better Developer (#17)]]></description>
-            <content:encoded><![CDATA[<h3>Forward Proxy vs. Reverse Proxy: OMBD #17</h3>
+            <description><![CDATA[Understand the difference between forward proxies and reverse proxies, and when to use each one.]]></description>
+            <content:encoded><![CDATA[<h3>Forward Proxy vs. Reverse Proxy</h3>
 <h4>Despite having similar names, they serve different purposes. Here’s a quick guide.</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-17/images/0.png" alt=""></p>
-<p>Art by my buddy<a href="https://www.instagram.com/loornicolas/"> Loor Nicolas</a></p>
+<p><img src="/content/blog/forward-proxy-vs-reverse-proxy/images/0.png" alt=""></p>
 <hr>
 <p>I came across <a href="https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/">this really well-explained article from Cloudflare</a> about proxies and wanted to share it with you, in one minute.</p>
 <h4>Proxy Server, AKA “Forward Proxy” or just “Proxy”</h4>
 <p>A server that sits in front of the client and acts as a middleman. It intercepts the client requests and <strong>forwards</strong> them — hence, the name — on their behalf to another server somewhere on the Internet.</p>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-17/images/1.png" alt=""></p>
+<p><img src="/content/blog/forward-proxy-vs-reverse-proxy/images/1.png" alt=""></p>
 <p>Forward Proxy Flow, image by <a href="https://www.cloudflare.com/">Cloudflare</a>.</p>
 <p>Some use cases of a Forward Proxy:</p>
 <ul>
@@ -919,11 +937,10 @@ function renderCurrentTime () {
 <li><strong>Avoid state or institutional regulations</strong>. The opposite to the previous example: If your network blocks connections to certain websites, you can do the requests to a proxy outside of that network which will forward the request for you.</li>
 <li><strong>Hide the client’s identity</strong>. By connecting to a website through a proxy, you could make your IP address more difficult to trace, since the final server would receive the proxy’s IP address.</li>
 </ul>
-<p>If you want to put it into practice, I wrote a story about the subject, covering the last 2 use cases:</p>
-<p><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246">**1 Minute To Become A Better Developer (#10)***Learn how to change public your public IP address, in one minute.*jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-10-bcb2396b6246"></a></p>
+<p>If you want to put it into practice, I wrote a story about the subject, covering the last 2 use cases.</p>
 <h4>Reverse Proxy</h4>
 <p>Is a server that sits in front of one or more web servers and acts as a gatekeeper for incoming requests.</p>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-17/images/2.png" alt=""></p>
+<p><img src="/content/blog/forward-proxy-vs-reverse-proxy/images/2.png" alt=""></p>
 <p>Reverse Proxy Flow, image by <a href="https://www.cloudflare.com/">Cloudflare</a>.</p>
 <p>Some use cases of a Reverse Proxy:</p>
 <ul>
@@ -937,14 +954,13 @@ function renderCurrentTime () {
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#16)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-16</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-16</guid>
+            <title><![CDATA[Avoid Headaches with Static Code Analysis Tools]]></title>
+            <link>https://jportella93.github.io/blog/avoid-headaches-with-static-code-analysis-tools</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/avoid-headaches-with-static-code-analysis-tools</guid>
             <pubDate>Tue, 16 Mar 2021 13:44:11 GMT</pubDate>
             <description><![CDATA[Learn to avoid headaches with Static Code Analysis Tools, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Or how Static Code Analysis Tools make your life and prevent headaches</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-16/images/0.png" alt=""></p>
-<p>Art by my buddy<a href="https://www.instagram.com/loornicolas/"> Loor Nicolas</a></p>
+<p><img src="/content/blog/avoid-headaches-with-static-code-analysis-tools/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Take a moment to look at this snippet and try to figure out what it does.</p>
@@ -968,10 +984,12 @@ function renderCurrentTime () {
 <p>.</p>
 <p>.</p>
 <p>Now, I bet you thought the result was:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">&#x26;#39;Swapped: 2,1&#x26;#39;</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">```text
+&#x26;#39;Swapped: 2,1&#x26;#39;</code></pre></div>
 <p><strong>WRONG.</strong></p>
 <p>This code throws an error. You can try it yourself on your browser’s console:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">```text
+Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code></pre></div>
 <p>But, why?</p>
 <p>This error happened to one of my students and I was puzzled for a while until I discovered the culprit. <strong>The code is missing semicolons</strong>. Usually, this is not a problem, since <a href="https://262.ecma-international.org/7.0/#sec-automatic-semicolon-insertion">JavaScript’s Automatic Semicolon Insertion</a> takes good care of it.</p>
 <p>However, in this case, the code is run as:</p>
@@ -986,23 +1004,25 @@ function renderCurrentTime () {
 </ol>
 <p>So even if it takes a couple of minutes to set up static code analysis tools, it is always a big win. Moreover, the more times you set them up, the faster you can get it done the next time.</p>
 <hr>
-<div class="remark-highlight"><pre class="language-com"><code class="language-com">const myArr = [1, 2]
-console.log(`Original: ${myArr}`)
-[myArr[0], myArr[1]] = [myArr[1], myArr[0]]
-console.log(`Swapped: ${myArr}`)</code></pre></div>
-<div class="remark-highlight"><pre class="language-com"><code class="language-com">const myArr = [1, 2];
-console.log(`Original: ${myArr}`)[myArr[0], myArr[1]] = [myArr[1], myArr[0]];
-console.log(`Swapped: ${myArr}`);</code></pre></div>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> myArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Original: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>myArr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span>myArr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> myArr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>myArr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> myArr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Swapped: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>myArr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> myArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Original: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>myArr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">[</span>myArr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> myArr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>myArr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> myArr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Swapped: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>myArr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#15)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-15</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-15</guid>
+            <title><![CDATA[Remove All node_modules Directories at Once]]></title>
+            <link>https://jportella93.github.io/blog/remove-all-node-modules-directories-at-once</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/remove-all-node-modules-directories-at-once</guid>
             <pubDate>Mon, 15 Mar 2021 13:43:28 GMT</pubDate>
             <description><![CDATA[Learn how to remove all your node_modules directories, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Here’s my one-liner to delete all the JavaScript dependencies of a repo in a flash.</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-15/images/0.png" alt=""></p>
+<p><img src="/content/blog/remove-all-node-modules-directories-at-once/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>You want to do a backup of all your current files because you’re switching computers.</p>
 <p>Some of your local repositories have unpublished branches so you want to copy them over to your new machine rather than checking out their remote versions.</p>
@@ -1013,32 +1033,38 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 <ol>
 <li>Go into your repositories directory:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">cd </code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> 
+</code></pre></div>
 <ol start="2">
 <li>List the <code>node_modules</code> directories you are going to remove:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">find . -type d -name node_modules</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown"># ./example-repo/node_modules# ./example-repo/node_modules/node-libs-browser/node_modules# ...</code></pre></div>
+<div class="remark-highlight"><pre class="language-css"><code class="language-css">find . -type d -name node_modules
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-bash"><code class="language-bash"><span class="token comment"># ./example-repo/node_modules# ./example-repo/node_modules/node-libs-browser/node_modules# ...</span>
+</code></pre></div>
 <ol start="3">
 <li>Let’s use <code>xargs</code> to pass these paths to <code>rm</code> :</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">find . -type d -name node_modules | xargs rm -rf</code></pre></div>
+<div class="remark-highlight"><pre class="language-css"><code class="language-css">find . -type d -name node_modules | xargs rm -rf
+</code></pre></div>
 <ol start="4">
 <li>Done! let’s double-check that all the <code>node_modules</code> have been deleted:</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">find . -type d -name node_modules</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown"># Empty</code></pre></div>
+<div class="remark-highlight"><pre class="language-css"><code class="language-css">find . -type d -name node_modules
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-bash"><code class="language-bash"><span class="token comment"># Empty</span>
+</code></pre></div>
 <p>Now copying over our repositories directory to our new machine takes just a second, and we can run <code>npm install</code> to generate a new <code>node_modules</code> directory.</p>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#14)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-14</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-14</guid>
+            <title><![CDATA[Build a 3D Bank Card with Vanilla-tilt.js]]></title>
+            <link>https://jportella93.github.io/blog/build-a-3d-bank-card-with-vanilla-tilt-js</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/build-a-3d-bank-card-with-vanilla-tilt-js</guid>
             <pubDate>Fri, 12 Mar 2021 13:55:24 GMT</pubDate>
             <description><![CDATA[Learn how to build a 3D bank card, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Make your cards stand-out with this quick JavaScript tutorial</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-14/images/0.png" alt=""></p>
+<p><img src="/content/blog/build-a-3d-bank-card-with-vanilla-tilt-js/images/0.png" alt=""></p>
 <p><a href="https://codepen.io/jportella93/pen/eYBxdzv">What we are going to build</a></p>
 <h4>THE PROBLEM</h4>
 <p>The payment form on our website looks a little bit dull. Customers get bored and don’t input their card details. How can we make it more engaging?</p>
@@ -1050,27 +1076,29 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 <ol>
 <li>Import it in our project</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">npm install vanilla-tilt</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> vanilla-tilt
+</code></pre></div>
 <p>or import it from a CDN as in the example:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">import vanillaTilt from &#x26;quot;https://cdn.skypack.dev/vanilla-tilt@1.7.0&#x26;quot;;</code></pre></div>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword module">import</span> <span class="token imports">vanillaTilt</span> <span class="token keyword module">from</span> <span class="token string">"https://cdn.skypack.dev/vanilla-tilt@1.7.0"</span><span class="token punctuation">;</span>
+</code></pre></div>
 <ol start="2">
 <li>Target a DOM element as a Vanilla-tilt container. The second argument is the <a href="https://github.com/micku7zu/vanilla-tilt.js/#options">options</a> object.</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">const card = document.querySelector(&#x26;quot;#card&#x26;quot;);VanillaTilt.init(card, {  max: 10,  speed: 1000,  perspective: 700});</code></pre></div>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> card <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">"#card"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token maybe-class-name">VanillaTilt</span><span class="token punctuation">.</span><span class="token method function property-access">init</span><span class="token punctuation">(</span>card<span class="token punctuation">,</span> <span class="token punctuation">{</span>  <span class="token literal-property property">max</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>  <span class="token literal-property property">speed</span><span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>  <span class="token literal-property property">perspective</span><span class="token operator">:</span> <span class="token number">700</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
 <p>And that’s really it! Here is our final result:</p>
 <p>Our cool cat 3D moving card! Let’s spend all our $$!</p>
 <hr>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#13)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-13</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-13</guid>
+            <title><![CDATA[Count Total Lines in a Git Repository]]></title>
+            <link>https://jportella93.github.io/blog/count-total-lines-in-a-git-repository</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/count-total-lines-in-a-git-repository</guid>
             <pubDate>Thu, 11 Mar 2021 13:43:08 GMT</pubDate>
             <description><![CDATA[Learn how to count the total number of lines in a Git repository, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>A one-liner to count lines, words, and characters on any repo</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-13/images/0.png" alt=""></p>
-<p>Art by my buddy<a href="https://www.instagram.com/loornicolas/"> Loor Nicolas</a></p>
+<p><img src="/content/blog/count-total-lines-in-a-git-repository/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>Our engineering manager has asked us about the total number of lines on several repositories of the company. How can we find out that information?</p>
 <h4>A SOLUTION</h4>
@@ -1078,21 +1106,27 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 <ol>
 <li>As a repository example, we are going to create a new project using <a href="https://github.com/pankod/superplate">superplate</a>.</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">npx superplate-cli my-app</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell">npx superplate-cli my-app
+</code></pre></div>
 <ol start="2">
 <li>Once created, we are going into the repo directory.</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">cd my-app</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> my-app
+</code></pre></div>
 <ol start="3">
 <li>Now we can run <code>git ls-files</code> to recursively see all the files versioned in the repo.</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git ls-files</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown"># .babelrc# .eslintignore# .eslintrc# .gitattributes# ...</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> ls-files
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-bash"><code class="language-bash"><span class="token comment"># .babelrc# .eslintignore# .eslintrc# .gitattributes# ...</span>
+</code></pre></div>
 <ol start="4">
 <li>However we want to also see the number of lines on every file. We are going to <a href="https://www.geeksforgeeks.org/piping-in-unix-or-linux/">pipe</a> the output of <code>git ls-files</code> to <code>wc</code> using <code>xargs</code> .</li>
 </ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">git ls-files | xargs wc</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">#       1       4      30 .babelrc#       1       2      26 .eslintignore#      25      37     600 .eslintrc#       1       2      12 .gitattributes# ...#   25891   49458 1219057 total</code></pre></div>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> ls-files <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">wc</span>
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-bash"><code class="language-bash"><span class="token comment">#       1       4      30 .babelrc#       1       2      26 .eslintignore#      25      37     600 .eslintrc#       1       2      12 .gitattributes# ...#   25891   49458 1219057 total</span>
+</code></pre></div>
 <p>Here we see:</p>
 <ul>
 <li>1st column: number of <strong>lines</strong> in that file**.**</li>
@@ -1105,14 +1139,13 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#12)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-12</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-12</guid>
+            <title><![CDATA[Track User Scroll with IntersectionObserver]]></title>
+            <link>https://jportella93.github.io/blog/track-user-scroll-with-intersectionobserver</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/track-user-scroll-with-intersectionobserver</guid>
             <pubDate>Wed, 10 Mar 2021 13:32:36 GMT</pubDate>
             <description><![CDATA[Learn how to leverage window.IntersectionObserver to find out how many visitors see your content, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>A tutorial on firing a callback function when an element enters the viewport</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-12/images/0.png" alt=""></p>
-<p>Art by my buddy<a href="https://www.instagram.com/loornicolas/"> Loor Nicolas</a></p>
+<p><img src="/content/blog/track-user-scroll-with-intersectionobserver/images/0.png" alt=""></p>
 <h4>The problem</h4>
 <p>Our website has a new and shiny landing page. We are getting lots of visits, so the marketing team has asked us to track how many of those visitors scroll down to the Call To Action section.</p>
 <p>How can we do that?</p>
@@ -1126,39 +1159,39 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 <p>Here’s a demo:</p>
 <p>Demonstration of window.IntersectionObserver to log user scroll to a certain section.</p>
 <hr>
-<div class="remark-highlight"><pre class="language-com"><code class="language-com">  // Feature detection, avoid breaking IE11
-  if (IntersectionObserver) {
-    document.querySelectorAll(&#x26;#39;.call-to-action&#x26;#39;)
-      .forEach((node) =&#x26;gt; {
-        // Create the observer and pass the callback
-        const observer = new IntersectionObserver(function(entries) {
-          if (entries[0].isIntersecting) {
-            // entries[0] is the element that entered into view
-            alert(
-              entries[0].target.textContent.trim() +
-              ` scrolled into view!`
-            );
-            // Disconnect to avoid logging more than once
-            this.disconnect();
-          }
-        });
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Feature detection, avoid breaking IE11</span>
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token maybe-class-name">IntersectionObserver</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.call-to-action'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token method function property-access">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token comment">// Create the observer and pass the callback</span>
+        <span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IntersectionObserver</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">entries</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>entries<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token property-access">isIntersecting</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// entries[0] is the element that entered into view</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span>
+              entries<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token property-access">target</span><span class="token punctuation">.</span><span class="token property-access">textContent</span><span class="token punctuation">.</span><span class="token method function property-access">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+              <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"> scrolled into view!</span><span class="token template-punctuation string">`</span></span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// Disconnect to avoid logging more than once</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token method function property-access">disconnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        // Make the observer watch for the node entering on viewport
-        observer.observe(node);
-      });
-  }
+        <span class="token comment">// Make the observer watch for the node entering on viewport</span>
+        observer<span class="token punctuation">.</span><span class="token method function property-access">observe</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
 </code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#11)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-11</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-11</guid>
+            <title><![CDATA[Using Regex Negative Lookahead to Replace HTTP with HTTPS]]></title>
+            <link>https://jportella93.github.io/blog/using-regex-negative-lookahead-to-replace-http-with-https</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/using-regex-negative-lookahead-to-replace-http-with-https</guid>
             <pubDate>Tue, 09 Mar 2021 13:51:16 GMT</pubDate>
             <description><![CDATA[Learn how to use Regex’s Negative Lookahead, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Make faster refactors in JavaScript, VSCode, or in your favourite place to run regular expressions</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-11/images/0.png" alt=""></p>
-<p>Art by my buddy<a href="https://www.instagram.com/loornicolas/"> Loor Nicolas</a></p>
+<p><img src="/content/blog/using-regex-negative-lookahead-to-replace-http-with-https/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>We have a list of images, some of them being requested via the HTTP protocol and some others via the HTTPS protocol.</p>
@@ -1169,7 +1202,7 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 <p>So we only want to match and update <code>http</code> that is not followed by an <code>s</code> . How do we do that?</p>
 <h4>A SOLUTION</h4>
 <p>Enter <strong>Regex’s Negative Lookahead</strong>. The syntax is simple:</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">http(?!s)</code></pre></div>
+<div class="remark-highlight"><pre class="language-text"><code class="language-text">http(?!s)</code></pre></div>
 <p>Where:</p>
 <ul>
 <li>The parentheses followed by a question mark and exclamation point <code>(?!)</code> is the construct for the Negative Lookahead.</li>
@@ -1182,78 +1215,12 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[1 Minute To Become A Better Developer (#10)]]></title>
-            <link>https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-10</link>
-            <guid isPermaLink="false">https://jportella93.github.io/blog/1-minute-to-become-a-better-developer-10</guid>
-            <pubDate>Mon, 08 Mar 2021 14:03:39 GMT</pubDate>
-            <description><![CDATA[Learn how to change public your public IP address, in one minute.]]></description>
-            <content:encoded><![CDATA[<h4>A tutorial on setting a VPN and using it from the CLI to hide our IP and location</h4>
-<p><img src="/content/blog/1-minute-to-become-a-better-developer-10/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
-<hr>
-<h4>THE PROBLEM</h4>
-<p>If you read issue #8, you already know which location information are we sharing with websites when we interact with them. If you didn’t, take a quick read first:</p>
-<p><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-8-31692050f5b8">**1 Minute To Become A Better Developer (#8)***Learn how to find out our public IP address and country from the command line, in 1 minute.*jportella93.medium.com</a><a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-8-31692050f5b8"></a></p>
-<p>So following up, now that we know about our public IP Address, it would be great if we could hide it or even change it.</p>
-<p>Why? here’s a handful of use cases:</p>
-<ul>
-<li>You don’t want the website you’re interacting with, your Internet Service Provider, or even your country’s government to know who’s the person interacting with that website.</li>
-<li>You want to make it look like your connection comes from a different country since there aresome online services that will charge you differently depending on your country of origin. Or content that just won’t be available in your country in streaming services.</li>
-<li>You want to look like a different individual, for example, if your IP has been blocked.</li>
-</ul>
-<p>So how can we change our public IP address?</p>
-<h4>THE SOLUTION</h4>
-<p>With a <a href="https://en.wikipedia.org/wiki/Virtual_private_network"><strong>V</strong>irtual <strong>P</strong>rivate <strong>N</strong>etwork (VPN)</a>. Basically, you’ll be doing requests to the VPN’s server and that server will do the actual request for you, hiding your IP address to the final server.</p>
-<p>There are several VPN providers out there, it’s a growing market. I’m going to explain how to use the one that has been more useful for me: Windscribe.</p>
-<ol>
-<li>Go to <a href="https://windscribe.com/">Windscribe</a> and create a free account. If you want, you can use my <a href="https://windscribe.com/yo/kocmap80">referral link</a> so we both get 1GB/month for free.</li>
-<li>To install the CLI in MacOS you can use <a href="https://formulae.brew.sh/cask/windscribe">homebrew</a> and skip to step #5. To do it in Ubuntu add the Windscribe signing key to apt:</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7</code></pre></div>
-<ol start="3">
-<li>Add the repository to your <code>sources.list</code>:</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">echo &#x26;#39;deb https://repo.windscribe.com/ubuntu bionic main&#x26;#39; | sudo tee /etc/apt/sources.list.d/windscribe-repo.list</code></pre></div>
-<ol start="4">
-<li>Update apt-get and install <code>windscribe-cli</code>:</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">sudo apt-get update &#x26;amp;&#x26;amp; sudo apt-get install windscribe-cli</code></pre></div>
-<ol start="5">
-<li>Log in to Windscribe:</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">windscribe login</code></pre></div>
-<ol start="6">
-<li>Connect to Windscribe:</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">windscribe connect</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown"># Connecting to US East New York Empire (UDP:443)# Firewall Enabled# Connected to US East New York Empire# Your IP changed from xxx.xxx.xxx.xxx to 77.81.136.80</code></pre></div>
-<p>Now we are set! We are using the VPN and our IP has changed. To disconnect just type <code>windscribe disconnect</code>.</p>
-<hr>
-<h4>If we want to connect from a specific country:</h4>
-<ol>
-<li>List the available locations:</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">windscribe locations</code></pre></div>
-<ol start="2">
-<li>Connect using their label. For example to connect to “Romania RO Bucharest No Vampires”:</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">windscribe connect &#x26;quot;No Vampires&#x26;quot;</code></pre></div>
-<ol start="3">
-<li>We can double-check using the alias <code>whatsmycountry</code> that I shared with you in <a href="https://jportella93.medium.com/1-minute-to-become-a-better-developer-8-31692050f5b8">issue #8</a>.</li>
-</ol>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">whatsmycountry</code></pre></div>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown"># {#   &#x26;quot;ip&#x26;quot;: &#x26;quot;89.46.103.236&#x26;quot;,#   &#x26;quot;hostname&#x26;quot;: &#x26;quot;mx-pool236.jvlists.com&#x26;quot;,#   &#x26;quot;city&#x26;quot;: &#x26;quot;Bucharest&#x26;quot;,#   &#x26;quot;region&#x26;quot;: &#x26;quot;Bucureşti&#x26;quot;,#   &#x26;quot;country&#x26;quot;: &#x26;quot;RO&#x26;quot;,#   &#x26;quot;loc&#x26;quot;: &#x26;quot;44.4323,26.1063&#x26;quot;,#   &#x26;quot;org&#x26;quot;: &#x26;quot;AS9009 M247 Ltd&#x26;quot;,#   &#x26;quot;postal&#x26;quot;: &#x26;quot;020011&#x26;quot;,#   &#x26;quot;timezone&#x26;quot;: &#x26;quot;Europe/Bucharest&#x26;quot;,#   &#x26;quot;readme&#x26;quot;: &#x26;quot;https://ipinfo.io/missingauth&#x26;quot;# }</code></pre></div>
-<hr>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[How To Use a VPN to Change Your Public IP Address From the Command Line]]></title>
             <link>https://jportella93.github.io/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line</link>
             <guid isPermaLink="false">https://jportella93.github.io/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line</guid>
             <pubDate>Mon, 08 Mar 2021 14:03:39 GMT</pubDate>
             <description><![CDATA[A tutorial on setting a VPN and using it from the CLI to hide our IP and location]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>You may already know which location information are we sharing with websites when we interact with them, such our IP Address. So, wouldn't it be great if we could hide it or even change it?</p>
@@ -1317,13 +1284,85 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[How to Use a VPN to Change Your Public IP Address From the Command Line]]></title>
+            <link>https://jportella93.github.io/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2</link>
+            <guid isPermaLink="false">https://jportella93.github.io/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2</guid>
+            <pubDate>Mon, 08 Mar 2021 14:03:39 GMT</pubDate>
+            <description><![CDATA[Learn how to change your public IP address using a VPN from the command line.]]></description>
+            <content:encoded><![CDATA[<h4>A tutorial on setting a VPN and using it from the CLI to hide our IP and location</h4>
+<p><img src="/content/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2/images/0.png" alt=""></p>
+<hr>
+<h4>THE PROBLEM</h4>
+<p>If you read issue #8, you already know which location information are we sharing with websites when we interact with them. If you didn't, take a quick read first.</p>
+<p>So following up, now that we know about our public IP Address, it would be great if we could hide it or even change it.</p>
+<p>Why? here’s a handful of use cases:</p>
+<ul>
+<li>You don’t want the website you’re interacting with, your Internet Service Provider, or even your country’s government to know who’s the person interacting with that website.</li>
+<li>You want to make it look like your connection comes from a different country since there aresome online services that will charge you differently depending on your country of origin. Or content that just won’t be available in your country in streaming services.</li>
+<li>You want to look like a different individual, for example, if your IP has been blocked.</li>
+</ul>
+<p>So how can we change our public IP address?</p>
+<h4>THE SOLUTION</h4>
+<p>With a <a href="https://en.wikipedia.org/wiki/Virtual_private_network"><strong>V</strong>irtual <strong>P</strong>rivate <strong>N</strong>etwork (VPN)</a>. Basically, you’ll be doing requests to the VPN’s server and that server will do the actual request for you, hiding your IP address to the final server.</p>
+<p>There are several VPN providers out there, it’s a growing market. I’m going to explain how to use the one that has been more useful for me: Windscribe.</p>
+<ol>
+<li>Go to <a href="https://windscribe.com/">Windscribe</a> and create a free account. If you want, you can use my <a href="https://windscribe.com/yo/kocmap80">referral link</a> so we both get 1GB/month for free.</li>
+<li>To install the CLI in MacOS you can use <a href="https://formulae.brew.sh/cask/windscribe">homebrew</a> and skip to step #5. To do it in Ubuntu add the Windscribe signing key to apt:</li>
+</ol>
+<div class="remark-highlight"><pre class="language-css"><code class="language-css">sudo apt-key adv <span class="token variable">--keyserver</span> keyserver.ubuntu.com <span class="token variable">--recv-key</span> FDC247B7
+</code></pre></div>
+<ol start="3">
+<li>Add the repository to your <code>sources.list</code>:</li>
+</ol>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">echo</span> <span class="token string">'deb https://repo.windscribe.com/ubuntu bionic main'</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/windscribe-repo.list
+</code></pre></div>
+<ol start="4">
+<li>Update apt-get and install <code>windscribe-cli</code>:</li>
+</ol>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">apt-get</span> update <span class="token operator">&#x26;&#x26;</span> <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> windscribe-cli
+</code></pre></div>
+<ol start="5">
+<li>Log in to Windscribe:</li>
+</ol>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell">windscribe login
+</code></pre></div>
+<ol start="6">
+<li>Connect to Windscribe:</li>
+</ol>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell">windscribe connect
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-bash"><code class="language-bash"><span class="token comment"># Connecting to US East New York Empire (UDP:443)# Firewall Enabled# Connected to US East New York Empire# Your IP changed from xxx.xxx.xxx.xxx to 77.81.136.80</span>
+</code></pre></div>
+<p>Now we are set! We are using the VPN and our IP has changed. To disconnect just type <code>windscribe disconnect</code>.</p>
+<hr>
+<h4>If we want to connect from a specific country:</h4>
+<ol>
+<li>List the available locations:</li>
+</ol>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell">windscribe locations
+</code></pre></div>
+<ol start="2">
+<li>Connect using their label. For example to connect to “Romania RO Bucharest No Vampires”:</li>
+</ol>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell">windscribe connect <span class="token string">"No Vampires"</span>
+</code></pre></div>
+<ol start="3">
+<li>We can double-check using the alias <code>whatsmycountry</code> that I shared with you in issue #8.</li>
+</ol>
+<div class="remark-highlight"><pre class="language-shell"><code class="language-shell">whatsmycountry
+</code></pre></div>
+<div class="remark-highlight"><pre class="language-bash"><code class="language-bash"><span class="token comment"># {#   "ip": "89.46.103.236",#   "hostname": "mx-pool236.jvlists.com",#   "city": "Bucharest",#   "region": "Bucureşti",#   "country": "RO",#   "loc": "44.4323,26.1063",#   "org": "AS9009 M247 Ltd",#   "postal": "020011",#   "timezone": "Europe/Bucharest",#   "readme": "https://ipinfo.io/missingauth"# }</span>
+</code></pre></div>
+<hr>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Autosave Your Shell Config in a GitHub Gist]]></title>
             <link>https://jportella93.github.io/blog/autosave-your-shell-config-in-a-git-hub-gist</link>
             <guid isPermaLink="false">https://jportella93.github.io/blog/autosave-your-shell-config-in-a-git-hub-gist</guid>
             <pubDate>Fri, 05 Mar 2021 13:34:17 GMT</pubDate>
             <description><![CDATA[Don’t lose your aliases again when switching computers!]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/autosave-your-shell-config-in-a-git-hub-gist/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>You get a new computer, you back up all your files but…</p>
@@ -1376,7 +1415,6 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
             <pubDate>Thu, 04 Mar 2021 13:53:57 GMT</pubDate>
             <description><![CDATA[A quick explanation and a couple of handy one-liners]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/find-out-our-public-ip-address-and-country-from-the-command-line/images/0.png" alt=""></p>
-<p>Art by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Every device connected to the Internet has an assigned IP Address (Internet Protocol Address), which is made up of 4 numbers in the following format: <code>&#x3C;number>.&#x3C;number>.&#x3C;number>.&#x3C;number></code>. Each number can be in the range of 0–255. e.g. <code>184.152.81.47</code> .</p>
@@ -1407,7 +1445,6 @@ console.log(`Swapped: ${myArr}`);</code></pre></div>
             <pubDate>Wed, 03 Mar 2021 14:00:40 GMT</pubDate>
             <description><![CDATA[A quick tip to save time on saving and sharing documents]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/0.png" alt=""></p>
-<p>Illustration by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>You are saving <a href="https://gist.github.com/">Github Gists</a> often but you spend too much time on their UI.</p>
@@ -1462,7 +1499,6 @@ gist-paste gist.txt
             <pubDate>Tue, 02 Mar 2021 13:47:41 GMT</pubDate>
             <description><![CDATA[A quick guide for web developers on this great time-saver when executing JavaScript on the go.]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/running-code-snippets-on-chrome-s-console/images/0.png" alt=""></p>
-<p>Illustration by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <h4>THE PROBLEM</h4>
 <p>You want to test a registration form on a website. Instead of filling it up manually every time, you may come up with a snippet like this that does it automatically for you:</p>
 <div class="remark-highlight"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> inputFields <span class="token operator">=</span> <span class="token punctuation">{</span>
@@ -1533,7 +1569,6 @@ gist-paste gist.txt
             <pubDate>Mon, 01 Mar 2021 13:47:00 GMT</pubDate>
             <description><![CDATA[And a few other methods that you can also use, but beware of the caveats!]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/the-right-way-to-log-objects-in-node-js/images/0.png" alt=""></p>
-<p>Illustration by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>The problem</h4>
 <p>We want to log in to the console this deeply nested JavaScript Object:</p>
@@ -1590,7 +1625,6 @@ gist-paste gist.txt
             <pubDate>Fri, 26 Feb 2021 12:35:22 GMT</pubDate>
             <description><![CDATA[A neat trick for a job interview or to save time on quick scripts]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/quick-async-one-liners-with-async-immediately-invoked-function-expressions/images/0.png" alt=""></p>
-<p>Illustration by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>We have to create a script that will do a GET request to the Chuck Norris jokes API and append that content to a div with the id <code>#chucky</code>.</p>
@@ -1637,7 +1671,6 @@ gist-paste gist.txt
             <pubDate>Thu, 25 Feb 2021 13:32:08 GMT</pubDate>
             <description><![CDATA[A simple Visual Studio Code trick to save precious time while refactoring]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/0.png" alt=""></p>
-<p>Illustration by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>We have a <code>pet</code> object, whose value under the key of <code>name</code> we are changing. We are saving a reference to the old value that the key <code>name</code> pointed to for logging purposes.</p>
@@ -1661,7 +1694,6 @@ gist-paste gist.txt
             <pubDate>Wed, 24 Feb 2021 13:38:12 GMT</pubDate>
             <description><![CDATA[Avoid losing all those changes on the elements tab if you accidentally reload your browser]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/0.png" alt=""></p>
-<p>Illustration by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Using your dev tools to tinker with CSS is great because you get immediate feedback on the changes. However, if the page is refreshed, all those changes get lost in oblivion…</p>
@@ -1713,7 +1745,6 @@ gist-paste gist.txt
             <pubDate>Tue, 23 Feb 2021 13:47:47 GMT</pubDate>
             <description><![CDATA[An obscure (but effective) way to do CSS feature detection with JavaScript. In the example, we test for a feature that only Microsoft browsers have.]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class/images/0.png" alt=""></p>
-<p>Illustration by my buddy <a href="https://www.instagram.com/loornicolas/">Loor Nicolas</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Some browsers have native support for pseudo-elements that others don’t. This is the case, for example, of <code>::ms-reveal</code> , the little eye that appears to show/hide password input fields in Microsoft browsers (Internet Explorer and Edge).</p>
@@ -1779,7 +1810,6 @@ gist-paste gist.txt
             <content:encoded><![CDATA[<h3>The Ugliest 6 Reasons To Not Enroll In A Coding Boot Camp</h3>
 <h4>Here’s my experience as a top European coding boot camp graduate</h4>
 <p><img src="/content/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp/images/0.png" alt=""></p>
-<p>Illustration by <a href="https://www.instagram.com/loornicolas/">loornicolas</a></p>
 <p>There are some ugly partsof coding boot camps that people don’t talk about.</p>
 <p>In this article, I’m going to give you a global vision about the possible dangers of enrolling in these courses, with the objective ofhelping you decide whether to do a boot camp or not.</p>
 <p>About me — Two years ago graduated from <a href="https://codeworks.me/">Codeworks</a>, which is currently the <a href="https://www.switchup.org/rankings/best-coding-bootcamps">top 5 best valued Software Engineering boot camp in the world</a>. It was a great experience for me. And besides the software developer job that I landed shortly after graduating from the course, once a week I’m also teaching new software devs in that same boot camp as an instructor.</p>
@@ -1825,7 +1855,7 @@ gist-paste gist.txt
             <guid isPermaLink="false">https://jportella93.github.io/blog/how-i-doubled-my-income-in-3-months</guid>
             <pubDate>Wed, 30 Sep 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[The story of my career change, and how first choices aren’t usually the best for your future]]></description>
-            <content:encoded><![CDATA[<p><img src="./images/hand.jpeg" alt="Illustration by loornicolas"></p>
+            <content:encoded><![CDATA[<p><img src="./images/hand.jpeg" alt=""></p>
 <h2>The Beginning — My Old Job</h2>
 <p>Barcelona, 2018.</p>
 <p>I was working as a live audiovisual technician in events like shows and conferences. It was my first serious job that I landed after graduating of my Audiovisual Communications degree.</p>
@@ -1881,7 +1911,6 @@ gist-paste gist.txt
             <description><![CDATA[These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…]]></description>
             <content:encoded><![CDATA[<p>These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…</p>
 <p><img src="/content/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity/images/0.png" alt=""></p>
-<p>Illustration by <a href="https://www.instagram.com/loornicolas/">loornicolas</a></p>
 <h3>1. Git Commit Work In Progess — gwip</h3>
 <p>This command will stage all current changes and commit them with a default message.</p>
 <p>It’s very useful for saving your current work and checking another branch and then coming back to it.</p>
@@ -1949,7 +1978,6 @@ gist-paste gist.txt
             <pubDate>Fri, 25 Sep 2020 22:52:57 GMT</pubDate>
             <description><![CDATA[Some web-dev wisdom, not just limited to JS!]]></description>
             <content:encoded><![CDATA[<p><img src="/content/blog/5-cool-js-tricks-to-impress-your-teammates/images/0.png" alt=""></p>
-<p>Illustration by <a href="https://www.instagram.com/loornicolas/">loornicolas</a></p>
 <h3>1. Update your NPM modules with one command</h3>
 <p>One common source of confusion for new Node.js developers is the command <code>npm update</code>. It will update all <code>node_modules</code> present in <code>package.json</code> to their latest versions but <strong>it will not change the version names</strong> in <code>package.json</code>.</p>
 <p>So PROBLEM: when another developer clones your repo and runs <code>npm install</code>, they will get an older version from the <code>node_modules</code> than you.</p>
@@ -2078,7 +2106,6 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
             <pubDate>Wed, 15 Jan 2020 19:38:03 GMT</pubDate>
             <description><![CDATA[Never trust the design.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/road-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <p>So imagine you have a component that shows some user information like name, surname and e-mail. The design shows a nice layout where all lines take the same space.</p>
 <p><img src="./images/example1.png" alt=""></p>
 <p>Easy enough, you implement the design and release it into the wild. But then you realize that this UI can break with a person with a longer name.</p>
@@ -2113,7 +2140,6 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
             <pubDate>Thu, 30 May 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[Some cool React.js libraries, PropTypes, node_modules updates and an Easter Egg.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/6-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <h2>1. How to properly update your Node.js modules to the latest versions</h2>
 <p>One common source of confusion for new Node.js developers is the command <code>npm update</code>. It will update all <code>node_modules</code> present in <code>package.json</code> to their latest versions but <strong>it will not change the version names</strong> in <code>package.json</code>.</p>
 <p>So PROBLEM: when another developer clones your repo and runs <code>npm install</code>, she will get an older version from the <code>node_modules</code> than you.</p>
@@ -2185,21 +2211,20 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
             <pubDate>Wed, 15 May 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[Stop listening.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/x-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <p>Will this code work?</p>
 <div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Listen to scroll event to log 'Scrolling!' to console.</span>
-<span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'scroll'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Scrolling!'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">"scroll"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"Scrolling!"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// After 1 second, stop listening to scroll to stop logging 'Scrolling!' to console.</span>
 <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">setTimeout</span><span class="token punctuation">(</span>
   <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span>
     <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">removeEventListener</span><span class="token punctuation">(</span>
-      <span class="token string">'scroll'</span><span class="token punctuation">,</span>
-      <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Scrolling!'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token string">"scroll"</span><span class="token punctuation">,</span>
+      <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"Scrolling!"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
       <span class="token boolean">false</span>
     <span class="token punctuation">)</span><span class="token punctuation">,</span>
   <span class="token number">1000</span>
-<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div>
 <p>Open your browser JavaScript console right now and paste this code.</p>
 <p>What happens? The window keeps listening for the scroll event.</p>
@@ -2207,46 +2232,46 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
 <p>So in this case, to remove your event listener you could do something like:</p>
 <div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Same function will be passed to add/removeEventListener.</span>
 <span class="token keyword">function</span> <span class="token function">logScroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Scrolling!'</span><span class="token punctuation">)</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"Scrolling!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">// Listen to scroll to log 'Scrolling!' to console.</span>
-<span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'scroll'</span><span class="token punctuation">,</span> logScroll<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">"scroll"</span><span class="token punctuation">,</span> logScroll<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// After 1 second, stop listening to scroll to stop logging 'Scrolling!' to console.</span>
 <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">setTimeout</span><span class="token punctuation">(</span>
-  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">removeEventListener</span><span class="token punctuation">(</span><span class="token string">'scroll'</span><span class="token punctuation">,</span> logScroll<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">removeEventListener</span><span class="token punctuation">(</span><span class="token string">"scroll"</span><span class="token punctuation">,</span> logScroll<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
   <span class="token number">1000</span>
-<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div>
 <p>Now, this works. But what will happen when you have many diferent events, with different handlers, which are being enabled and disabled at different moments? how can you keep track of all this?</p>
 <p>We are going to create a store for our event handlers.</p>
 <div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">EventHandlerStore</span> <span class="token punctuation">{</span>
   <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment">// Here we will store our event handlers.</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 
   <span class="token comment">// Private method to generate a unique identifier for the event handler.</span>
-  <span class="token function-variable function">_getHandlerId</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>element<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>event<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>handler<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+  <span class="token function-variable function">_getHandlerId</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>element<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>event<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>handler<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
 
   <span class="token comment">// Public method to save an event hanlder on the store.</span>
   <span class="token function-variable function">save</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> element <span class="token operator">=</span> <span class="token dom variable">window</span><span class="token punctuation">,</span> handler<span class="token punctuation">,</span> event <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> handlerId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token method function property-access">_getHandlerId</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+    <span class="token keyword">const</span> handlerId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token method function property-access">_getHandlerId</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token comment">// Save the handler on the event handler store.</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span> <span class="token operator">=</span> handler
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span> <span class="token operator">=</span> handler<span class="token punctuation">;</span>
 
     <span class="token comment">// Add an event listener with the saved handler.</span>
-    element<span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span>event<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+    element<span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span>event<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token comment">// Return true to indicate that saving was succesful.</span>
-    <span class="token keyword control-flow">return</span> <span class="token boolean">true</span>
-  <span class="token punctuation">}</span>
+    <span class="token keyword control-flow">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
   <span class="token comment">// Remove an event handler from the store</span>
   <span class="token function-variable function">remove</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> element <span class="token operator">=</span> <span class="token dom variable">window</span><span class="token punctuation">,</span> handler<span class="token punctuation">,</span> event <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> handlerId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token method function property-access">_getHandlerId</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+    <span class="token keyword">const</span> handlerId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token method function property-access">_getHandlerId</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token comment">// If the event handler is not in the store throw an error</span>
     <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -2254,48 +2279,48 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
         <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>
           <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Cannot remove an event handler that has not been previously saved in the store.</span><span class="token template-punctuation string">`</span></span>
         <span class="token punctuation">)</span>
-      <span class="token punctuation">)</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token comment">// Remove the listener from the node using the same handler.</span>
-    element<span class="token punctuation">.</span><span class="token method function property-access">removeEventListener</span><span class="token punctuation">(</span>event<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+    element<span class="token punctuation">.</span><span class="token method function property-access">removeEventListener</span><span class="token punctuation">(</span>event<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token comment">// Also remove the handler from store.</span>
-    <span class="token keyword">delete</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span>
+    <span class="token keyword">delete</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span>handlerId<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
     <span class="token comment">// Return true to indicate that saving was succesful.</span>
-    <span class="token keyword control-flow">return</span> <span class="token boolean">true</span>
-  <span class="token punctuation">}</span>
+    <span class="token keyword control-flow">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
   <span class="token comment">// Check if an event handler is in store</span>
   <span class="token function-variable function">has</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> element <span class="token operator">=</span> <span class="token dom variable">window</span><span class="token punctuation">,</span> handler<span class="token punctuation">,</span> event <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=></span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token method function property-access">_getHandlerId</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">store</span><span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token method function property-access">_getHandlerId</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> event<span class="token punctuation">,</span> handler<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre></div>
 <p>Now, we can save and retrieve events handlers effectively by referencing them in the store.</p>
-<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> eventHandlerStore <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EventHandlerStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> eventHandlerStore <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EventHandlerStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token keyword">function</span> <span class="token function">logScroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Scrolling!'</span><span class="token punctuation">)</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"Scrolling!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">// Log the scroll only if the screen is large.</span>
 <span class="token keyword">const</span> <span class="token function-variable function">logScrollOnLargeScreens</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> eventHandlerData <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">handler</span><span class="token operator">:</span> logScroll<span class="token punctuation">,</span> <span class="token literal-property property">event</span><span class="token operator">:</span> <span class="token string">'scroll'</span> <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> eventHandlerData <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">handler</span><span class="token operator">:</span> logScroll<span class="token punctuation">,</span> <span class="token literal-property property">event</span><span class="token operator">:</span> <span class="token string">"scroll"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token property-access">innerWidth</span> <span class="token operator">></span> <span class="token number">768</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>eventHandlerStore<span class="token punctuation">.</span><span class="token method function property-access">has</span><span class="token punctuation">(</span>eventHandlerData<span class="token punctuation">)</span><span class="token punctuation">)</span>
-      eventHandlerStore<span class="token punctuation">.</span><span class="token method function property-access">save</span><span class="token punctuation">(</span>eventHandlerData<span class="token punctuation">)</span>
+      eventHandlerStore<span class="token punctuation">.</span><span class="token method function property-access">save</span><span class="token punctuation">(</span>eventHandlerData<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token punctuation">{</span>
     <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>eventHandlerStore<span class="token punctuation">.</span><span class="token method function property-access">has</span><span class="token punctuation">(</span>eventHandlerData<span class="token punctuation">)</span><span class="token punctuation">)</span>
-      eventHandlerStore<span class="token punctuation">.</span><span class="token method function property-access">remove</span><span class="token punctuation">(</span>eventHandlerData<span class="token punctuation">)</span>
+      eventHandlerStore<span class="token punctuation">.</span><span class="token method function property-access">remove</span><span class="token punctuation">(</span>eventHandlerData<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Initiate the handler.</span>
-<span class="token function">logScrollOnLargeScreens</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">logScrollOnLargeScreens</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Set to also trigger on resize in order to detect screen changes.</span>
-<span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'resize'</span><span class="token punctuation">,</span> logScrollOnLargeScreens<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">"resize"</span><span class="token punctuation">,</span> logScrollOnLargeScreens<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div>
 <p><a href="/you-are-using-browser-events-wrong-demo">🦞 Check the DEMO 🦞 </a></p>
 ]]></content:encoded>
@@ -2307,7 +2332,6 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
             <pubDate>Tue, 30 Apr 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, macOS apps, using searchable components and fighting Chrome's autocomplete styling.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/9-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <h2>1. How to use CSS Modules in create-react-app.</h2>
 <p>With CSS Modules you can make CSS classes with a component scope. This allows to use simple class names and avoid name collisions between components. Following the <a href="https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet">Create React App docs</a>:</p>
 <div class="remark-highlight"><pre class="language-CSS"><code class="language-CSS">/* Button.module.css */
@@ -2349,7 +2373,6 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
 <h2>4. How to fight and plug into Chrome autocomplete feature.</h2>
 <p>There's a <a href="http://webagility.com/posts/the-ultimate-list-of-hacks-for-chromes-forced-yellow-background-on-autocompleted-inputs">long list of hacks</a> to fight Chrome input field autocomplete styling. However, my problem was that I had to execute some JavaScript when this action triggered. But Chrome just adds a class to the autocompleted element, it doesn't trigger any event when autocompletes, so I didn't know how to detect it without polling.</p>
 <p>After some research, I finally found a smart hack to plug into this event: It turns out you can listen for CSS animations events. So the trick is adding an empty CSS animation to the Chrome autocomplete class and listen for an animation start event with a JavaScript event listener. Then use it as a hook for whatever you need it. Really smart!</p>
-<p>Check the original -and better worded- explanation <a href="https://medium.com/@brunn/detecting-autofilled-fields-in-javascript-aed598d25da7">here</a>.</p>
 <h2>5. How to git ignore momentarily.</h2>
 <p>There are some files that should be always ignored by Git, that's why we include them in <code>.gitignore</code>. But what if you want to ignore a file just for a while? This happened to me with a compiled file created automatically by a task runner.</p>
 <p>To ignore:</p>
@@ -2394,9 +2417,10 @@ effb3b4 initial commit
 -<span class="token operator">></span> cat: nonexisting.txt: No such <span class="token function">file</span> or directory
 </code></pre></div>
 <p>Using the <code>\</code> operator, you can split your command in multiple lines for readability.</p>
-<div class="remark-highlight"><pre class="language-unknown"><code class="language-unknown">$ echo \
+<div class="remark-highlight"><pre class="language-bash"><code class="language-bash">$ <span class="token builtin class-name">echo</span> <span class="token punctuation">\</span>
 $ hello world
--&#x26;gt; hello world</code></pre></div>
+-<span class="token operator">></span> hello world
+</code></pre></div>
 <h2>9. How to quickly start my work environment</h2>
 <p>There are a number of apps and programs that I use while working. Opening them one by one at the start of the day is a hassle and so is closing them at the end. So I made a bash script to automate this:</p>
 <p>For opening everything:</p>
@@ -2442,7 +2466,6 @@ $ work_off
             <pubDate>Sun, 31 Mar 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[Tips and tricks including but not limited to Pandas, JavaScript sliders and swipers, a flights API, BASH automations and some other nifty ideas.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/t-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <h2>1. How to count occurrences of a data cell in a .cvs (Python and Pandas).</h2>
 <p>I had a big .cvs file with a log of e-mails sent. The columns included e-mail address, timestamp, state, subject, etc. All mails were using some template from a set of 10 or so templates.</p>
 <p>At some point I wanted to know how many mails were sent with the same template. So I ended up with this code:</p>
@@ -2523,7 +2546,6 @@ $ <span class="token function">ls</span>
             <pubDate>Tue, 29 Jan 2019 15:12:03 GMT</pubDate>
             <description><![CDATA[Get all the neat desktop goodness from /r/wallpapers with this command line utility built in Node.js]]></description>
             <content:encoded><![CDATA[<p><img src="./images/several-images-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <p>There are some cool wallpapers on <a href="https://www.reddit.com/r/wallpapers">r/wallpapers</a>. Earlier this year, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion.</p>
 <p>This picking and downloading process was kind of tedious, so I've built a small Node.js program to automate it.</p>
 <p><a href="http://bit.ly/reddit-image-downloader-jonportella-website">🌄 The program is available here.</a></p>
@@ -2539,7 +2561,6 @@ $ <span class="token function">ls</span>
             <pubDate>Tue, 15 Jan 2019 15:12:03 GMT</pubDate>
             <description><![CDATA[A web app to make Instagram contests suck less.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/i-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <p>So this friend of mine, who is a personal trainer, has a bussiness Instagram account. He did a contest where any follower could comment a picture of his to have a chance to win a pack of training equipment.</p>
 <p>The comment needed to:</p>
 <ul>
@@ -2561,7 +2582,6 @@ $ <span class="token function">ls</span>
             <pubDate>Mon, 31 Dec 2018 15:12:03 GMT</pubDate>
             <description><![CDATA[Mandatory]]></description>
             <content:encoded><![CDATA[<p><img src="./images/wood-head-loor-nicolas.jpg" alt=""></p>
-<p style="text-align:center">Illustration by <a href="https://www.instagram.com/loornicolas/" target="_blank">loornicolas</a><p>
 <p>Hello there!</p>
 <p>It has been a year since I wrote my first expression in this nice little language called JavaScript so today is a great day to start with this blog.</p>
 <div class="remark-highlight"><pre class="language-javascript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">)</span>

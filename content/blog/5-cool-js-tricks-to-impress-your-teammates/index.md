@@ -4,7 +4,6 @@ spoiler: Some web-dev wisdom, not just limited to JS!
 date: 2020-09-25T22:52:57.672Z
 ---
 
-
 ![](images/0.png)
 
 Illustration by [loornicolas](https://www.instagram.com/loornicolas/)
@@ -47,7 +46,6 @@ const App = () => <SplitPane left={<Contacts />} right={<Chat />} />
 
 **But how can you specify a component or a rendered value as a PropType?**From the [PropTypes docs](https://github.com/facebook/prop-types#usage):
 
-
 ```js
   // Anything that can be rendered: numbers, strings, elements or an array
   // (or fragment) containing these types.
@@ -72,7 +70,6 @@ SplitPane.propTypes = {
   rightComponent: PropTypes.oneOfType([PropTypes.node, PropTypes.element]),
 }
 ```
-
 
 ---
 

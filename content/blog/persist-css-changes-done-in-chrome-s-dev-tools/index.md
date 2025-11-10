@@ -4,7 +4,6 @@ spoiler: Avoid losing all those changes on the elements tab if you accidentally 
 date: 2021-02-24T13:38:12.609Z
 ---
 
-
 ![](images/0.png)
 
 Illustration by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
@@ -54,7 +53,6 @@ Here’s a quick tip to persist those changes without affecting your original so
 9. (BONUS!) To see the diff between your source code and the local overrides, you can type “Show changes” on the command menu.
 
 ![](images/9.png)![](images/10.png)
-
 
 ---
 

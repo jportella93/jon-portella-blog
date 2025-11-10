@@ -1,0 +1,37 @@
+import React from 'react';
+import Head from 'next/head';
+import { siteMetadata } from '../lib/siteMetadata.js';
+
+export default function SEO({ description, lang = 'en', meta = [], keywords = [], title, url, image, type = 'website', publishedTime }) {
+  const metaDescription = description || siteMetadata.description;
+  const fullTitle = title ? `${title} | ${siteMetadata.title}` : siteMetadata.title;
+
+  return (
+    <Head>
+      <html lang={lang} />
+      <title>{fullTitle}</title>
+      <meta name="author" content="Jon Portella" />
+      <meta name="description" content={metaDescription} />
+      {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+      
+      {/* Open Graph */}
+      <meta property="og:title" content={title || siteMetadata.title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content={type} />
+      {url && <meta property="og:url" content={url} />}
+      {image && <meta property="og:image" content={image} />}
+      {publishedTime && <meta property="og:article:published_time" content={publishedTime} />}
+      
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={siteMetadata.social.twitter} />
+      <meta name="twitter:title" content={title || siteMetadata.title} />
+      <meta name="twitter:description" content={metaDescription} />
+      
+      {meta.map((m, i) => (
+        <meta key={i} {...m} />
+      ))}
+    </Head>
+  );
+}
+

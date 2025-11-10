@@ -56,7 +56,6 @@ cat ~/.gist
 
 7. Now we can create gists from the command line!
 
-
 > Note that in Ubuntu/Debian the `gist` command is renamed to `gist-paste` to avoid conflicts, if you are using a different system like MacOS just replace `gist-paste` for `gist` in the next snippet.
 
 ```shell

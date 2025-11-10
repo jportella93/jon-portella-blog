@@ -4,7 +4,6 @@ spoiler: An obscure (but effective) way to do CSS feature detection with JavaScr
 date: 2021-02-23T13:47:47.254Z
 ---
 
-
 ![](images/0.png)
 
 Illustration by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
@@ -40,7 +39,6 @@ But why are we so quick to discard a native feature? They’re great! In the end
 #### A (NATIVE FRIENDLY) SOLUTION
 
 So in this case, a good approach would be to test if the browser has the`::ms-reveal` feature, and only show our own if it doesn’t.
-
 
 ```js
 /**
@@ -84,5 +82,4 @@ return <PasswordInput rightSlot={rightSlot} />
 ```
 
 ---
-
 

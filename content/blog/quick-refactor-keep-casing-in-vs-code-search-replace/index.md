@@ -4,7 +4,6 @@ spoiler: A simple Visual Studio Code trick to save precious time while refactori
 date: 2021-02-25T13:32:08.096Z
 ---
 
-
 ![](images/0.png)
 
 Illustration by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
@@ -34,7 +33,6 @@ We are going to undo this change and repeat it using the [preserve case option o
 Now we’ve saved time refactoring and our pets are happy with their aliases!
 
 ![](images/5.png)
-
 
 ---
 

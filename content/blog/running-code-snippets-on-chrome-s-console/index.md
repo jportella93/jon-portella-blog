@@ -4,16 +4,13 @@ spoiler: A quick guide for web developers on this great time-saver when executin
 date: 2021-03-02T13:47:41.548Z
 ---
 
-
 ![](images/0.png)
-
 
 Illustration by my buddy [Loor Nicolas](https://www.instagram.com/loornicolas/)
 
 #### THE PROBLEM
 
 You want to test a registration form on a website. Instead of filling it up manually every time, you may come up with a snippet like this that does it automatically for you:
-
 
 ```js
 const inputFields = {

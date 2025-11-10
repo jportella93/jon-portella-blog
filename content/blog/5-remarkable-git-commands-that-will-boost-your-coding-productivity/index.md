@@ -113,4 +113,3 @@ alias gpshf="git push -f origin HEAD"
 
 This will automatically push your branch to a branch with the same name on the remote, or create it if it doesn’t exist.
 
-

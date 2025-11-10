@@ -26,7 +26,6 @@ To save you this headache, I’m sharing my super-useful custom alias for updati
 
 Let’s set it up.
 
-
 > This tutorial assumes you’re using [zsh](https://www.zsh.org/). If your are using [bash](https://www.gnu.org/software/bash/), just replace `zsh` and `.zshrc` by `bash` and `.bashrc` in the next commands. You can find out which shell you’re using by running `echo $0`.
 
 1. Let’s create a secret [gist](https://gist.github.com/) where our config will be saved:

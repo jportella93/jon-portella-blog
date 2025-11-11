@@ -19,15 +19,32 @@ export function ThemeProvider({ children }) {
     if (!mounted || typeof window === 'undefined') return;
 
     const root = window.document.documentElement;
-    root.classList.remove('light', 'dark');
-
+    
+    // Only remove classes if we're changing the theme (not on initial mount)
+    // This prevents flicker on initial load
+    const currentClasses = root.classList;
+    const hasLight = currentClasses.contains('light');
+    const hasDark = currentClasses.contains('dark');
+    
+    let targetClass = '';
     if (theme === 'system') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      targetClass = window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
         : 'light';
-      root.classList.add(systemTheme);
     } else {
-      root.classList.add(theme);
+      targetClass = theme;
+    }
+
+    // Only update if the class needs to change
+    if (targetClass === 'light' && !hasLight) {
+      root.classList.remove('dark');
+      root.classList.add('light');
+    } else if (targetClass === 'dark' && !hasDark) {
+      root.classList.remove('light');
+      root.classList.add('dark');
+    } else if (!hasLight && !hasDark) {
+      // No class set yet, add the target class
+      root.classList.add(targetClass);
     }
 
     // Save to localStorage

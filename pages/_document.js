@@ -6,7 +6,7 @@ export default function Document() {
   const cssPath = basePath ? `${basePath}/code-syntax.css` : '/code-syntax.css';
   
   return (
-    <Html>
+    <Html suppressHydrationWarning>
       <Head>
         <style dangerouslySetInnerHTML={{ __html: typography.toString() }} />
         <link rel="stylesheet" href={cssPath} />
@@ -17,11 +17,11 @@ export default function Document() {
             __html: `
               (function() {
                 try {
-                  const theme = localStorage.getItem('theme') || 'system';
-                  const root = document.documentElement;
+                  var theme = localStorage.getItem('theme') || 'system';
+                  var root = document.documentElement;
                   
                   if (theme === 'system') {
-                    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
                     root.classList.add(systemTheme);
                   } else {
                     root.classList.add(theme);

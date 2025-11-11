@@ -1,30 +1,30 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/e78e6287a6d442de.js"
+    "static/chunks/9061033061b9c13c.js"
   ],
   "/404": [
-    "static/chunks/1df812cc719d06f6.js"
+    "static/chunks/ff42174b10c2c2f1.js"
   ],
   "/_error": [
     "static/chunks/912dfb9552a13999.js"
   ],
   "/blog": [
-    "static/chunks/54f083db7898641f.js"
+    "static/chunks/03189faa88aa966b.js"
   ],
   "/blog/[slug]": [
-    "static/chunks/b1cdc0bf2b241f63.js"
+    "static/chunks/86c4e6b169178a63.js"
   ],
   "/contact": [
-    "static/chunks/ca742df0b9057045.js"
+    "static/chunks/de511faeea1fabf7.js"
   ],
   "/displaying-data-with-variable-length-example": [
     "static/chunks/cfa24f4e01f08968.js"
   ],
   "/free-instagram-random-comment-picker": [
-    "static/chunks/575ead3e094b1bc5.js"
+    "static/chunks/892c4a702594a00d.js"
   ],
   "/job-aggregator-sub": [
-    "static/chunks/e6f23eefdb893a85.js"
+    "static/chunks/7e77926e419b5a24.js"
   ],
   "/you-are-using-browser-events-wrong-demo": [
     "static/chunks/06a6c9ffd83f8f1a.js"

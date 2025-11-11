@@ -1,8 +1,9 @@
 import { Head, Html, Main, NextScript } from 'next/document';
+import { BASE_PATH } from '../lib/constants.js';
 import typography from '../lib/typography';
 
 export default function Document() {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const basePath = BASE_PATH;
   const cssPath = basePath ? `${basePath}/code-syntax.css` : '/code-syntax.css';
   
   return (

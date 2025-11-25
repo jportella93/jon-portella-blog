@@ -1,0 +1,211 @@
+[
+  {
+    "id": "study-1",
+    "type": "study",
+    "title": "Bachelor's degree, Communication and Media Studies",
+    "description": "Bachelor's degree in Communication and Media Studies from Universitat de Barcelona.",
+    "image": null,
+    "link": "https://www.ub.edu",
+    "startDate": "2011-09-01",
+    "endDate": "2015-06-30",
+    "milestones": []
+  },
+  {
+    "id": "study-2",
+    "type": "study",
+    "title": "Software Engineering Bootcamp",
+    "description": "Software engineering bootcamp at Codeworks. Covered advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking (Internet, HTTP, WebSocket), end-to-end testing, security threats, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, and open source contributions. Back-end frameworks (Node, Express, Koa, GraphQL). Databases (SQL, MongoDB, Redis). Front-end frameworks (Angular, React).",
+    "image": null,
+    "link": "https://www.codeworks.me",
+    "startDate": "2018-04-01",
+    "endDate": "2018-08-31",
+    "milestones": []
+  },
+  {
+    "id": "study-3",
+    "type": "study",
+    "title": "CS50: Introduction to Computer Science",
+    "description": "CS50: Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. Languages include C, Python, and SQL plus HTML, CSS, and JavaScript. Problem sets inspired by the arts, humanities, social sciences, and sciences.",
+    "image": null,
+    "link": "https://cs50.harvard.edu",
+    "startDate": "2021-01-01",
+    "endDate": "2021-03-31",
+    "milestones": []
+  },
+  {
+    "id": "job-1",
+    "type": "job",
+    "title": "Senior Software Engineer at Pinterest",
+    "description": "Part of the Toronto-based Shopping Experience team, full stack engineer with a front end web focus and some iOS experience. Building software used (and loved) by 500m people/month. Tech lead, mentor and creator of several company-wide cross-functional initiatives. Tech Stack/Tools: JavaScript, TypeScript, Flow, React, Redux, Jest, React Testing Library, RESTful APIs, GraphQL, Relay, Enzyme, Cypress, Python, Flask, Apache Thrift, Docker, Figma, Phabricator, Kibana, Gestalt, Objective-C, Texture, Plank.",
+    "image": null,
+    "link": "https://www.pinterest.com",
+    "startDate": "2021-08-01",
+    "endDate": null,
+    "milestones": []
+  },
+  {
+    "id": "job-2",
+    "type": "job",
+    "title": "Full Stack Engineer at Curelator Inc.",
+    "description": "Curelator is a digital health company focused on developing a clinical-grade disease management platform for patients and clinicians. The company is based in Cambridge MA with operations in the US as well as Barcelona, Spain, UK, and Germany. Responsibilities: Engineering team lead on a Single Page Application web app (React.js, d3, Alt/flux, Karma, Mocha). Contributor to a Python HTTP server implementing a RESTful API (Python 3, Flask, nosetests, Debian, PostgreSQL). Engineer team lead on the i18n company website, responsible for migration from WordPress to JAMStack architecture with Metalsmith SSG (PHP, WordPress, jQuery, Backbone, Node.js, Jest, Metalsmith, Handlebars). Engineering team lead on statically generated transactional email templates and marketing templates (Node.js, Metalsmith, Handlebars, MJML, Mailjet).",
+    "image": null,
+    "link": "https://www.curelator.com",
+    "startDate": "2018-08-01",
+    "endDate": "2021-08-31",
+    "milestones": []
+  },
+  {
+    "id": "job-3",
+    "type": "job",
+    "title": "Instructor at Codeworks",
+    "description": "Codeworks is an immersive coding bootcamp with campuses in Austin, Barcelona, New York, Berlin, London, and Toronto. Its Software Engineering Immersive program covers advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking, end-to-end testing, security, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, open source contributions, back-end frameworks (Node, Express, Koa, GraphQL), databases (SQL, MongoDB, Redis), and front-end frameworks (Angular, React). Responsibilities: Give a lecture once a week about the current course subject, train new Teaching Assistants, answer help requests from all students, host Q&A sessions and exercise reviews, support senior students throughout their coding projects (brainstorming, code reviews, demos), prepare senior students for their job search.",
+    "image": null,
+    "link": "https://www.codeworks.me",
+    "startDate": "2019-10-01",
+    "endDate": "2020-11-30",
+    "milestones": []
+  },
+  {
+    "id": "job-4",
+    "type": "job",
+    "title": "Audiovisual Engineer / Artist (Self-employed)",
+    "description": "Figuring myself out after graduating from university. Lots of creative work in this period: advertising, short films, music composition and production, graphic design. Pivoted to a more technical role towards the end, specializing in live events doing video/audio systems set up and operation for conferences, shows and art installations.",
+    "image": null,
+    "link": null,
+    "startDate": "2015-12-01",
+    "endDate": "2018-05-31",
+    "milestones": []
+  },
+  {
+    "id": "project-1",
+    "type": "project",
+    "title": "Eloquent JS Mentoring",
+    "description": "A mentoring project and website around the Eloquent JavaScript book, to be used as portfolio aimed to tech recruiters. I mentored a junior engineer friend (and he got hired!!). Built with Next.js.",
+    "image": null,
+    "link": "https://eloquent-js-theta.vercel.app/",
+    "startDate": "2023-10-01",
+    "endDate": "2024-02-29",
+    "milestones": []
+  },
+  {
+    "id": "project-2",
+    "type": "project",
+    "title": "Make Me Drink - Real Time Online Game",
+    "description": "Weekend project - My version of the game couple battles, using websockets for real time online multiplayer. Front-end built with Gatsby and web sockets for real-time gameplay.",
+    "image": null,
+    "link": "https://github.com/jportella93/make-me-drink-client",
+    "startDate": "2020-05-01",
+    "endDate": "2020-05-31",
+    "milestones": []
+  },
+  {
+    "id": "project-3",
+    "type": "project",
+    "title": "VizViz: Trippy Visualisations with p5.js",
+    "description": "Website to make trippy visualisations using p5.js. Built over a weekend after being inspired by Processing visualisations. Features local storage for saving state, draggable canvas and controls. Initially built with d3.js but switched to p5.js for better performance. Deployed on Netlify.",
+    "image": null,
+    "link": "https://github.com/jportella93/vizviz",
+    "startDate": "2020-05-01",
+    "endDate": "2020-05-31",
+    "milestones": []
+  },
+  {
+    "id": "project-4",
+    "type": "project",
+    "title": "Instagram Random Comment Picker",
+    "description": "An app that allows to randomly pick a comment on an Instagram picture that follows a set of conditions. It features a conversational UI to get the rules for a given contest and, at the last step, it creates a snippet that gets copied to the user clipboard. Then, this can be pasted in the JavaScript console in the picture page and the winner comment will be highlighted.",
+    "image": null,
+    "link": "/free-instagram-random-comment-picker",
+    "startDate": "2019-01-01",
+    "endDate": "2019-01-31",
+    "milestones": []
+  },
+  {
+    "id": "project-5",
+    "type": "project",
+    "title": "Jon Portella Blog",
+    "description": "My homepage, where I (rarely) post articles, tools and whatnot. \"Serverless\" static site generated with Gatsby (now migrated to Next.js). Features markdown support, RSS feeds, and dark mode.",
+    "image": null,
+    "link": "https://github.com/jportella93/jon-portella-blog",
+    "startDate": "2018-12-01",
+    "endDate": null,
+    "milestones": []
+  },
+  {
+    "id": "project-6",
+    "type": "project",
+    "title": "Uma Zuasti's Blog",
+    "description": "Blog I made for mom's business, with a CMS so she can update it independently. Her blog gets more traffic than mine haha. Built with Gatsby and NetlifyCMS. Website: https://umazuasti.com",
+    "image": null,
+    "link": "https://github.com/jportella93/uma-zuasti-blog",
+    "startDate": "2018-12-01",
+    "endDate": "2018-12-31",
+    "milestones": []
+  },
+  {
+    "id": "project-7",
+    "type": "project",
+    "title": "Reddit Bulk Image Downloader",
+    "description": "There are some cool wallpapers on Reddit. At some point, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion. This picking and downloading process was kind of tedious, so I've built a small Node.js program to automate it.",
+    "image": null,
+    "link": "/blog/reddit-image-downloader-node",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-30",
+    "milestones": []
+  },
+  {
+    "id": "project-8",
+    "type": "project",
+    "title": "Flickr Gallery",
+    "description": "Web app to explore the most recent images uploaded to Flickr worldwide. I built from the ground up and deployed the whole project myself. Tech stack: React, Redux, Koa, Flickr API.",
+    "image": null,
+    "link": "https://jportella93.github.io/flickr-gallery/",
+    "startDate": "2018-08-01",
+    "endDate": "2018-08-31",
+    "milestones": []
+  },
+  {
+    "id": "project-9",
+    "type": "project",
+    "title": "Bitcoin Collab: Fullstack Web App",
+    "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
+    "image": null,
+    "link": "https://github.com/jportella93/collab-frontend",
+    "startDate": "2018-07-01",
+    "endDate": "2018-07-31",
+    "milestones": []
+  },
+  {
+    "id": "project-10",
+    "type": "project",
+    "title": "Nanny Express: Fullstack Web App",
+    "description": "Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
+    "image": null,
+    "link": "https://github.com/jportella93/Nanny-Express-client",
+    "startDate": "2018-06-01",
+    "endDate": "2018-06-30",
+    "milestones": []
+  },
+  {
+    "id": "project-11",
+    "type": "project",
+    "title": "Find a Hobby!: Fullstack Web App",
+    "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB.",
+    "image": null,
+    "link": "https://github.com/jportella93/find-a-hobby-client",
+    "startDate": "2018-06-01",
+    "endDate": "2018-06-30",
+    "milestones": []
+  },
+  {
+    "id": "project-12",
+    "type": "project",
+    "title": "Jon Portella's Blackjack: Web App",
+    "description": "As the last test in order to get admitted in Codeworks, the full stack JavaScript bootcamp I did back in 2018, I had one week to create and deliver a blackjack game. This was my first ever JavaScript + CSS + HTML project.",
+    "image": null,
+    "link": "/blog/creating-a-blackjack-game",
+    "startDate": "2018-02-01",
+    "endDate": "2018-02-28",
+    "milestones": []
+  }
+]

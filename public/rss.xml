@@ -4,7 +4,7 @@
         <title>Jon Portella - Full Stack Developer</title>
         <link>https://jportella93.github.io/jon-portella-blog</link>
         <description>Welcome to my website! Here you'll find articles and resources written by a Full Stack Developer.</description>
-        <lastBuildDate>Thu, 20 Jul 2023 01:49:35 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Nov 2025 23:59:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Next.js</generator>
         <language>en</language>
@@ -14,6 +14,33 @@
             <link>https://jportella93.github.io/jon-portella-blog</link>
         </image>
         <copyright>All rights reserved 2025, Jon Portella</copyright>
+        <item>
+            <title><![CDATA[Cursor loves your attention]]></title>
+            <link>https://jportella93.github.io/jon-portella-blog/blog/cursor-loves-your-attention</link>
+            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/cursor-loves-your-attention</guid>
+            <pubDate>Fri, 14 Nov 2025 23:59:47 GMT</pubDate>
+            <description><![CDATA[(Plays agent finished sound)]]></description>
+            <content:encoded><![CDATA[<p>It’s interesting to think how much has the craft of a software builder changed in the last year? I remember well while I was in parental leave I watched a video by Siraj Raval, who was basically vibe coding in cursor YOLO mode a stock market web app, and at that point, I knew everything was going to be changing Super fast like I also a few months before that I listened to the podcast of Lex Friedman, who was interviewing the cursor guys and I was a bit sceptic like what’s the point of doing a whole integration of LLM in an IDE when there was stuff like VSCode copilot already working but boy was I wrong the flow of just letting the coding agent go do its thing while you do l another thing and then come back to it and iterate on that that’s just priceless and it’s even become a bit of problem for me because even though building software is my main output on my 9 to 5 job it’s at the same time one of my hobbies so I have several side projects and ideas that I like going on at the same time and being able to send coding agents to those while I’m at home doing something else and then coming back to it is amazing but also a source of shifted focus and many distractions</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Team onsites are fun]]></title>
+            <link>https://jportella93.github.io/jon-portella-blog/blog/team-onsites-are-fun</link>
+            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/team-onsites-are-fun</guid>
+            <pubDate>Fri, 14 Nov 2025 23:53:45 GMT</pubDate>
+            <description><![CDATA[Generally on favour of them]]></description>
+            <content:encoded><![CDATA[<p>One of the things that I struggled the most when I got into my current role at the corporate company coming from a startup its the corporate things in a way like my previous company we were like 20 people and like this one just my team is almost like 15 people so it’s just a different scale and there’s a lot of politics and workflows and processes so I did struggle with that a little bit and also the way you connect with people so before you know it was pre-Covid so we would still go to office more often and you would have like some kind of rapport with these people at least some since we were already semi remote but now in my current team, we are so spread out between Canada and the US that we seldom see each other aside from the camera so it is really special when we have the chance to actually meet in person and these last few days folks came to visit us in Toronto and we had an offsite and it was like so fun apart from being like really really exhausting, but I feel like the social time that you spend especially like dinners and having drinks and those conversations are kind of like the most natural and it’s the way to actually make something like a friendship with people that you don’t see that often and get to know the person behind the screen I think that’s super important and basically it makes the work fun and if it’s not fun then what’s the point of work?</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[A human wrote this]]></title>
+            <link>https://jportella93.github.io/jon-portella-blog/blog/a-human-wrote-this</link>
+            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/a-human-wrote-this</guid>
+            <pubDate>Fri, 14 Nov 2025 23:48:08 GMT</pubDate>
+            <description><![CDATA[And it shows]]></description>
+            <content:encoded><![CDATA[<p>Hey long time no write it’s been a while I’ve just been quite busy I guess since I joined Pinterest I haven’t really written anymore and that was like four years ago so so yeah the previous post it was an experiment just trying to one shot at an article on ChatGPT, as you can really tell by how it’s written it’s quite interesting how we moved away from the artisanal writing thing into more like LLM powered content machine, where basically everything that we write ends up being filtered out by the LLM and then probably scraped by another LLM and served in a different shape so I guess that’s what has made me want to come back and share my thoughts in a really natural way like I’m literally dictating this into a note and I’m just gonna push it so yeah stay tuned for more random updates maybe like I’ll talk about more software stuff who knows things change a lot</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[How to Land a Job as a Software Engineer: A One-Minute Guide]]></title>
             <link>https://jportella93.github.io/jon-portella-blog/blog/how-to-land-a-job-as-a-software-engineer-a-one-minute-guide</link>

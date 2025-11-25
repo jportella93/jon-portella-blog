@@ -38,6 +38,11 @@ html.dark a {
   color: #5ba3d3 !important;
 }
 
+html.dark blockquote {
+  color: #e0e0e0 !important;
+  border-left-color: #5ba3d3 !important;
+}
+
 /* System preference - only apply when no explicit theme class is set */
 @media (prefers-color-scheme: dark) {
   html:not(.light):not(.dark) body {
@@ -47,6 +52,11 @@ html.dark a {
 
   html:not(.light):not(.dark) a {
     color: #5ba3d3 !important;
+  }
+
+  html:not(.light):not(.dark) blockquote {
+    color: #e0e0e0 !important;
+    border-left-color: #5ba3d3 !important;
   }
 }
 

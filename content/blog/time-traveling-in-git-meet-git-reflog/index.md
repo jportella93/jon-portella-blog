@@ -83,6 +83,10 @@ c2149d1 fixup! feat: add Navbar747ef1e feat: add Button19d9327 feat: add Navbare
 
 ---
 
-**Resources**[https://git-scm.com/docs/git-reflog](https://git-scm.com/docs/git-reflog)[https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)[https://www.edureka.co/blog/git-reflog/](https://www.edureka.co/blog/git-reflog/)
+**Resources**
+
+- [git-reflog Documentation](https://git-scm.com/docs/git-reflog) — Git SCM
+- [Git Reflog](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog) — Atlassian
+- [Git Reflog Tutorial](https://www.edureka.co/blog/git-reflog/) — Edureka
 
 

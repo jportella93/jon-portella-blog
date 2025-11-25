@@ -3,8 +3,6 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Bio from "../../components/Bio";
-import BlogLayout from "../../components/BlogLayout";
 import Layout from "../../components/Layout";
 import SEO from "../../components/SEO";
 import {
@@ -51,58 +49,55 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
 
   return (
     <Layout maxWidth={rhythm(22)}>
-      <BlogLayout>
-        <SEO
-          title={postTitle}
-          description={postDescriptionMetaTag}
-          url={postUrl}
-          image={imageUrl}
-          type="article"
-          publishedTime={date || undefined}
-        />
-        <h1>{postTitle}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {date ? moment(date).format("MMMM DD, YYYY") : ""}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: contentWithoutFirstH1 }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio writtenByText />
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link href={`/blog/${previous.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link href={`/blog/${next.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </BlogLayout>
+      <SEO
+        title={postTitle}
+        description={postDescriptionMetaTag}
+        url={postUrl}
+        image={imageUrl}
+        type="article"
+        publishedTime={date || undefined}
+      />
+      <h1>{postTitle}</h1>
+      <p
+        style={{
+          ...scale(-1 / 5),
+          display: `block`,
+          marginBottom: rhythm(1),
+          marginTop: rhythm(-1),
+        }}
+      >
+        {date ? moment(date).format("MMMM DD, YYYY") : ""}
+      </p>
+      <div dangerouslySetInnerHTML={{ __html: contentWithoutFirstH1 }} />
+      <hr
+        style={{
+          marginBottom: rhythm(1),
+        }}
+      />
+      <ul
+        style={{
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-between`,
+          listStyle: `none`,
+          padding: 0,
+        }}
+      >
+        <li>
+          {previous && (
+            <Link href={`/blog/${previous.slug}`} rel="prev">
+              ← {previous.frontmatter.title}
+            </Link>
+          )}
+        </li>
+        <li>
+          {next && (
+            <Link href={`/blog/${next.slug}`} rel="next">
+              {next.frontmatter.title} →
+            </Link>
+          )}
+        </li>
+      </ul>
     </Layout>
   );
 }

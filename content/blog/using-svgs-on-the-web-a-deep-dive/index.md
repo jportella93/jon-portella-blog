@@ -242,16 +242,16 @@ Thanks for reading and never stop learning! 😄
 
 ### Resources I’ve used to research this article
 
-[Working with SVG in HTML5–20 | HTML5 & CSS3 Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/HTML5-CSS3-Fundamentals-Development-for-Absolute-Beginners/Working-with-SVG-in-HTML5-20) — MSDN
+- [Working with SVG in HTML5–20 | HTML5 & CSS3 Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/HTML5-CSS3-Fundamentals-Development-for-Absolute-Beginners/Working-with-SVG-in-HTML5-20) — MSDN
 
-[How to Use SVG Images in CSS and HTML — A Tutorial for Beginners](https://www.freecodecamp.org/news/use-svg-images-in-css-html/) — FreeCodeCamp
+- [How to Use SVG Images in CSS and HTML — A Tutorial for Beginners](https://www.freecodecamp.org/news/use-svg-images-in-css-html/) — FreeCodeCamp
 
-[09: SVG with Data URIs](https://css-tricks.com/lodge/svg/09-svg-data-uris/) — CSS Tricks
+- [09: SVG with Data URIs](https://css-tricks.com/lodge/svg/09-svg-data-uris/) — CSS Tricks
 
-[Displaying SVG in Web Browsers](http://tutorials.jenkov.com/svg/displaying-svg-in-web-browsers.html) — Jenkov
+- [Displaying SVG in Web Browsers](http://tutorials.jenkov.com/svg/displaying-svg-in-web-browsers.html) — Jenkov
 
-[A Practical Guide to SVGs on the web](https://svgontheweb.com/) — SVG on the Web
+- [A Practical Guide to SVGs on the web](https://svgontheweb.com/) — SVG on the Web
 
-[Adding vector graphics to the Web — Learn web development](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web) — MDN
+- [Adding vector graphics to the Web — Learn web development](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web) — MDN
 
-[The Best Way to Embed SVG on HTML (2021)](https://vecta.io/blog/best-way-to-embed-svg) — Vecta
+- [The Best Way to Embed SVG on HTML (2021)](https://vecta.io/blog/best-way-to-embed-svg) — Vecta

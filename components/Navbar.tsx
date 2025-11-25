@@ -21,10 +21,6 @@ export default function Navbar({ location }: NavbarProps) {
       url: "/timeline",
     },
     {
-      label: "Contact",
-      url: "/contact",
-    },
-    {
       label: "RSS",
       url: "/rss.xml",
     },
@@ -35,12 +31,24 @@ export default function Navbar({ location }: NavbarProps) {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",
+        alignItems: "start",
       }}
     >
-      <ul style={{ display: "flex", margin: 0 }}>
+      <ul
+        style={{
+          display: "flex",
+          margin: 0,
+        }}
+      >
         {links.map(({ label, url }) => (
-          <li key={url} style={{ listStyle: "none", marginRight: rhythm(0.5) }}>
+          <li
+            key={url}
+            style={{
+              listStyle: "none",
+              marginRight: rhythm(0.5),
+              marginBottom: 0,
+            }}
+          >
             <Link
               href={url}
               style={{

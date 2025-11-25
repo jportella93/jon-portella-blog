@@ -87,15 +87,15 @@ Jon Portella
 
 ### Resources
 
-[Content delivery network — Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network)
+- [Content delivery network — Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network)
 
-[What is a CDN? | How do CDNs work? — Cloudflare](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
+- [What is a CDN? | How do CDNs work? — Cloudflare](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
 
-[What is a content delivery network (CDN)? — Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview)
+- [What is a content delivery network (CDN)? — Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview)
 
-[What is a CDN? How does a CDN Work? — Imperva](https://www.imperva.com/learn/performance/what-is-cdn-how-it-works/)
+- [What is a CDN? How does a CDN Work? — Imperva](https://www.imperva.com/learn/performance/what-is-cdn-how-it-works/)
 
-[CDN Infrastructure Architecture and Topology — Imperva](https://www.imperva.com/learn/performance/cdn-architecture)
+- [CDN Infrastructure Architecture and Topology — Imperva](https://www.imperva.com/learn/performance/cdn-architecture)
 
-[What Is a Multi CDN? — KeyCDN](https://www.keycdn.com/support/what-is-a-multi-cdn)
+- [What Is a Multi CDN? — KeyCDN](https://www.keycdn.com/support/what-is-a-multi-cdn)
 

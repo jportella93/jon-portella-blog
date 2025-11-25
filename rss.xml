@@ -304,13 +304,29 @@
 <p>There isn’t a one-size-fits-all approach when it comes to implementing SVGs on the web, it depends on which features you are looking for.</p>
 <p>Thanks for reading and never stop learning! 😄</p>
 <h3>Resources I’ve used to research this article</h3>
+<ul>
+<li>
 <p><a href="https://channel9.msdn.com/Series/HTML5-CSS3-Fundamentals-Development-for-Absolute-Beginners/Working-with-SVG-in-HTML5-20">Working with SVG in HTML5–20 | HTML5 &#x26; CSS3 Fundamentals: Development for Absolute Beginners</a> — MSDN</p>
+</li>
+<li>
 <p><a href="https://www.freecodecamp.org/news/use-svg-images-in-css-html/">How to Use SVG Images in CSS and HTML — A Tutorial for Beginners</a> — FreeCodeCamp</p>
+</li>
+<li>
 <p><a href="https://css-tricks.com/lodge/svg/09-svg-data-uris/">09: SVG with Data URIs</a> — CSS Tricks</p>
+</li>
+<li>
 <p><a href="http://tutorials.jenkov.com/svg/displaying-svg-in-web-browsers.html">Displaying SVG in Web Browsers</a> — Jenkov</p>
+</li>
+<li>
 <p><a href="https://svgontheweb.com/">A Practical Guide to SVGs on the web</a> — SVG on the Web</p>
+</li>
+<li>
 <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">Adding vector graphics to the Web — Learn web development</a> — MDN</p>
+</li>
+<li>
 <p><a href="https://vecta.io/blog/best-way-to-embed-svg">The Best Way to Embed SVG on HTML (2021)</a> — Vecta</p>
+</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
@@ -409,12 +425,26 @@
 <p>Jon Portella</p>
 <hr>
 <h3>Resources</h3>
+<ul>
+<li>
 <p><a href="https://en.wikipedia.org/wiki/Content_delivery_network">Content delivery network — Wikipedia</a></p>
+</li>
+<li>
 <p><a href="https://www.cloudflare.com/learning/cdn/what-is-a-cdn/">What is a CDN? | How do CDNs work? — Cloudflare</a></p>
+</li>
+<li>
 <p><a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-overview">What is a content delivery network (CDN)? — Azure</a></p>
+</li>
+<li>
 <p><a href="https://www.imperva.com/learn/performance/what-is-cdn-how-it-works/">What is a CDN? How does a CDN Work? — Imperva</a></p>
+</li>
+<li>
 <p><a href="https://www.imperva.com/learn/performance/cdn-architecture">CDN Infrastructure Architecture and Topology — Imperva</a></p>
+</li>
+<li>
 <p><a href="https://www.keycdn.com/support/what-is-a-multi-cdn">What Is a Multi CDN? — KeyCDN</a></p>
+</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
@@ -593,7 +623,12 @@
 <div class="remark-highlight"><pre class="language-text"><code class="language-text">c2149d1 fixup! feat: add Navbar747ef1e feat: add Button19d9327 feat: add Navbareffb3b4 initial commit</code></pre></div>
 <h4>Thanks for reading! Keep learning, and don’t stop coding 😊</h4>
 <hr>
-<p><strong>Resources</strong><a href="https://git-scm.com/docs/git-reflog">https://git-scm.com/docs/git-reflog</a><a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog">https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog</a><a href="https://www.edureka.co/blog/git-reflog/">https://www.edureka.co/blog/git-reflog/</a></p>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href="https://git-scm.com/docs/git-reflog">git-reflog Documentation</a> — Git SCM</li>
+<li><a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog">Git Reflog</a> — Atlassian</li>
+<li><a href="https://www.edureka.co/blog/git-reflog/">Git Reflog Tutorial</a> — Edureka</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>

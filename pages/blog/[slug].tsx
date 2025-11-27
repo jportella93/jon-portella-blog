@@ -48,7 +48,7 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
   }, [post.content]);
 
   return (
-    <Layout maxWidth={rhythm(22)}>
+    <Layout width="narrow">
       <SEO
         title={postTitle}
         description={postDescriptionMetaTag}

@@ -2,6 +2,7 @@
 // Each item represents a study, job, or project with optional milestones
 
 import timelineDataJson from "./timelineData.json";
+import { BASE_PATH } from "./constants";
 
 export interface TimelineMilestone {
   date: string;
@@ -21,7 +22,28 @@ export interface TimelineItem {
   milestones: TimelineMilestone[];
 }
 
-export const timelineData: TimelineItem[] = timelineDataJson as TimelineItem[];
+// Helper function to process links with base path
+function processTimelineLink(link: string | null): string | null {
+  if (!link) return null;
+
+  // If it's an external link (starts with http), return as-is
+  if (link.startsWith('http://') || link.startsWith('https://')) {
+    return link;
+  }
+
+  // If it's a relative link starting with '/', prepend the base path
+  if (link.startsWith('/')) {
+    return BASE_PATH ? `${BASE_PATH}${link}` : link;
+  }
+
+  // Otherwise return as-is (shouldn't happen with current data)
+  return link;
+}
+
+export const timelineData: TimelineItem[] = (timelineDataJson as TimelineItem[]).map(item => ({
+  ...item,
+  link: processTimelineLink(item.link)
+}));
 
 // Helper function to get all unique dates for timeline axis
 export function getAllTimelineDates(): string[] {

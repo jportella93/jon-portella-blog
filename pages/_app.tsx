@@ -1,6 +1,7 @@
-import { AppProps } from 'next/app';
+import { AppProps } from "next/app";
 import { ThemeProvider } from "../components/ThemeProvider";
 import "../styles/globals.css";
+import "../styles/timeline.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -9,9 +10,3 @@ export default function App({ Component, pageProps }: AppProps) {
     </ThemeProvider>
   );
 }
-
-
-
-
-
-

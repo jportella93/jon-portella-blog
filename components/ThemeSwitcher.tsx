@@ -33,9 +33,8 @@ export default function ThemeSwitcher() {
         "(prefers-color-scheme: dark)"
       ).matches;
       setTheme(systemIsDark ? "light" : "dark");
-    } else if (theme === "light") {
-      setTheme("dark");
     } else {
+      // When on light or dark (opposite of system), switch back to system
       setTheme("system");
     }
   };

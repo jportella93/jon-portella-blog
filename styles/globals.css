@@ -69,6 +69,11 @@ html.dark blockquote {
   transform: scale(1.1);
 }
 
+/* Make system theme icon (moon) light colored */
+.theme-icon-system {
+  color: #e0e0e0;
+}
+
 /* Make moon icon light colored in dark mode for visibility */
 html.dark .theme-icon-moon-dark {
   fill: #e0e0e0 !important;

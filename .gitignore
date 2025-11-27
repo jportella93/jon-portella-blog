@@ -44,3 +44,5 @@ next-env.d.ts
 .DS_Store
 Thumbs.db
 
+.gh-pages-temp/
+public/rss.xml

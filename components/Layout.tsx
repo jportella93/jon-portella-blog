@@ -6,13 +6,10 @@ import Navbar from "./Navbar";
 
 interface LayoutProps {
   children: React.ReactNode;
-  maxWidth?: string | number;
+  width?: "narrow";
 }
 
-export default function Layout({
-  children,
-  maxWidth = rhythm(32),
-}: LayoutProps) {
+export default function Layout({ children, width }: LayoutProps) {
   const router = useRouter();
 
   return (
@@ -27,7 +24,7 @@ export default function Layout({
       <Navbar location={router.pathname} />
       <div
         style={{
-          maxWidth,
+          maxWidth: width === "narrow" ? rhythm(22) : rhythm(32),
           marginLeft: `auto`,
           marginRight: `auto`,
         }}

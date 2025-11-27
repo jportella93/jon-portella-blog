@@ -10,7 +10,7 @@ interface BlogIndexProps {
 
 export default function BlogIndex({ posts }: BlogIndexProps) {
   return (
-    <Layout maxWidth={rhythm(22)}>
+    <Layout width="narrow">
       <SEO title="Blog" keywords={["blog", "javascript", "react"]} />
       {posts.map((post) => {
         const title = post.frontmatter.title || post.slug;

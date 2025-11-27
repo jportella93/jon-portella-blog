@@ -1,11 +1,10 @@
 ---
 title: Picking Random Comments On Instagram
 spoiler: A web app to make Instagram contests suck less.
-date: '2019-01-15T15:12:03.284Z'
+date: "2019-01-15T15:12:03.284Z"
 ---
 
 ![](./images/i-loor-nicolas.jpg)
-
 
 So this friend of mine, who is a personal trainer, has a bussiness Instagram account. He did a contest where any follower could comment a picture of his to have a chance to win a pack of training equipment.
 
@@ -21,6 +20,6 @@ So I did a quick search for available options and I didn't find anything accepta
 
 That's why I built a small app to solve this problem. It features a conversational UI to get the rules for a given contest and, at the last step, it creates a snippet that gets copied to the user clipboard. Then, this can be pasted in the JavaScript console in the picture page and the winner comment will be highlighted.
 
-[The app is available here.](/free-instagram-random-comment-picker/)
+[The app is available here.](/jon-portella-blog/free-instagram-random-comment-picker/)
 
 In the future I might do a post about the decisions and the findings that features this little project. If I have to take one thing out of this is that conversational UI is super fun to work with!

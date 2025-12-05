@@ -2,7 +2,7 @@ import moment from "moment";
 import Image from "next/image";
 import { TimelineItem } from "../lib/timelineData";
 import { rhythm, scale } from "../lib/typography";
-import { useDarkMode } from "../lib/useDarkMode";
+import { useTheme } from "./ThemeProvider";
 
 interface TimelineModalProps {
   item: TimelineItem | null;
@@ -10,7 +10,7 @@ interface TimelineModalProps {
 }
 
 export default function TimelineModal({ item, onClose }: TimelineModalProps) {
-  const isDarkMode = useDarkMode();
+  const { isDark } = useTheme();
 
   if (!item) return null;
 
@@ -106,7 +106,7 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
             style={{
               display: "inline-block",
               marginTop: rhythm(0.5),
-              color: isDarkMode ? "#5ba3d3" : "#358ccb",
+              color: isDark ? "#5ba3d3" : "#358ccb",
               fontWeight: 500,
             }}
           >
@@ -132,16 +132,14 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
                     gap: rhythm(0.75),
                     marginBottom: rhythm(0.75),
                     paddingLeft: rhythm(0.5),
-                    borderLeft: `2px solid ${
-                      isDarkMode ? "#5ba3d3" : "#358ccb"
-                    }`,
+                    borderLeft: `2px solid ${isDark ? "#5ba3d3" : "#358ccb"}`,
                   }}
                 >
                   <div
                     style={{
                       minWidth: "100px",
                       fontSize: "0.8rem",
-                      color: isDarkMode ? "#999" : "#666",
+                      color: isDark ? "#999" : "#666",
                       fontWeight: 500,
                     }}
                   >
@@ -188,7 +186,7 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
         className="timeline-modal"
         onClick={(e) => e.stopPropagation()}
         style={{
-          background: isDarkMode ? "#2a2a2a" : "white",
+          background: isDark ? "#2a2a2a" : "white",
           borderRadius: "12px",
           maxWidth: "700px",
           maxHeight: "90vh",
@@ -203,7 +201,7 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
           className="timeline-modal-header"
           style={{
             padding: `${rhythm(1)} ${rhythm(1)} ${rhythm(1)} ${rhythm(1)}`,
-            borderBottom: `1px solid ${isDarkMode ? "#444" : "#eee"}`,
+            borderBottom: `1px solid ${isDark ? "#444" : "#eee"}`,
           }}
         >
           <div
@@ -213,14 +211,14 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
               fontSize: "0.75rem",
               color:
                 item.type === "study"
-                  ? isDarkMode
+                  ? isDark
                     ? "#64b5f6"
                     : "#2196f3"
                   : item.type === "job"
-                  ? isDarkMode
+                  ? isDark
                     ? "#ba68c8"
                     : "#9c27b0"
-                  : isDarkMode
+                  : isDark
                   ? "#66bb6a"
                   : "#4caf50",
               fontWeight: 600,
@@ -248,11 +246,10 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
             className="timeline-modal-dates"
             style={{
               fontSize: "0.9rem",
-              color: isDarkMode ? "#999" : "#666",
+              color: isDark ? "#999" : "#666",
             }}
           >
-            {formatDate(item.startDate)} -{" "}
-            {formatDate(item.endDate)}
+            {formatDate(item.startDate)} - {formatDate(item.endDate)}
           </div>
         </div>
         <div

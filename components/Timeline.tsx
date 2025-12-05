@@ -8,7 +8,7 @@ import {
 import "vis-timeline/styles/vis-timeline-graph2d.min.css";
 import { timelineData, type TimelineItem } from "../lib/timelineData";
 import { rhythm, scale } from "../lib/typography";
-import { useDarkMode } from "../lib/useDarkMode";
+import { useTheme } from "./ThemeProvider";
 import TimelineList from "./TimelineList";
 import TimelineModal from "./TimelineModal";
 import TimelineSkeleton from "./TimelineSkeleton";
@@ -40,7 +40,7 @@ export default function timeline() {
   const timelineInstanceRef = useRef<VisTimeline | null>(null);
   const [modalItem, setModalItem] = useState<TimelineItem | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const isDarkMode = useDarkMode();
+  const { isDark } = useTheme();
 
   // Get current time once to avoid re-computation issues
   const now = useMemo(() => moment(), []);
@@ -338,10 +338,10 @@ export default function timeline() {
         className="timeline-wrapper"
         style={{
           width: "100%",
-          border: `1px solid ${isDarkMode ? "#444" : "#ddd"}`,
+          border: `1px solid ${isDark ? "#444" : "#ddd"}`,
           borderRadius: "8px",
           overflow: "auto",
-          background: isDarkMode ? "#1a1a1a" : "white",
+          background: isDark ? "#1a1a1a" : "white",
           position: "relative",
           minHeight: "400px",
         }}
@@ -356,7 +356,7 @@ export default function timeline() {
               left: 0,
               right: 0,
               bottom: 0,
-              background: isDarkMode ? "#1a1a1a" : "white",
+              background: isDark ? "#1a1a1a" : "white",
               zIndex: 10,
             }}
           >

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Jon Portella - Full Stack Developer</title>
-        <link>https://jportella93.github.io/jon-portella-blog</link>
+        <link>https://jonportella.com</link>
         <description>Welcome to my website! Here you'll find articles and resources written by a Full Stack Developer.</description>
         <lastBuildDate>Fri, 14 Nov 2025 23:59:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,14 +10,14 @@
         <language>en</language>
         <image>
             <title>Jon Portella - Full Stack Developer</title>
-            <url>https://jportella93.github.io/jon-portella-blog/assets/profile-pic.jpg</url>
-            <link>https://jportella93.github.io/jon-portella-blog</link>
+            <url>https://jonportella.com/assets/profile-pic.jpg</url>
+            <link>https://jonportella.com</link>
         </image>
         <copyright>All rights reserved 2025, Jon Portella</copyright>
         <item>
             <title><![CDATA[Cursor loves your attention]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/cursor-loves-your-attention</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/cursor-loves-your-attention</guid>
+            <link>https://jonportella.com/blog/cursor-loves-your-attention</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/cursor-loves-your-attention</guid>
             <pubDate>Fri, 14 Nov 2025 23:59:47 GMT</pubDate>
             <description><![CDATA[(Plays agent finished sound)]]></description>
             <content:encoded><![CDATA[<p>It’s interesting to think how much has the craft of a software builder changed in the last year? I remember well while I was in parental leave I watched a video by Siraj Raval, who was basically vibe coding in cursor YOLO mode a stock market web app, and at that point, I knew everything was going to be changing Super fast like I also a few months before that I listened to the podcast of Lex Friedman, who was interviewing the cursor guys and I was a bit sceptic like what’s the point of doing a whole integration of LLM in an IDE when there was stuff like VSCode copilot already working but boy was I wrong the flow of just letting the coding agent go do its thing while you do l another thing and then come back to it and iterate on that that’s just priceless and it’s even become a bit of problem for me because even though building software is my main output on my 9 to 5 job it’s at the same time one of my hobbies so I have several side projects and ideas that I like going on at the same time and being able to send coding agents to those while I’m at home doing something else and then coming back to it is amazing but also a source of shifted focus and many distractions</p>
@@ -25,8 +25,8 @@
         </item>
         <item>
             <title><![CDATA[Team onsites are fun]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/team-onsites-are-fun</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/team-onsites-are-fun</guid>
+            <link>https://jonportella.com/blog/team-onsites-are-fun</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/team-onsites-are-fun</guid>
             <pubDate>Fri, 14 Nov 2025 23:53:45 GMT</pubDate>
             <description><![CDATA[Generally on favour of them]]></description>
             <content:encoded><![CDATA[<p>One of the things that I struggled the most when I got into my current role at the corporate company coming from a startup its the corporate things in a way like my previous company we were like 20 people and like this one just my team is almost like 15 people so it’s just a different scale and there’s a lot of politics and workflows and processes so I did struggle with that a little bit and also the way you connect with people so before you know it was pre-Covid so we would still go to office more often and you would have like some kind of rapport with these people at least some since we were already semi remote but now in my current team, we are so spread out between Canada and the US that we seldom see each other aside from the camera so it is really special when we have the chance to actually meet in person and these last few days folks came to visit us in Toronto and we had an offsite and it was like so fun apart from being like really really exhausting, but I feel like the social time that you spend especially like dinners and having drinks and those conversations are kind of like the most natural and it’s the way to actually make something like a friendship with people that you don’t see that often and get to know the person behind the screen I think that’s super important and basically it makes the work fun and if it’s not fun then what’s the point of work?</p>
@@ -34,8 +34,8 @@
         </item>
         <item>
             <title><![CDATA[A human wrote this]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/a-human-wrote-this</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/a-human-wrote-this</guid>
+            <link>https://jonportella.com/blog/a-human-wrote-this</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/a-human-wrote-this</guid>
             <pubDate>Fri, 14 Nov 2025 23:48:08 GMT</pubDate>
             <description><![CDATA[And it shows]]></description>
             <content:encoded><![CDATA[<p>Hey long time no write it’s been a while I’ve just been quite busy I guess since I joined Pinterest I haven’t really written anymore and that was like four years ago so so yeah the previous post it was an experiment just trying to one shot at an article on ChatGPT, as you can really tell by how it’s written it’s quite interesting how we moved away from the artisanal writing thing into more like LLM powered content machine, where basically everything that we write ends up being filtered out by the LLM and then probably scraped by another LLM and served in a different shape so I guess that’s what has made me want to come back and share my thoughts in a really natural way like I’m literally dictating this into a note and I’m just gonna push it so yeah stay tuned for more random updates maybe like I’ll talk about more software stuff who knows things change a lot</p>
@@ -43,8 +43,8 @@
         </item>
         <item>
             <title><![CDATA[How to Land a Job as a Software Engineer: A One-Minute Guide]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/how-to-land-a-job-as-a-software-engineer-a-one-minute-guide</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/how-to-land-a-job-as-a-software-engineer-a-one-minute-guide</guid>
+            <link>https://jonportella.com/blog/how-to-land-a-job-as-a-software-engineer-a-one-minute-guide</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/how-to-land-a-job-as-a-software-engineer-a-one-minute-guide</guid>
             <pubDate>Thu, 20 Jul 2023 01:49:35 GMT</pubDate>
             <description><![CDATA[Landing a job as a software engineer requires more than just technical skills. In this one-minute tutorial, I’ll outline the key steps to…]]></description>
             <content:encoded><![CDATA[<h1>How to Land a Job as a Software Engineer: A One-Minute Guide</h1>
@@ -72,8 +72,8 @@
         </item>
         <item>
             <title><![CDATA[Autosave Your Shell Config in a GitHub Gist]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/autosave-your-shell-config-in-a-github-gist</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/autosave-your-shell-config-in-a-github-gist</guid>
+            <link>https://jonportella.com/blog/autosave-your-shell-config-in-a-github-gist</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/autosave-your-shell-config-in-a-github-gist</guid>
             <pubDate>Thu, 29 Apr 2021 13:23:46 GMT</pubDate>
             <description><![CDATA[Learn how to prevent your custom aliases to be lost in oblivion, in one minute.]]></description>
             <content:encoded><![CDATA[<h1>Autosave Your Shell Config in a GitHub Gist</h1>
@@ -121,13 +121,13 @@
         </item>
         <item>
             <title><![CDATA[Using SVGs on the Web — A Deep Dive]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/using-svgs-on-the-web-a-deep-dive</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/using-svgs-on-the-web-a-deep-dive</guid>
+            <link>https://jonportella.com/blog/using-svgs-on-the-web-a-deep-dive</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/using-svgs-on-the-web-a-deep-dive</guid>
             <pubDate>Wed, 28 Apr 2021 15:13:21 GMT</pubDate>
             <description><![CDATA[There isn’t one best way to implement SVGs on our websites, since each method has its pros and cons. Let’s learn their differences.]]></description>
             <content:encoded><![CDATA[<h3>Using SVGs on the Web — A Deep Dive</h3>
 <h4>There isn’t one best way to implement SVGs on our websites, since each method has its pros and cons. Learning their differences is a crucial skill for a good Web Developer.</h4>
-<p><img src="/jon-portella-blog/content/blog/using-svgs-on-the-web-a-deep-dive/images/0.png" alt=""></p>
+<p><img src="/content/blog/using-svgs-on-the-web-a-deep-dive/images/0.png" alt=""></p>
 <p><strong>Scalable Vector Graphics (SVG)</strong> allow you to present pictures that are lightweight and can scale without being pixelated.</p>
 <p>However, we can implement them in several ways in our websites, and some methods allow for some features that others don’t.</p>
 <hr>
@@ -331,8 +331,8 @@
         </item>
         <item>
             <title><![CDATA[Running Code Snippets on Chrome's Console]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/running-code-snippets-on-chrome-s-console-2</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/running-code-snippets-on-chrome-s-console-2</guid>
+            <link>https://jonportella.com/blog/running-code-snippets-on-chrome-s-console-2</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/running-code-snippets-on-chrome-s-console-2</guid>
             <pubDate>Fri, 23 Apr 2021 13:58:02 GMT</pubDate>
             <description><![CDATA[Learn how to store and run JavaScript code snippets in Chrome's DevTools for faster testing and debugging.]]></description>
             <content:encoded><![CDATA[<h1>Running Code Snippets on Chrome's Console</h1>
@@ -367,13 +367,13 @@
         </item>
         <item>
             <title><![CDATA[CDNs — A Deep Dive]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/cdns-a-deep-dive</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/cdns-a-deep-dive</guid>
+            <link>https://jonportella.com/blog/cdns-a-deep-dive</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/cdns-a-deep-dive</guid>
             <pubDate>Wed, 21 Apr 2021 23:45:16 GMT</pubDate>
             <description><![CDATA[You’ve used them before but you’re not completely sure what they are, here are some answers.]]></description>
             <content:encoded><![CDATA[<h3>CDNs — A Deep Dive</h3>
 <h4>You’ve used them before but you’re not completely sure what they are, here are some answers.</h4>
-<p><img src="/jon-portella-blog/content/blog/cdns-a-deep-dive/images/0.png" alt=""></p>
+<p><img src="/content/blog/cdns-a-deep-dive/images/0.png" alt=""></p>
 <p>Single server versus Content Delivery Network (CDN) by <a href="https://en.wikipedia.org/wiki/File:NCDN_-_CDN.png">Kanoha</a> on Wikimedia Commons</p>
 <h3>What is a CDN?</h3>
 <p>A **Content Distribution **(or Delivery) **Network **(<strong>CDN</strong>) is a group of servers distributed geographically with the purpose of providing fast delivery of Internet content.</p>
@@ -382,7 +382,7 @@
 <h3>How does a CDN work?</h3>
 <p>Servers in a CDN can help provide a better user experience by caching content closer to the user and delivering it instead of the origin server.</p>
 <p>This reduces the <strong>Round Trip Time (RTT)</strong> which is the number of milliseconds (ms) it takes for a browser to send a request and receive a response back from a server.</p>
-<p><img src="/jon-portella-blog/content/blog/cdns-a-deep-dive/images/1.png" alt=""></p>
+<p><img src="/content/blog/cdns-a-deep-dive/images/1.png" alt=""></p>
 <p>Without CDN vs with CDN by <a href="https://www.imperva.com/learn/performance/what-is-cdn-how-it-works/">Imperva</a></p>
 <h4><strong>Without CDN</strong></h4>
 <ol>
@@ -449,12 +449,12 @@
         </item>
         <item>
             <title><![CDATA[How To Call a Function When a User Stops Typing]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing</guid>
+            <link>https://jonportella.com/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing</guid>
             <pubDate>Wed, 21 Apr 2021 13:12:45 GMT</pubDate>
             <description><![CDATA[We’ll learn how to implement a browser auto-saving draft system in JavaScript]]></description>
             <content:encoded><![CDATA[<h4>We’ll learn how to implement a browser auto-saving draft system in JavaScript</h4>
-<p><img src="/jon-portella-blog/content/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing/images/0.png" alt=""></p>
+<p><img src="/content/blog/ombd-14-how-to-call-a-function-when-a-user-stops-typing/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>We are implementing a text editor with a Google-Docs-like draft system, where content gets saved server-side when the user stops typing for a second.</p>
 <h4>A SOLUTION</h4>
@@ -483,13 +483,13 @@
         </item>
         <item>
             <title><![CDATA[Trying To Write Every Day? Here’s How To Stick to It]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/trying-to-write-every-day-heres-how-to-stick-to-it</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/trying-to-write-every-day-heres-how-to-stick-to-it</guid>
+            <link>https://jonportella.com/blog/trying-to-write-every-day-heres-how-to-stick-to-it</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/trying-to-write-every-day-heres-how-to-stick-to-it</guid>
             <pubDate>Wed, 21 Apr 2021 13:06:03 GMT</pubDate>
             <description><![CDATA[Many people struggle to build a writing habit. I did too, but I solved it with this simple mantra]]></description>
             <content:encoded><![CDATA[<h3>Trying To Write Every Day? Here’s How To Stick to It</h3>
 <h4>Many people struggle to build a writing habit. I did too, but I solved it with this simple mantra</h4>
-<p><img src="/jon-portella-blog/content/blog/trying-to-write-every-day-heres-how-to-stick-to-it/images/0.png" alt=""></p>
+<p><img src="/content/blog/trying-to-write-every-day-heres-how-to-stick-to-it/images/0.png" alt=""></p>
 <p>In my experience, that’s easy to implement if you follow some simple steps. Keep on reading to know how to exactly how.</p>
 <h4>Tip #1: write short-form stories.</h4>
 <p>In the beginning, I was writing long-form articles, which took me between 2 to 3 hours to write.</p>
@@ -536,8 +536,8 @@
         </item>
         <item>
             <title><![CDATA[Use gist-paste to Save Text Files as GitHub Gists From the Command Line]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/use-gist-paste-to-save-text-files-as-github-gists-from-the-command-line</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/use-gist-paste-to-save-text-files-as-github-gists-from-the-command-line</guid>
+            <link>https://jonportella.com/blog/use-gist-paste-to-save-text-files-as-github-gists-from-the-command-line</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/use-gist-paste-to-save-text-files-as-github-gists-from-the-command-line</guid>
             <pubDate>Tue, 20 Apr 2021 15:19:33 GMT</pubDate>
             <description><![CDATA[A quick tip to save time on saving and sharing documents]]></description>
             <content:encoded><![CDATA[<h1>Use gist-paste to Save Text Files as GitHub Gists From the Command Line</h1>
@@ -586,12 +586,12 @@
         </item>
         <item>
             <title><![CDATA[Time-Traveling in Git? Meet Git Reflog]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/time-traveling-in-git-meet-git-reflog</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/time-traveling-in-git-meet-git-reflog</guid>
+            <link>https://jonportella.com/blog/time-traveling-in-git-meet-git-reflog</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/time-traveling-in-git-meet-git-reflog</guid>
             <pubDate>Tue, 06 Apr 2021 16:00:13 GMT</pubDate>
             <description><![CDATA[Let’s learn to use the power of this advanced tool for Git disaster‑saving]]></description>
             <content:encoded><![CDATA[<h4>Let’s learn to use the power of this advanced tool for Git disaster‑saving</h4>
-<p><img src="/jon-portella-blog/content/blog/time-traveling-in-git-meet-git-reflog/images/0.png" alt=""></p>
+<p><img src="/content/blog/time-traveling-in-git-meet-git-reflog/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>A local branch deleted by accident, squashed commits that we would like to be un-squashed… when a catastrophe occurs, wouldn’t it be great if we could <strong>time-travel in Git</strong>?</p>
 <h4>A SOLUTION</h4>
@@ -633,13 +633,13 @@
         </item>
         <item>
             <title><![CDATA[Building a carousel with Swiper]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/omonp-3-building-a-carousel-with-swiper</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/omonp-3-building-a-carousel-with-swiper</guid>
+            <link>https://jonportella.com/blog/omonp-3-building-a-carousel-with-swiper</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/omonp-3-building-a-carousel-with-swiper</guid>
             <pubDate>Tue, 06 Apr 2021 01:28:57 GMT</pubDate>
             <description><![CDATA[Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/omonp-3-building-a-carousel-with-swiper/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/omonp-3-building-a-carousel-with-swiper/images/0.png" alt=""></p>
 <h4>Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.</h4>
-<p><img src="/jon-portella-blog/content/blog/omonp-3-building-a-carousel-with-swiper/images/1.png" alt=""></p>
+<p><img src="/content/blog/omonp-3-building-a-carousel-with-swiper/images/1.png" alt=""></p>
 <p><a href="https://codepen.io/jportella93/pen/PoWjaaG">What we will build</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
@@ -731,8 +731,8 @@
         </item>
         <item>
             <title><![CDATA[Quick Refactor: Keep Casing in VSCode Search + Replace]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/quick-refactor-keep-casing-in-vscode-search-replace</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/quick-refactor-keep-casing-in-vscode-search-replace</guid>
+            <link>https://jonportella.com/blog/quick-refactor-keep-casing-in-vscode-search-replace</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/quick-refactor-keep-casing-in-vscode-search-replace</guid>
             <pubDate>Sun, 28 Mar 2021 15:50:52 GMT</pubDate>
             <description><![CDATA[Learn how to preserve casing when refactoring variable names in VSCode search and replace.]]></description>
             <content:encoded><![CDATA[<h1>Quick Refactor: Keep Casing in VSCode Search + Replace</h1>
@@ -748,8 +748,8 @@
         </item>
         <item>
             <title><![CDATA[A Snazzy Trick: How To Style Your console.log() Messages]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/a-snazzy-trick-how-to-style-your-console-log-messages</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/a-snazzy-trick-how-to-style-your-console-log-messages</guid>
+            <link>https://jonportella.com/blog/a-snazzy-trick-how-to-style-your-console-log-messages</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/a-snazzy-trick-how-to-style-your-console-log-messages</guid>
             <pubDate>Thu, 25 Mar 2021 13:59:01 GMT</pubDate>
             <description><![CDATA[A quick guide (with examples) on applying CSS to log messages in the browser’s console]]></description>
             <content:encoded><![CDATA[<h4>A quick guide (with examples) on applying CSS to log messages in the browser's console.</h4>
@@ -804,8 +804,8 @@
         </item>
         <item>
             <title><![CDATA[The One Thing You Need to Know To Avoid CSS Overflow]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/the-one-thing-you-need-to-know-to-avoid-css-overflow</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/the-one-thing-you-need-to-know-to-avoid-css-overflow</guid>
+            <link>https://jonportella.com/blog/the-one-thing-you-need-to-know-to-avoid-css-overflow</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/the-one-thing-you-need-to-know-to-avoid-css-overflow</guid>
             <pubDate>Thu, 25 Mar 2021 12:55:11 GMT</pubDate>
             <description><![CDATA[Learn how to prevent CSS overflow with variable-length text using a simple wrapper component that keeps text on one line.]]></description>
             <content:encoded><![CDATA[<h1>The One Thing You Need To Know To Avoid CSS Multiline Wrapping</h1>
@@ -824,12 +824,12 @@
         </item>
         <item>
             <title><![CDATA[Master Git Diff With These Not-So-Known Commands]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/master-git-diff-with-these-not-so-known-commands</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/master-git-diff-with-these-not-so-known-commands</guid>
+            <link>https://jonportella.com/blog/master-git-diff-with-these-not-so-known-commands</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/master-git-diff-with-these-not-so-known-commands</guid>
             <pubDate>Wed, 24 Mar 2021 13:59:13 GMT</pubDate>
             <description><![CDATA[Save time while reviewing your own pull requests]]></description>
             <content:encoded><![CDATA[<h4>Spot errors before pushing to save time while reviewing your own pull requests</h4>
-<p><img src="/jon-portella-blog/content/blog/master-git-diff-with-these-not-so-known-commands/images/0.png" alt=""></p>
+<p><img src="/content/blog/master-git-diff-with-these-not-so-known-commands/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>You spend a lot of time reviewing your own pull request on Github before asking for a review and you always find stuff that needs to be changed. So you need to add/edit commits, losing lots of time.</p>
 <h4>A SOLUTION</h4>
@@ -902,12 +902,12 @@
         </item>
         <item>
             <title><![CDATA[Lazy Load Images with LazySizes]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/lazy-load-images-with-lazysizes</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/lazy-load-images-with-lazysizes</guid>
+            <link>https://jonportella.com/blog/lazy-load-images-with-lazysizes</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/lazy-load-images-with-lazysizes</guid>
             <pubDate>Tue, 23 Mar 2021 14:17:37 GMT</pubDate>
             <description><![CDATA[Learn how to lazy load images, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>A quick introduction to a library that has better browser support than the loading="lazy" attribute.</h4>
-<p><img src="/jon-portella-blog/content/blog/lazy-load-images-with-lazysizes/images/0.png" alt=""></p>
+<p><img src="/content/blog/lazy-load-images-with-lazysizes/images/0.png" alt=""></p>
 <p><a href="https://codepen.io/jportella93/pen/MWJYeLj">What we will build</a></p>
 <hr>
 <h4>THE PROBLEM</h4>
@@ -927,8 +927,8 @@
         </item>
         <item>
             <title><![CDATA[Use RegEx Lazy Quantifier to Match Alt Tags]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/use-regex-lazy-quantifier-to-match-alt-tags</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/use-regex-lazy-quantifier-to-match-alt-tags</guid>
+            <link>https://jonportella.com/blog/use-regex-lazy-quantifier-to-match-alt-tags</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/use-regex-lazy-quantifier-to-match-alt-tags</guid>
             <pubDate>Fri, 19 Mar 2021 13:26:48 GMT</pubDate>
             <description><![CDATA[Learn how to use RegEx Lazy Quantifier, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Save refactor time with one character — Regular expressions on JavaScript or any other language made easier</h4>
@@ -958,12 +958,12 @@
         </item>
         <item>
             <title><![CDATA[Prevent Hyphen Line-Breaks with Non-Breaking Hyphen]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen</guid>
+            <link>https://jonportella.com/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen</guid>
             <pubDate>Thu, 18 Mar 2021 14:27:15 GMT</pubDate>
             <description><![CDATA[Learn how to avoid hyphen line-breaks, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Learn to dominate your hyphens and control where your content line breaks</h4>
-<p><img src="/jon-portella-blog/content/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen/images/0.png" alt=""></p>
+<p><img src="/content/blog/prevent-hyphen-line-breaks-with-non-breaking-hyphen/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Let’s say our company is called Astro-Team, or whatever name with a hyphen.</p>
@@ -980,18 +980,18 @@
         </item>
         <item>
             <title><![CDATA[Forward Proxy vs. Reverse Proxy]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/forward-proxy-vs-reverse-proxy</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/forward-proxy-vs-reverse-proxy</guid>
+            <link>https://jonportella.com/blog/forward-proxy-vs-reverse-proxy</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/forward-proxy-vs-reverse-proxy</guid>
             <pubDate>Wed, 17 Mar 2021 13:47:39 GMT</pubDate>
             <description><![CDATA[Understand the difference between forward proxies and reverse proxies, and when to use each one.]]></description>
             <content:encoded><![CDATA[<h3>Forward Proxy vs. Reverse Proxy</h3>
 <h4>Despite having similar names, they serve different purposes. Here’s a quick guide.</h4>
-<p><img src="/jon-portella-blog/content/blog/forward-proxy-vs-reverse-proxy/images/0.png" alt=""></p>
+<p><img src="/content/blog/forward-proxy-vs-reverse-proxy/images/0.png" alt=""></p>
 <hr>
 <p>I came across <a href="https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/">this really well-explained article from Cloudflare</a> about proxies and wanted to share it with you, in one minute.</p>
 <h4>Proxy Server, AKA “Forward Proxy” or just “Proxy”</h4>
 <p>A server that sits in front of the client and acts as a middleman. It intercepts the client requests and <strong>forwards</strong> them — hence, the name — on their behalf to another server somewhere on the Internet.</p>
-<p><img src="/jon-portella-blog/content/blog/forward-proxy-vs-reverse-proxy/images/1.png" alt=""></p>
+<p><img src="/content/blog/forward-proxy-vs-reverse-proxy/images/1.png" alt=""></p>
 <p>Forward Proxy Flow, image by <a href="https://www.cloudflare.com/">Cloudflare</a>.</p>
 <p>Some use cases of a Forward Proxy:</p>
 <ul>
@@ -1002,7 +1002,7 @@
 <p>If you want to put it into practice, I wrote a story about the subject, covering the last 2 use cases.</p>
 <h4>Reverse Proxy</h4>
 <p>Is a server that sits in front of one or more web servers and acts as a gatekeeper for incoming requests.</p>
-<p><img src="/jon-portella-blog/content/blog/forward-proxy-vs-reverse-proxy/images/2.png" alt=""></p>
+<p><img src="/content/blog/forward-proxy-vs-reverse-proxy/images/2.png" alt=""></p>
 <p>Reverse Proxy Flow, image by <a href="https://www.cloudflare.com/">Cloudflare</a>.</p>
 <p>Some use cases of a Reverse Proxy:</p>
 <ul>
@@ -1017,12 +1017,12 @@
         </item>
         <item>
             <title><![CDATA[Avoid Headaches with Static Code Analysis Tools]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/avoid-headaches-with-static-code-analysis-tools</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/avoid-headaches-with-static-code-analysis-tools</guid>
+            <link>https://jonportella.com/blog/avoid-headaches-with-static-code-analysis-tools</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/avoid-headaches-with-static-code-analysis-tools</guid>
             <pubDate>Tue, 16 Mar 2021 13:44:11 GMT</pubDate>
             <description><![CDATA[Learn to avoid headaches with Static Code Analysis Tools, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Or how Static Code Analysis Tools make your life and prevent headaches</h4>
-<p><img src="/jon-portella-blog/content/blog/avoid-headaches-with-static-code-analysis-tools/images/0.png" alt=""></p>
+<p><img src="/content/blog/avoid-headaches-with-static-code-analysis-tools/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Take a moment to look at this snippet and try to figure out what it does.</p>
@@ -1079,12 +1079,12 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Remove All node_modules Directories at Once]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/remove-all-node-modules-directories-at-once</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/remove-all-node-modules-directories-at-once</guid>
+            <link>https://jonportella.com/blog/remove-all-node-modules-directories-at-once</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/remove-all-node-modules-directories-at-once</guid>
             <pubDate>Mon, 15 Mar 2021 13:43:28 GMT</pubDate>
             <description><![CDATA[Learn how to remove all your node_modules directories, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Here’s my one-liner to delete all the JavaScript dependencies of a repo in a flash.</h4>
-<p><img src="/jon-portella-blog/content/blog/remove-all-node-modules-directories-at-once/images/0.png" alt=""></p>
+<p><img src="/content/blog/remove-all-node-modules-directories-at-once/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>You want to do a backup of all your current files because you’re switching computers.</p>
 <p>Some of your local repositories have unpublished branches so you want to copy them over to your new machine rather than checking out their remote versions.</p>
@@ -1121,12 +1121,12 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Build a 3D Bank Card with Vanilla-tilt.js]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/build-a-3d-bank-card-with-vanilla-tilt-js</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/build-a-3d-bank-card-with-vanilla-tilt-js</guid>
+            <link>https://jonportella.com/blog/build-a-3d-bank-card-with-vanilla-tilt-js</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/build-a-3d-bank-card-with-vanilla-tilt-js</guid>
             <pubDate>Fri, 12 Mar 2021 13:55:24 GMT</pubDate>
             <description><![CDATA[Learn how to build a 3D bank card, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Make your cards stand-out with this quick JavaScript tutorial</h4>
-<p><img src="/jon-portella-blog/content/blog/build-a-3d-bank-card-with-vanilla-tilt-js/images/0.png" alt=""></p>
+<p><img src="/content/blog/build-a-3d-bank-card-with-vanilla-tilt-js/images/0.png" alt=""></p>
 <p><a href="https://codepen.io/jportella93/pen/eYBxdzv">What we are going to build</a></p>
 <h4>THE PROBLEM</h4>
 <p>The payment form on our website looks a little bit dull. Customers get bored and don’t input their card details. How can we make it more engaging?</p>
@@ -1155,12 +1155,12 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Count Total Lines in a Git Repository]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/count-total-lines-in-a-git-repository</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/count-total-lines-in-a-git-repository</guid>
+            <link>https://jonportella.com/blog/count-total-lines-in-a-git-repository</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/count-total-lines-in-a-git-repository</guid>
             <pubDate>Thu, 11 Mar 2021 13:43:08 GMT</pubDate>
             <description><![CDATA[Learn how to count the total number of lines in a Git repository, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>A one-liner to count lines, words, and characters on any repo</h4>
-<p><img src="/jon-portella-blog/content/blog/count-total-lines-in-a-git-repository/images/0.png" alt=""></p>
+<p><img src="/content/blog/count-total-lines-in-a-git-repository/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>Our engineering manager has asked us about the total number of lines on several repositories of the company. How can we find out that information?</p>
 <h4>A SOLUTION</h4>
@@ -1202,12 +1202,12 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Track User Scroll with IntersectionObserver]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/track-user-scroll-with-intersectionobserver</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/track-user-scroll-with-intersectionobserver</guid>
+            <link>https://jonportella.com/blog/track-user-scroll-with-intersectionobserver</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/track-user-scroll-with-intersectionobserver</guid>
             <pubDate>Wed, 10 Mar 2021 13:32:36 GMT</pubDate>
             <description><![CDATA[Learn how to leverage window.IntersectionObserver to find out how many visitors see your content, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>A tutorial on firing a callback function when an element enters the viewport</h4>
-<p><img src="/jon-portella-blog/content/blog/track-user-scroll-with-intersectionobserver/images/0.png" alt=""></p>
+<p><img src="/content/blog/track-user-scroll-with-intersectionobserver/images/0.png" alt=""></p>
 <h4>The problem</h4>
 <p>Our website has a new and shiny landing page. We are getting lots of visits, so the marketing team has asked us to track how many of those visitors scroll down to the Call To Action section.</p>
 <p>How can we do that?</p>
@@ -1248,12 +1248,12 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Using Regex Negative Lookahead to Replace HTTP with HTTPS]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/using-regex-negative-lookahead-to-replace-http-with-https</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/using-regex-negative-lookahead-to-replace-http-with-https</guid>
+            <link>https://jonportella.com/blog/using-regex-negative-lookahead-to-replace-http-with-https</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/using-regex-negative-lookahead-to-replace-http-with-https</guid>
             <pubDate>Tue, 09 Mar 2021 13:51:16 GMT</pubDate>
             <description><![CDATA[Learn how to use Regex’s Negative Lookahead, in one minute.]]></description>
             <content:encoded><![CDATA[<h4>Make faster refactors in JavaScript, VSCode, or in your favourite place to run regular expressions</h4>
-<p><img src="/jon-portella-blog/content/blog/using-regex-negative-lookahead-to-replace-http-with-https/images/0.png" alt=""></p>
+<p><img src="/content/blog/using-regex-negative-lookahead-to-replace-http-with-https/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>We have a list of images, some of them being requested via the HTTP protocol and some others via the HTTPS protocol.</p>
@@ -1278,11 +1278,11 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[How To Use a VPN to Change Your Public IP Address From the Command Line]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line</guid>
+            <link>https://jonportella.com/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line</guid>
             <pubDate>Mon, 08 Mar 2021 14:03:39 GMT</pubDate>
             <description><![CDATA[A tutorial on setting a VPN and using it from the CLI to hide our IP and location]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>You may already know which location information are we sharing with websites when we interact with them, such our IP Address. So, wouldn't it be great if we could hide it or even change it?</p>
@@ -1347,12 +1347,12 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[How to Use a VPN to Change Your Public IP Address From the Command Line]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2</guid>
+            <link>https://jonportella.com/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2</guid>
             <pubDate>Mon, 08 Mar 2021 14:03:39 GMT</pubDate>
             <description><![CDATA[Learn how to change your public IP address using a VPN from the command line.]]></description>
             <content:encoded><![CDATA[<h4>A tutorial on setting a VPN and using it from the CLI to hide our IP and location</h4>
-<p><img src="/jon-portella-blog/content/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2/images/0.png" alt=""></p>
+<p><img src="/content/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line-2/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>If you read issue #8, you already know which location information are we sharing with websites when we interact with them. If you didn't, take a quick read first.</p>
@@ -1420,11 +1420,11 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Autosave Your Shell Config in a GitHub Gist]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/autosave-your-shell-config-in-a-git-hub-gist</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/autosave-your-shell-config-in-a-git-hub-gist</guid>
+            <link>https://jonportella.com/blog/autosave-your-shell-config-in-a-git-hub-gist</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/autosave-your-shell-config-in-a-git-hub-gist</guid>
             <pubDate>Fri, 05 Mar 2021 13:34:17 GMT</pubDate>
             <description><![CDATA[Don’t lose your aliases again when switching computers!]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/autosave-your-shell-config-in-a-git-hub-gist/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/autosave-your-shell-config-in-a-git-hub-gist/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>You get a new computer, you back up all your files but…</p>
@@ -1443,7 +1443,7 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
 <ol>
 <li>Let’s create a secret <a href="https://gist.github.com/">gist</a> where our config will be saved:</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/autosave-your-shell-config-in-a-git-hub-gist/images/1.png" alt=""></p>
+<p><img src="/content/blog/autosave-your-shell-config-in-a-git-hub-gist/images/1.png" alt=""></p>
 <p>Creating a secret <a href="https://gist.github.com/">Gist</a>.</p>
 <ol start="2">
 <li>
@@ -1472,11 +1472,11 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Find Out Our Public IP Address and Country From the Command Line]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/find-out-our-public-ip-address-and-country-from-the-command-line</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/find-out-our-public-ip-address-and-country-from-the-command-line</guid>
+            <link>https://jonportella.com/blog/find-out-our-public-ip-address-and-country-from-the-command-line</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/find-out-our-public-ip-address-and-country-from-the-command-line</guid>
             <pubDate>Thu, 04 Mar 2021 13:53:57 GMT</pubDate>
             <description><![CDATA[A quick explanation and a couple of handy one-liners]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/find-out-our-public-ip-address-and-country-from-the-command-line/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/find-out-our-public-ip-address-and-country-from-the-command-line/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Every device connected to the Internet has an assigned IP Address (Internet Protocol Address), which is made up of 4 numbers in the following format: <code>&#x3C;number>.&#x3C;number>.&#x3C;number>.&#x3C;number></code>. Each number can be in the range of 0–255. e.g. <code>184.152.81.47</code> .</p>
@@ -1502,11 +1502,11 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
         </item>
         <item>
             <title><![CDATA[Use gist-paste to Save Text Files as GitHub Gists From the Command Line]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line</guid>
+            <link>https://jonportella.com/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line</guid>
             <pubDate>Wed, 03 Mar 2021 14:00:40 GMT</pubDate>
             <description><![CDATA[A quick tip to save time on saving and sharing documents]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>You are saving <a href="https://gist.github.com/">Github Gists</a> often but you spend too much time on their UI.</p>
@@ -1520,18 +1520,18 @@ Uncaught TypeError: Cannot set property &#x26;#39;2&#x26;#39; of undefined</code
 <ol start="2">
 <li>Go to the <a href="https://github.com/settings/tokens">tokens section in GitHub</a> and press on “Generate new token”. Input your password in the next screen:</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/1.png" alt=""></p>
+<p><img src="/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/1.png" alt=""></p>
 <ol start="3">
 <li>Set a name for your token and make sure to check the <code>gist</code> and <code>user:email</code> permissions:</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/2.png" alt=""></p>
+<p><img src="/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/2.png" alt=""></p>
 <p>Set a name for your token like <code>gist.</code></p>
-<p><img src="/jon-portella-blog/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/3.png" alt=""></p>
+<p><img src="/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/3.png" alt=""></p>
 <p>Check <strong>gist</strong> and <strong>user:email</strong> permissions.</p>
 <ol start="4">
 <li>Copy your generated token:</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/4.png" alt=""></p>
+<p><img src="/content/blog/use-gist-paste-to-save-text-files-as-git-hub-gists-from-the-command-line/images/4.png" alt=""></p>
 <ol start="5">
 <li>Save the token in <code>~/.gist</code>. The <code>umask</code> ensures that the file is only accessible from your user account:</li>
 </ol>
@@ -1556,11 +1556,11 @@ gist-paste gist.txt
         </item>
         <item>
             <title><![CDATA[Running Code Snippets on Chrome’s Console]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/running-code-snippets-on-chrome-s-console</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/running-code-snippets-on-chrome-s-console</guid>
+            <link>https://jonportella.com/blog/running-code-snippets-on-chrome-s-console</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/running-code-snippets-on-chrome-s-console</guid>
             <pubDate>Tue, 02 Mar 2021 13:47:41 GMT</pubDate>
             <description><![CDATA[A quick guide for web developers on this great time-saver when executing JavaScript on the go.]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/running-code-snippets-on-chrome-s-console/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/running-code-snippets-on-chrome-s-console/images/0.png" alt=""></p>
 <h4>THE PROBLEM</h4>
 <p>You want to test a registration form on a website. Instead of filling it up manually every time, you may come up with a snippet like this that does it automatically for you:</p>
 <div class="remark-highlight"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> inputFields <span class="token operator">=</span> <span class="token punctuation">{</span>
@@ -1601,24 +1601,24 @@ gist-paste gist.txt
 <ol>
 <li>Open <a href="https://developers.google.com/web/tools/chrome-devtools/open">Chrome’s DevTools</a>.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/running-code-snippets-on-chrome-s-console/images/1.png" alt=""></p>
+<p><img src="/content/blog/running-code-snippets-on-chrome-s-console/images/1.png" alt=""></p>
 <ol start="2">
 <li>Press ctrl/cmd + shift + p to show <a href="https://developers.google.com/web/tools/chrome-devtools/command-menu">Chrome’s </a><a href="https://developers.google.com/web/tools/chrome-devtools/open">DevTools</a><a href="https://developers.google.com/web/tools/chrome-devtools/command-menu"> command menu</a>:</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/running-code-snippets-on-chrome-s-console/images/2.png" alt=""></p>
+<p><img src="/content/blog/running-code-snippets-on-chrome-s-console/images/2.png" alt=""></p>
 <ol start="3">
 <li>Type “show snippets” and select that option</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/running-code-snippets-on-chrome-s-console/images/3.png" alt=""></p>
+<p><img src="/content/blog/running-code-snippets-on-chrome-s-console/images/3.png" alt=""></p>
 <ol start="4">
 <li>This will reveal the Snippets tab under the sources panel.</li>
 </ol>
 <p>Tap on <code>+ New snippet</code></p>
-<p><img src="/jon-portella-blog/content/blog/running-code-snippets-on-chrome-s-console/images/4.png" alt=""></p>
+<p><img src="/content/blog/running-code-snippets-on-chrome-s-console/images/4.png" alt=""></p>
 <ol start="5">
 <li>Name your snippet and input its content on the right-hand panel.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/running-code-snippets-on-chrome-s-console/images/5.png" alt=""></p>
+<p><img src="/content/blog/running-code-snippets-on-chrome-s-console/images/5.png" alt=""></p>
 <p>Now that your snippet is saved, you can press <strong>ctrl/cmd + enter to run iton the page</strong>!</p>
 <p>Snippets will persist between browser sessions, so you can retrieve and run them easily.</p>
 <p><strong>BONUS</strong>: here’s <a href="https://bgrins.github.io/devtools-snippets/">a list of snippets</a> to get you inspired.</p>
@@ -1626,11 +1626,11 @@ gist-paste gist.txt
         </item>
         <item>
             <title><![CDATA[The Right Way To Log Objects in Node.js]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/the-right-way-to-log-objects-in-node-js</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/the-right-way-to-log-objects-in-node-js</guid>
+            <link>https://jonportella.com/blog/the-right-way-to-log-objects-in-node-js</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/the-right-way-to-log-objects-in-node-js</guid>
             <pubDate>Mon, 01 Mar 2021 13:47:00 GMT</pubDate>
             <description><![CDATA[And a few other methods that you can also use, but beware of the caveats!]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/the-right-way-to-log-objects-in-node-js/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/the-right-way-to-log-objects-in-node-js/images/0.png" alt=""></p>
 <hr>
 <h4>The problem</h4>
 <p>We want to log in to the console this deeply nested JavaScript Object:</p>
@@ -1658,7 +1658,7 @@ gist-paste gist.txt
 </code></pre></div>
 <h4>A Naive Solution</h4>
 <p>The common beginner mistake is to just put it through the most basic logging tool that the language provides: <code>console.log</code>. However, we have limited depth logging, making<code>friend</code> on the third level just appear as <code>[Object]</code>:</p>
-<p><img src="/jon-portella-blog/content/blog/the-right-way-to-log-objects-in-node-js/images/1.png" alt=""></p>
+<p><img src="/content/blog/the-right-way-to-log-objects-in-node-js/images/1.png" alt=""></p>
 <p>Console.log: Hidden third level as <code>friend: [Object].</code></p>
 <h4>A Hacky Solution</h4>
 <p>A trick I’ve used in the past is to put it through JSON.stringify with two extra arguments:</p>
@@ -1670,23 +1670,23 @@ gist-paste gist.txt
 <li>Functions will disappear from the output.</li>
 <li>You won’t get syntax highlighting, as you’re basically logging a formatted string.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/the-right-way-to-log-objects-in-node-js/images/2.png" alt=""></p>
+<p><img src="/content/blog/the-right-way-to-log-objects-in-node-js/images/2.png" alt=""></p>
 <p>JSON.stringify: no colors and… where’s is <code>sayHi()</code>??</p>
 <h4><strong>A (BETTER) SOLUTION</strong></h4>
 <p>Use</p>
 <div class="remark-highlight"><pre class="language-js"><code class="language-js"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">dir</span><span class="token punctuation">(</span>person<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">depth</span><span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre></div>
 <p>That will show all nested objects, including functions, with syntax highlighting.</p>
-<p><img src="/jon-portella-blog/content/blog/the-right-way-to-log-objects-in-node-js/images/3.png" alt=""></p>
+<p><img src="/content/blog/the-right-way-to-log-objects-in-node-js/images/3.png" alt=""></p>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Quick Async One-Liners With Async Immediately Invoked Function Expressions]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/quick-async-one-liners-with-async-immediately-invoked-function-expressions</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/quick-async-one-liners-with-async-immediately-invoked-function-expressions</guid>
+            <link>https://jonportella.com/blog/quick-async-one-liners-with-async-immediately-invoked-function-expressions</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/quick-async-one-liners-with-async-immediately-invoked-function-expressions</guid>
             <pubDate>Fri, 26 Feb 2021 12:35:22 GMT</pubDate>
             <description><![CDATA[A neat trick for a job interview or to save time on quick scripts]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/quick-async-one-liners-with-async-immediately-invoked-function-expressions/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/quick-async-one-liners-with-async-immediately-invoked-function-expressions/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>We have to create a script that will do a GET request to the Chuck Norris jokes API and append that content to a div with the id <code>#chucky</code>.</p>
@@ -1728,34 +1728,34 @@ gist-paste gist.txt
         </item>
         <item>
             <title><![CDATA[Quick Refactor: Keep Casing in VSCode Search + Replace]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/quick-refactor-keep-casing-in-vs-code-search-replace</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/quick-refactor-keep-casing-in-vs-code-search-replace</guid>
+            <link>https://jonportella.com/blog/quick-refactor-keep-casing-in-vs-code-search-replace</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/quick-refactor-keep-casing-in-vs-code-search-replace</guid>
             <pubDate>Thu, 25 Feb 2021 13:32:08 GMT</pubDate>
             <description><![CDATA[A simple Visual Studio Code trick to save precious time while refactoring]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>We have a <code>pet</code> object, whose value under the key of <code>name</code> we are changing. We are saving a reference to the old value that the key <code>name</code> pointed to for logging purposes.</p>
-<p><img src="/jon-portella-blog/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/1.png" alt=""></p>
+<p><img src="/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/1.png" alt=""></p>
 <p>Now we realize that we’d like to rename the key <code>name</code> to <code>alias</code>. A refactoring is in order. So we pull up the find and replace feature by pressing ctrl/cmd + f.</p>
-<p><img src="/jon-portella-blog/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/2.png" alt=""></p>
+<p><img src="/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/2.png" alt=""></p>
 <p>But oops! as they key <code>name</code> is also used in camelCase as part of other variables names <code>newPetName</code> and <code>oldPetName</code> , we get a casing mismatch after replacing. <code>newPetalias</code> and <code>oldPetalias</code> don’t look so good…</p>
-<p><img src="/jon-portella-blog/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/3.png" alt=""></p>
+<p><img src="/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/3.png" alt=""></p>
 <h4>A SOLUTION</h4>
 <p>We are going to undo this change and repeat it using the <a href="https://code.visualstudio.com/docs/editor/codebasics#_advanced-find-and-replace-options">preserve case option on the find and replace feature</a> by pressing the <code>AB</code> button.</p>
-<p><img src="/jon-portella-blog/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/4.png" alt=""></p>
+<p><img src="/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/4.png" alt=""></p>
 <p>Now we’ve saved time refactoring and our pets are happy with their aliases!</p>
-<p><img src="/jon-portella-blog/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/5.png" alt=""></p>
+<p><img src="/content/blog/quick-refactor-keep-casing-in-vs-code-search-replace/images/5.png" alt=""></p>
 <hr>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Persist CSS Changes Done in Chrome’s Dev-Tools]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/persist-css-changes-done-in-chrome-s-dev-tools</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/persist-css-changes-done-in-chrome-s-dev-tools</guid>
+            <link>https://jonportella.com/blog/persist-css-changes-done-in-chrome-s-dev-tools</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/persist-css-changes-done-in-chrome-s-dev-tools</guid>
             <pubDate>Wed, 24 Feb 2021 13:38:12 GMT</pubDate>
             <description><![CDATA[Avoid losing all those changes on the elements tab if you accidentally reload your browser]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Using your dev tools to tinker with CSS is great because you get immediate feedback on the changes. However, if the page is refreshed, all those changes get lost in oblivion…</p>
@@ -1764,56 +1764,56 @@ gist-paste gist.txt
 <ol>
 <li>Open Chrome’s dev tools.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/1.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/1.png" alt=""></p>
 <ol start="2">
 <li>Press ctrl/cmd + shift + p to show <a href="https://developers.google.com/web/tools/chrome-devtools/command-menu">Chrome’s dev tools command menu</a>.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/2.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/2.png" alt=""></p>
 <ol start="3">
 <li>Type “show overrides”.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/3.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/3.png" alt=""></p>
 <ol start="4">
 <li>Tap on “+ Select folder for overrides” on the left side and select a folder on your machine. That’s where your overrides will live.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/4.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/4.png" alt=""></p>
 <ol start="5">
 <li>Allow Chrome to access this folder by tapping “Allow” on the bar that appears below the search bar.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/5.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/5.png" alt=""></p>
 <ol start="6">
 <li>Now the folder has appeared on the “Overrides” section.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/6.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/6.png" alt=""></p>
 <ol start="7">
 <li>Let’s try it! Change some styles in the “Elements” panel. You’ll see a purplish dot next to the stylesheet file name, which means it has been saved locally in our overrides folder. Refreshing the page will keep that change!</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/7.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/7.png" alt=""></p>
 <ol start="8">
 <li>Now back in the “Overrides” tab, we can see those local overrides, sorted by URL folders.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/8.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/8.png" alt=""></p>
 <ol start="9">
 <li>(BONUS!) To see the diff between your source code and the local overrides, you can type “Show changes” on the command menu.</li>
 </ol>
-<p><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/9.png" alt=""><img src="/jon-portella-blog/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/10.png" alt=""></p>
+<p><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/9.png" alt=""><img src="/content/blog/persist-css-changes-done-in-chrome-s-dev-tools/images/10.png" alt=""></p>
 <hr>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Using JavaScript To Test Browser Support for a CSS Pseudo-Class]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class</guid>
+            <link>https://jonportella.com/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class</guid>
             <pubDate>Tue, 23 Feb 2021 13:47:47 GMT</pubDate>
             <description><![CDATA[An obscure (but effective) way to do CSS feature detection with JavaScript. In the example, we test for a feature that only Microsoft browsers have.]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class/images/0.png" alt=""></p>
 <hr>
 <h4>THE PROBLEM</h4>
 <p>Some browsers have native support for pseudo-elements that others don’t. This is the case, for example, of <code>::ms-reveal</code> , the little eye that appears to show/hide password input fields in Microsoft browsers (Internet Explorer and Edge).</p>
-<p><img src="/jon-portella-blog/content/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class/images/1.png" alt=""></p>
+<p><img src="/content/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class/images/1.png" alt=""></p>
 <p>Edge’s native password reveal feature.</p>
 <p>The problem with this native feature is that if your front-end has its own password reveal feature, you could end up with a layout like this one:</p>
-<p><img src="/jon-portella-blog/content/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class/images/2.png" alt=""></p>
+<p><img src="/content/blog/using-java-script-to-test-browser-support-for-a-css-pseudo-class/images/2.png" alt=""></p>
 <p>Oops! Edge’s native password reveal feature and our own’s.</p>
 <h4>A SOLUTION</h4>
 <p>A quick fix would be to just hide the native reveal password:</p>
@@ -1865,13 +1865,13 @@ gist-paste gist.txt
         </item>
         <item>
             <title><![CDATA[The Ugliest 6 Reasons To Not Enrol In A Coding Bootcamp.]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp</guid>
+            <link>https://jonportella.com/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp</guid>
             <pubDate>Fri, 02 Oct 2020 10:03:34 GMT</pubDate>
             <description><![CDATA[There are some ugly parts that people don’t talk about. Before deciding to enrol, mind all the possible outcomes.]]></description>
             <content:encoded><![CDATA[<h3>The Ugliest 6 Reasons To Not Enroll In A Coding Boot Camp</h3>
 <h4>Here’s my experience as a top European coding boot camp graduate</h4>
-<p><img src="/jon-portella-blog/content/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp/images/0.png" alt=""></p>
+<p><img src="/content/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp/images/0.png" alt=""></p>
 <p>There are some ugly partsof coding boot camps that people don’t talk about.</p>
 <p>In this article, I’m going to give you a global vision about the possible dangers of enrolling in these courses, with the objective ofhelping you decide whether to do a boot camp or not.</p>
 <p>About me — Two years ago graduated from <a href="https://codeworks.me/">Codeworks</a>, which is currently the <a href="https://www.switchup.org/rankings/best-coding-bootcamps">top 5 best valued Software Engineering boot camp in the world</a>. It was a great experience for me. And besides the software developer job that I landed shortly after graduating from the course, once a week I’m also teaching new software devs in that same boot camp as an instructor.</p>
@@ -1913,8 +1913,8 @@ gist-paste gist.txt
         </item>
         <item>
             <title><![CDATA[How I Doubled My Income in 3 Months]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/how-i-doubled-my-income-in-3-months</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/how-i-doubled-my-income-in-3-months</guid>
+            <link>https://jonportella.com/blog/how-i-doubled-my-income-in-3-months</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/how-i-doubled-my-income-in-3-months</guid>
             <pubDate>Wed, 30 Sep 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[The story of my career change, and how first choices aren’t usually the best for your future]]></description>
             <content:encoded><![CDATA[<p><img src="./images/hand.jpeg" alt=""></p>
@@ -1967,12 +1967,12 @@ gist-paste gist.txt
         </item>
         <item>
             <title><![CDATA[5 Remarkable Git Commands That Will Boost Your Coding Productivity]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity</guid>
+            <link>https://jonportella.com/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity</guid>
             <pubDate>Tue, 29 Sep 2020 08:24:58 GMT</pubDate>
             <description><![CDATA[These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…]]></description>
             <content:encoded><![CDATA[<p>These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…</p>
-<p><img src="/jon-portella-blog/content/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity/images/0.png" alt=""></p>
+<p><img src="/content/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity/images/0.png" alt=""></p>
 <h3>1. Git Commit Work In Progess — gwip</h3>
 <p>This command will stage all current changes and commit them with a default message.</p>
 <p>It’s very useful for saving your current work and checking another branch and then coming back to it.</p>
@@ -2035,11 +2035,11 @@ gist-paste gist.txt
         </item>
         <item>
             <title><![CDATA[5 cool JS tricks to impress your teammates]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/5-cool-js-tricks-to-impress-your-teammates</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/5-cool-js-tricks-to-impress-your-teammates</guid>
+            <link>https://jonportella.com/blog/5-cool-js-tricks-to-impress-your-teammates</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/5-cool-js-tricks-to-impress-your-teammates</guid>
             <pubDate>Fri, 25 Sep 2020 22:52:57 GMT</pubDate>
             <description><![CDATA[Some web-dev wisdom, not just limited to JS!]]></description>
-            <content:encoded><![CDATA[<p><img src="/jon-portella-blog/content/blog/5-cool-js-tricks-to-impress-your-teammates/images/0.png" alt=""></p>
+            <content:encoded><![CDATA[<p><img src="/content/blog/5-cool-js-tricks-to-impress-your-teammates/images/0.png" alt=""></p>
 <h3>1. Update your NPM modules with one command</h3>
 <p>One common source of confusion for new Node.js developers is the command <code>npm update</code>. It will update all <code>node_modules</code> present in <code>package.json</code> to their latest versions but <strong>it will not change the version names</strong> in <code>package.json</code>.</p>
 <p>So PROBLEM: when another developer clones your repo and runs <code>npm install</code>, they will get an older version from the <code>node_modules</code> than you.</p>
@@ -2151,8 +2151,8 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
         </item>
         <item>
             <title><![CDATA[Creating a Blackjack game]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/creating-a-blackjack-game</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/creating-a-blackjack-game</guid>
+            <link>https://jonportella.com/blog/creating-a-blackjack-game</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/creating-a-blackjack-game</guid>
             <pubDate>Tue, 11 Feb 2020 22:45:03 GMT</pubDate>
             <description><![CDATA[A memento of my first ever JavaScript project circa February 2018.]]></description>
             <content:encoded><![CDATA[<p><a href="https://jportella93.github.io/Blackjack/index.html"><img src="./images/blackjack.png" alt=""></a></p>
@@ -2163,8 +2163,8 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
         </item>
         <item>
             <title><![CDATA[Displaying data with variable length]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/displaying-data-with-variable-length</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/displaying-data-with-variable-length</guid>
+            <link>https://jonportella.com/blog/displaying-data-with-variable-length</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/displaying-data-with-variable-length</guid>
             <pubDate>Wed, 15 Jan 2020 19:38:03 GMT</pubDate>
             <description><![CDATA[Never trust the design.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/road-loor-nicolas.jpg" alt=""></p>
@@ -2197,8 +2197,8 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
         </item>
         <item>
             <title><![CDATA[6 Things I Learned in May 2019]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/6-things-i-learned-in-may-2019</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/6-things-i-learned-in-may-2019</guid>
+            <link>https://jonportella.com/blog/6-things-i-learned-in-may-2019</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/6-things-i-learned-in-may-2019</guid>
             <pubDate>Thu, 30 May 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[Some cool React.js libraries, PropTypes, node_modules updates and an Easter Egg.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/6-loor-nicolas.jpg" alt=""></p>
@@ -2268,8 +2268,8 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
         </item>
         <item>
             <title><![CDATA[You are using browser events wrong]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/you-are-using-browser-events-wrong</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/you-are-using-browser-events-wrong</guid>
+            <link>https://jonportella.com/blog/you-are-using-browser-events-wrong</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/you-are-using-browser-events-wrong</guid>
             <pubDate>Wed, 15 May 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[Stop listening.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/x-loor-nicolas.jpg" alt=""></p>
@@ -2389,8 +2389,8 @@ osascript -e 'quit app <span title="\&#x22;" class="token entity">\"</span>Postm
         </item>
         <item>
             <title><![CDATA[9 Things I Learned in April 2019]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/9-things-i-learned-in-april-2019</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/9-things-i-learned-in-april-2019</guid>
+            <link>https://jonportella.com/blog/9-things-i-learned-in-april-2019</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/9-things-i-learned-in-april-2019</guid>
             <pubDate>Tue, 30 Apr 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, macOS apps, using searchable components and fighting Chrome's autocomplete styling.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/9-loor-nicolas.jpg" alt=""></p>
@@ -2523,8 +2523,8 @@ $ work_off
         </item>
         <item>
             <title><![CDATA[12 Things I Learned in March 2019]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/12-things-i-learned-in-march-2019</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/12-things-i-learned-in-march-2019</guid>
+            <link>https://jonportella.com/blog/12-things-i-learned-in-march-2019</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/12-things-i-learned-in-march-2019</guid>
             <pubDate>Sun, 31 Mar 2019 19:38:03 GMT</pubDate>
             <description><![CDATA[Tips and tricks including but not limited to Pandas, JavaScript sliders and swipers, a flights API, BASH automations and some other nifty ideas.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/t-loor-nicolas.jpg" alt=""></p>
@@ -2603,8 +2603,8 @@ $ <span class="token function">ls</span>
         </item>
         <item>
             <title><![CDATA[Downloading Reddit Images in Bulk]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/reddit-image-downloader-node</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/reddit-image-downloader-node</guid>
+            <link>https://jonportella.com/blog/reddit-image-downloader-node</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/reddit-image-downloader-node</guid>
             <pubDate>Tue, 29 Jan 2019 15:12:03 GMT</pubDate>
             <description><![CDATA[Get all the neat desktop goodness from /r/wallpapers with this command line utility built in Node.js]]></description>
             <content:encoded><![CDATA[<p><img src="./images/several-images-loor-nicolas.jpg" alt=""></p>
@@ -2618,8 +2618,8 @@ $ <span class="token function">ls</span>
         </item>
         <item>
             <title><![CDATA[Picking Random Comments On Instagram]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/picking-random-comments-on-instagram</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/picking-random-comments-on-instagram</guid>
+            <link>https://jonportella.com/blog/picking-random-comments-on-instagram</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/picking-random-comments-on-instagram</guid>
             <pubDate>Tue, 15 Jan 2019 15:12:03 GMT</pubDate>
             <description><![CDATA[A web app to make Instagram contests suck less.]]></description>
             <content:encoded><![CDATA[<p><img src="./images/i-loor-nicolas.jpg" alt=""></p>
@@ -2633,14 +2633,14 @@ $ <span class="token function">ls</span>
 <p>A problem arised when, after more than 200 people commented, he had to, somehow, randomly pick a comment that also passed these conditions.</p>
 <p>So I did a quick search for available options and I didn't find anything acceptable. Some were <a href="https://www.easypromosapp.com/instagram-sweepstakes/">paid services</a> and some other even required you to <a href="https://commentpicker.com/instagram.php">give them your credentials</a>... which doesn't make sense since pictures and comments are public unless the account is private. And I don't think many private accounts do contests adressed to gain more followers.</p>
 <p>That's why I built a small app to solve this problem. It features a conversational UI to get the rules for a given contest and, at the last step, it creates a snippet that gets copied to the user clipboard. Then, this can be pasted in the JavaScript console in the picture page and the winner comment will be highlighted.</p>
-<p><a href="/free-instagram-random-comment-picker/">The app is available here.</a></p>
+<p><a href="/jon-portella-blog/free-instagram-random-comment-picker/">The app is available here.</a></p>
 <p>In the future I might do a post about the decisions and the findings that features this little project. If I have to take one thing out of this is that conversational UI is super fun to work with!</p>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Hello World]]></title>
-            <link>https://jportella93.github.io/jon-portella-blog/blog/hello-world</link>
-            <guid isPermaLink="false">https://jportella93.github.io/jon-portella-blog/blog/hello-world</guid>
+            <link>https://jonportella.com/blog/hello-world</link>
+            <guid isPermaLink="false">https://jonportella.com/blog/hello-world</guid>
             <pubDate>Mon, 31 Dec 2018 15:12:03 GMT</pubDate>
             <description><![CDATA[Mandatory]]></description>
             <content:encoded><![CDATA[<p><img src="./images/wood-head-loor-nicolas.jpg" alt=""></p>

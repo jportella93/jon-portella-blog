@@ -1,0 +1,54 @@
+import Link from "next/link";
+import { rhythm } from "../lib/typography";
+import { useTheme } from "./ThemeProvider";
+
+export default function KeyboardNavHint() {
+  const { isDark } = useTheme();
+
+  const hintStyle = {
+    backgroundColor: isDark
+      ? "rgba(91, 163, 211, 0.1)"
+      : "rgba(53, 140, 203, 0.1)",
+    border: `1px solid ${
+      isDark ? "rgba(91, 163, 211, 0.2)" : "rgba(53, 140, 203, 0.2)"
+    }`,
+    color: isDark ? "#e0e0e0" : "#1a1a1a",
+    borderRadius: "4px",
+    padding: `${rhythm(0.5)} ${rhythm(0.75)}`,
+    marginTop: rhythm(1),
+    marginBottom: rhythm(1),
+    fontSize: "14px",
+  };
+
+  const kbdStyle = {
+    fontFamily: "monospace",
+    backgroundColor: isDark ? "#2a2a2a" : "#f5f5f5",
+    border: `1px solid ${isDark ? "#555" : "#ddd"}`,
+    borderRadius: "3px",
+    padding: "2px 4px",
+    margin: "0 2px",
+    color: isDark ? "#e0e0e0" : "#444",
+    display: "inline-block",
+    fontSize: ".85em",
+    fontWeight: "bold",
+    lineHeight: "1",
+    whiteSpace: "nowrap" as const,
+    boxShadow: `0 1px 0 ${isDark ? "rgba(255,255,255,.1)" : "rgba(0,0,0,.1)"}`,
+  };
+
+  return (
+    <div style={hintStyle}>
+      <strong>Tip:</strong> Use keyboard shortcuts to navigate between posts:
+      <br />
+      <kbd style={kbdStyle}>n</kbd> for next (newer) post,
+      <kbd style={kbdStyle}>p</kbd> for previous (older) post.
+      <br />
+      <Link
+        href="/shortcuts"
+        style={{ color: "#358ccb", textDecoration: "underline" }}
+      >
+        See all shortcuts →
+      </Link>
+    </div>
+  );
+}

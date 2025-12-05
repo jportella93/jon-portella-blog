@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import KeyboardNavHint from "../../components/KeyboardNavHint";
 import Layout from "../../components/Layout";
 import SEO from "../../components/SEO";
 import {
@@ -13,6 +14,7 @@ import {
 import { getPostBySlug } from "../../lib/markdown";
 import { siteMetadata } from "../../lib/siteMetadata";
 import { rhythm, scale } from "../../lib/typography";
+import { useKeyboardNavigation } from "../../lib/useKeyboardNavigation";
 
 interface BlogPostProps {
   post: Post;
@@ -24,6 +26,11 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
   const router = useRouter();
   const { title: postTitle, spoiler, date } = post.frontmatter;
   const postUrl = siteMetadata.siteUrl + router.asPath;
+
+  useKeyboardNavigation({
+    previous: previous?.slug,
+    next: next?.slug,
+  });
 
   const postDescriptionMetaTag = `${spoiler || ""} - ${siteMetadata.title} - ${
     siteMetadata.description
@@ -98,6 +105,7 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
           )}
         </li>
       </ul>
+      <KeyboardNavHint />
     </Layout>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NAVIGATION_PAGES } from "../lib/constants";
 import { rhythm } from "../lib/typography";
 import ThemeSwitcher from "./ThemeSwitcher";
 
@@ -7,25 +8,6 @@ interface NavbarProps {
 }
 
 export default function Navbar({ location }: NavbarProps) {
-  const links = [
-    {
-      label: "Home",
-      url: "/",
-    },
-    {
-      label: "Blog",
-      url: "/blog",
-    },
-    {
-      label: "Timeline",
-      url: "/timeline",
-    },
-    {
-      label: "RSS",
-      url: "/rss.xml",
-    },
-  ];
-
   return (
     <nav
       style={{
@@ -40,7 +22,7 @@ export default function Navbar({ location }: NavbarProps) {
           margin: 0,
         }}
       >
-        {links.map(({ label, url }) => (
+        {NAVIGATION_PAGES.map(({ label, url }) => (
           <li
             key={url}
             style={{

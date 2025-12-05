@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import KeyboardNavHint from "../../components/KeyboardNavHint";
 import Layout from "../../components/Layout";
+import ReadingProgressBar from "../../components/ReadingProgressBar";
 import SEO from "../../components/SEO";
 import {
   getAllPostsMetadata,
@@ -56,6 +57,7 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
 
   return (
     <Layout width="narrow">
+      <ReadingProgressBar />
       <SEO
         title={postTitle}
         description={postDescriptionMetaTag}

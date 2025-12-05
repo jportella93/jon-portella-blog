@@ -46,3 +46,5 @@ Thumbs.db
 
 .gh-pages-temp/
 public/rss.xml
+
+lib/postsMetadata.json

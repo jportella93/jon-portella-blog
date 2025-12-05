@@ -49,6 +49,20 @@ export function generateRSS(): void {
   const rssPath = path.join(process.cwd(), 'public', 'rss.xml');
   fs.writeFileSync(rssPath, feed.rss2());
   console.log('RSS feed generated at', rssPath);
+
+  // Generate client-safe posts metadata JSON for use in browser
+  const postsMetadata = posts.map(post => ({
+    slug: post.slug,
+    frontmatter: {
+      title: post.frontmatter.title,
+      spoiler: post.frontmatter.spoiler,
+      date: post.frontmatter.date,
+    }
+  }));
+
+  const postsMetadataPath = path.join(process.cwd(), 'lib', 'postsMetadata.json');
+  fs.writeFileSync(postsMetadataPath, JSON.stringify(postsMetadata, null, 2));
+  console.log('Posts metadata generated at', postsMetadataPath);
 }
 
 

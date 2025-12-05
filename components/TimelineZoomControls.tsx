@@ -9,7 +9,7 @@ export default function TimelineZoomControls({
   onZoomIn,
   onZoomOut,
 }: TimelineZoomControlsProps) {
-  const { isDark } = useTheme();
+  const { isDarkMode } = useTheme();
 
   return (
     <div
@@ -25,8 +25,8 @@ export default function TimelineZoomControls({
         onClick={onZoomOut}
         aria-label="Zoom out"
         style={{
-          background: isDark ? "#2a2a2a" : "white",
-          border: `1px solid ${isDark ? "#444" : "#ddd"}`,
+          background: isDarkMode ? "#2a2a2a" : "white",
+          border: `1px solid ${isDarkMode ? "#444" : "#ddd"}`,
           borderRadius: "4px",
           width: "40px",
           height: "40px",
@@ -34,7 +34,7 @@ export default function TimelineZoomControls({
           alignItems: "center",
           justifyContent: "center",
           cursor: "pointer",
-          color: isDark ? "#e0e0e0" : "#333",
+          color: isDarkMode ? "#e0e0e0" : "#333",
           transition: "all 0.2s ease",
           userSelect: "none",
           padding: 0,
@@ -60,8 +60,8 @@ export default function TimelineZoomControls({
         onClick={onZoomIn}
         aria-label="Zoom in"
         style={{
-          background: isDark ? "#2a2a2a" : "white",
-          border: `1px solid ${isDark ? "#444" : "#ddd"}`,
+          background: isDarkMode ? "#2a2a2a" : "white",
+          border: `1px solid ${isDarkMode ? "#444" : "#ddd"}`,
           borderRadius: "4px",
           width: "40px",
           height: "40px",
@@ -69,7 +69,7 @@ export default function TimelineZoomControls({
           alignItems: "center",
           justifyContent: "center",
           cursor: "pointer",
-          color: isDark ? "#e0e0e0" : "#333",
+          color: isDarkMode ? "#e0e0e0" : "#333",
           transition: "all 0.2s ease",
           userSelect: "none",
           padding: 0,

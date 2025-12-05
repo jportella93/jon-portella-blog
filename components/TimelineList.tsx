@@ -16,7 +16,7 @@ export default function TimelineList({
   itemsByType,
   onItemClick,
 }: TimelineListProps) {
-  const { isDark } = useTheme();
+  const { isDarkMode } = useTheme();
 
   function formatDate(dateString: string | null): string {
     if (!dateString) return "Present";
@@ -97,7 +97,7 @@ export default function TimelineList({
                   <div
                     style={{
                       fontSize: "0.85rem",
-                      color: isDark ? "#999" : "#666",
+                      color: isDarkMode ? "#999" : "#666",
                     }}
                   >
                     {formatDate(item.startDate)} - {formatDate(item.endDate)}
@@ -117,7 +117,7 @@ export default function TimelineList({
         "study",
         "studies",
         THEME_COLORS.study.light,
-        isDark ? THEME_COLORS.study.dark : THEME_COLORS.study.light
+        isDarkMode ? THEME_COLORS.study.dark : THEME_COLORS.study.light
       )}
 
       {renderTimelineSection(
@@ -125,7 +125,7 @@ export default function TimelineList({
         "job",
         "work",
         THEME_COLORS.job.light,
-        isDark ? THEME_COLORS.job.dark : THEME_COLORS.job.light
+        isDarkMode ? THEME_COLORS.job.dark : THEME_COLORS.job.light
       )}
 
       {renderTimelineSection(
@@ -133,7 +133,7 @@ export default function TimelineList({
         "project",
         "fun",
         THEME_COLORS.project.light,
-        isDark ? THEME_COLORS.project.dark : THEME_COLORS.project.light
+        isDarkMode ? THEME_COLORS.project.dark : THEME_COLORS.project.light
       )}
     </div>
   );

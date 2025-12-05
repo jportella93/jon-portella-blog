@@ -12,7 +12,7 @@ interface ThemeContextType {
   theme: Theme;
   setTheme: (theme: Theme) => void;
   mounted: boolean;
-  isDark: boolean;
+  isDarkMode: boolean;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -24,6 +24,7 @@ interface ThemeProviderProps {
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>("system");
   const [mounted, setMounted] = useState(false);
+  const [systemPrefersDark, setSystemPrefersDark] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -32,6 +33,11 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     // Get theme from localStorage or default to 'system'
     const savedTheme = (localStorage.getItem("theme") || "system") as Theme;
     setTheme(savedTheme);
+
+    // Set initial system preference
+    setSystemPrefersDark(
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
   }, []);
 
   useEffect(() => {
@@ -78,6 +84,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = () => {
+      setSystemPrefersDark(mediaQuery.matches);
       const root = window.document.documentElement;
       root.classList.remove("light", "dark");
       root.classList.add(mediaQuery.matches ? "dark" : "light");
@@ -87,17 +94,16 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, [theme, mounted]);
 
-  const isDark =
-    mounted &&
-    (theme === "dark" ||
-      (theme === "system" &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches));
+  // During static generation, use light theme as default
+  const isDarkMode = mounted
+    ? theme === "dark" || (theme === "system" && systemPrefersDark)
+    : false;
 
   const value = {
     theme,
     setTheme,
     mounted,
-    isDark,
+    isDarkMode,
   };
 
   return (
@@ -108,7 +114,13 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 export function useTheme(): ThemeContextType {
   const context = useContext(ThemeContext);
   if (context === undefined) {
-    throw new Error("useTheme must be used within a ThemeProvider");
+    // During static generation, provide default values
+    return {
+      theme: "system",
+      setTheme: () => {},
+      mounted: false,
+      isDarkMode: false,
+    };
   }
   return context;
 }

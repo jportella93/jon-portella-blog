@@ -40,7 +40,7 @@ export default function timeline() {
   const timelineInstanceRef = useRef<VisTimeline | null>(null);
   const [modalItem, setModalItem] = useState<TimelineItem | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const { isDark } = useTheme();
+  const { isDarkMode } = useTheme();
 
   // Get current time once to avoid re-computation issues
   const now = useMemo(() => moment(), []);
@@ -338,10 +338,10 @@ export default function timeline() {
         className="timeline-wrapper"
         style={{
           width: "100%",
-          border: `1px solid ${isDark ? "#444" : "#ddd"}`,
+          border: `1px solid ${isDarkMode ? "#444" : "#ddd"}`,
           borderRadius: "8px",
           overflow: "auto",
-          background: isDark ? "#1a1a1a" : "white",
+          background: isDarkMode ? "#1a1a1a" : "white",
           position: "relative",
           minHeight: "400px",
         }}
@@ -356,7 +356,7 @@ export default function timeline() {
               left: 0,
               right: 0,
               bottom: 0,
-              background: isDark ? "#1a1a1a" : "white",
+              background: isDarkMode ? "#1a1a1a" : "white",
               zIndex: 10,
             }}
           >

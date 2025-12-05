@@ -1,18 +1,17 @@
-import Link from "next/link";
 import { rhythm } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 
 export default function KeyboardNavHint() {
-  const { isDark } = useTheme();
+  const { isDarkMode } = useTheme();
 
   const hintStyle = {
-    backgroundColor: isDark
+    backgroundColor: isDarkMode
       ? "rgba(91, 163, 211, 0.1)"
       : "rgba(53, 140, 203, 0.1)",
     border: `1px solid ${
-      isDark ? "rgba(91, 163, 211, 0.2)" : "rgba(53, 140, 203, 0.2)"
+      isDarkMode ? "rgba(91, 163, 211, 0.2)" : "rgba(53, 140, 203, 0.2)"
     }`,
-    color: isDark ? "#e0e0e0" : "#1a1a1a",
+    color: isDarkMode ? "#e0e0e0" : "#1a1a1a",
     borderRadius: "4px",
     padding: `${rhythm(0.5)} ${rhythm(0.75)}`,
     marginTop: rhythm(1),
@@ -22,18 +21,20 @@ export default function KeyboardNavHint() {
 
   const kbdStyle = {
     fontFamily: "monospace",
-    backgroundColor: isDark ? "#2a2a2a" : "#f5f5f5",
-    border: `1px solid ${isDark ? "#555" : "#ddd"}`,
+    backgroundColor: isDarkMode ? "#2a2a2a" : "#f5f5f5",
+    border: `1px solid ${isDarkMode ? "#555" : "#ddd"}`,
     borderRadius: "3px",
     padding: "2px 4px",
     margin: "0 2px",
-    color: isDark ? "#e0e0e0" : "#444",
+    color: isDarkMode ? "#e0e0e0" : "#444",
     display: "inline-block",
     fontSize: ".85em",
     fontWeight: "bold",
     lineHeight: "1",
     whiteSpace: "nowrap" as const,
-    boxShadow: `0 1px 0 ${isDark ? "rgba(255,255,255,.1)" : "rgba(0,0,0,.1)"}`,
+    boxShadow: `0 1px 0 ${
+      isDarkMode ? "rgba(255,255,255,.1)" : "rgba(0,0,0,.1)"
+    }`,
   };
 
   return (
@@ -41,14 +42,10 @@ export default function KeyboardNavHint() {
       <strong>Tip:</strong> Use keyboard shortcuts to navigate between posts:
       <br />
       <kbd style={kbdStyle}>n</kbd> for next (newer) post,
-      <kbd style={kbdStyle}>p</kbd> for previous (older) post.
+      <kbd style={kbdStyle}>p</kbd> for previous (older) post,
+      <kbd style={kbdStyle}>r</kbd> for random post.
       <br />
-      <Link
-        href="/shortcuts"
-        style={{ color: "#358ccb", textDecoration: "underline" }}
-      >
-        See all shortcuts →
-      </Link>
+      Tap <kbd style={kbdStyle}>/</kbd> to see more shortcuts.
     </div>
   );
 }

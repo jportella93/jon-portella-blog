@@ -1,7 +1,7 @@
 import { useTheme } from "./ThemeProvider";
 
 export default function TimelineSkeleton() {
-  const { isDark } = useTheme();
+  const { isDarkMode } = useTheme();
 
   const skeletonColors = [
     { bg: "#e3f2fd", border: "#2196f3" }, // study
@@ -22,7 +22,7 @@ export default function TimelineSkeleton() {
       <div
         style={{
           height: "60px",
-          borderBottom: `2px solid ${isDark ? "#444" : "#ddd"}`,
+          borderBottom: `2px solid ${isDarkMode ? "#444" : "#ddd"}`,
           padding: "16px",
           display: "flex",
           alignItems: "center",
@@ -35,7 +35,7 @@ export default function TimelineSkeleton() {
             style={{
               width: "60px",
               height: "20px",
-              background: isDark ? "#333" : "#f0f0f0",
+              background: isDarkMode ? "#333" : "#f0f0f0",
               borderRadius: "4px",
               animation: "pulse 1.5s ease-in-out infinite",
               animationDelay: `${i * 0.1}s`,
@@ -71,7 +71,7 @@ export default function TimelineSkeleton() {
                   left: `${left}%`,
                   width: `${width}%`,
                   height: "100%",
-                  background: isDark
+                  background: isDarkMode
                     ? `rgba(${
                         color.border === "#2196f3"
                           ? "33, 150, 243"

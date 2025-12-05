@@ -1,8 +1,22 @@
 {
-  "name": "jon-portella-blog",
-  "compatibility_date": "2025-12-05",
   "assets": {
     "directory": "./out"
+  },
+  "compatibility_date": "2025-12-05",
+  "name": "jon-portella-blog",
+  "observability": {
+    "enabled": false,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    }
   }
 }
-

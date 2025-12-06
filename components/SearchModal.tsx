@@ -141,6 +141,13 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
     color: isDarkMode ? "#e0e0e0" : "#2B303A",
   };
 
+  const dateStyle: React.CSSProperties = {
+    fontSize: "12px",
+    color: isDarkMode ? "#b3b3b3" : "#555",
+    margin: 0,
+    marginBottom: "4px",
+  };
+
   const spoilerStyle: React.CSSProperties = {
     fontSize: "14px",
     color: isDarkMode ? "#ccc" : "#666",
@@ -227,6 +234,14 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <div style={titleStyle}>
                     {post.frontmatter.title || post.slug}
                   </div>
+                  {post.frontmatter.date && (
+                    <p style={dateStyle}>
+                      {new Date(post.frontmatter.date).toLocaleDateString(
+                        "en-US",
+                        { year: "numeric", month: "long", day: "numeric" }
+                      )}
+                    </p>
+                  )}
                   {post.frontmatter.spoiler && (
                     <p style={spoilerStyle}>{post.frontmatter.spoiler}</p>
                   )}

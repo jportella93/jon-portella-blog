@@ -548,5 +548,25 @@
     "startDate": "2012-10-15",
     "endDate": "2012-11-15",
     "milestones": []
+  },
+  {
+    "type": "project",
+    "title": "Snap in the Bath - Get Away [Official Music Video]",
+    "description": "A music videoclip my band at the time, I made the whole video, acting, recording of the song, playing guitar, and backing vocals",
+    "image": null,
+    "link": "https://www.youtube.com/watch?v=3BicGzmKJHw",
+    "startDate": "2014-03-03",
+    "endDate": "2014-04-03",
+    "milestones": []
+  },
+  {
+    "type": "project",
+    "title": "Get Away - Making of",
+    "description": "The making of the music videoclip for my band I did the whole video and acting",
+    "image": null,
+    "link": "https://www.youtube.com/watch?v=xp_fQcDMkA4",
+    "startDate": "2014-03-08",
+    "endDate": "2014-04-08",
+    "milestones": []
   }
 ]

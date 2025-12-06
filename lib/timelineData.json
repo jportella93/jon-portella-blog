@@ -518,5 +518,35 @@
     "startDate": "2013-06-13",
     "endDate": "2013-07-13",
     "milestones": []
+  },
+  {
+    "type": "project",
+    "title": "Cadena de Valores KH-7 ZAS!",
+    "description": "A TV spot for a cleaning company, I did boom mic operation and also cameo in the video",
+    "image": null,
+    "link": "https://www.youtube.com/watch?v=cfDd1nk6iNY",
+    "startDate": "2012-06-29",
+    "endDate": "2012-07-29",
+    "milestones": []
+  },
+  {
+    "type": "project",
+    "title": "Bambusound, el documental",
+    "description": "A music documentary for University project, I conceived the idea, did sound and OST production. Also interviewed the musicians.",
+    "image": null,
+    "link": "https://www.youtube.com/watch?v=ZFNF4Xx5gF8",
+    "startDate": "2014-09-30",
+    "endDate": "2014-10-30",
+    "milestones": []
+  },
+  {
+    "type": "project",
+    "title": "Itaca Band - Ojalá (Videoclip Oficial)",
+    "description": "A music videoclip for a local band, I did boom mic operation",
+    "image": null,
+    "link": "https://www.youtube.com/watch?v=IMunDXoTKdU",
+    "startDate": "2012-10-15",
+    "endDate": "2012-11-15",
+    "milestones": []
   }
 ]

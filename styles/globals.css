@@ -59,27 +59,3 @@ html.dark blockquote {
     border-left-color: #5ba3d3 !important;
   }
 }
-
-/* Theme icon styles */
-.theme-icon {
-  transition: transform 0.2s ease;
-}
-
-.theme-icon:hover {
-  transform: scale(1.1);
-}
-
-/* Make system theme icon (moon) light colored */
-.theme-icon-system {
-  color: #e0e0e0;
-}
-
-/* Make moon icon light colored in dark mode for visibility */
-html.dark .theme-icon-moon-dark {
-  fill: #e0e0e0 !important;
-}
-
-/* Make star light colored in dark mode for visibility */
-html.dark .theme-icon-star-dark {
-  fill: #e0e0e0 !important;
-}

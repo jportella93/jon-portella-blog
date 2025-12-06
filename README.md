@@ -1,6 +1,6 @@
-# Next.js Blog for GitHub Pages
+# Next.js Blog (Cloudflare Pages)
 
-This is a Next.js static site generator (SSG) blog, migrated from Gatsby, configured for deployment to GitHub Pages.
+This is a Next.js static site generator (SSG) blog, migrated from Gatsby, deployed to Cloudflare Pages (Workers) using Wrangler.
 
 ## Features
 
@@ -13,22 +13,13 @@ This is a Next.js static site generator (SSG) blog, migrated from Gatsby, config
 ## Setup
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
-2. Set the base path for GitHub Pages (if deploying to a project site):
-```bash
-# For project site (username.github.io/repo-name)
-export NEXT_PUBLIC_BASE_PATH="/repo-name"
+2. Run the development server:
 
-# For user/organization site (username.github.io)
-# Leave NEXT_PUBLIC_BASE_PATH empty or unset
-```
-
-## Development
-
-Run the development server:
 ```bash
 npm run dev
 ```
@@ -38,68 +29,62 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ## Build
 
 Build the static site:
+
 ```bash
 npm run build
 ```
 
 This will:
+
 1. Generate the RSS feed
-2. Build all static pages to the `out/` directory
+2. Export all static pages to the `out/` directory
 
-## Deploy to GitHub Pages
+## Deploy to Cloudflare Pages (Workers) with Wrangler
 
-Deploy the built site to GitHub Pages:
-```bash
-npm run deploy
-```
-
-This will:
-1. Build the static site
-2. Push the `out/` directory to the `gh-pages` branch
-
-Make sure to:
-1. Set up GitHub Pages in your repository settings to serve from the `gh-pages` branch
-2. Configure the base path if deploying to a project site (not username.github.io)
+1. Install Wrangler (if you don't have it):
+   ```bash
+   npm install -g wrangler
+   ```
+2. Authenticate once:
+   ```bash
+   wrangler login
+   ```
+3. Build and deploy:
+   ```bash
+   npm run build
+   npx wrangler pages deploy ./out --project-name jon-portella-blog --branch main
+   ```
+   - Uses `wrangler.jsonc` to serve `./out` as static assets via Cloudflare Pages (Workers).
+   - For a preview deployment, set `--branch` to the target branch name (e.g. `feature/my-change`).
 
 ## Configuration
 
 ### Base Path
 
-For GitHub Pages project sites, set the `NEXT_PUBLIC_BASE_PATH` environment variable to your repository name:
-
-```bash
-export NEXT_PUBLIC_BASE_PATH="/your-repo-name"
-```
-
-Or create a `.env.local` file:
-```
-NEXT_PUBLIC_BASE_PATH=/your-repo-name
-```
+The site is served from the root domain, so `BASE_PATH` is empty. If you need to serve from a subpath, update `lib/constants.ts` and `next.config.ts` accordingly.
 
 ### Site Metadata
 
-Edit `lib/generateRSS.js` and component files to update site metadata (title, author, description, etc.).
+Edit `lib/generateRSS.ts` and component files to update site metadata (title, author, description, etc.).
 
 ## Project Structure
 
 ```
-gh-blog/
+jon-portella-blog/
+├── components/          # React components
 ├── content/
-│   └── blog/          # Blog post markdown files
-├── components/        # React components
-├── lib/              # Utility functions
-│   ├── markdown.js   # Markdown processing
-│   ├── getAllPosts.js
-│   ├── generateRSS.js
-│   └── typography.js
-├── pages/            # Next.js pages
-│   ├── blog/         # Blog listing and post pages
+│   └── blog/            # Markdown posts and images
+├── lib/                 # Utilities (markdown, RSS, metadata, timeline)
+│   ├── generateRSS.ts
+│   ├── timelineData.json
 │   └── ...
-├── public/           # Static assets
-│   ├── assets/       # Images and other assets
-│   └── ...
-└── scripts/          # Build scripts
-    └── generate-rss.js
+├── pages/               # Next.js pages (SSG, output: export)
+├── public/              # Static assets and generated rss.xml
+├── scripts/             # Helpers (generate-rss.ts, fixes, etc.)
+├── styles/              # Global and feature styles
+├── next.config.ts       # Next.js config (static export)
+├── wrangler.jsonc       # Cloudflare Pages (Workers) config
+└── package.json
 ```
 
 ## Notes

@@ -4,7 +4,7 @@ spoiler: This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, 
 date: "2019-04-30T19:38:03.284Z"
 ---
 
-![](./images/9-loor-nicolas.jpg)
+![Presentation image](./images/9-loor-nicolas.jpg)
 
 ## 1. How to use CSS Modules in create-react-app.
 

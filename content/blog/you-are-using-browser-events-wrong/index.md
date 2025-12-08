@@ -4,7 +4,7 @@ spoiler: Stop listening.
 date: "2019-05-15T19:38:03.284Z"
 ---
 
-![](./images/x-loor-nicolas.jpg)
+![Presentation image](./images/x-loor-nicolas.jpg)
 
 Will this code work?
 

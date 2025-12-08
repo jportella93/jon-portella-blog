@@ -1,12 +1,12 @@
 ---
 title: Track User Scroll with IntersectionObserver
 spoiler: Learn how to leverage window.IntersectionObserver to find out how many visitors see your content, in one minute.
-date: 2021-03-10T13:32:36.932Z
+date: "2021-03-10T13:32:36.932Z"
 ---
 
 #### A tutorial on firing a callback function when an element enters the viewport
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 #### The problem
 

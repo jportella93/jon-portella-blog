@@ -4,7 +4,7 @@ spoiler: A memento of my first ever JavaScript project circa February 2018.
 date: "2020-02-11T22:45:03.284Z"
 ---
 
-[![](./images/blackjack.png)](https://jportella93.github.io/Blackjack/index.html)
+[![Presentation image](./images/blackjack.png)](https://jportella93.github.io/Blackjack/index.html)
 
 As the last test in order to get admitted in [Codeworks](https://codeworks.me/), the full stack JavaScript bootcamp I did back in 2018, I had one week to create and deliver a blackjack game.
 

@@ -4,7 +4,7 @@ spoiler: Some cool React.js libraries, PropTypes, node_modules updates and an Ea
 date: "2019-05-30T19:38:03.284Z"
 ---
 
-![](./images/6-loor-nicolas.jpg)
+![Presentation image](./images/6-loor-nicolas.jpg)
 
 ## 1. How to properly update your Node.js modules to the latest versions
 

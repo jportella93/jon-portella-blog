@@ -1,14 +1,14 @@
 ---
 title: Using SVGs on the Web — A Deep Dive
 spoiler: There isn’t one best way to implement SVGs on our websites, since each method has its pros and cons. Let’s learn their differences.
-date: 2021-04-28T15:13:21.156Z
+date: "2021-04-28T15:13:21.156Z"
 ---
 
 ### Using SVGs on the Web — A Deep Dive
 
 #### There isn’t one best way to implement SVGs on our websites, since each method has its pros and cons. Learning their differences is a crucial skill for a good Web Developer.
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 **Scalable Vector Graphics (SVG)** allow you to present pictures that are lightweight and can scale without being pixelated.
 

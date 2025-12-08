@@ -1,14 +1,14 @@
 ---
 title: "Forward Proxy vs. Reverse Proxy"
 spoiler: Understand the difference between forward proxies and reverse proxies, and when to use each one.
-date: 2021-03-17T13:47:39.957Z
+date: "2021-03-17T13:47:39.957Z"
 ---
 
 ### Forward Proxy vs. Reverse Proxy
 
 #### Despite having similar names, they serve different purposes. Here’s a quick guide.
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 
@@ -18,7 +18,7 @@ I came across [this really well-explained article from Cloudflare](https://www.c
 
 A server that sits in front of the client and acts as a middleman. It intercepts the client requests and **forwards** them — hence, the name — on their behalf to another server somewhere on the Internet.
 
-![](images/1.png)
+![Presentation image](./images/1.png)
 
 Forward Proxy Flow, image by [Cloudflare](https://www.cloudflare.com/).
 
@@ -34,7 +34,7 @@ If you want to put it into practice, I wrote a story about the subject, covering
 
 Is a server that sits in front of one or more web servers and acts as a gatekeeper for incoming requests.
 
-![](images/2.png)
+![Presentation image](./images/2.png)
 
 Reverse Proxy Flow, image by [Cloudflare](https://www.cloudflare.com/).
 

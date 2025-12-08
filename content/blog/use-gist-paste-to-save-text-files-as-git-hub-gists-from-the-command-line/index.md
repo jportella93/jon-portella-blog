@@ -1,10 +1,10 @@
 ---
 title: Use gist-paste to Save Text Files as GitHub Gists From the Command Line
 spoiler: A quick tip to save time on saving and sharing documents
-date: 2021-03-03T14:00:40.463Z
+date: "2021-03-03T14:00:40.463Z"
 ---
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 
@@ -24,21 +24,21 @@ sudo apt install gist
 
 2. Go to the [tokens section in GitHub](https://github.com/settings/tokens) and press on “Generate new token”. Input your password in the next screen:
 
-![](images/1.png)
+![Presentation image](./images/1.png)
 
 3. Set a name for your token and make sure to check the `gist` and `user:email` permissions:
 
-![](images/2.png)
+![Presentation image](./images/2.png)
 
 Set a name for your token like `gist.`
 
-![](images/3.png)
+![Presentation image](./images/3.png)
 
 Check **gist** and **user:email** permissions.
 
 4. Copy your generated token:
 
-![](images/4.png)
+![Presentation image](./images/4.png)
 
 5. Save the token in `~/.gist`. The `umask` ensures that the file is only accessible from your user account:
 

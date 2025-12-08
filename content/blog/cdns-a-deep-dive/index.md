@@ -1,14 +1,14 @@
 ---
 title: CDNs — A Deep Dive
 spoiler: You’ve used them before but you’re not completely sure what they are, here are some answers.
-date: 2021-04-21T23:45:16.803Z
+date: "2021-04-21T23:45:16.803Z"
 ---
 
 ### CDNs — A Deep Dive
 
 #### You’ve used them before but you’re not completely sure what they are, here are some answers.
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 Single server versus Content Delivery Network (CDN) by [Kanoha](https://en.wikipedia.org/wiki/File:NCDN_-_CDN.png) on Wikimedia Commons
 
@@ -26,7 +26,7 @@ Servers in a CDN can help provide a better user experience by caching content cl
 
 This reduces the **Round Trip Time (RTT)** which is the number of milliseconds (ms) it takes for a browser to send a request and receive a response back from a server.
 
-![](images/1.png)
+![Presentation image](./images/1.png)
 
 Without CDN vs with CDN by [Imperva](https://www.imperva.com/learn/performance/what-is-cdn-how-it-works/)
 

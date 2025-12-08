@@ -1,12 +1,12 @@
 ---
 title: "How To Call a Function When a User Stops Typing"
 spoiler: We’ll learn how to implement a browser auto-saving draft system in JavaScript
-date: 2021-04-21T13:12:45.974Z
+date: "2021-04-21T13:12:45.974Z"
 ---
 
 #### We’ll learn how to implement a browser auto-saving draft system in JavaScript
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 #### THE PROBLEM
 

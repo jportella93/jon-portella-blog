@@ -1,14 +1,14 @@
 ---
 title: "Building a carousel with Swiper"
 spoiler: Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.
-date: 2021-04-06T01:28:57.384Z
+date: "2021-04-06T01:28:57.384Z"
 ---
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 #### Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.
 
-![](images/1.png)
+![Presentation image](./images/1.png)
 
 [What we will build](https://codepen.io/jportella93/pen/PoWjaaG)
 

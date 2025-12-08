@@ -1,10 +1,10 @@
 ---
 title: How To Use a VPN to Change Your Public IP Address From the Command Line
 spoiler: A tutorial on setting a VPN and using it from the CLI to hide our IP and location
-date: 2021-03-08T14:03:39.417Z
+date: "2021-03-08T14:03:39.417Z"
 ---
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 

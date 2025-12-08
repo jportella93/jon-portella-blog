@@ -1,12 +1,12 @@
 ---
 title: Prevent Hyphen Line-Breaks with Non-Breaking Hyphen
 spoiler: Learn how to avoid hyphen line-breaks, in one minute.
-date: 2021-03-18T14:27:15.879Z
+date: "2021-03-18T14:27:15.879Z"
 ---
 
 #### Learn to dominate your hyphens and control where your content line breaks
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 
@@ -24,7 +24,7 @@ You could go and wrap every occurrence of the company name with a `` , and that
 
 #### ANOTHER (CLEANER) SOLUTION
 
-Replace the [Hyphen-Minus symbol](http://v) `-`, which is the one most commonly found on keyboards, with a [Non-Breaking Hyphen](https://unicode-table.com/en/2011/) `‑` , which looks the same but will avoid line breaks.
+Replace the [Hyphen-Minus symbol](https://en.wikipedia.org/wiki/Hyphen-minus) `-`, which is the one most commonly found on keyboards, with a [Non-Breaking Hyphen](https://unicode-table.com/en/2011/) `‑` , which looks the same but will avoid line breaks.
 
 Here’s a demo:
 

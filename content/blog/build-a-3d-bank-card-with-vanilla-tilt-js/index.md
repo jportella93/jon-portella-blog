@@ -1,12 +1,12 @@
 ---
 title: Build a 3D Bank Card with Vanilla-tilt.js
 spoiler: Learn how to build a 3D bank card, in one minute.
-date: 2021-03-12T13:55:24.717Z
+date: "2021-03-12T13:55:24.717Z"
 ---
 
 #### Make your cards stand-out with this quick JavaScript tutorial
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 [What we are going to build](https://codepen.io/jportella93/pen/eYBxdzv)
 

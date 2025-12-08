@@ -1,7 +1,7 @@
 ---
 title: Use RegEx Lazy Quantifier to Match Alt Tags
 spoiler: Learn how to use RegEx Lazy Quantifier, in one minute.
-date: 2021-03-19T13:26:48.884Z
+date: "2021-03-19T13:26:48.884Z"
 ---
 
 #### Save refactor time with one character — Regular expressions on JavaScript or any other language made easier

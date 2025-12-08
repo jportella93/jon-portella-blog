@@ -1,7 +1,7 @@
 ---
 title: "Quick Refactor: Keep Casing in VSCode Search + Replace"
 spoiler: Learn how to preserve casing when refactoring variable names in VSCode search and replace.
-date: 2021-03-28T15:50:52.785Z
+date: "2021-03-28T15:50:52.785Z"
 ---
 
 # Quick Refactor: Keep Casing in VSCode Search + Replace

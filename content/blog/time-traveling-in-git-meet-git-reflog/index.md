@@ -1,12 +1,12 @@
 ---
 title: Time-Traveling in Git? Meet Git Reflog
 spoiler: Let’s learn to use the power of this advanced tool for Git disaster‑saving
-date: 2021-04-06T16:00:13.759Z
+date: "2021-04-06T16:00:13.759Z"
 ---
 
 #### Let’s learn to use the power of this advanced tool for Git disaster‑saving
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 #### THE PROBLEM
 

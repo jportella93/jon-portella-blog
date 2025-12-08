@@ -1,12 +1,12 @@
 ---
 title: Using Regex Negative Lookahead to Replace HTTP with HTTPS
 spoiler: Learn how to use Regex’s Negative Lookahead, in one minute.
-date: 2021-03-09T13:51:16.857Z
+date: "2021-03-09T13:51:16.857Z"
 ---
 
 #### Make faster refactors in JavaScript, VSCode, or in your favourite place to run regular expressions
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 

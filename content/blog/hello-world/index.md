@@ -4,7 +4,7 @@ spoiler: Mandatory
 date: "2018-12-31T15:12:03.284Z"
 ---
 
-![](./images/wood-head-loor-nicolas.jpg)
+![Presentation image](./images/wood-head-loor-nicolas.jpg)
 
 Hello there!
 

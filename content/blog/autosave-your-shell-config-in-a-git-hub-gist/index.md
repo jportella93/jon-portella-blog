@@ -1,10 +1,10 @@
 ---
 title: Autosave Your Shell Config in a GitHub Gist
 spoiler: Don’t lose your aliases again when switching computers!
-date: 2021-03-05T13:34:17.791Z
+date: "2021-03-05T13:34:17.791Z"
 ---
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 
@@ -28,7 +28,7 @@ Let’s set it up.
 
 1. Let’s create a secret [gist](https://gist.github.com/) where our config will be saved:
 
-![](images/1.png)
+![Presentation image](./images/1.png)
 
 Creating a secret [Gist](https://gist.github.com/).
 

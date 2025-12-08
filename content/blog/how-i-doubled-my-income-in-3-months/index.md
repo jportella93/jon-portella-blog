@@ -4,7 +4,7 @@ spoiler: The story of my career change, and how first choices aren’t usually t
 date: "2020-09-30T00:00:00.284Z"
 ---
 
-![](./images/hand.jpeg)
+![Presentation image](./images/hand.jpeg)
 
 ## The Beginning — My Old Job
 

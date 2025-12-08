@@ -1,10 +1,10 @@
 ---
 title: Quick Async One-Liners With Async Immediately Invoked Function Expressions
 spoiler: A neat trick for a job interview or to save time on quick scripts
-date: 2021-02-26T12:35:22.653Z
+date: "2021-02-26T12:35:22.653Z"
 ---
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 

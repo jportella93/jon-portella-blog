@@ -1,10 +1,10 @@
 ---
 title: Using JavaScript To Test Browser Support for a CSS Pseudo-Class
 spoiler: An obscure (but effective) way to do CSS feature detection with JavaScript. In the example, we test for a feature that only Microsoft browsers have.
-date: 2021-02-23T13:47:47.254Z
+date: "2021-02-23T13:47:47.254Z"
 ---
 
-![](images/0.png)
+![Presentation image](./images/0.png)
 
 ---
 
@@ -12,13 +12,13 @@ date: 2021-02-23T13:47:47.254Z
 
 Some browsers have native support for pseudo-elements that others don’t. This is the case, for example, of `::ms-reveal` , the little eye that appears to show/hide password input fields in Microsoft browsers (Internet Explorer and Edge).
 
-![](images/1.png)
+![Presentation image](./images/1.png)
 
 Edge’s native password reveal feature.
 
 The problem with this native feature is that if your front-end has its own password reveal feature, you could end up with a layout like this one:
 
-![](images/2.png)
+![Presentation image](./images/2.png)
 
 Oops! Edge’s native password reveal feature and our own’s.
 

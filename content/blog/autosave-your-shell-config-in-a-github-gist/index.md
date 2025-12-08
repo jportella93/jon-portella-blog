@@ -1,7 +1,7 @@
 ---
 title: Autosave Your Shell Config in a GitHub Gist
 spoiler: Learn how to prevent your custom aliases to be lost in oblivion, in one minute.
-date: 2021-04-29T13:23:46.328Z
+date: "2021-04-29T13:23:46.328Z"
 ---
 
 # Autosave Your Shell Config in a GitHub Gist

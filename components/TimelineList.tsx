@@ -1,5 +1,10 @@
 import moment from "moment";
-import { TimelineItem, getTimelineCategoryEmoji } from "../lib/timelineData";
+import { useEffect, useMemo, useState } from "react";
+import {
+  type TimelineCategory,
+  type TimelineItem,
+  getTimelineCategoryEmoji,
+} from "../lib/timelineData";
 import { rhythm } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 
@@ -17,6 +22,33 @@ export default function TimelineList({
   onItemClick,
 }: TimelineListProps) {
   const { isDarkMode } = useTheme();
+  const projectCategories = useMemo(() => {
+    const unique = new Set<TimelineCategory>();
+    itemsByType.project.forEach((item) => {
+      if (item.category) unique.add(item.category);
+    });
+    return Array.from(unique);
+  }, [itemsByType.project]);
+
+  const [selectedCategory, setSelectedCategory] = useState<
+    TimelineCategory | "all"
+  >("all");
+
+  useEffect(() => {
+    if (
+      selectedCategory !== "all" &&
+      !projectCategories.includes(selectedCategory)
+    ) {
+      setSelectedCategory("all");
+    }
+  }, [projectCategories, selectedCategory]);
+
+  const filteredProjects = useMemo(() => {
+    if (selectedCategory === "all") return itemsByType.project;
+    return itemsByType.project.filter(
+      (item) => item.category === selectedCategory
+    );
+  }, [itemsByType.project, selectedCategory]);
 
   function formatDate(dateString: string | null): string {
     if (!dateString) return "Present";
@@ -33,6 +65,59 @@ export default function TimelineList({
     if (!startDate && endDate) return formatDate(endDate);
     return "Present";
   }
+
+  const renderProjectFilters = () => {
+    if (projectCategories.length === 0) return null;
+
+    const options: Array<TimelineCategory | "all"> = [
+      "all",
+      ...projectCategories,
+    ];
+
+    return (
+      <div
+        role="radiogroup"
+        style={{
+          marginBottom: rhythm(1.25),
+          display: "flex",
+          gap: rhythm(0.5),
+          flexWrap: "wrap",
+          alignItems: "center",
+        }}
+      >
+        {options.map((categoryOption) => {
+          const isActive = selectedCategory === categoryOption;
+          const label =
+            categoryOption === "all"
+              ? "All"
+              : (CATEGORY_LABELS[categoryOption] ?? categoryOption);
+
+          return (
+            <button
+              key={categoryOption}
+              type="button"
+              onClick={() => setSelectedCategory(categoryOption)}
+              role="radio"
+              aria-checked={isActive}
+              style={{
+                padding: `${rhythm(0.25)} ${rhythm(0.75)}`,
+                borderRadius: "999px",
+                border: `1px solid ${isDarkMode ? "#444" : "#ccc"}`,
+                background: isActive
+                  ? THEME_COLORS.project.light
+                  : "transparent",
+                color: isActive ? "#fff" : isDarkMode ? "#eee" : "#333",
+                cursor: "pointer",
+                fontSize: "0.85rem",
+              }}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+    );
+  };
 
   function renderTimelineSection(
     items: TimelineItem[],
@@ -66,6 +151,7 @@ export default function TimelineList({
         >
           {title}
         </h2>
+        {type === "project" && renderProjectFilters()}
         {items
           .sort((a, b) => {
             const startA = a.startDate || a.endDate || "";
@@ -149,7 +235,7 @@ export default function TimelineList({
       )}
 
       {renderTimelineSection(
-        itemsByType.project,
+        filteredProjects,
         "project",
         "fun",
         THEME_COLORS.project.light,
@@ -164,3 +250,9 @@ const THEME_COLORS = {
   job: { light: "#9c27b0", dark: "#ba68c8" },
   project: { light: "#4caf50", dark: "#66bb6a" },
 } as const;
+
+const CATEGORY_LABELS: Record<TimelineCategory, string> = {
+  software: "Software",
+  video: "Video",
+  music: "Music",
+};

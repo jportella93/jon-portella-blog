@@ -48,6 +48,24 @@ const links = [
     ),
   },
   {
+    url: "/rss.xml",
+    label: "RSS",
+    icon: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g transform="scale(0.03)">
+          <path d="M493 652H392c0-134-111-244-244-244V307c189 0 345 156 345 345zm71 0c0-228-188-416-416-416V132c285 0 520 235 520 520z" />
+          <circle cx="219" cy="581" r="71" />
+        </g>
+      </svg>
+    ),
+  },
+  {
     url: "https://pinterest.com/jonportella/",
     label: "Pinterest",
     icon: (

@@ -348,7 +348,6 @@ export default function timeline() {
           overflow: "auto",
           background: isDarkMode ? "#1a1a1a" : "white",
           position: "relative",
-          minHeight: "400px",
         }}
         suppressHydrationWarning
       >

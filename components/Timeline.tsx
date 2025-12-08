@@ -354,6 +354,7 @@ export default function timeline() {
           width: "100%",
           border: `1px solid ${isDarkMode ? "#444" : "#ddd"}`,
           borderRadius: "8px",
+          minHeight: isLoading ? "500px" : "auto",
           overflow: "auto",
           background: isDarkMode ? "#1a1a1a" : "white",
           position: "relative",

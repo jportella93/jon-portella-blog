@@ -6,7 +6,6 @@ date: 2020-09-25T22:52:57.672Z
 
 ![](images/0.png)
 
-
 ### 1. Update your NPM modules with one command
 
 One common source of confusion for new Node.js developers is the command `npm update`. It will update all `node_modules` present in `package.json` to their latest versions but **it will not change the version names** in `package.json`.
@@ -38,9 +37,9 @@ const SplitPane = ({ leftComponent, rightComponent }) => (
     <div className="SplitPane-left">{leftComponent}</div>
     <div className="SplitPane-right">{rightComponent}</div>
   </div>
-)
+);
 
-const App = () => <SplitPane left={<Contacts />} right={<Chat />} />
+const App = () => <SplitPane left={<Contacts />} right={<Chat />} />;
 ```
 
 **But how can you specify a component or a rendered value as a PropType?**From the [PropTypes docs](https://github.com/facebook/prop-types#usage):
@@ -62,12 +61,12 @@ const SplitPane = ({ leftComponent, rightComponent }) => (
     <div className="SplitPane-left">{leftComponent}</div>
     <div className="SplitPane-right">{rightComponent}</div>
   </div>
-)
+);
 
 SplitPane.propTypes = {
   leftComponent: PropTypes.oneOfType([PropTypes.node, PropTypes.element]),
   rightComponent: PropTypes.oneOfType([PropTypes.node, PropTypes.element]),
-}
+};
 ```
 
 ---

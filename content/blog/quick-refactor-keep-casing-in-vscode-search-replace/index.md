@@ -21,4 +21,3 @@ But oops! as they key `name` is also used in camelCase as part of other variable
 We are going to undo this change and repeat it using the [preserve case option on the find and replace feature](https://code.visualstudio.com/docs/editor/codebasics#_advanced-find-and-replace-options) by pressing the `AB` button.
 
 Now we’ve saved time refactoring and our pets are happy with their aliases!
-

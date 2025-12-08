@@ -8,7 +8,6 @@ date: 2021-03-10T13:32:36.932Z
 
 ![](images/0.png)
 
-
 #### The problem
 
 Our website has a new and shiny landing page. We are getting lots of visits, so the marketing team has asked us to track how many of those visitors scroll down to the Call To Action section.
@@ -30,26 +29,21 @@ Demonstration of window.IntersectionObserver to log user scroll to a certain sec
 ---
 
 ```javascript
-  // Feature detection, avoid breaking IE11
-  if (IntersectionObserver) {
-    document.querySelectorAll('.call-to-action')
-      .forEach((node) => {
-        // Create the observer and pass the callback
-        const observer = new IntersectionObserver(function(entries) {
-          if (entries[0].isIntersecting) {
-            // entries[0] is the element that entered into view
-            alert(
-              entries[0].target.textContent.trim() +
-              ` scrolled into view!`
-            );
-            // Disconnect to avoid logging more than once
-            this.disconnect();
-          }
-        });
+// Feature detection, avoid breaking IE11
+if (IntersectionObserver) {
+  document.querySelectorAll(".call-to-action").forEach((node) => {
+    // Create the observer and pass the callback
+    const observer = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        // entries[0] is the element that entered into view
+        alert(entries[0].target.textContent.trim() + ` scrolled into view!`);
+        // Disconnect to avoid logging more than once
+        this.disconnect();
+      }
+    });
 
-        // Make the observer watch for the node entering on viewport
-        observer.observe(node);
-      });
-  }
-
+    // Make the observer watch for the node entering on viewport
+    observer.observe(node);
+  });
+}
 ```

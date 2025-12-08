@@ -1,5 +1,5 @@
-import React from 'react';
-import OneLineScroller from './OneLineScroller';
+import React from "react";
+import OneLineScroller from "./OneLineScroller";
 
 interface User {
   name: string;
@@ -14,28 +14,27 @@ interface ProfileCardProps {
   withScrollers?: boolean;
 }
 
-const getElement = (el: string) => <p key={el}>{el}</p>
+const getElement = (el: string) => <p key={el}>{el}</p>;
 
 const getWrappedElement = (el: string) => (
   <OneLineScroller key={el}>
     <p>{el}</p>
   </OneLineScroller>
-)
+);
 
-const ProfileCard = ({ user: { name, surname, email }, withScrollers }: ProfileCardProps) => {
-  const elements = [name, surname, email]
+const ProfileCard = ({
+  user: { name, surname, email },
+  withScrollers,
+}: ProfileCardProps) => {
+  const elements = [name, surname, email];
 
   return (
     <div>
-      {elements.map(el => withScrollers ? getWrappedElement(el) : getElement(el))}
+      {elements.map((el) =>
+        withScrollers ? getWrappedElement(el) : getElement(el)
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default ProfileCard;
-
-
-
-
-
-

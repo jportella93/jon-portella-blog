@@ -1,6 +1,3 @@
-import { generateRSS } from '../lib/generateRSS';
+import { generateRSS } from "../lib/generateRSS";
 
 generateRSS();
-
-
-

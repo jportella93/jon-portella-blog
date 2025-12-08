@@ -8,7 +8,6 @@ date: 2021-03-11T13:43:08.802Z
 
 ![](images/0.png)
 
-
 #### THE PROBLEM
 
 Our engineering manager has asked us about the total number of lines on several repositories of the company. How can we find out that information?
@@ -51,13 +50,12 @@ git ls-files | xargs wc
 
 Here we see:
 
-*  1st column: number of **lines** in that file**.**
-*  2nd column: number of **words** in that file.
-*  3rd column: number of **characters** in that file.
+- 1st column: number of **lines** in that file**.**
+- 2nd column: number of **words** in that file.
+- 3rd column: number of **characters** in that file.
 
 And in the last row, information on the total of files.
 
 **So our repo has25891 lines**.
 
 ---
-

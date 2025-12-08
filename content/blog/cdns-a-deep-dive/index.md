@@ -43,8 +43,8 @@ Without CDN vs with CDN by [Imperva](https://www.imperva.com/learn/performance/
 
 At this point, there are 2 possible outcomes:
 
-*  **The asset is available:** A non-stale copy of the requested asset is present in the PoP’s cache servers, so the asset is sent back to the user directly, resulting in a **shorter RTT**, hence a better UX.
-*  **The asset is NOT available**: The PoP’s server re-routes the request to the origin server, which sends back a fresh version of the asset. The PoP’s server caches the asset and sends it back to the user. This time the RTT is longer but subsequent requests for this asset in this region will be faster since the asset is now available in the PoP’s cache servers.
+- **The asset is available:** A non-stale copy of the requested asset is present in the PoP’s cache servers, so the asset is sent back to the user directly, resulting in a **shorter RTT**, hence a better UX.
+- **The asset is NOT available**: The PoP’s server re-routes the request to the origin server, which sends back a fresh version of the asset. The PoP’s server caches the asset and sends it back to the user. This time the RTT is longer but subsequent requests for this asset in this region will be faster since the asset is now available in the PoP’s cache servers.
 
 The asset remains cached on the PoP’s cache server until the **time-to-live (TTL)** specified by its HTTP headers expires.
 
@@ -54,7 +54,7 @@ The most obvious benefit is the **better UX **caused by the **faster RTT **that 
 
 Beyond that, using a CDN can result in **increased uptime** on a website. Imagine a traffic overload or a hardware failure that incapacitates your origin server. Having cached content on the distributed CDN’s servers can prevent interruptions on the service for end-users. Moreover, since the content is redundant in the CDN’s servers, a failure in one PoP can be saved by the content on another PoP.
 
-Another benefit is that by serving cached content, **bandwidth costs on the origin server are reduced**. However, the CDN provider might charge a substantial fee, making this benefit tiny, so take this point *with a grain of salt*!
+Another benefit is that by serving cached content, **bandwidth costs on the origin server are reduced**. However, the CDN provider might charge a substantial fee, making this benefit tiny, so take this point _with a grain of salt_!
 
 Also, it is worth noting that some CDN providers, by leveraging the reverse proxy configuration, are crossing to other services. Some use the CDNs distributed configuration to provide **protection againstDistributed Denial of Service(DDOS) attacks**. Also, they may implement load balancers to avoid overloading origin servers with huge amounts of traffic.
 
@@ -62,12 +62,12 @@ Also, it is worth noting that some CDN providers, by leveraging the reverse prox
 
 At the time of writing, there are 6 major types of CDN:
 
-*  **Free** CDNs, whose task is to serve open source packages. E.g. jsDelivr.
-*  **Commercial** CDNs, provide their services to the public at a cost. E.g. Cloudflare.
-*  **In-House **CDNs, launched by companies whose business model makes commercial CDN options not worth their costs, so they roll out their own private CDN. E.g. Netflix.
-*  **Telco **CDNs, launched by Telecommunications Service Providers (TSPs) in order to serve their own streaming content without leasing commercial CDNs. They’re similar to In-Hose CDNs. E.g. Verizon.
-*  **Peer to Peer** (P2P) CDNs, used to share assets between individuals who are equally privileged in the application, or peers. E.g. BitTorrent.
-*  **Multi** CDNs, leverage the power of several other CDNs. E.g. MetaCDN.
+- **Free** CDNs, whose task is to serve open source packages. E.g. jsDelivr.
+- **Commercial** CDNs, provide their services to the public at a cost. E.g. Cloudflare.
+- **In-House **CDNs, launched by companies whose business model makes commercial CDN options not worth their costs, so they roll out their own private CDN. E.g. Netflix.
+- **Telco **CDNs, launched by Telecommunications Service Providers (TSPs) in order to serve their own streaming content without leasing commercial CDNs. They’re similar to In-Hose CDNs. E.g. Verizon.
+- **Peer to Peer** (P2P) CDNs, used to share assets between individuals who are equally privileged in the application, or peers. E.g. BitTorrent.
+- **Multi** CDNs, leverage the power of several other CDNs. E.g. MetaCDN.
 
 ### Why don’t CDNs come by default in web hosting?
 
@@ -98,4 +98,3 @@ Jon Portella
 - [CDN Infrastructure Architecture and Topology — Imperva](https://www.imperva.com/learn/performance/cdn-architecture)
 
 - [What Is a Multi CDN? — KeyCDN](https://www.keycdn.com/support/what-is-a-multi-cdn)
-

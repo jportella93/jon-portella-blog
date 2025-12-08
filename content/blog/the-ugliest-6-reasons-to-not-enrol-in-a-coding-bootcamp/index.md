@@ -10,7 +10,6 @@ date: 2020-10-02T10:03:34.981Z
 
 ![](images/0.png)
 
-
 There are some ugly partsof coding boot camps that people don’t talk about.
 
 In this article, I’m going to give you a global vision about the possible dangers of enrolling in these courses, with the objective ofhelping you decide whether to do a boot camp or not.
@@ -84,4 +83,3 @@ Before deciding to enroll in a software engineering boot camp, mind all the poss
 **If you put effort and interest, it’s absolutely doable**. In my experience, one of the best decisions I made. However, every person is different.
 
 ---
-

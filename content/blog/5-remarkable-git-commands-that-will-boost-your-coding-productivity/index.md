@@ -8,7 +8,6 @@ These are custom made, they don’t appear in the Git docs! Saved me countless h
 
 ![](images/0.png)
 
-
 ### 1. Git Commit Work In Progess — gwip
 
 This command will stage all current changes and commit them with a default message.
@@ -111,4 +110,3 @@ alias gpshf="git push -f origin HEAD"
 ```
 
 This will automatically push your branch to a branch with the same name on the remote, or create it if it doesn’t exist.
-

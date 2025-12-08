@@ -6,34 +6,36 @@ date: 2021-03-01T13:47:00.110Z
 
 ![](images/0.png)
 
-
 ---
 
 #### The problem
 
 We want to log in to the console this deeply nested JavaScript Object:
+
 ```js
 const person = {
-    name: 'Joe',
-    age: 24,
-    sayHi: function () { console.log('Hi!') },
+  name: "Joe",
+  age: 24,
+  sayHi: function () {
+    console.log("Hi!");
+  },
+  friend: {
+    name: "Sarah",
+    age: 26,
     friend: {
-        name: 'Sarah',
+      name: "Peter",
+      age: 39,
+      friend: {
+        name: "Sarah",
         age: 26,
         friend: {
-            name: 'Peter',
-            age: 39,
-            friend: {
-                name: 'Sarah',
-                age: 26,
-                friend: {
-                    name: 'Annie',
-                    age: 21
-                }
-            }
-        }
-    }
-}
+          name: "Annie",
+          age: 21,
+        },
+      },
+    },
+  },
+};
 ```
 
 #### A Naive Solution
@@ -49,7 +51,7 @@ Console.log: Hidden third level as `friend: [Object].`
 A trick I’ve used in the past is to put it through JSON.stringify with two extra arguments:
 
 ```js
-console.log(JSON.stringify(person, null, 2))
+console.log(JSON.stringify(person, null, 2));
 ```
 
 You can read about what these do in [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify).
@@ -66,8 +68,9 @@ JSON.stringify: no colors and… where’s is `sayHi()`??
 #### **A (BETTER) SOLUTION**
 
 Use
+
 ```js
-console.dir(person, {depth: null})
+console.dir(person, { depth: null });
 ```
 
 That will show all nested objects, including functions, with syntax highlighting.

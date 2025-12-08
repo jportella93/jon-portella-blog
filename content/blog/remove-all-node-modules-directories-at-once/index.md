@@ -25,7 +25,7 @@ We are going to use Unix's `find` to look for `node_modules` folders in our repo
 1. Go into your repositories directory:
 
 ```shell
-cd 
+cd
 ```
 
 2. List the `node_modules` directories you are going to remove:
@@ -55,4 +55,3 @@ find . -type d -name node_modules
 ```
 
 Now copying over our repositories directory to our new machine takes just a second, and we can run `npm install` to generate a new `node_modules` directory.
-

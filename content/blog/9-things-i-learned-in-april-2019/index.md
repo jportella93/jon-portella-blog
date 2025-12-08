@@ -1,11 +1,10 @@
 ---
 title: 9 Things I Learned in April 2019
 spoiler: This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, macOS apps, using searchable components and fighting Chrome's autocomplete styling.
-date: '2019-04-30T19:38:03.284Z'
+date: "2019-04-30T19:38:03.284Z"
 ---
 
 ![](./images/9-loor-nicolas.jpg)
-
 
 ## 1. How to use CSS Modules in create-react-app.
 
@@ -27,14 +26,14 @@ With CSS Modules you can make CSS classes with a component scope. This allows to
 
 ```javascript
 // Button.js
-import React, { Component } from 'react'
-import styles from './Button.module.css' // Import css modules stylesheet as styles
-import './another-stylesheet.css' // Import regular stylesheet
+import React, { Component } from "react";
+import styles from "./Button.module.css"; // Import css modules stylesheet as styles
+import "./another-stylesheet.css"; // Import regular stylesheet
 
 class Button extends Component {
   render() {
     // reference as a js object
-    return <button className={styles.error}>Error Button</button> // Background color will be red
+    return <button className={styles.error}>Error Button</button>; // Background color will be red
   }
 }
 ```

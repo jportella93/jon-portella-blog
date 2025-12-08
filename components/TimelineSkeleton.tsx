@@ -76,8 +76,8 @@ export default function TimelineSkeleton() {
                         color.border === "#2196f3"
                           ? "33, 150, 243"
                           : color.border === "#9c27b0"
-                          ? "156, 39, 176"
-                          : "76, 175, 80"
+                            ? "156, 39, 176"
+                            : "76, 175, 80"
                       }, 0.2)`
                     : color.bg,
                   border: `2px solid ${color.border}`,

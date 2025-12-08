@@ -6,7 +6,6 @@ date: 2021-03-08T14:03:39.417Z
 
 ![](images/0.png)
 
-
 ---
 
 #### THE PROBLEM
@@ -15,9 +14,9 @@ You may already know which location information are we sharing with websites whe
 
 Why? here’s a handful of use cases:
 
-*  You don’t want the website you’re interacting with, your Internet Service Provider, or even your country’s government to know who’s the person interacting with that website.
-*  You want to make it look like your connection comes from a different country since there aresome online services that will charge you differently depending on your country of origin. Or content that just won’t be available in your country in streaming services.
-*  You want to look like a different individual, for example, if your IP has been blocked.
+- You don’t want the website you’re interacting with, your Internet Service Provider, or even your country’s government to know who’s the person interacting with that website.
+- You want to make it look like your connection comes from a different country since there aresome online services that will charge you differently depending on your country of origin. Or content that just won’t be available in your country in streaming services.
+- You want to look like a different individual, for example, if your IP has been blocked.
 
 So how can we change our public IP address?
 

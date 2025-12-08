@@ -1,11 +1,10 @@
 ---
 title: Displaying data with variable length
 spoiler: Never trust the design.
-date: '2020-01-15T19:38:03.284Z'
+date: "2020-01-15T19:38:03.284Z"
 ---
 
 ![](./images/road-loor-nicolas.jpg)
-
 
 So imagine you have a component that shows some user information like name, surname and e-mail. The design shows a nice layout where all lines take the same space.
 
@@ -21,20 +20,18 @@ There will be users with super long names, e-mail addresses and what not and thi
 
 ```jsx
 const oneLineScrollerStyle = {
-  overflow: 'hidden' // Avoid breaking UI
-}
+  overflow: "hidden", // Avoid breaking UI
+};
 
 const oneLineScrollerChildrenWrapperStyle = {
-  whiteSpace: 'nowrap', // Render text in one line
-  display: 'block',
-  overflow: 'auto', // Scroll overflow if needed
-}
+  whiteSpace: "nowrap", // Render text in one line
+  display: "block",
+  overflow: "auto", // Scroll overflow if needed
+};
 
 const OneLineScroller = ({ children }) => (
   <span style={oneLineScrollerStyle}>
-    <span style={oneLineScrollerChildrenWrapperStyle}>
-      {children}
-    </span>
+    <span style={oneLineScrollerChildrenWrapperStyle}>{children}</span>
   </span>
 );
 ```

@@ -1,7 +1,7 @@
 ---
 title: Creating a Blackjack game
 spoiler: A memento of my first ever JavaScript project circa February 2018.
-date: '2020-02-11T22:45:03.284Z'
+date: "2020-02-11T22:45:03.284Z"
 ---
 
 [![](./images/blackjack.png)](https://jportella93.github.io/Blackjack/index.html)

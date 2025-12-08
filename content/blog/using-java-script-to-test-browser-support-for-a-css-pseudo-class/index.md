@@ -6,7 +6,6 @@ date: 2021-02-23T13:47:47.254Z
 
 ![](images/0.png)
 
-
 ---
 
 #### THE PROBLEM
@@ -52,17 +51,16 @@ export function supportsPseudoClass(pseudoClass) {
   // Test the pseudo-class by trying to add and remove a rule to the stylesheet
   let formattedPseudoClass = pseudoClass;
   try {
-    if (!(/^:/).test(formattedPseudoClass)) {
-      formattedPseudoClass = ':' + formattedPseudoClass;
+    if (!/^:/.test(formattedPseudoClass)) {
+      formattedPseudoClass = ":" + formattedPseudoClass;
     }
-    ss.insertRule('html' + formattedPseudoClass + '{}', 0);
+    ss.insertRule("html" + formattedPseudoClass + "{}", 0);
     ss.deleteRule(0);
     return true;
   } catch (e) {
     return false;
   }
 }
-
 ```
 
 Now you can just check for `::ms-reveal` and roll your own if it doesn’t exist!
@@ -70,15 +68,12 @@ Now you can just check for `::ms-reveal` and roll your own if it doesn’t exis
 ```jsx
 // ...
 
-const hasNativePasswordReveal = supportsPseudoClass('::ms-reveal')
-const rightSlot = hasNativePasswordReveal
-  ? null
-  : <PasswordReveal />
+const hasNativePasswordReveal = supportsPseudoClass("::ms-reveal");
+const rightSlot = hasNativePasswordReveal ? null : <PasswordReveal />;
 
-return <PasswordInput rightSlot={rightSlot} />
+return <PasswordInput rightSlot={rightSlot} />;
 
 // ...
 ```
 
 ---
-

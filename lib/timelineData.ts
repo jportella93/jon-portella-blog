@@ -27,12 +27,12 @@ function processTimelineLink(link: string | null): string | null {
   if (!link) return null;
 
   // If it's an external link (starts with http), return as-is
-  if (link.startsWith('http://') || link.startsWith('https://')) {
+  if (link.startsWith("http://") || link.startsWith("https://")) {
     return link;
   }
 
   // If it's a relative link starting with '/', prepend the base path
-  if (link.startsWith('/')) {
+  if (link.startsWith("/")) {
     return BASE_PATH ? `${BASE_PATH}${link}` : link;
   }
 
@@ -40,9 +40,11 @@ function processTimelineLink(link: string | null): string | null {
   return link;
 }
 
-export const timelineData: TimelineItem[] = (timelineDataJson as TimelineItem[]).map(item => ({
+export const timelineData: TimelineItem[] = (
+  timelineDataJson as TimelineItem[]
+).map((item) => ({
   ...item,
-  link: processTimelineLink(item.link)
+  link: processTimelineLink(item.link),
 }));
 
 // Helper function to get all unique dates for timeline axis

@@ -1,11 +1,10 @@
 ---
 title: Downloading Reddit Images in Bulk
 spoiler: Get all the neat desktop goodness from /r/wallpapers with this command line utility built in Node.js
-date: '2019-01-29T15:12:03.284Z'
+date: "2019-01-29T15:12:03.284Z"
 ---
 
 ![](./images/several-images-loor-nicolas.jpg)
-
 
 There are some cool wallpapers on [r/wallpapers](https://www.reddit.com/r/wallpapers). Earlier this year, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion.
 

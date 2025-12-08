@@ -1,11 +1,11 @@
-import { Head, Html, Main, NextScript } from 'next/document';
-import { BASE_PATH } from '../lib/constants';
-import typography from '../lib/typography';
+import { Head, Html, Main, NextScript } from "next/document";
+import { BASE_PATH } from "../lib/constants";
+import typography from "../lib/typography";
 
 export default function Document() {
   const basePath = BASE_PATH;
-  const cssPath = basePath ? `${basePath}/code-syntax.css` : '/code-syntax.css';
-  
+  const cssPath = basePath ? `${basePath}/code-syntax.css` : "/code-syntax.css";
+
   return (
     <Html suppressHydrationWarning>
       <Head>
@@ -40,9 +40,3 @@ export default function Document() {
     </Html>
   );
 }
-
-
-
-
-
-

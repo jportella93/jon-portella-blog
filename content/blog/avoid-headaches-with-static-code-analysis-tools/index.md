@@ -8,7 +8,6 @@ date: 2021-03-16T13:44:11.170Z
 
 ![](images/0.png)
 
-
 ---
 
 #### THE PROBLEM
@@ -55,19 +54,19 @@ OK, ready?
 
 Now, I bet you thought the result was:
 
-```text
+````text
 ```text
 'Swapped: 2,1'
-```
+````
 
 **WRONG.**
 
 This code throws an error. You can try it yourself on your browser’s console:
 
-```text
+````text
 ```text
 Uncaught TypeError: Cannot set property '2' of undefined
-```
+````
 
 But, why?
 
@@ -93,14 +92,13 @@ So even if it takes a couple of minutes to set up static code analysis tools, it
 ---
 
 ```javascript
-const myArr = [1, 2]
-console.log(`Original: ${myArr}`)
-[myArr[0], myArr[1]] = [myArr[1], myArr[0]]
-console.log(`Swapped: ${myArr}`)
+const myArr = [1, 2];
+console.log(`Original: ${myArr}`)[(myArr[0], myArr[1])] = [myArr[1], myArr[0]];
+console.log(`Swapped: ${myArr}`);
 ```
 
 ```javascript
 const myArr = [1, 2];
-console.log(`Original: ${myArr}`)[myArr[0], myArr[1]] = [myArr[1], myArr[0]];
+console.log(`Original: ${myArr}`)[(myArr[0], myArr[1])] = [myArr[1], myArr[0]];
 console.log(`Swapped: ${myArr}`);
 ```

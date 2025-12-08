@@ -8,7 +8,6 @@ date: 2021-03-25T12:55:11.037Z
 
 ## 10 lines of code to make your text always span one line, and save you from countless headaches
 
-
 ## THE PROBLEM
 
 So imagine you have a component that shows some user information like name, surname, and e-mail. The design shows a nice layout where all lines take the same space.
@@ -23,8 +22,8 @@ There will be users with super long names, e-mail addresses, and what not and th
 
 One approach to prevent this would be to create a wrapper component for variable length text which is expected to be shown in a single line. All overflowing text can be scrolled to the side if needed.
 
-### *OneLineScroller.jsx*
+### _OneLineScroller.jsx_
 
 Wrapping your text fields with this component makes them span exactly one line. [Check example #2 with the OneLineScroller](https://www.jonportella.com/displaying-data-with-variable-length-example#example-2).
 
-Thanks for reading! Take care, *Jon Portella*.
+Thanks for reading! Take care, _Jon Portella_.

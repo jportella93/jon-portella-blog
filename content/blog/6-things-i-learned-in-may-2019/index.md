@@ -1,11 +1,10 @@
 ---
 title: 6 Things I Learned in May 2019
 spoiler: Some cool React.js libraries, PropTypes, node_modules updates and an Easter Egg.
-date: '2019-05-30T19:38:03.284Z'
+date: "2019-05-30T19:38:03.284Z"
 ---
 
 ![](./images/6-loor-nicolas.jpg)
-
 
 ## 1. How to properly update your Node.js modules to the latest versions
 
@@ -50,9 +49,9 @@ const SplitPane = ({ leftComponent, rightComponent }) => (
     <div className="SplitPane-left">{leftComponent}</div>
     <div className="SplitPane-right">{rightComponent}</div>
   </div>
-)
+);
 
-const App = () => <SplitPane left={<Contacts />} right={<Chat />} />
+const App = () => <SplitPane left={<Contacts />} right={<Chat />} />;
 ```
 
 **But how can you specify a component or a rendered value as a PropType?**
@@ -76,12 +75,12 @@ const SplitPane = ({ leftComponent, rightComponent }) => (
     <div className="SplitPane-left">{leftComponent}</div>
     <div className="SplitPane-right">{rightComponent}</div>
   </div>
-)
+);
 
 SplitPane.propTypes = {
   leftComponent: PropTypes.oneOfType([PropTypes.node, PropTypes.element]),
   rightComponent: PropTypes.oneOfType([PropTypes.node, PropTypes.element]),
-}
+};
 ```
 
 ## 5. How to build a data-grid table in React.js

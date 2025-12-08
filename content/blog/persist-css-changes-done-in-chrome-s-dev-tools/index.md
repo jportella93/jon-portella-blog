@@ -6,7 +6,6 @@ date: 2021-02-24T13:38:12.609Z
 
 ![](images/0.png)
 
-
 ---
 
 #### THE PROBLEM
@@ -54,4 +53,3 @@ Here’s a quick tip to persist those changes without affecting your original so
 ![](images/9.png)![](images/10.png)
 
 ---
-

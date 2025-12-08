@@ -50,10 +50,12 @@ This will:
    wrangler login
    ```
 3. Build and deploy:
+
    ```bash
    npm run build
    npx wrangler pages deploy ./out --project-name jon-portella-blog --branch main
    ```
+
    - Uses `wrangler.jsonc` to serve `./out` as static assets via Cloudflare Pages (Workers).
    - For a preview deployment, set `--branch` to the target branch name (e.g. `feature/my-change`).
 

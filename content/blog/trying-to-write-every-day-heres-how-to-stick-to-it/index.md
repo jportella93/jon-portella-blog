@@ -10,7 +10,6 @@ date: 2021-04-21T13:06:03.465Z
 
 ![](images/0.png)
 
-
 In my experience, that’s easy to implement if you follow some simple steps. Keep on reading to know how to exactly how.
 
 #### Tip #1: write short-form stories.
@@ -47,8 +46,8 @@ First I tried in the evening, but that’s my free time and depending on the pla
 
 After some trial and error, I found that the best time to implement a routine was the morning because:
 
-*  I always wake up at the same time.
-*  I always start working at the same time.
+- I always wake up at the same time.
+- I always start working at the same time.
 
 So I came up with the following procedure:
 
@@ -79,4 +78,3 @@ So here’s my trick for being able to write every day:
 7. Repeat from step #2.
 
 ---
-

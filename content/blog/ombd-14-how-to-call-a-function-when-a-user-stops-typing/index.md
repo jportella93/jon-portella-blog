@@ -8,7 +8,6 @@ date: 2021-04-21T13:12:45.974Z
 
 ![](images/0.png)
 
-
 #### THE PROBLEM
 
 We are implementing a text editor with a Google-Docs-like draft system, where content gets saved server-side when the user stops typing for a second.
@@ -25,19 +24,19 @@ Call function when the user stops typing.
 
 ```javascript
 // Declare a new variable that will get reassigned later with the timeout id
-let timerId
+let timerId;
 
 // Get the DOM Node of the input area and listen for a keyup event
-document.querySelector('textarea').addEventListener('keyup', () => {
+document.querySelector("textarea").addEventListener("keyup", () => {
   // Clear timeout to callback, doesn't do anything on first run since timerId is undefined
-  clearTimeout(timerId)
+  clearTimeout(timerId);
   // Set timerId to fire callback in one second, unless another keyup event is triggered
-  timerId = window.setTimeout(renderCurrentTime, 1000)
-})
+  timerId = window.setTimeout(renderCurrentTime, 1000);
+});
 
 // Callback that will get fired 1s after typing
-function renderCurrentTime () {
+function renderCurrentTime() {
   // TODO: Save note to server
-  document.querySelector('time').textContent = new Date().toLocaleString()
+  document.querySelector("time").textContent = new Date().toLocaleString();
 }
 ```

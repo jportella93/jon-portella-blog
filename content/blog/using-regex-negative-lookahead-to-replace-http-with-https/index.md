@@ -8,7 +8,6 @@ date: 2021-03-09T13:51:16.857Z
 
 ![](images/0.png)
 
-
 ---
 
 #### THE PROBLEM
@@ -35,8 +34,8 @@ http(?!s)
 
 Where:
 
-*  The parentheses followed by a question mark and exclamation point `(?!)` is the construct for the Negative Lookahead.
-*  Characters between the exclamation point and the closing parentheses are the ones negated. In this case, we are only negating the character `s` .
+- The parentheses followed by a question mark and exclamation point `(?!)` is the construct for the Negative Lookahead.
+- Characters between the exclamation point and the closing parentheses are the ones negated. In this case, we are only negating the character `s` .
 
 Here’s a demo on [RegExr](http://regexr.com/5o95i).
 
@@ -45,4 +44,3 @@ So our solution would be:
 Using Regex’s Negative Lookahead, we can match http and not https.
 
 ---
-

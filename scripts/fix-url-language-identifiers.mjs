@@ -1,6 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -36,11 +36,11 @@ const languagePatterns = {
 
 function detectLanguage(code) {
   const codeTrimmed = code.trim();
-  if (!codeTrimmed) return 'text';
+  if (!codeTrimmed) return "text";
 
   // Count matches for each language
   const scores = {};
-  
+
   for (const [lang, patterns] of Object.entries(languagePatterns)) {
     scores[lang] = 0;
     for (const pattern of patterns) {
@@ -53,14 +53,16 @@ function detectLanguage(code) {
   // Find the language with the highest score
   const maxScore = Math.max(...Object.values(scores));
   if (maxScore === 0) {
-    return 'text';
+    return "text";
   }
 
-  const detectedLang = Object.entries(scores).find(([_, score]) => score === maxScore)[0];
-  
+  const detectedLang = Object.entries(scores).find(
+    ([_, score]) => score === maxScore
+  )[0];
+
   // Special case: if JSX patterns match, prefer jsx over javascript
   if (scores.jsx > 0 && scores.javascript > 0) {
-    return 'jsx';
+    return "jsx";
   }
 
   return detectedLang;
@@ -69,19 +71,19 @@ function detectLanguage(code) {
 function fixUrlLanguageIdentifiers(content) {
   // Match code blocks that start with ```com/ or similar URL patterns
   const urlPattern = /^```[a-z]+\/[^`\n]+$/m;
-  const lines = content.split('\n');
+  const lines = content.split("\n");
   let modified = false;
   const fixedLines = [];
   let inCodeBlock = false;
   let codeBlockStartIndex = -1;
   let codeBlockContent = [];
-  
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const trimmed = line.trim();
-    
+
     // Check if this is a code block delimiter
-    if (trimmed.startsWith('```')) {
+    if (trimmed.startsWith("```")) {
       if (!inCodeBlock) {
         // Opening code block
         // Check if it has a URL-like language identifier
@@ -102,11 +104,11 @@ function fixUrlLanguageIdentifiers(content) {
         if (codeBlockStartIndex >= 0) {
           const openingLine = lines[codeBlockStartIndex];
           const openingTrimmed = openingLine.trim();
-          
+
           // Check if opening line had a URL-like identifier
           if (openingTrimmed.match(/^```[a-z]+\/[^`\n]+$/)) {
             // Replace with correct language
-            const code = codeBlockContent.join('\n');
+            const code = codeBlockContent.join("\n");
             const lang = detectLanguage(code);
             // Preserve indentation
             const indent = openingLine.match(/^(\s*)/)[1];
@@ -131,14 +133,14 @@ function fixUrlLanguageIdentifiers(content) {
       fixedLines.push(line);
     }
   }
-  
+
   // Handle case where code block is not closed
   if (inCodeBlock && codeBlockStartIndex >= 0) {
     const openingLine = lines[codeBlockStartIndex];
     const openingTrimmed = openingLine.trim();
-    
+
     if (openingTrimmed.match(/^```[a-z]+\/[^`\n]+$/)) {
-      const code = codeBlockContent.join('\n');
+      const code = codeBlockContent.join("\n");
       const lang = detectLanguage(code);
       const indent = openingLine.match(/^(\s*)/)[1];
       fixedLines.push(`${indent}\`\`\`${lang}`);
@@ -150,16 +152,17 @@ function fixUrlLanguageIdentifiers(content) {
     }
   }
 
-  return { content: fixedLines.join('\n'), modified };
+  return { content: fixedLines.join("\n"), modified };
 }
 
 function processMarkdownFile(filePath) {
   try {
-    const content = fs.readFileSync(filePath, 'utf8');
-    const { content: fixedContent, modified } = fixUrlLanguageIdentifiers(content);
-    
+    const content = fs.readFileSync(filePath, "utf8");
+    const { content: fixedContent, modified } =
+      fixUrlLanguageIdentifiers(content);
+
     if (modified) {
-      fs.writeFileSync(filePath, fixedContent, 'utf8');
+      fs.writeFileSync(filePath, fixedContent, "utf8");
       return true;
     }
     return false;
@@ -176,11 +179,11 @@ function findMarkdownFiles(dir) {
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      const indexPath = path.join(fullPath, 'index.md');
+      const indexPath = path.join(fullPath, "index.md");
       if (fs.existsSync(indexPath)) {
         files.push(indexPath);
       }
-    } else if (entry.name.endsWith('.md')) {
+    } else if (entry.name.endsWith(".md")) {
       files.push(fullPath);
     }
   }
@@ -189,7 +192,7 @@ function findMarkdownFiles(dir) {
 }
 
 // Main execution
-const blogDir = path.join(__dirname, '..', 'content', 'blog');
+const blogDir = path.join(__dirname, "..", "content", "blog");
 const markdownFiles = findMarkdownFiles(blogDir);
 
 console.log(`Found ${markdownFiles.length} markdown files`);
@@ -203,4 +206,3 @@ for (const file of markdownFiles) {
 }
 
 console.log(`\nFixed ${fixedCount} out of ${markdownFiles.length} files`);
-

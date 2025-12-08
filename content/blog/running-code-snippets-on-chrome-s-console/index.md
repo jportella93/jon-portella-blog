@@ -6,43 +6,44 @@ date: 2021-03-02T13:47:41.548Z
 
 ![](images/0.png)
 
-
 #### THE PROBLEM
 
 You want to test a registration form on a website. Instead of filling it up manually every time, you may come up with a snippet like this that does it automatically for you:
 
 ```js
 const inputFields = {
-    "first-name": 'John',
-    "last-name": 'Doe',
-    "month-of-birth": '01',
-    "day-of-birth": '01',
-    "year-of-birth": '1990',
-    "register-username": `test+autocomplete+${Math.floor((Math.random() * 10000000))}@example.com`,
-    "register-password": 'password1',
-    "repeat-password": 'password1',
-    "address1": '420 Surfing St.',
-    "address2": '42',
-    "city": 'Santa Cruz',
-    "state": 'California',
-    "postal-code": '12345',
-    "country": 'US',
-}
+  "first-name": "John",
+  "last-name": "Doe",
+  "month-of-birth": "01",
+  "day-of-birth": "01",
+  "year-of-birth": "1990",
+  "register-username": `test+autocomplete+${Math.floor(Math.random() * 10000000)}@example.com`,
+  "register-password": "password1",
+  "repeat-password": "password1",
+  address1: "420 Surfing St.",
+  address2: "42",
+  city: "Santa Cruz",
+  state: "California",
+  "postal-code": "12345",
+  country: "US",
+};
 
 // Populate fields
 for (var prop in inputFields) {
-    if (inputFields.hasOwnProperty(prop)) {
-        if (document.getElementById(prop)) {
-            document.getElementById(prop).value = inputFields[prop]
-        }
+  if (inputFields.hasOwnProperty(prop)) {
+    if (document.getElementById(prop)) {
+      document.getElementById(prop).value = inputFields[prop];
     }
+  }
 }
 
 // Check checkboxes
-document.querySelectorAll('input[type="checkbox"]').forEach(input => !input.checked ? input.click() : null)
+document
+  .querySelectorAll('input[type="checkbox"]')
+  .forEach((input) => (!input.checked ? input.click() : null));
 
 // Submit form
-document.getElementById('buy-now-button').click()
+document.getElementById("buy-now-button").click();
 ```
 
 Now, instead of copy-pasting it over and over, it would be great if we could store it on the browser so when we want to use it we can retrieve it and run it easily.
@@ -78,4 +79,3 @@ Now that your snippet is saved, you can press **ctrl/cmd + enter to run iton the
 Snippets will persist between browser sessions, so you can retrieve and run them easily.
 
 **BONUS**: here’s [a list of snippets](https://bgrins.github.io/devtools-snippets/) to get you inspired.
-

@@ -215,12 +215,12 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
                     ? "#64b5f6"
                     : "#2196f3"
                   : item.type === "job"
-                  ? isDarkMode
-                    ? "#ba68c8"
-                    : "#9c27b0"
-                  : isDarkMode
-                  ? "#66bb6a"
-                  : "#4caf50",
+                    ? isDarkMode
+                      ? "#ba68c8"
+                      : "#9c27b0"
+                    : isDarkMode
+                      ? "#66bb6a"
+                      : "#4caf50",
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.5px",
@@ -229,8 +229,8 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
             {item.type === "study"
               ? "Study"
               : item.type === "job"
-              ? "work"
-              : "fun"}
+                ? "work"
+                : "fun"}
           </div>
           <h2
             className="timeline-modal-title"

@@ -8,7 +8,6 @@ date: 2021-04-06T16:00:13.759Z
 
 ![](images/0.png)
 
-
 #### THE PROBLEM
 
 A local branch deleted by accident, squashed commits that we would like to be un-squashed… when a catastrophe occurs, wouldn’t it be great if we could **time-travel in Git**?
@@ -88,5 +87,3 @@ c2149d1 fixup! feat: add Navbar747ef1e feat: add Button19d9327 feat: add Navbare
 - [git-reflog Documentation](https://git-scm.com/docs/git-reflog) — Git SCM
 - [Git Reflog](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog) — Atlassian
 - [Git Reflog Tutorial](https://www.edureka.co/blog/git-reflog/) — Edureka
-
-

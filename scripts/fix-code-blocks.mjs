@@ -1,6 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -27,10 +27,7 @@ const languagePatterns = {
     /^\$|^#!\/bin\/(bash|sh|zsh)/,
     /&& |\|\| |\$\(|`/,
   ],
-  bash: [
-    /^#!\/bin\/(bash|sh)/,
-    /^\$ |^# /,
-  ],
+  bash: [/^#!\/bin\/(bash|sh)/, /^\$ |^# /],
   python: [
     /^(import |from |def |class |if __name__|print\(|\.py$)/m,
     /:\s*$/m, // Python-style indentation
@@ -43,28 +40,21 @@ const languagePatterns = {
     /^<!DOCTYPE|<html|<head|<body|<div|<span|<p|<h[1-6]|<a |<img |<script|<style/,
     /<\/[a-z]+>/,
   ],
-  json: [
-    /^\s*[\{\[]/,
-    /"[\w-]+"\s*:/,
-  ],
-  markdown: [
-    /^#+\s|^\*\s|^-\s|^\d+\.\s|\[.*\]\(.*\)/,
-  ],
+  json: [/^\s*[\{\[]/, /"[\w-]+"\s*:/],
+  markdown: [/^#+\s|^\*\s|^-\s|^\d+\.\s|\[.*\]\(.*\)/],
   sql: [
     /^(SELECT|INSERT|UPDATE|DELETE|CREATE|ALTER|DROP|FROM|WHERE|JOIN|INNER|OUTER)/i,
   ],
-  yaml: [
-    /^[\w-]+:\s|^---|^\.\.\./,
-  ],
+  yaml: [/^[\w-]+:\s|^---|^\.\.\./],
 };
 
 function detectLanguage(code) {
   const codeTrimmed = code.trim();
-  if (!codeTrimmed) return 'text';
+  if (!codeTrimmed) return "text";
 
   // Count matches for each language
   const scores = {};
-  
+
   for (const [lang, patterns] of Object.entries(languagePatterns)) {
     scores[lang] = 0;
     for (const pattern of patterns) {
@@ -78,27 +68,33 @@ function detectLanguage(code) {
   const maxScore = Math.max(...Object.values(scores));
   if (maxScore === 0) {
     // Default to shell if it looks like a command (starts with a command-like word)
-    const firstLine = codeTrimmed.split('\n')[0].trim();
-    if (/^(git|npm|yarn|curl|wget|echo|export|cd|ls|mkdir|rm|cp|mv|cat|grep|sed|awk|ssh|scp|node|python|ruby|perl|java|go|rust|cargo|docker|kubectl|aws|gcloud|terraform|make|cmake|\.\/)/.test(firstLine)) {
-      return 'shell';
+    const firstLine = codeTrimmed.split("\n")[0].trim();
+    if (
+      /^(git|npm|yarn|curl|wget|echo|export|cd|ls|mkdir|rm|cp|mv|cat|grep|sed|awk|ssh|scp|node|python|ruby|perl|java|go|rust|cargo|docker|kubectl|aws|gcloud|terraform|make|cmake|\.\/)/.test(
+        firstLine
+      )
+    ) {
+      return "shell";
     }
     // If it looks like output or log, default to text
     if (/^[a-z-]+(\s+[^\s]+)*$/m.test(firstLine) && firstLine.length < 100) {
-      return 'shell';
+      return "shell";
     }
-    return 'text';
+    return "text";
   }
 
-  const detectedLang = Object.entries(scores).find(([_, score]) => score === maxScore)[0];
-  
+  const detectedLang = Object.entries(scores).find(
+    ([_, score]) => score === maxScore
+  )[0];
+
   // Special case: if JSX patterns match, prefer jsx over javascript
   if (scores.jsx > 0 && scores.javascript > 0) {
-    return 'jsx';
+    return "jsx";
   }
-  
+
   // Special case: prefer bash over shell if bash patterns match
   if (scores.bash > 0 && scores.shell > 0 && scores.bash >= scores.shell) {
-    return 'bash';
+    return "bash";
   }
 
   return detectedLang;
@@ -110,28 +106,28 @@ function fixCodeBlocks(content) {
   // We need to match ``` at start of line or after whitespace, followed by newline
   // But NOT match ``` that already has a language identifier (```javascript, ```shell, etc.)
   // Also need to avoid matching closing code blocks
-  
+
   // First, let's find all code blocks without language identifiers
   // We'll use a more careful approach: find ```\n that is NOT preceded by ``` on the same line
   // and NOT followed by a word character (which would indicate a language)
-  
-  const lines = content.split('\n');
+
+  const lines = content.split("\n");
   let modified = false;
   const fixedLines = [];
   let inCodeBlock = false;
   let codeBlockStartIndex = -1;
   let codeBlockContent = [];
-  
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-    
+
     // Check if this line is a code block delimiter
     // It could be just ``` or ```language
-    if (line.trim().startsWith('```')) {
+    if (line.trim().startsWith("```")) {
       if (!inCodeBlock) {
         // Opening code block
         // Check if previous line ended with ``` (shouldn't happen, but safety check)
-        if (i > 0 && lines[i - 1].trim().endsWith('```')) {
+        if (i > 0 && lines[i - 1].trim().endsWith("```")) {
           fixedLines.push(line);
           continue;
         }
@@ -147,13 +143,16 @@ function fixCodeBlocks(content) {
           // Check if it had a language identifier
           const openingLine = lines[codeBlockStartIndex];
           const openingTrimmed = openingLine.trim();
-          if (openingTrimmed === '```') {
+          if (openingTrimmed === "```") {
             // No language identifier, add one
-            const code = codeBlockContent.join('\n');
+            const code = codeBlockContent.join("\n");
             const lang = detectLanguage(code);
             fixedLines.push(`\`\`\`${lang}`);
             modified = true;
-          } else if (openingTrimmed.startsWith('```') && openingTrimmed.length > 3) {
+          } else if (
+            openingTrimmed.startsWith("```") &&
+            openingTrimmed.length > 3
+          ) {
             // Had a language identifier, keep it as is
             fixedLines.push(openingLine);
           } else {
@@ -176,26 +175,26 @@ function fixCodeBlocks(content) {
       fixedLines.push(line);
     }
   }
-  
+
   // Handle case where code block is not closed (shouldn't happen, but safety)
   if (inCodeBlock && codeBlockStartIndex >= 0) {
-    const code = codeBlockContent.join('\n');
+    const code = codeBlockContent.join("\n");
     const lang = detectLanguage(code);
     fixedLines[codeBlockStartIndex] = `\`\`\`${lang}`;
     fixedLines.push(...codeBlockContent);
     modified = true;
   }
 
-  return { content: fixedLines.join('\n'), modified };
+  return { content: fixedLines.join("\n"), modified };
 }
 
 function processMarkdownFile(filePath) {
   try {
-    const content = fs.readFileSync(filePath, 'utf8');
+    const content = fs.readFileSync(filePath, "utf8");
     const { content: fixedContent, modified } = fixCodeBlocks(content);
-    
+
     if (modified) {
-      fs.writeFileSync(filePath, fixedContent, 'utf8');
+      fs.writeFileSync(filePath, fixedContent, "utf8");
       return true;
     }
     return false;
@@ -212,11 +211,11 @@ function findMarkdownFiles(dir) {
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      const indexPath = path.join(fullPath, 'index.md');
+      const indexPath = path.join(fullPath, "index.md");
       if (fs.existsSync(indexPath)) {
         files.push(indexPath);
       }
-    } else if (entry.name.endsWith('.md')) {
+    } else if (entry.name.endsWith(".md")) {
       files.push(fullPath);
     }
   }
@@ -225,7 +224,7 @@ function findMarkdownFiles(dir) {
 }
 
 // Main execution
-const blogDir = path.join(__dirname, '..', 'content', 'blog');
+const blogDir = path.join(__dirname, "..", "content", "blog");
 const markdownFiles = findMarkdownFiles(blogDir);
 
 console.log(`Found ${markdownFiles.length} markdown files`);
@@ -239,4 +238,3 @@ for (const file of markdownFiles) {
 }
 
 console.log(`\nFixed ${fixedCount} out of ${markdownFiles.length} files`);
-

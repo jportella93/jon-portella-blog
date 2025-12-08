@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface EventHandlerData {
   element?: Window | Element;
@@ -17,11 +17,18 @@ export default function YouAreUsingBrowserEventsWrongDemo() {
     }
 
     // Private method to generate a unique identifier for the event handler.
-    private _getHandlerId = (element: Window | Element, event: string, handler: EventListener): string => 
-      `${element}-${event}-${handler}`;
+    private _getHandlerId = (
+      element: Window | Element,
+      event: string,
+      handler: EventListener
+    ): string => `${element}-${event}-${handler}`;
 
     // Public method to save an event hanlder on the store.
-    save = ({ element = window, handler, event }: EventHandlerData): boolean => {
+    save = ({
+      element = window,
+      handler,
+      event,
+    }: EventHandlerData): boolean => {
       const handlerId = this._getHandlerId(element, event, handler);
 
       // Save the handler on the event handler store.
@@ -35,12 +42,20 @@ export default function YouAreUsingBrowserEventsWrongDemo() {
     };
 
     // Remove an event handler from the store
-    remove = ({ element = window, handler, event }: EventHandlerData): boolean => {
+    remove = ({
+      element = window,
+      handler,
+      event,
+    }: EventHandlerData): boolean => {
       const handlerId = this._getHandlerId(element, event, handler);
 
       // If the event handler is not in the store throw an error
       if (!this.store[handlerId]) {
-        console.error(new Error(`Cannot remove an event handler that has not been previously saved in the store.`));
+        console.error(
+          new Error(
+            `Cannot remove an event handler that has not been previously saved in the store.`
+          )
+        );
       }
 
       // Remove the listener from the node using the same handler.
@@ -62,8 +77,8 @@ export default function YouAreUsingBrowserEventsWrongDemo() {
 
   // Example function that changes the text of the page with current scroll position.
   const logScroll = (): void => {
-    if (typeof document !== 'undefined') {
-      const scrollDisplay = document.querySelector('#scrollDisplay');
+    if (typeof document !== "undefined") {
+      const scrollDisplay = document.querySelector("#scrollDisplay");
       if (scrollDisplay) {
         scrollDisplay.textContent = `${window.scrollY.toFixed()}px`;
       }
@@ -72,11 +87,16 @@ export default function YouAreUsingBrowserEventsWrongDemo() {
 
   // Log the scroll only if the screen is large.
   const logScrollOnLargeScreens = (): void => {
-    const eventHandlerData: EventHandlerData = { handler: logScroll, event: 'scroll' };
+    const eventHandlerData: EventHandlerData = {
+      handler: logScroll,
+      event: "scroll",
+    };
     if (window.innerWidth > 768) {
-      if (!eventHandlerStore.has(eventHandlerData)) eventHandlerStore.save(eventHandlerData);
+      if (!eventHandlerStore.has(eventHandlerData))
+        eventHandlerStore.save(eventHandlerData);
     } else {
-      if (eventHandlerStore.has(eventHandlerData)) eventHandlerStore.remove(eventHandlerData);
+      if (eventHandlerStore.has(eventHandlerData))
+        eventHandlerStore.remove(eventHandlerData);
     }
   };
 
@@ -85,36 +105,36 @@ export default function YouAreUsingBrowserEventsWrongDemo() {
     logScrollOnLargeScreens();
 
     // Set to also trigger on resize in order to detect screen changes.
-    window.addEventListener('resize', logScrollOnLargeScreens, false);
+    window.addEventListener("resize", logScrollOnLargeScreens, false);
 
     return () => {
-      window.removeEventListener('resize', logScrollOnLargeScreens, false);
+      window.removeEventListener("resize", logScrollOnLargeScreens, false);
     };
   }, []);
 
   // Styles for the demo
-  const pageStyle: React.CSSProperties = { height: '500vh' };
+  const pageStyle: React.CSSProperties = { height: "500vh" };
   const justifierStyle: React.CSSProperties = {
-    height: '100vh', width: '100vw', position: 'fixed', display: 'flex', justifyContent: 'center',
-    alignItems: 'center'
+    height: "100vh",
+    width: "100vw",
+    position: "fixed",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   };
-  const textWrapperStyle: React.CSSProperties = { minWidth: '550px' };
+  const textWrapperStyle: React.CSSProperties = { minWidth: "550px" };
   const textStyle: React.CSSProperties = { margin: 0 };
 
   return (
     <div style={pageStyle}>
       <div style={justifierStyle}>
         <div style={textWrapperStyle}>
-          <h1 style={textStyle} id="title">Scroll position is: <span id="scrollDisplay">0px</span></h1>
+          <h1 style={textStyle} id="title">
+            Scroll position is: <span id="scrollDisplay">0px</span>
+          </h1>
           <p id="subTitle">Shrink your window to remove the event listener</p>
         </div>
       </div>
     </div>
   );
 }
-
-
-
-
-
-

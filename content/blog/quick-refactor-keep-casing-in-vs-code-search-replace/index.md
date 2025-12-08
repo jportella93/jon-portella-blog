@@ -6,7 +6,6 @@ date: 2021-02-25T13:32:08.096Z
 
 ![](images/0.png)
 
-
 ---
 
 #### THE PROBLEM
@@ -34,4 +33,3 @@ Now we’ve saved time refactoring and our pets are happy with their aliases!
 ![](images/5.png)
 
 ---
-

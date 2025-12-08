@@ -8,7 +8,6 @@ date: 2021-03-24T13:59:13.304Z
 
 ![](images/0.png)
 
-
 #### THE PROBLEM
 
 You spend a lot of time reviewing your own pull request on Github before asking for a review and you always find stuff that needs to be changed. So you need to add/edit commits, losing lots of time.
@@ -104,4 +103,3 @@ Finally, here’s a neat trick by [Shime.sh](https://shime.sh/til/git-diff-tips-
 ```shell
 git config --global pager.diff 'sed "s/^\([^-+ ]*\)[-+ ]/\\1/"'
 ```
-

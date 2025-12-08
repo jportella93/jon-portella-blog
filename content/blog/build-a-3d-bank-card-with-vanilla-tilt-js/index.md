@@ -39,7 +39,8 @@ import vanillaTilt from "https://cdn.skypack.dev/vanilla-tilt@1.7.0";
 2. Target a DOM element as a Vanilla-tilt container. The second argument is the [options](https://github.com/micku7zu/vanilla-tilt.js/#options) object.
 
 ```javascript
-const card = document.querySelector("#card");VanillaTilt.init(card, {  max: 10,  speed: 1000,  perspective: 700});
+const card = document.querySelector("#card");
+VanillaTilt.init(card, { max: 10, speed: 1000, perspective: 700 });
 ```
 
 And that’s really it! Here is our final result:
@@ -47,4 +48,3 @@ And that’s really it! Here is our final result:
 Our cool cat 3D moving card! Let’s spend all our $$!
 
 ---
-

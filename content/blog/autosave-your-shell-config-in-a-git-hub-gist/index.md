@@ -6,7 +6,6 @@ date: 2021-03-05T13:34:17.791Z
 
 ![](images/0.png)
 
-
 ---
 
 #### THE PROBLEM

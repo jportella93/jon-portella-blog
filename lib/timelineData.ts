@@ -1,8 +1,8 @@
 // Centralized timeline data
 // Each item represents a study, job, or project with optional milestones
 
-import timelineDataJson from "./timelineData.json";
 import { BASE_PATH } from "./constants";
+import timelineDataJson from "./timelineData.json";
 
 export interface TimelineMilestone {
   date: string;
@@ -17,7 +17,7 @@ export interface TimelineItem {
   description: string;
   image: string | null;
   link: string | null;
-  startDate: string;
+  startDate: string | null;
   endDate: string | null;
   milestones: TimelineMilestone[];
 }

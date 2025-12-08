@@ -3,7 +3,6 @@
     "type": "study",
     "title": "Bachelor's degree, Communication and Media Studies",
     "description": "Bachelor's degree in Communication and Media Studies from Universitat de Barcelona.",
-    "image": null,
     "link": "https://www.ub.edu",
     "startDate": "2011-09-01",
     "endDate": "2015-06-30",
@@ -13,7 +12,6 @@
     "type": "study",
     "title": "Software Engineering Bootcamp",
     "description": "Software engineering bootcamp at Codeworks. Covered advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking (Internet, HTTP, WebSocket), end-to-end testing, security threats, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, and open source contributions. Back-end frameworks (Node, Express, Koa, GraphQL). Databases (SQL, MongoDB, Redis). Front-end frameworks (Angular, React).",
-    "image": null,
     "link": "https://www.codeworks.me",
     "startDate": "2018-04-01",
     "endDate": "2018-08-31",
@@ -23,7 +21,6 @@
     "type": "study",
     "title": "CS50: Introduction to Computer Science",
     "description": "CS50: Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. Languages include C, Python, and SQL plus HTML, CSS, and JavaScript. Problem sets inspired by the arts, humanities, social sciences, and sciences.",
-    "image": null,
     "link": "https://cs50.harvard.edu",
     "startDate": "2021-01-01",
     "endDate": "2021-03-31",
@@ -33,7 +30,6 @@
     "type": "job",
     "title": "Senior Software Engineer at Pinterest",
     "description": "Part of the Toronto-based Product Experience team, full stack engineer with a front end web focus and some iOS experience. Tech lead, mentor and creator of several company-wide cross-functional initiatives. Tech Stack/Tools: JavaScript, TypeScript, Flow, React, Redux, Jest, React Testing Library, RESTful APIs, GraphQL, Relay, Enzyme, Cypress, Python, Flask, Apache Thrift, Docker, Figma, Phabricator, Kibana, Gestalt, Objective-C, Texture, Plank.",
-    "image": null,
     "link": "https://www.pinterest.com",
     "startDate": "2021-08-01",
     "endDate": null,
@@ -43,7 +39,6 @@
     "type": "job",
     "title": "Full Stack Engineer at Curelator Inc.",
     "description": "Curelator is a digital health company focused on developing a clinical-grade disease management platform for patients and clinicians. The company is based in Cambridge MA with operations in the US as well as Barcelona, Spain, UK, and Germany. Responsibilities: Engineering team lead on a Single Page Application web app (React.js, d3, Alt/flux, Karma, Mocha). Contributor to a Python HTTP server implementing a RESTful API (Python 3, Flask, nosetests, Debian, PostgreSQL). Engineer team lead on the i18n company website, responsible for migration from WordPress to JAMStack architecture with Metalsmith SSG (PHP, WordPress, jQuery, Backbone, Node.js, Jest, Metalsmith, Handlebars). Engineering team lead on statically generated transactional email templates and marketing templates (Node.js, Metalsmith, Handlebars, MJML, Mailjet).",
-    "image": null,
     "link": "https://www.curelator.com",
     "startDate": "2018-08-01",
     "endDate": "2021-08-31",
@@ -53,7 +48,6 @@
     "type": "job",
     "title": "Instructor at Codeworks",
     "description": "Codeworks is an immersive coding bootcamp with campuses in Austin, Barcelona, New York, Berlin, London, and Toronto. Its Software Engineering Immersive program covers advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking, end-to-end testing, security, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, open source contributions, back-end frameworks (Node, Express, Koa, GraphQL), databases (SQL, MongoDB, Redis), and front-end frameworks (Angular, React). Responsibilities: Give a lecture once a week about the current course subject, train new Teaching Assistants, answer help requests from all students, host Q&A sessions and exercise reviews, support senior students throughout their coding projects (brainstorming, code reviews, demos), prepare senior students for their job search.",
-    "image": null,
     "link": "https://www.codeworks.me",
     "startDate": "2019-10-01",
     "endDate": "2020-11-30",
@@ -63,7 +57,6 @@
     "type": "job",
     "title": "Audiovisual Engineer / Artist (Self-employed)",
     "description": "Figuring myself out after graduating from university. Lots of creative work in this period: advertising, short films, music composition and production, graphic design. Pivoted to a more technical role towards the end, specializing in live events doing video/audio systems set up and operation for conferences, shows and art installations.",
-    "image": null,
     "link": null,
     "startDate": "2015-12-01",
     "endDate": "2018-05-31",
@@ -73,500 +66,350 @@
     "type": "project",
     "title": "Eloquent JS Mentoring",
     "description": "A mentoring project and website around the Eloquent JavaScript book, to be used as portfolio aimed to tech recruiters. I mentored a junior engineer friend (and he got hired!!). Built with Next.js.",
-    "image": null,
     "link": "https://eloquent-js-theta.vercel.app/",
-    "startDate": "2023-10-01",
-    "endDate": "2024-02-29",
-    "milestones": []
+    "endDate": "2023-10-01"
   },
   {
     "type": "project",
     "title": "Make Me Drink - Real Time Online Game",
     "description": "Weekend project - My version of the game couple battles, using websockets for real time online multiplayer. Front-end built with Gatsby and web sockets for real-time gameplay.",
-    "image": null,
     "link": "https://github.com/jportella93/make-me-drink-client",
-    "startDate": "2020-05-01",
-    "endDate": "2020-05-31",
-    "milestones": []
+    "endDate": "2020-05-01"
   },
   {
     "type": "project",
     "title": "VizViz: Trippy Visualisations with p5.js",
     "description": "Website to make trippy visualisations using p5.js. Built over a weekend after being inspired by Processing visualisations. Features local storage for saving state, draggable canvas and controls. Initially built with d3.js but switched to p5.js for better performance. Deployed on Netlify.",
-    "image": null,
     "link": "https://github.com/jportella93/vizviz",
-    "startDate": "2020-05-01",
-    "endDate": "2020-05-31",
-    "milestones": []
+    "endDate": "2020-05-01"
   },
   {
     "type": "project",
     "title": "Instagram Random Comment Picker",
     "description": "An app that allows to randomly pick a comment on an Instagram picture that follows a set of conditions. It features a conversational UI to get the rules for a given contest and, at the last step, it creates a snippet that gets copied to the user clipboard. Then, this can be pasted in the JavaScript console in the picture page and the winner comment will be highlighted.",
-    "image": null,
     "link": "/free-instagram-random-comment-picker",
-    "startDate": "2019-01-01",
-    "endDate": "2019-01-31",
-    "milestones": []
+    "endDate": "2019-01-01"
   },
   {
     "type": "project",
     "title": "Jon Portella Blog",
     "description": "My homepage, where I (rarely) post articles, tools and whatnot. Serverless static site generated with Gatsby (now migrated to Next.js). Features markdown support, RSS feeds, and dark mode.",
-    "image": null,
     "link": "https://github.com/jportella93/jon-portella-blog",
-    "startDate": "2018-12-01",
-    "endDate": null,
-    "milestones": []
+    "endDate": "2018-12-01"
   },
   {
     "type": "project",
     "title": "Uma Zuasti's Blog",
     "description": "Blog I made for mom's business, with a CMS so she can update it independently. Her blog gets more traffic than mine haha. Built with Gatsby and NetlifyCMS. Website: https://umazuasti.com",
-    "image": null,
     "link": "https://github.com/jportella93/uma-zuasti-blog",
-    "startDate": "2018-12-01",
-    "endDate": "2018-12-31",
-    "milestones": []
+    "endDate": "2018-12-01"
   },
   {
     "type": "project",
     "title": "Reddit Bulk Image Downloader",
     "description": "There are some cool wallpapers on Reddit. At some point, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion. This picking and downloading process was kind of tedious, so I've built a small Node.js program to automate it.",
-    "image": null,
     "link": "/blog/reddit-image-downloader-node",
-    "startDate": "2018-11-01",
-    "endDate": "2018-11-30",
-    "milestones": []
+    "endDate": "2018-11-01"
   },
   {
     "type": "project",
     "title": "Flickr Gallery",
     "description": "Web app to explore the most recent images uploaded to Flickr worldwide. I built from the ground up and deployed the whole project myself. Tech stack: React, Redux, Koa, Flickr API.",
-    "image": null,
     "link": "https://jportella93.github.io/flickr-gallery/",
-    "startDate": "2018-08-01",
-    "endDate": "2018-08-31",
-    "milestones": []
+    "endDate": "2018-08-01"
   },
   {
     "type": "project",
     "title": "Bitcoin Collab: Fullstack Web App",
     "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
-    "image": null,
     "link": "https://github.com/jportella93/collab-frontend",
-    "startDate": "2018-07-01",
-    "endDate": "2018-07-31",
-    "milestones": []
+    "endDate": "2018-07-01"
   },
   {
     "type": "project",
     "title": "Nanny Express: Fullstack Web App",
     "description": "Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
-    "image": null,
     "link": "https://github.com/jportella93/Nanny-Express-client",
-    "startDate": "2018-06-01",
-    "endDate": "2018-06-30",
-    "milestones": []
+    "endDate": "2018-06-01"
   },
   {
     "type": "project",
     "title": "Find a Hobby!: Fullstack Web App",
     "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB.",
-    "image": null,
     "link": "https://github.com/jportella93/find-a-hobby-client",
-    "startDate": "2018-06-01",
-    "endDate": "2018-06-30",
-    "milestones": []
+    "endDate": "2018-06-01"
   },
   {
     "type": "project",
     "title": "Jon Portella's Blackjack: Web App",
     "description": "As the last test in order to get admitted in Codeworks, the full stack JavaScript bootcamp I did back in 2018, I had one week to create and deliver a blackjack game. This was my first ever JavaScript + CSS + HTML project.",
-    "image": null,
     "link": "/blog/creating-a-blackjack-game",
-    "startDate": "2018-02-01",
-    "endDate": "2018-02-28",
-    "milestones": []
+    "endDate": "2018-02-01"
   },
   {
     "type": "project",
     "title": "[Tutorial] Comment Picker",
     "description": "Video tutorial showing how to use the Instagram Comment Picker app that I built.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=0x2O-_BgDe8",
-    "startDate": "2021-10-30",
-    "endDate": "2021-11-30",
-    "milestones": []
+    "endDate": "2021-10-30"
   },
   {
     "type": "project",
     "title": "Clinical charts",
     "description": "Recording of a live demo of some clinical charts I built while working at Curelator .",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=98VJoUg2wdQ",
-    "startDate": "2021-07-02",
-    "endDate": "2021-08-02",
-    "milestones": []
+    "endDate": "2021-07-02"
   },
   {
     "type": "project",
     "title": "OXIDIA experience",
     "description": "Advertisement video for the OXIDIA backpack I produced.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=2v6PIpQAT2g",
-    "startDate": "2021-01-02",
-    "endDate": "2021-02-02",
-    "milestones": []
+    "endDate": "2021-01-02"
   },
   {
     "type": "project",
     "title": "OXIDIA tutorial MINi EN",
     "description": "Tutorial video for the OXIDIA MINi backpack I produced.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=3dPmBW85dbQ",
-    "startDate": "2021-01-02",
-    "endDate": "2021-02-02",
-    "milestones": []
+    "endDate": "2021-01-02"
   },
   {
     "type": "project",
     "title": "OXIDIA tutorial MAXi EN",
     "description": "Tutorial video for the OXIDIA MAXi backpack I produced.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=V5iJLUPkDyU",
-    "startDate": "2021-01-02",
-    "endDate": "2021-02-02",
-    "milestones": []
+    "endDate": "2021-01-02"
   },
   {
     "type": "project",
     "title": "Javi Tximak the Barber",
     "description": "Video promotion for a local barber shop I produced.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=o4g7cQGY6pU",
-    "startDate": "2012-06-02",
-    "endDate": "2012-07-02",
-    "milestones": []
+    "endDate": "2012-06-02"
   },
   {
     "type": "project",
     "title": "Los Diletantes de Antonia Romero",
     "description": "Book trailer I produced",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=aJTIPKAOH-U",
-    "startDate": "2013-04-02",
-    "endDate": "2013-05-02",
-    "milestones": []
+    "endDate": "2013-04-02"
   },
   {
     "type": "project",
     "title": "Snap in the Bath “Get Away“",
     "description": "Music video I produced for my band at the time.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=zkvBKlTy-hk",
-    "startDate": "2014-01-02",
-    "endDate": "2014-02-02",
-    "milestones": []
+    "endDate": "2014-01-02"
   },
   {
     "type": "project",
     "title": "UB - Dia internacional de les Dones",
     "description": "Video promoting the International Women's Day event at the University of Barcelona.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=I_ytX1YKk3M",
-    "startDate": "2013-03-02",
-    "endDate": "2013-04-02",
-    "milestones": []
+    "endDate": "2013-03-02"
   },
   {
     "type": "project",
     "title": "Clúster Edutech - Empresas de tecnologia educativa",
     "description": "Video promoting a group of educational technology companies I produced.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=T6zJyz-HraY",
-    "startDate": "2015-04-02",
-    "endDate": "2015-05-02",
-    "milestones": []
+    "endDate": "2015-04-02"
   },
   {
     "type": "project",
     "title": "Tecnosis",
     "description": "Videoart piece for a University project.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=yJPS-5GfovQ",
-    "startDate": "2014-10-02",
-    "endDate": "2014-11-02",
-    "milestones": []
+    "endDate": "2014-10-02"
   },
   {
     "type": "project",
     "title": "Lil'Jeez G Swagg Explicit ft  Dj Crazy Cool",
     "description": "Music video I produced for a local artist.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=czyNnWxcO_0",
-    "startDate": "2016-01-02",
-    "endDate": "2016-02-02",
-    "milestones": []
+    "endDate": "2016-01-02"
   },
   {
     "type": "project",
     "title": "La Fábrica de Juguetes de los Reyes Magos de Oriente fabra i coats",
     "description": "Art installation, I produced the original soundtrack.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=06vY0iEj5hw",
-    "startDate": "2016-12-02",
-    "endDate": "2016-01-02",
-    "milestones": []
+    "endDate": "2016-12-02"
   },
   {
     "type": "project",
     "title": "Barcelona - About a Girl",
     "description": "Video promoting rental apartments in Barcelona.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=w4dnywqCEXs",
-    "startDate": "2017-01-02",
-    "endDate": "2017-02-02",
-    "milestones": []
+    "endDate": "2017-01-02"
   },
   {
     "type": "project",
     "title": "Snap in the Bath - Videoresumen",
     "description": "Video summarizing a music concert",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=MVjupBbDi1o",
-    "startDate": "2015-01-02",
-    "endDate": "2015-02-02",
-    "milestones": []
+    "endDate": "2015-01-02"
   },
   {
     "type": "project",
     "title": "Sharkeye Scooter",
     "description": "Video promoting a scooter.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=yrQrYD9wR8E",
-    "startDate": "2018-01-02",
-    "endDate": "2018-02-02",
-    "milestones": []
+    "endDate": "2018-01-02"
   },
   {
     "type": "project",
     "title": "No más trabajos de clase aburridos! Cómo crear tu proyecto mydocumenta",
     "description": "Video tutorial showing how to create a project with mydocumenta. Part of my University internship.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=hmNYwJbywz0",
-    "startDate": "2014-11-02",
-    "endDate": "2014-12-02",
-    "milestones": []
+    "endDate": "2014-11-02"
   },
   {
     "type": "project",
     "title": "Streety.mp3",
     "description": "A song I made",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=gtrizPMyBGE",
-    "startDate": "2019-09-24",
-    "endDate": "2019-10-24",
-    "milestones": []
+    "endDate": "2019-09-24"
   },
   {
     "type": "project",
     "title": "Thingy.mp3",
     "description": "A song I made",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=-JnVWZCRfJk",
-    "startDate": "2019-08-21",
-    "endDate": "2019-09-21",
-    "milestones": []
+    "endDate": "2019-08-21"
   },
   {
     "type": "project",
     "title": "Demo for VizViz",
     "description": "Demo for the VizViz app I built.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=tFouYFk-Ri8",
-    "startDate": "2020-05-04",
-    "endDate": "2020-06-04",
-    "milestones": []
+    "endDate": "2020-05-04"
   },
   {
     "type": "project",
     "title": "Audiovisual Engineer Portfolio",
     "description": "Summary reel of my work as an Audiovisual Engineer in live events and conferences.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=z3fHTJysMvA",
-    "startDate": "2017-12-05",
-    "endDate": "2018-01-05",
-    "milestones": []
+    "endDate": "2017-12-05"
   },
   {
     "type": "project",
     "title": "Animation",
     "description": "For a University project in the animation subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=ykLdat_ndhw",
-    "startDate": "2013-01-20",
-    "endDate": "2013-02-20",
-    "milestones": []
+    "endDate": "2013-01-20"
   },
   {
     "type": "project",
     "title": "Ritmo Madre",
     "description": "A short documentary for a University project in the documentary subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=rZ6s8PDI9tg",
-    "startDate": "2014-12-14",
-    "endDate": "2015-01-14",
-    "milestones": []
+    "endDate": "2014-12-14"
   },
   {
     "type": "project",
     "title": "El Super Show",
     "description": "A short TV show for a University project in the TV show subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=zzUw3tzz-gg",
-    "startDate": "2014-06-29",
-    "endDate": "2014-07-29",
-    "milestones": []
+    "endDate": "2014-06-29"
   },
   {
     "type": "project",
     "title": "Nunca imaginé que serías tu",
     "description": "A short film for a University project in the audiovisual production subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=QXOcW7k-p-M",
-    "startDate": "2014-03-12",
-    "endDate": "2014-04-12",
-    "milestones": []
+    "endDate": "2014-03-12"
   },
   {
     "type": "project",
     "title": "Tutorial para subir videos a youtube",
     "description": "Short comedy video about how to upload videos to YouTube. For a University project.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=t6HVDe1e5KE",
-    "startDate": "2013-05-03",
-    "endDate": "2013-06-03",
-    "milestones": []
+    "endDate": "2013-05-03"
   },
   {
     "type": "project",
     "title": "Can a book kill a man? - intro",
     "description": "Intro to a school research project.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=PAilNL4J97Y",
-    "startDate": "2013-04-28",
-    "endDate": "2013-05-28",
-    "milestones": []
+    "endDate": "2013-04-28"
   },
   {
     "type": "project",
     "title": "Dextro, Energy Drink",
     "description": "A short TV spot for a University project in the TV show subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=cRnu3UUBtnc",
-    "startDate": "2013-04-18",
-    "endDate": "2013-05-18",
-    "milestones": []
+    "endDate": "2013-04-18"
   },
   {
     "type": "project",
     "title": "Ambrosio tiene hambre",
     "description": "A comedy news piece for a University project in the TV news subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=lL0gwV6lTko",
-    "startDate": "2013-01-28",
-    "endDate": "2013-02-28",
-    "milestones": []
+    "endDate": "2013-01-28"
   },
   {
     "type": "project",
     "title": "\"El Encantador\" Teaser",
     "description": "A movie teaser for a University project in the audiovisual production subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=JkLvf5fW8w0",
-    "startDate": "2013-01-09",
-    "endDate": "2013-02-09",
-    "milestones": []
+    "endDate": "2013-01-09"
   },
   {
     "type": "project",
     "title": "Can a book kill a man?",
     "description": "school research project.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=lnhALsdwuAs",
-    "startDate": "2012-11-11",
-    "endDate": "2012-12-11",
-    "milestones": []
+    "endDate": "2012-11-11"
   },
   {
     "type": "project",
     "title": "Videocurriculum",
     "description": "CAV UB",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=YSEsPYo_eHo",
-    "startDate": "2012-10-29",
-    "endDate": "2012-11-29",
-    "milestones": []
+    "endDate": "2012-10-29"
   },
   {
     "type": "project",
     "title": "78 Caracoles con Pajarita - Cortometraje de comedia",
     "description": "A short comedy film for a University project in the audiovisual production subject.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=RXSGbaZgUds",
-    "startDate": "2013-06-13",
-    "endDate": "2013-07-13",
-    "milestones": []
+    "endDate": "2013-06-13"
   },
   {
     "type": "project",
     "title": "Cadena de Valores KH-7 ZAS!",
     "description": "A TV spot for a cleaning company, I did boom mic operation and also cameo in the video",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=cfDd1nk6iNY",
-    "startDate": "2012-06-29",
-    "endDate": "2012-07-29",
-    "milestones": []
+    "endDate": "2012-06-29"
   },
   {
     "type": "project",
     "title": "Bambusound, el documental",
     "description": "A music documentary for University project, I conceived the idea, did sound and OST production. Also interviewed the musicians.",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=ZFNF4Xx5gF8",
-    "startDate": "2014-09-30",
-    "endDate": "2014-10-30",
-    "milestones": []
+    "endDate": "2014-09-30"
   },
   {
     "type": "project",
     "title": "Itaca Band - Ojalá (Videoclip Oficial)",
     "description": "A music videoclip for a local band, I did boom mic operation",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=IMunDXoTKdU",
-    "startDate": "2012-10-15",
-    "endDate": "2012-11-15",
-    "milestones": []
+    "endDate": "2012-10-15"
   },
   {
     "type": "project",
     "title": "Snap in the Bath - Get Away [Official Music Video]",
     "description": "A music videoclip my band at the time, I made the whole video, acting, recording of the song, playing guitar, and backing vocals",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=3BicGzmKJHw",
-    "startDate": "2014-03-03",
-    "endDate": "2014-04-03",
-    "milestones": []
+    "endDate": "2014-03-03"
   },
   {
     "type": "project",
     "title": "Get Away - Making of",
     "description": "The making of the music videoclip for my band I did the whole video and acting",
-    "image": null,
     "link": "https://www.youtube.com/watch?v=xp_fQcDMkA4",
-    "startDate": "2014-03-08",
-    "endDate": "2014-04-08",
-    "milestones": []
+    "endDate": "2014-03-08"
   }
 ]

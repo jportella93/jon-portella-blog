@@ -23,6 +23,17 @@ export default function TimelineList({
     return moment(dateString).format("MMM YYYY");
   }
 
+  function formatDateRange(
+    startDate: string | null,
+    endDate: string | null
+  ): string {
+    if (startDate && endDate)
+      return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+    if (startDate && !endDate) return `${formatDate(startDate)} - Present`;
+    if (!startDate && endDate) return formatDate(endDate);
+    return "Present";
+  }
+
   function renderTimelineSection(
     items: TimelineItem[],
     type: "study" | "job" | "project",
@@ -51,7 +62,11 @@ export default function TimelineList({
           {title}
         </h2>
         {items
-          .sort((a, b) => moment(b.startDate).diff(moment(a.startDate)))
+          .sort((a, b) => {
+            const startA = a.startDate || a.endDate || "";
+            const startB = b.startDate || b.endDate || "";
+            return moment(startB).diff(moment(startA));
+          })
           .map((item) => {
             const isOngoing = !item.endDate;
 
@@ -100,7 +115,7 @@ export default function TimelineList({
                       color: isDarkMode ? "#999" : "#666",
                     }}
                   >
-                    {formatDate(item.startDate)} - {formatDate(item.endDate)}
+                    {formatDateRange(item.startDate, item.endDate)}
                   </div>
                 </div>
               </div>

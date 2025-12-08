@@ -45,6 +45,15 @@ export default function timeline() {
   // Get current time once to avoid re-computation issues
   const now = useMemo(() => moment(), []);
 
+  const getItemStartDate = (item: TimelineItem) => {
+    if (item.type === "project" && !item.startDate && item.endDate) {
+      return moment(item.endDate).subtract(3, "months").startOf("month");
+    }
+    if (item.startDate) return moment(item.startDate);
+    if (item.endDate) return moment(item.endDate);
+    return now.clone();
+  };
+
   // Group items by type
   const itemsByType = useMemo(() => {
     return {
@@ -63,14 +72,14 @@ export default function timeline() {
 
     // Sort items by start date
     const sortedItems = [...items].sort((a, b) =>
-      moment(a.startDate).diff(moment(b.startDate))
+      getItemStartDate(a).diff(getItemStartDate(b))
     );
 
     // Track the end date of each lane
     const laneEndDates: Date[] = [];
 
     sortedItems.forEach((item) => {
-      const itemStart = moment(item.startDate);
+      const itemStart = getItemStartDate(item);
       const itemEnd = item.endDate ? moment(item.endDate) : now;
 
       // Find the first lane that doesn't have an overlapping item
@@ -112,19 +121,15 @@ export default function timeline() {
       const lane = lanes.get(item.title) || 0;
       const groupId = laneCount > 1 ? `${groupName}-${lane}` : groupName;
 
-      let startDate: moment.Moment;
-      let endDate: Date;
-
-      if (type === "project") {
-        // Projects show as one month long
-        startDate = moment(item.startDate);
-        endDate = startDate.clone().add(1, "month").endOf("month").toDate();
-      } else {
-        startDate = moment(item.startDate);
-        endDate = item.endDate
-          ? moment(item.endDate).endOf("month").toDate()
-          : now.toDate();
-      }
+      const startDate = getItemStartDate(item);
+      const endDate =
+        type === "project"
+          ? item.endDate
+            ? moment(item.endDate).endOf("month").toDate()
+            : startDate.clone().add(1, "month").endOf("month").toDate()
+          : item.endDate
+            ? moment(item.endDate).endOf("month").toDate()
+            : now.toDate();
 
       visItems.push({
         id: item.title,

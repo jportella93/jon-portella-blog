@@ -19,6 +19,17 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
     return moment(dateString).format("MMM YYYY");
   }
 
+  function formatDateRange(
+    startDate: string | null,
+    endDate: string | null
+  ): string {
+    if (startDate && endDate)
+      return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+    if (startDate && !endDate) return `${formatDate(startDate)} - Present`;
+    if (!startDate && endDate) return formatDate(endDate);
+    return "Present";
+  }
+
   function formatDateFull(dateString: string | null): string {
     if (!dateString) return "Present";
     return moment(dateString).format("MMMM YYYY");
@@ -249,7 +260,7 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
               color: isDarkMode ? "#999" : "#666",
             }}
           >
-            {formatDate(item.startDate)} - {formatDate(item.endDate)}
+            {formatDateRange(item.startDate, item.endDate)}
           </div>
         </div>
         <div

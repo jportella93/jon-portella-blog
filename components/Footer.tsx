@@ -1,4 +1,5 @@
 import { rhythm } from "../lib/typography";
+import Kofi from "./Kofi";
 
 const links = [
   {
@@ -112,6 +113,9 @@ export default function Footer() {
               </a>
             </li>
           ))}
+          <li style={{ listStyle: "none" }}>
+            <Kofi />
+          </li>
         </ul>
       </nav>
     </footer>

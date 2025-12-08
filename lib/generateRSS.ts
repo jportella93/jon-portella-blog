@@ -14,7 +14,7 @@ export function generateRSS(): void {
     id: siteUrl,
     link: siteUrl,
     language: "en",
-    image: `${siteUrl}/assets/profile-pic.jpg`,
+    image: `${siteUrl}/assets/alien.png`,
     favicon: `${siteUrl}/favicon.ico`,
     copyright: `All rights reserved ${new Date().getFullYear()}, ${siteMetadata.author}`,
     updated:

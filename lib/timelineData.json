@@ -64,6 +64,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Eloquent JS Mentoring",
     "description": "A mentoring project and website around the Eloquent JavaScript book, to be used as portfolio aimed to tech recruiters. I mentored a junior engineer friend (and he got hired!!). Built with Next.js.",
     "link": "https://eloquent-js-theta.vercel.app/",
@@ -71,6 +72,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Make Me Drink - Real Time Online Game",
     "description": "Weekend project - My version of the game couple battles, using websockets for real time online multiplayer. Front-end built with Gatsby and web sockets for real-time gameplay.",
     "link": "https://github.com/jportella93/make-me-drink-client",
@@ -78,6 +80,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "VizViz: Trippy Visualisations with p5.js",
     "description": "Website to make trippy visualisations using p5.js. Built over a weekend after being inspired by Processing visualisations. Features local storage for saving state, draggable canvas and controls. Initially built with d3.js but switched to p5.js for better performance. Deployed on Netlify.",
     "link": "https://github.com/jportella93/vizviz",
@@ -85,6 +88,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Instagram Random Comment Picker",
     "description": "An app that allows to randomly pick a comment on an Instagram picture that follows a set of conditions. It features a conversational UI to get the rules for a given contest and, at the last step, it creates a snippet that gets copied to the user clipboard. Then, this can be pasted in the JavaScript console in the picture page and the winner comment will be highlighted.",
     "link": "/free-instagram-random-comment-picker",
@@ -92,6 +96,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Jon Portella Blog",
     "description": "My homepage, where I (rarely) post articles, tools and whatnot. Serverless static site generated with Gatsby (now migrated to Next.js). Features markdown support, RSS feeds, and dark mode.",
     "link": "https://github.com/jportella93/jon-portella-blog",
@@ -99,6 +104,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Uma Zuasti's Blog",
     "description": "Blog I made for mom's business, with a CMS so she can update it independently. Her blog gets more traffic than mine haha. Built with Gatsby and NetlifyCMS. Website: https://umazuasti.com",
     "link": "https://github.com/jportella93/uma-zuasti-blog",
@@ -106,6 +112,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Reddit Bulk Image Downloader",
     "description": "There are some cool wallpapers on Reddit. At some point, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion. This picking and downloading process was kind of tedious, so I've built a small Node.js program to automate it.",
     "link": "/blog/reddit-image-downloader-node",
@@ -113,6 +120,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Flickr Gallery",
     "description": "Web app to explore the most recent images uploaded to Flickr worldwide. I built from the ground up and deployed the whole project myself. Tech stack: React, Redux, Koa, Flickr API.",
     "link": "https://jportella93.github.io/flickr-gallery/",
@@ -120,6 +128,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Bitcoin Collab: Fullstack Web App",
     "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
     "link": "https://github.com/jportella93/collab-frontend",
@@ -127,6 +136,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Nanny Express: Fullstack Web App",
     "description": "Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
     "link": "https://github.com/jportella93/Nanny-Express-client",
@@ -134,6 +144,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Find a Hobby!: Fullstack Web App",
     "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB.",
     "link": "https://github.com/jportella93/find-a-hobby-client",
@@ -141,6 +152,7 @@
   },
   {
     "type": "project",
+    "category": "software",
     "title": "Jon Portella's Blackjack: Web App",
     "description": "As the last test in order to get admitted in Codeworks, the full stack JavaScript bootcamp I did back in 2018, I had one week to create and deliver a blackjack game. This was my first ever JavaScript + CSS + HTML project.",
     "link": "/blog/creating-a-blackjack-game",
@@ -148,6 +160,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "[Tutorial] Comment Picker",
     "description": "Video tutorial showing how to use the Instagram Comment Picker app that I built.",
     "link": "https://www.youtube.com/watch?v=0x2O-_BgDe8",
@@ -155,6 +168,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Clinical charts",
     "description": "Recording of a live demo of some clinical charts I built while working at Curelator .",
     "link": "https://www.youtube.com/watch?v=98VJoUg2wdQ",
@@ -162,6 +176,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "OXIDIA experience",
     "description": "Advertisement video for the OXIDIA backpack I produced.",
     "link": "https://www.youtube.com/watch?v=2v6PIpQAT2g",
@@ -169,6 +184,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "OXIDIA tutorial MINi EN",
     "description": "Tutorial video for the OXIDIA MINi backpack I produced.",
     "link": "https://www.youtube.com/watch?v=3dPmBW85dbQ",
@@ -176,6 +192,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "OXIDIA tutorial MAXi EN",
     "description": "Tutorial video for the OXIDIA MAXi backpack I produced.",
     "link": "https://www.youtube.com/watch?v=V5iJLUPkDyU",
@@ -183,6 +200,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Javi Tximak the Barber",
     "description": "Video promotion for a local barber shop I produced.",
     "link": "https://www.youtube.com/watch?v=o4g7cQGY6pU",
@@ -190,6 +208,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Los Diletantes de Antonia Romero",
     "description": "Book trailer I produced",
     "link": "https://www.youtube.com/watch?v=aJTIPKAOH-U",
@@ -197,6 +216,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Snap in the Bath “Get Away“",
     "description": "Music video I produced for my band at the time.",
     "link": "https://www.youtube.com/watch?v=zkvBKlTy-hk",
@@ -204,6 +224,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "UB - Dia internacional de les Dones",
     "description": "Video promoting the International Women's Day event at the University of Barcelona.",
     "link": "https://www.youtube.com/watch?v=I_ytX1YKk3M",
@@ -211,6 +232,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Clúster Edutech - Empresas de tecnologia educativa",
     "description": "Video promoting a group of educational technology companies I produced.",
     "link": "https://www.youtube.com/watch?v=T6zJyz-HraY",
@@ -218,6 +240,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Tecnosis",
     "description": "Videoart piece for a University project.",
     "link": "https://www.youtube.com/watch?v=yJPS-5GfovQ",
@@ -225,6 +248,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Lil'Jeez G Swagg Explicit ft  Dj Crazy Cool",
     "description": "Music video I produced for a local artist.",
     "link": "https://www.youtube.com/watch?v=czyNnWxcO_0",
@@ -232,6 +256,7 @@
   },
   {
     "type": "project",
+    "category": "music",
     "title": "La Fábrica de Juguetes de los Reyes Magos de Oriente fabra i coats",
     "description": "Art installation, I produced the original soundtrack.",
     "link": "https://www.youtube.com/watch?v=06vY0iEj5hw",
@@ -239,6 +264,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Barcelona - About a Girl",
     "description": "Video promoting rental apartments in Barcelona.",
     "link": "https://www.youtube.com/watch?v=w4dnywqCEXs",
@@ -246,6 +272,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Snap in the Bath - Videoresumen",
     "description": "Video summarizing a music concert",
     "link": "https://www.youtube.com/watch?v=MVjupBbDi1o",
@@ -253,6 +280,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Sharkeye Scooter",
     "description": "Video promoting a scooter.",
     "link": "https://www.youtube.com/watch?v=yrQrYD9wR8E",
@@ -260,6 +288,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "No más trabajos de clase aburridos! Cómo crear tu proyecto mydocumenta",
     "description": "Video tutorial showing how to create a project with mydocumenta. Part of my University internship.",
     "link": "https://www.youtube.com/watch?v=hmNYwJbywz0",
@@ -267,6 +296,7 @@
   },
   {
     "type": "project",
+    "category": "music",
     "title": "Streety.mp3",
     "description": "A song I made",
     "link": "https://www.youtube.com/watch?v=gtrizPMyBGE",
@@ -274,6 +304,7 @@
   },
   {
     "type": "project",
+    "category": "music",
     "title": "Thingy.mp3",
     "description": "A song I made",
     "link": "https://www.youtube.com/watch?v=-JnVWZCRfJk",
@@ -281,6 +312,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Demo for VizViz",
     "description": "Demo for the VizViz app I built.",
     "link": "https://www.youtube.com/watch?v=tFouYFk-Ri8",
@@ -288,6 +320,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Audiovisual Engineer Portfolio",
     "description": "Summary reel of my work as an Audiovisual Engineer in live events and conferences.",
     "link": "https://www.youtube.com/watch?v=z3fHTJysMvA",
@@ -295,6 +328,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Animation",
     "description": "For a University project in the animation subject.",
     "link": "https://www.youtube.com/watch?v=ykLdat_ndhw",
@@ -302,6 +336,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Ritmo Madre",
     "description": "A short documentary for a University project in the documentary subject.",
     "link": "https://www.youtube.com/watch?v=rZ6s8PDI9tg",
@@ -309,6 +344,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "El Super Show",
     "description": "A short TV show for a University project in the TV show subject.",
     "link": "https://www.youtube.com/watch?v=zzUw3tzz-gg",
@@ -316,6 +352,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Nunca imaginé que serías tu",
     "description": "A short film for a University project in the audiovisual production subject.",
     "link": "https://www.youtube.com/watch?v=QXOcW7k-p-M",
@@ -323,6 +360,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Tutorial para subir videos a youtube",
     "description": "Short comedy video about how to upload videos to YouTube. For a University project.",
     "link": "https://www.youtube.com/watch?v=t6HVDe1e5KE",
@@ -330,6 +368,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Can a book kill a man? - intro",
     "description": "Intro to a school research project.",
     "link": "https://www.youtube.com/watch?v=PAilNL4J97Y",
@@ -337,6 +376,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Dextro, Energy Drink",
     "description": "A short TV spot for a University project in the TV show subject.",
     "link": "https://www.youtube.com/watch?v=cRnu3UUBtnc",
@@ -344,6 +384,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Ambrosio tiene hambre",
     "description": "A comedy news piece for a University project in the TV news subject.",
     "link": "https://www.youtube.com/watch?v=lL0gwV6lTko",
@@ -351,6 +392,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "\"El Encantador\" Teaser",
     "description": "A movie teaser for a University project in the audiovisual production subject.",
     "link": "https://www.youtube.com/watch?v=JkLvf5fW8w0",
@@ -358,6 +400,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Can a book kill a man?",
     "description": "school research project.",
     "link": "https://www.youtube.com/watch?v=lnhALsdwuAs",
@@ -365,6 +408,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Videocurriculum",
     "description": "CAV UB",
     "link": "https://www.youtube.com/watch?v=YSEsPYo_eHo",
@@ -372,6 +416,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "78 Caracoles con Pajarita - Cortometraje de comedia",
     "description": "A short comedy film for a University project in the audiovisual production subject.",
     "link": "https://www.youtube.com/watch?v=RXSGbaZgUds",
@@ -379,6 +424,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Cadena de Valores KH-7 ZAS!",
     "description": "A TV spot for a cleaning company, I did boom mic operation and also cameo in the video",
     "link": "https://www.youtube.com/watch?v=cfDd1nk6iNY",
@@ -386,6 +432,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Bambusound, el documental",
     "description": "A music documentary for University project, I conceived the idea, did sound and OST production. Also interviewed the musicians.",
     "link": "https://www.youtube.com/watch?v=ZFNF4Xx5gF8",
@@ -393,6 +440,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Itaca Band - Ojalá (Videoclip Oficial)",
     "description": "A music videoclip for a local band, I did boom mic operation",
     "link": "https://www.youtube.com/watch?v=IMunDXoTKdU",
@@ -400,6 +448,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Snap in the Bath - Get Away [Official Music Video]",
     "description": "A music videoclip my band at the time, I made the whole video, acting, recording of the song, playing guitar, and backing vocals",
     "link": "https://www.youtube.com/watch?v=3BicGzmKJHw",
@@ -407,6 +456,7 @@
   },
   {
     "type": "project",
+    "category": "video",
     "title": "Get Away - Making of",
     "description": "The making of the music videoclip for my band I did the whole video and acting",
     "link": "https://www.youtube.com/watch?v=xp_fQcDMkA4",

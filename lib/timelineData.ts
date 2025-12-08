@@ -4,6 +4,8 @@
 import { BASE_PATH } from "./constants";
 import timelineDataJson from "./timelineData.json";
 
+export type TimelineCategory = "software" | "video" | "music";
+
 export interface TimelineMilestone {
   date: string;
   title: string;
@@ -13,6 +15,7 @@ export interface TimelineMilestone {
 export interface TimelineItem {
   id: string;
   type: "study" | "job" | "project";
+  category?: TimelineCategory;
   title: string;
   description: string;
   image: string | null;
@@ -46,6 +49,17 @@ export const timelineData: TimelineItem[] = (
   ...item,
   link: processTimelineLink(item.link),
 }));
+
+const CATEGORY_EMOJI: Record<TimelineCategory, string> = {
+  software: "💻",
+  video: "🎬",
+  music: "🎵",
+};
+
+export function getTimelineCategoryEmoji(category?: TimelineCategory): string {
+  if (!category) return "";
+  return CATEGORY_EMOJI[category];
+}
 
 // Helper function to get all unique dates for timeline axis
 export function getAllTimelineDates(): string[] {

@@ -6,7 +6,11 @@ import {
   Timeline as VisTimeline,
 } from "vis-timeline/standalone";
 import "vis-timeline/styles/vis-timeline-graph2d.min.css";
-import { timelineData, type TimelineItem } from "../lib/timelineData";
+import {
+  getTimelineCategoryEmoji,
+  timelineData,
+  type TimelineItem,
+} from "../lib/timelineData";
 import { rhythm, scale } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 import TimelineList from "./TimelineList";
@@ -52,6 +56,11 @@ export default function timeline() {
     if (item.startDate) return moment(item.startDate);
     if (item.endDate) return moment(item.endDate);
     return now.clone();
+  };
+
+  const getItemLabel = (item: TimelineItem) => {
+    const emoji = getTimelineCategoryEmoji(item.category);
+    return emoji ? `${emoji} ${item.title}` : item.title;
   };
 
   // Group items by type
@@ -134,7 +143,7 @@ export default function timeline() {
       visItems.push({
         id: item.title,
         group: groupId,
-        content: item.title,
+        content: getItemLabel(item),
         start: startDate.toDate(),
         end: endDate,
         type: "range",

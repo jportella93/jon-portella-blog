@@ -1,5 +1,5 @@
 import moment from "moment";
-import { TimelineItem } from "../lib/timelineData";
+import { TimelineItem, getTimelineCategoryEmoji } from "../lib/timelineData";
 import { rhythm } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 
@@ -42,6 +42,11 @@ export default function TimelineList({
     textColor: string
   ) {
     if (items.length === 0) return null;
+
+    const getItemLabel = (item: TimelineItem) => {
+      const emoji = getTimelineCategoryEmoji(item.category);
+      return emoji ? `${emoji} ${item.title}` : item.title;
+    };
 
     return (
       <div
@@ -107,7 +112,7 @@ export default function TimelineList({
                       marginBottom: rhythm(0.25),
                     }}
                   >
-                    {item.title}
+                    {getItemLabel(item)}
                   </div>
                   <div
                     style={{

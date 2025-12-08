@@ -89,6 +89,8 @@ export default function Footer() {
             margin: 0,
             gap: rhythm(1),
             alignItems: "center",
+            flexWrap: "wrap",
+            justifyContent: "center",
             padding: 0,
           }}
         >

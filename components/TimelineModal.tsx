@@ -4,8 +4,23 @@ import { TimelineItem } from "../lib/timelineData";
 import { rhythm, scale } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 
+export interface ProfilePhotoModalItem {
+  id: string;
+  type: "photo";
+  title: string;
+  image: string;
+  year: number;
+  startDate: string;
+  endDate: string;
+  description: string | null;
+  link: null;
+  milestones: [];
+}
+
+export type TimelineModalItem = TimelineItem | ProfilePhotoModalItem;
+
 interface TimelineModalProps {
-  item: TimelineItem | null;
+  item: TimelineModalItem | null;
   onClose: () => void;
 }
 
@@ -33,6 +48,13 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
   function formatDateFull(dateString: string | null): string {
     if (!dateString) return "Present";
     return moment(dateString).format("MMMM YYYY");
+  }
+
+  function getDateLabel(currentItem: TimelineModalItem): string {
+    if (currentItem.type === "photo") {
+      return String(currentItem.year);
+    }
+    return formatDateRange(currentItem.startDate, currentItem.endDate);
   }
 
   function getYouTubeVideoId(url: string): string | null {
@@ -73,7 +95,36 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
     return null;
   }
 
-  function renderItemDetails(item: TimelineItem) {
+  function renderItemDetails(item: TimelineModalItem) {
+    if (item.type === "photo") {
+      return (
+        <div style={{ margin: `${rhythm(0.75)} 0` }}>
+          <Image
+            src={item.image}
+            alt={item.title}
+            width={400}
+            height={400}
+            style={{
+              objectFit: "cover",
+              borderRadius: "8px",
+              width: "100%",
+              height: "auto",
+            }}
+          />
+          <p
+            style={{
+              marginTop: rhythm(0.5),
+              marginBottom: 0,
+              color: isDarkMode ? "#ccc" : "#444",
+              fontSize: "0.95rem",
+            }}
+          >
+            That's me in {item.year}
+          </p>
+        </div>
+      );
+    }
+
     return (
       <>
         {item.description && (
@@ -229,9 +280,13 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
                     ? isDarkMode
                       ? "#ba68c8"
                       : "#9c27b0"
-                    : isDarkMode
-                      ? "#66bb6a"
-                      : "#4caf50",
+                    : item.type === "project"
+                      ? isDarkMode
+                        ? "#66bb6a"
+                        : "#4caf50"
+                      : isDarkMode
+                        ? "#90a4ae"
+                        : "#607d8b",
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.5px",
@@ -241,7 +296,9 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
               ? "Study"
               : item.type === "job"
                 ? "work"
-                : "fun"}
+                : item.type === "project"
+                  ? "fun"
+                  : "photo"}
           </div>
           <h2
             className="timeline-modal-title"
@@ -260,7 +317,7 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
               color: isDarkMode ? "#999" : "#666",
             }}
           >
-            {formatDateRange(item.startDate, item.endDate)}
+            {getDateLabel(item)}
           </div>
         </div>
         <div

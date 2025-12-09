@@ -6,6 +6,7 @@ import {
   Timeline as VisTimeline,
 } from "vis-timeline/standalone";
 import "vis-timeline/styles/vis-timeline-graph2d.min.css";
+import { BASE_PATH } from "../lib/constants";
 import {
   getTimelineCategoryEmoji,
   timelineData,
@@ -14,7 +15,10 @@ import {
 import { rhythm, scale } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 import TimelineList from "./TimelineList";
-import TimelineModal from "./TimelineModal";
+import TimelineModal, {
+  ProfilePhotoModalItem,
+  TimelineModalItem,
+} from "./TimelineModal";
 import TimelineSkeleton from "./TimelineSkeleton";
 import TimelineZoomControls from "./TimelineZoomControls";
 
@@ -26,7 +30,8 @@ interface VisTimelineItem {
   end: Date | null;
   type: "range";
   className?: string;
-  data?: TimelineItem;
+  style?: string;
+  data?: TimelineModalItem;
 }
 
 const TIMELINE_CONSTANTS = {
@@ -39,10 +44,14 @@ const TIMELINE_CONSTANTS = {
   MODAL_SLIDE_DURATION: 0.3,
 } as const;
 
+const PROFILE_PHOTO_YEARS = [
+  2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025,
+] as const;
+
 export default function timeline() {
   const timelineRef = useRef<HTMLDivElement>(null);
   const timelineInstanceRef = useRef<VisTimeline | null>(null);
-  const [modalItem, setModalItem] = useState<TimelineItem | null>(null);
+  const [modalItem, setModalItem] = useState<TimelineModalItem | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const { isDarkMode } = useTheme();
 
@@ -147,9 +156,7 @@ export default function timeline() {
         start: startDate.toDate(),
         end: endDate,
         type: "range",
-        className: `timeline-item-${item.type}${
-          type !== "project" && !item.endDate ? " ongoing" : ""
-        }`,
+        className: `timeline-item-${item.type}`,
         data: item,
       });
     });
@@ -174,6 +181,92 @@ export default function timeline() {
   const { visItems, groups } = useMemo(() => {
     const allItems: VisTimelineItem[] = [];
     const allGroups: Array<{ id: string; content: string; order: number }> = [];
+
+    const photoItems: VisTimelineItem[] = PROFILE_PHOTO_YEARS.map((year) => {
+      const photoStart = moment({ year }).startOf("year");
+      const photoEnd = photoStart.clone().add(1, "months");
+      const photoSrc = `${BASE_PATH || ""}/assets/${year}.jpeg`;
+
+      const size = 56;
+      const borderColor = isDarkMode ? "#555" : "#ddd";
+      const backgroundColor = isDarkMode ? "#0f0f0f" : "#fafafa";
+
+      const content = `
+        <div
+          style="
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:${size}px;
+            height:${size}px;
+            padding:0;
+            border-radius:8px;
+            background:${backgroundColor};
+            border:1px solid ${borderColor};
+            box-shadow:0 2px 6px rgba(0,0,0,0.06);
+            box-sizing:border-box;
+          "
+        >
+          <div
+            style="
+              width:100%;
+              height:100%;
+              border-radius:8px;
+              overflow:hidden;
+              border:2px solid ${borderColor};
+              background:${isDarkMode ? "#111" : "#f0f0f0"};
+              box-sizing:border-box;
+            "
+          >
+            <img
+              src="${photoSrc}"
+              alt="Jon Portella profile ${year}"
+              loading="lazy"
+              style="width:100%;height:100%;object-fit:contain;display:block;"
+            />
+          </div>
+        </div>
+      `;
+
+      const photoData: ProfilePhotoModalItem = {
+        id: `photo-${year}`,
+        type: "photo",
+        title: `Profile photo ${year}`,
+        image: photoSrc,
+        year,
+        startDate: photoStart.format("YYYY-MM-DD"),
+        endDate: photoEnd.format("YYYY-MM-DD"),
+        description: null,
+        link: null,
+        milestones: [],
+      };
+
+      return {
+        id: photoData.id,
+        group: "photos",
+        content,
+        start: photoStart.toDate(),
+        end: photoEnd.toDate(),
+        type: "range",
+        style: `
+          padding:0;
+          height:${size}px;
+          min-height:${size}px;
+          max-height:${size}px;
+          width:${size}px;
+          min-width:${size}px;
+          max-width:${size}px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          box-sizing:border-box;
+        `,
+        data: photoData,
+      };
+    });
+
+    allItems.push(...photoItems);
+    allGroups.push({ id: "photos", content: "photos", order: -1 });
 
     // Process each type
     const types = [
@@ -213,7 +306,7 @@ export default function timeline() {
       visItems: allItems,
       groups: allGroups,
     };
-  }, [itemsByType, now]);
+  }, [isDarkMode, itemsByType, now]);
 
   // Initialize timeline - use multiple checks to ensure DOM is ready
   useLayoutEffect(() => {
@@ -296,9 +389,13 @@ export default function timeline() {
     }
   }
 
-  function showModal(item: TimelineItem) {
+  function showModal(item: TimelineModalItem) {
     setModalItem(item);
   }
+
+  const handleListItemClick = (item: TimelineItem) => {
+    showModal(item);
+  };
 
   function zoomIn() {
     if (timelineInstanceRef.current) {
@@ -379,7 +476,10 @@ export default function timeline() {
         )}
       </div>
 
-      <TimelineList itemsByType={itemsByType} onItemClick={showModal} />
+      <TimelineList
+        itemsByType={itemsByType}
+        onItemClick={handleListItemClick}
+      />
 
       <TimelineModal item={modalItem} onClose={closeModal} />
     </div>

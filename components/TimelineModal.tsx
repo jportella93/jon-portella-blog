@@ -71,12 +71,18 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
     return null;
   }
 
-  function isEmbeddableContent(link: string): boolean {
-    return getYouTubeVideoId(link) !== null;
+  function isEmbeddableContent(item: TimelineModalItem): boolean {
+    if (item.type === "photo") return false;
+    return (
+      getYouTubeVideoId(item.link || "") !== null ||
+      !!(item as any).bandcampAlbumId
+    );
   }
 
-  function renderEmbed(link: string) {
-    const youtubeVideoId = getYouTubeVideoId(link);
+  function renderEmbed(item: TimelineModalItem) {
+    if (item.type === "photo") return null;
+
+    const youtubeVideoId = getYouTubeVideoId(item.link || "");
     if (youtubeVideoId) {
       return (
         <iframe
@@ -92,6 +98,21 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
         />
       );
     }
+
+    const bandcampAlbumId = (item as any).bandcampAlbumId;
+    if (bandcampAlbumId) {
+      return (
+        <iframe
+          style={{ border: 0, width: "350px", height: "470px" }}
+          src={`https://bandcamp.com/EmbeddedPlayer/album=${bandcampAlbumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/`}
+          seamless
+          title="Bandcamp embed"
+        >
+          <a href={item.link || "#"}>Listen to the album on Bandcamp</a>
+        </iframe>
+      );
+    }
+
     return null;
   }
 
@@ -139,8 +160,8 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
           </p>
         )}
 
-        {item.link && isEmbeddableContent(item.link)
-          ? renderEmbed(item.link)
+        {item.link && isEmbeddableContent(item)
+          ? renderEmbed(item)
           : item.image && (
               <div style={{ margin: `${rhythm(0.75)} 0` }}>
                 <Image
@@ -166,14 +187,16 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
             className="timeline-item-link"
             onClick={(e) => e.stopPropagation()}
             style={{
-              display: "inline-block",
+              display: "block",
               marginTop: rhythm(0.5),
               color: isDarkMode ? "#5ba3d3" : "#358ccb",
               fontWeight: 500,
             }}
           >
-            {isEmbeddableContent(item.link)
-              ? "View on YouTube →"
+            {isEmbeddableContent(item)
+              ? getYouTubeVideoId(item.link || "") !== null
+                ? "View on YouTube →"
+                : "View on Bandcamp →"
               : `View ${item.type === "project" ? "Project" : "More"} →`}
           </a>
         )}

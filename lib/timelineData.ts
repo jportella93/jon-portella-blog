@@ -20,6 +20,7 @@ export interface TimelineItem {
   description: string;
   image: string | null;
   link: string | null;
+  bandcampAlbumId?: string;
   startDate: string | null;
   endDate: string | null;
   milestones: TimelineMilestone[];

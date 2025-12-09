@@ -298,7 +298,7 @@
     "type": "project",
     "category": "music",
     "title": "Streety.mp3",
-    "description": "A song I made",
+    "description": "A song I made - playing a sound similar to the Game Boy Advanced's startup sound",
     "link": "https://www.youtube.com/watch?v=gtrizPMyBGE",
     "endDate": "2019-09-24"
   },
@@ -306,9 +306,18 @@
     "type": "project",
     "category": "music",
     "title": "Thingy.mp3",
-    "description": "A song I made",
+    "description": "A song I made - It had been a while without producing music and set myself to complete this one in one evening",
     "link": "https://www.youtube.com/watch?v=-JnVWZCRfJk",
     "endDate": "2019-08-21"
+  },
+  {
+    "type": "project",
+    "category": "music",
+    "title": "Papery.mp3",
+    "description": "A song I made - Inspired by the Money Heist Netflix show",
+    "link": "https://jonportella.bandcamp.com/album/papery",
+    "bandcampAlbumId": "1960663173",
+    "endDate": "2020-08-01"
   },
   {
     "type": "project",
@@ -461,5 +470,14 @@
     "description": "The making of the music videoclip for my band I did the whole video and acting",
     "link": "https://www.youtube.com/watch?v=xp_fQcDMkA4",
     "endDate": "2014-03-08"
+  },
+  {
+    "type": "project",
+    "category": "music",
+    "title": "Guerra de Lleons",
+    "description": "Songs composed and produced specifically for the play 'Guerra de Lleons', written and directed by Francesc Cuéllar, a Un Pam i Dos Dits production.",
+    "link": "https://jonportella.bandcamp.com/album/guerra-de-lleons",
+    "bandcampAlbumId": "3951795121",
+    "endDate": "2013-04-02"
   }
 ]

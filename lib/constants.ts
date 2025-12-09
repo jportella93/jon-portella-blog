@@ -9,8 +9,8 @@ export interface NavigationPage {
 
 export const NAVIGATION_PAGES: NavigationPage[] = [
   { label: "Home", url: "/" },
-  { label: "Blog", url: "/blog" },
   { label: "Timeline", url: "/timeline" },
+  { label: "Blog", url: "/blog" },
 ];
 
 export interface KeyboardShortcut {

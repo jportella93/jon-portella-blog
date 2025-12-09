@@ -1,4 +1,5 @@
 import moment from "moment";
+import { useRouter } from "next/router";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { DataSet } from "vis-data";
 import {
@@ -49,6 +50,7 @@ const PROFILE_PHOTO_YEARS = [
 ] as const;
 
 export default function timeline() {
+  const router = useRouter();
   const timelineRef = useRef<HTMLDivElement>(null);
   const timelineInstanceRef = useRef<VisTimeline | null>(null);
   const [modalItem, setModalItem] = useState<TimelineModalItem | null>(null);
@@ -70,6 +72,51 @@ export default function timeline() {
   const getItemLabel = (item: TimelineItem) => {
     const emoji = getTimelineCategoryEmoji(item.category);
     return emoji ? `${emoji} ${item.title}` : item.title;
+  };
+
+  // Helper function to create URL-safe slug from title
+  const createSlug = (title: string): string => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, "") // Remove special characters except spaces and hyphens
+      .replace(/\s+/g, "-") // Replace spaces with hyphens
+      .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
+      .trim();
+  };
+
+  // Helper function to find item by slug
+  const findItemBySlug = (slug: string): TimelineModalItem | null => {
+    // Check timeline data first
+    const timelineItem = timelineData.find(
+      (item) => createSlug(item.title) === slug
+    );
+    if (timelineItem) return timelineItem;
+
+    // Check profile photos
+    if (slug.startsWith("photo-")) {
+      const year = parseInt(slug.replace("photo-", ""));
+      if (
+        PROFILE_PHOTO_YEARS.includes(
+          year as (typeof PROFILE_PHOTO_YEARS)[number]
+        )
+      ) {
+        const photoSrc = `${BASE_PATH || ""}/assets/${year}.jpeg`;
+        return {
+          id: `photo-${year}`,
+          type: "photo",
+          title: `Profile photo ${year}`,
+          image: photoSrc,
+          year,
+          startDate: `${year}-01-01`,
+          endDate: `${year}-01-31`,
+          description: null,
+          link: null,
+          milestones: [],
+        } as ProfilePhotoModalItem;
+      }
+    }
+
+    return null;
   };
 
   // Group items by type
@@ -150,7 +197,7 @@ export default function timeline() {
             : now.toDate();
 
       visItems.push({
-        id: item.title,
+        id: createSlug(item.title),
         group: groupId,
         content: getItemLabel(item),
         start: startDate.toDate(),
@@ -242,7 +289,7 @@ export default function timeline() {
       };
 
       return {
-        id: photoData.id,
+        id: `photo-${year}`,
         group: "photos",
         content,
         start: photoStart.toDate(),
@@ -365,7 +412,7 @@ export default function timeline() {
         const itemId = String(properties.items[0]);
         const item = visItems.find((i) => i.id === itemId);
         if (item?.data) {
-          setModalItem(item.data);
+          showModal(item.data);
         }
       }
     };
@@ -387,10 +434,31 @@ export default function timeline() {
     if (timelineInstanceRef.current) {
       timelineInstanceRef.current.setSelection([]);
     }
+    // Clear URL param
+    const { item, ...otherQuery } = router.query;
+    router.push(
+      {
+        pathname: router.pathname,
+        query: otherQuery,
+      },
+      undefined,
+      { shallow: true }
+    );
   }
 
   function showModal(item: TimelineModalItem) {
     setModalItem(item);
+    // Update URL with item slug
+    const slug =
+      item.type === "photo" ? `photo-${item.year}` : createSlug(item.title);
+    router.push(
+      {
+        pathname: router.pathname,
+        query: { ...router.query, item: slug },
+      },
+      undefined,
+      { shallow: true }
+    );
   }
 
   const handleListItemClick = (item: TimelineItem) => {
@@ -438,6 +506,33 @@ export default function timeline() {
       };
     }
   }, [modalItem]);
+
+  // Handle URL params for modal state
+  useEffect(() => {
+    const handleRouteChange = () => {
+      const { item } = router.query;
+      if (typeof item === "string") {
+        const foundItem = findItemBySlug(item);
+        if (foundItem) {
+          setModalItem(foundItem);
+        }
+      } else if (!item) {
+        setModalItem(null);
+      }
+    };
+
+    // Check on mount
+    if (router.isReady) {
+      handleRouteChange();
+    }
+
+    // Listen for route changes
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.isReady, router.query, router.events]);
 
   return (
     <div style={{ width: "100%", marginTop: rhythm(2) }}>

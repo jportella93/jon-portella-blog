@@ -1,6 +1,6 @@
 import moment from "moment";
 import Image from "next/image";
-import { TimelineItem } from "../lib/timelineData";
+import { TimelineItem, getTimelineCategoryEmoji } from "../lib/timelineData";
 import { rhythm, scale } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 
@@ -390,6 +390,20 @@ export default function TimelineModal({
                   ? "fun"
                   : "photo"}
           </div>
+          {item.type === "project" && item.category && (
+            <div
+              className="timeline-modal-category"
+              style={{
+                fontSize: "0.75rem",
+                color: isDarkMode ? "#ccc" : "#666",
+                fontWeight: 500,
+                marginTop: "4px",
+                textTransform: "capitalize",
+              }}
+            >
+              {getTimelineCategoryEmoji(item.category)} {item.category}
+            </div>
+          )}
           <h2
             className="timeline-modal-title"
             style={{

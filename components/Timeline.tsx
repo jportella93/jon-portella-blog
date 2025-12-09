@@ -119,14 +119,71 @@ export default function timeline() {
     return null;
   };
 
-  // Group items by type
+  // Group items by type and sort chronologically
   const itemsByType = useMemo(() => {
     return {
-      study: timelineData.filter((item) => item.type === "study"),
-      job: timelineData.filter((item) => item.type === "job"),
-      project: timelineData.filter((item) => item.type === "project"),
+      study: timelineData
+        .filter((item) => item.type === "study")
+        .sort((a, b) => getItemStartDate(a).diff(getItemStartDate(b))),
+      job: timelineData
+        .filter((item) => item.type === "job")
+        .sort((a, b) => getItemStartDate(a).diff(getItemStartDate(b))),
+      project: timelineData
+        .filter((item) => item.type === "project")
+        .sort((a, b) => getItemStartDate(a).diff(getItemStartDate(b))),
     };
   }, []);
+
+  // Function to find previous/next item in same category
+  const getNavigationItem = (
+    currentItem: TimelineModalItem,
+    direction: "prev" | "next"
+  ): TimelineModalItem | null => {
+    if (currentItem.type === "photo") {
+      // Handle photo navigation
+      const photoYears = PROFILE_PHOTO_YEARS;
+      const currentIndex = photoYears.indexOf(
+        currentItem.year as (typeof PROFILE_PHOTO_YEARS)[number]
+      );
+      if (currentIndex === -1) return null;
+
+      const targetIndex =
+        direction === "next" ? currentIndex + 1 : currentIndex - 1;
+      if (targetIndex < 0 || targetIndex >= photoYears.length) return null;
+
+      const targetYear = photoYears[
+        targetIndex
+      ] as (typeof PROFILE_PHOTO_YEARS)[number];
+      const photoSrc = `${BASE_PATH || ""}/assets/${targetYear}.jpeg`;
+      return {
+        id: `photo-${targetYear}`,
+        type: "photo",
+        title: `Profile photo ${targetYear}`,
+        image: photoSrc,
+        year: targetYear,
+        startDate: `${targetYear}-01-01`,
+        endDate: `${targetYear}-01-31`,
+        description: null,
+        link: null,
+        milestones: [],
+      } as ProfilePhotoModalItem;
+    } else {
+      // Handle timeline items navigation
+      const categoryItems =
+        itemsByType[currentItem.type as keyof typeof itemsByType];
+      const currentIndex = categoryItems.findIndex(
+        (item) => item.title === currentItem.title
+      );
+      if (currentIndex === -1) return null;
+
+      // Reverse navigation for timeline items to match user expectation
+      const targetIndex =
+        direction === "next" ? currentIndex - 1 : currentIndex + 1;
+      if (targetIndex < 0 || targetIndex >= categoryItems.length) return null;
+
+      return categoryItems[targetIndex];
+    }
+  };
 
   // Function to assign items to lanes based on overlaps
   function assignItemsToLanes(
@@ -461,6 +518,15 @@ export default function timeline() {
     );
   }
 
+  function handleNavigate(direction: "prev" | "next") {
+    if (!modalItem) return;
+
+    const targetItem = getNavigationItem(modalItem, direction);
+    if (targetItem) {
+      showModal(targetItem);
+    }
+  }
+
   const handleListItemClick = (item: TimelineItem) => {
     showModal(item);
   };
@@ -491,18 +557,26 @@ export default function timeline() {
     };
   }, []);
 
-  // Handle Escape key to close modal
+  // Handle keyboard navigation for modal
   useEffect(() => {
-    function handleEscapeKey(event: KeyboardEvent) {
-      if (event.key === "Escape" && modalItem) {
+    function handleKeyboardNavigation(event: KeyboardEvent) {
+      if (!modalItem) return;
+
+      if (event.key === "Escape") {
         closeModal();
+      } else if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        handleNavigate("prev");
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        handleNavigate("next");
       }
     }
 
     if (modalItem) {
-      document.addEventListener("keydown", handleEscapeKey);
+      document.addEventListener("keydown", handleKeyboardNavigation);
       return () => {
-        document.removeEventListener("keydown", handleEscapeKey);
+        document.removeEventListener("keydown", handleKeyboardNavigation);
       };
     }
   }, [modalItem]);
@@ -576,7 +650,17 @@ export default function timeline() {
         onItemClick={handleListItemClick}
       />
 
-      <TimelineModal item={modalItem} onClose={closeModal} />
+      <TimelineModal
+        item={modalItem}
+        onClose={closeModal}
+        onNavigate={handleNavigate}
+        hasPrev={
+          modalItem ? getNavigationItem(modalItem, "prev") !== null : false
+        }
+        hasNext={
+          modalItem ? getNavigationItem(modalItem, "next") !== null : false
+        }
+      />
     </div>
   );
 }

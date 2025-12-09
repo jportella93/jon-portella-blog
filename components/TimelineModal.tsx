@@ -22,9 +22,18 @@ export type TimelineModalItem = TimelineItem | ProfilePhotoModalItem;
 interface TimelineModalProps {
   item: TimelineModalItem | null;
   onClose: () => void;
+  onNavigate?: (direction: "prev" | "next") => void;
+  hasPrev?: boolean;
+  hasNext?: boolean;
 }
 
-export default function TimelineModal({ item, onClose }: TimelineModalProps) {
+export default function TimelineModal({
+  item,
+  onClose,
+  onNavigate,
+  hasPrev = false,
+  hasNext = false,
+}: TimelineModalProps) {
   const { isDarkMode } = useTheme();
 
   if (!item) return null;
@@ -246,6 +255,19 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
     );
   }
 
+  const navigationButtonStyle: React.CSSProperties = {
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
+    color: isDarkMode ? "#ccc" : "#FFF",
+    background: "transparent",
+    border: "none",
+    cursor: "pointer",
+    fontSize: "42px",
+    transition: "all 0.2s ease",
+    zIndex: 1001,
+  };
+
   return (
     <div
       className="timeline-modal-overlay"
@@ -267,6 +289,51 @@ export default function TimelineModal({ item, onClose }: TimelineModalProps) {
         animation: "fadeIn 0.2s ease",
       }}
     >
+      {/* Floating Navigation Arrows */}
+      {hasPrev && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onNavigate?.("prev");
+          }}
+          style={{
+            ...navigationButtonStyle,
+            left: "5px",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "translateY(-50%) scale(1.05)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "translateY(-50%) scale(1)";
+          }}
+          aria-label="Previous item"
+        >
+          ‹
+        </button>
+      )}
+
+      {hasNext && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onNavigate?.("next");
+          }}
+          style={{
+            ...navigationButtonStyle,
+            right: "5px",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "translateY(-50%) scale(1.05)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "translateY(-50%) scale(1)";
+          }}
+          aria-label="Next item"
+        >
+          ›
+        </button>
+      )}
+
       <div
         className="timeline-modal"
         onClick={(e) => e.stopPropagation()}

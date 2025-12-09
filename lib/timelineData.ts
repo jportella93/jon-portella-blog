@@ -21,6 +21,8 @@ export interface TimelineItem {
   image: string | null;
   link: string | null;
   bandcampAlbumId?: string;
+  demoVideo?: string;
+  code?: string;
   startDate: string | null;
   endDate: string | null;
   milestones: TimelineMilestone[];

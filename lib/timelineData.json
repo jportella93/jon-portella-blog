@@ -68,6 +68,8 @@
     "title": "Eloquent JS Mentoring",
     "description": "A mentoring project and website around the Eloquent JavaScript book, to be used as portfolio aimed to tech recruiters. I mentored a junior engineer friend (and he got hired!!). Built with Next.js.",
     "link": "https://eloquent-js-theta.vercel.app/",
+    "demoVideo": "",
+    "code": "https://github.com/jon-oscar/eloquent-js",
     "endDate": "2023-10-01"
   },
   {
@@ -75,7 +77,9 @@
     "category": "software",
     "title": "Make Me Drink - Real Time Online Game",
     "description": "Weekend project - My version of the game couple battles, using websockets for real time online multiplayer. Front-end built with Gatsby and web sockets for real-time gameplay.",
-    "link": "https://github.com/jportella93/make-me-drink-client",
+    "code": "https://github.com/jportella93/make-me-drink-client",
+    "demoVideo": "",
+    "link": "",
     "endDate": "2020-05-01"
   },
   {
@@ -83,7 +87,9 @@
     "category": "software",
     "title": "VizViz: Trippy Visualisations with p5.js",
     "description": "Website to make trippy visualisations using p5.js. Built over a weekend after being inspired by Processing visualisations. Features local storage for saving state, draggable canvas and controls. Initially built with d3.js but switched to p5.js for better performance. Deployed on Netlify.",
-    "link": "https://github.com/jportella93/vizviz",
+    "code": "https://github.com/jportella93/vizviz",
+    "demoVideo": "https://www.youtube.com/watch?v=tFouYFk-Ri8",
+    "link": "",
     "endDate": "2020-05-01"
   },
   {
@@ -91,15 +97,19 @@
     "category": "software",
     "title": "Instagram Random Comment Picker",
     "description": "An app that allows to randomly pick a comment on an Instagram picture that follows a set of conditions. It features a conversational UI to get the rules for a given contest and, at the last step, it creates a snippet that gets copied to the user clipboard. Then, this can be pasted in the JavaScript console in the picture page and the winner comment will be highlighted.",
-    "link": "/free-instagram-random-comment-picker",
+    "link": "https://jonportella.com/free-instagram-random-comment-picker",
+    "demoVideo": "https://www.youtube.com/watch?v=0x2O-_BgDe8",
+    "code": "https://github.com/jportella93/jon-portella-blog/blob/f63a506ffad76809525e3af63c487880db9958eb/components/specific/InstagramCommentPickerApp.tsx",
     "endDate": "2019-01-01"
   },
   {
     "type": "project",
     "category": "software",
     "title": "Jon Portella Blog",
-    "description": "My homepage, where I (rarely) post articles, tools and whatnot. Serverless static site generated with Gatsby (now migrated to Next.js). Features markdown support, RSS feeds, and dark mode.",
-    "link": "https://github.com/jportella93/jon-portella-blog",
+    "description": "You are here!My homepage, where I (rarely) post articles, tools and whatnot. Serverless static site generated with Gatsby (now migrated to Next.js). Features markdown support, RSS feeds, and dark mode.",
+    "code": "https://github.com/jportella93/jon-portella-blog",
+    "demoVideo": "",
+    "link": "https://jonportella.com",
     "endDate": "2018-12-01"
   },
   {
@@ -107,7 +117,9 @@
     "category": "software",
     "title": "Uma Zuasti's Blog",
     "description": "Blog I made for mom's business, with a CMS so she can update it independently. Her blog gets more traffic than mine haha. Built with Gatsby and NetlifyCMS. Website: https://umazuasti.com",
-    "link": "https://github.com/jportella93/uma-zuasti-blog",
+    "code": "https://github.com/jportella93/uma-zuasti-blog",
+    "demoVideo": "",
+    "link": "https://umazuasti.com",
     "endDate": "2018-12-01"
   },
   {
@@ -123,7 +135,9 @@
     "category": "software",
     "title": "Flickr Gallery",
     "description": "Web app to explore the most recent images uploaded to Flickr worldwide. I built from the ground up and deployed the whole project myself. Tech stack: React, Redux, Koa, Flickr API.",
-    "link": "https://jportella93.github.io/flickr-gallery/",
+    "code": "https://jportella93.github.io/flickr-gallery/",
+    "demoVideo": "",
+    "link": "",
     "endDate": "2018-08-01"
   },
   {
@@ -131,7 +145,9 @@
     "category": "software",
     "title": "Bitcoin Collab: Fullstack Web App",
     "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
-    "link": "https://github.com/jportella93/collab-frontend",
+    "code": "https://github.com/jportella93/collab-frontend",
+    "demoVideo": "",
+    "link": "",
     "endDate": "2018-07-01"
   },
   {
@@ -139,7 +155,9 @@
     "category": "software",
     "title": "Nanny Express: Fullstack Web App",
     "description": "Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
-    "link": "https://github.com/jportella93/Nanny-Express-client",
+    "code": "https://github.com/jportella93/Nanny-Express-client",
+    "demoVideo": "",
+    "link": "",
     "endDate": "2018-06-01"
   },
   {
@@ -147,7 +165,9 @@
     "category": "software",
     "title": "Find a Hobby!: Fullstack Web App",
     "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB.",
-    "link": "https://github.com/jportella93/find-a-hobby-client",
+    "code": "https://github.com/jportella93/find-a-hobby-client",
+    "demoVideo": "",
+    "link": "",
     "endDate": "2018-06-01"
   },
   {
@@ -157,14 +177,6 @@
     "description": "As the last test in order to get admitted in Codeworks, the full stack JavaScript bootcamp I did back in 2018, I had one week to create and deliver a blackjack game. This was my first ever JavaScript + CSS + HTML project.",
     "link": "/blog/creating-a-blackjack-game",
     "endDate": "2018-02-01"
-  },
-  {
-    "type": "project",
-    "category": "video",
-    "title": "[Tutorial] Comment Picker",
-    "description": "Video tutorial showing how to use the Instagram Comment Picker app that I built.",
-    "link": "https://www.youtube.com/watch?v=0x2O-_BgDe8",
-    "endDate": "2021-10-30"
   },
   {
     "type": "project",
@@ -318,14 +330,6 @@
     "link": "https://jonportella.bandcamp.com/album/papery",
     "bandcampAlbumId": "1960663173",
     "endDate": "2020-08-01"
-  },
-  {
-    "type": "project",
-    "category": "video",
-    "title": "Demo for VizViz",
-    "description": "Demo for the VizViz app I built.",
-    "link": "https://www.youtube.com/watch?v=tFouYFk-Ri8",
-    "endDate": "2020-05-04"
   },
   {
     "type": "project",

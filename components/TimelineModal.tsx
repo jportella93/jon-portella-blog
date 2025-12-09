@@ -1,5 +1,6 @@
 import moment from "moment";
 import Image from "next/image";
+import React from "react";
 import { TimelineItem, getTimelineCategoryEmoji } from "../lib/timelineData";
 import { rhythm, scale } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
@@ -80,21 +81,116 @@ export default function TimelineModal({
     return null;
   }
 
+  function getGitHubEmbedUrl(codeUrl: string): string | null {
+    // Match GitHub URLs like:
+    // https://github.com/jportella93/make-me-drink-client
+    // https://github.com/jportella93/jon-portella-blog/blob/f63a506ffad76809525e3af63c487880db9958eb/components/specific/InstagramCommentPickerApp.tsx
+    // https://jportella93.github.io/flickr-gallery/
+    const githubPattern = /github\.com\/([^\/]+)\/([^\/]+?)(?:\/|$)/;
+    const match = codeUrl.match(githubPattern);
+    if (match) {
+      const [, owner, repo] = match;
+      // Clean up repo name (remove trailing slashes, .git, etc.)
+      const cleanRepo = repo.replace(/\/$/, "").replace(/\.git$/, "");
+      // Use a random hash for the OpenGraph URL
+      const hash = Math.random().toString(36).substring(2, 15);
+      return `https://opengraph.githubassets.com/${hash}/${owner}/${cleanRepo}`;
+    }
+    return null;
+  }
+
   function isEmbeddableContent(item: TimelineModalItem): boolean {
     if (item.type === "photo") return false;
     return (
       getYouTubeVideoId(item.link || "") !== null ||
-      !!(item as any).bandcampAlbumId
+      !!(item as any).bandcampAlbumId ||
+      !!(item as any).demoVideo ||
+      !!(item as any).code
+    );
+  }
+
+  function GitHubEmbed({
+    repoUrl,
+    embedUrl,
+  }: {
+    repoUrl: string;
+    embedUrl: string;
+  }) {
+    const [imageError, setImageError] = React.useState(false);
+
+    if (imageError) return null;
+
+    return (
+      <div style={{ margin: `${rhythm(0.75)} 0` }}>
+        <a
+          href={repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "block" }}
+        >
+          <Image
+            src={embedUrl}
+            alt="GitHub repository preview"
+            width={600}
+            height={300}
+            style={{
+              width: "100%",
+              height: "auto",
+              borderRadius: "8px",
+              maxWidth: "600px",
+            }}
+            onError={() => setImageError(true)}
+          />
+        </a>
+      </div>
     );
   }
 
   function renderEmbed(item: TimelineModalItem) {
     if (item.type === "photo") return null;
 
+    const embeds: React.ReactElement[] = [];
+
+    // Handle demoVideo - treat as YouTube URL
+    const demoVideo = (item as any).demoVideo;
+    if (demoVideo && demoVideo.trim()) {
+      const youtubeVideoId = getYouTubeVideoId(demoVideo);
+      if (youtubeVideoId) {
+        embeds.push(
+          <iframe
+            key="demoVideo"
+            width="100%"
+            height="315"
+            src={`https://www.youtube.com/embed/${youtubeVideoId}`}
+            title="Demo video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            style={{
+              borderRadius: "8px",
+              marginBottom: embeds.length > 0 ? rhythm(0.75) : 0,
+            }}
+          />
+        );
+      }
+    }
+
+    // Handle code - GitHub embed
+    const code = (item as any).code;
+    if (code && code.trim()) {
+      const embedUrl = getGitHubEmbedUrl(code);
+      if (embedUrl) {
+        embeds.push(
+          <GitHubEmbed key="code" repoUrl={code} embedUrl={embedUrl} />
+        );
+      }
+    }
+
+    // Handle YouTube links
     const youtubeVideoId = getYouTubeVideoId(item.link || "");
     if (youtubeVideoId) {
-      return (
+      embeds.push(
         <iframe
+          key="youtube"
           width="100%"
           height="315"
           src={`https://www.youtube.com/embed/${youtubeVideoId}`}
@@ -103,15 +199,18 @@ export default function TimelineModal({
           allowFullScreen
           style={{
             borderRadius: "8px",
+            marginBottom: embeds.length > 0 ? rhythm(0.75) : 0,
           }}
         />
       );
     }
 
+    // Handle Bandcamp
     const bandcampAlbumId = (item as any).bandcampAlbumId;
     if (bandcampAlbumId) {
-      return (
+      embeds.push(
         <iframe
+          key="bandcamp"
           style={{ border: 0, width: "350px", height: "470px" }}
           src={`https://bandcamp.com/EmbeddedPlayer/album=${bandcampAlbumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/`}
           seamless
@@ -122,7 +221,10 @@ export default function TimelineModal({
       );
     }
 
-    return null;
+    if (embeds.length === 0) return null;
+    if (embeds.length === 1) return embeds[0];
+
+    return <div>{embeds}</div>;
   }
 
   function renderItemDetails(item: TimelineModalItem) {
@@ -169,7 +271,9 @@ export default function TimelineModal({
           </p>
         )}
 
-        {item.link && isEmbeddableContent(item)
+        {(item.link && isEmbeddableContent(item)) ||
+        (item as any).demoVideo ||
+        (item as any).code
           ? renderEmbed(item)
           : item.image && (
               <div style={{ margin: `${rhythm(0.75)} 0` }}>
@@ -188,27 +292,66 @@ export default function TimelineModal({
               </div>
             )}
 
-        {item.link && (
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="timeline-item-link"
-            onClick={(e) => e.stopPropagation()}
-            style={{
-              display: "block",
-              marginTop: rhythm(0.5),
-              color: isDarkMode ? "#5ba3d3" : "#358ccb",
-              fontWeight: 500,
-            }}
-          >
-            {isEmbeddableContent(item)
-              ? getYouTubeVideoId(item.link || "") !== null
-                ? "View on YouTube →"
-                : "View on Bandcamp →"
-              : `View ${item.type === "project" ? "Project" : "More"} →`}
-          </a>
-        )}
+        {item.link || (item as any).demoVideo || (item as any).code ? (
+          <div style={{ marginTop: rhythm(0.5) }}>
+            {item.link && (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="timeline-item-link"
+                onClick={(e) => e.stopPropagation()}
+                style={{
+                  display: "block",
+                  marginBottom: rhythm(0.25),
+                  color: isDarkMode ? "#5ba3d3" : "#358ccb",
+                  fontWeight: 500,
+                }}
+              >
+                {isEmbeddableContent(item)
+                  ? getYouTubeVideoId(item.link || "") !== null
+                    ? "View on YouTube →"
+                    : (item as any).bandcampAlbumId
+                      ? "View on Bandcamp →"
+                      : `View ${item.type === "project" ? "Project" : "More"} →`
+                  : `View ${item.type === "project" ? "Project" : "More"} →`}
+              </a>
+            )}
+            {(item as any).demoVideo && (
+              <a
+                href={(item as any).demoVideo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="timeline-item-link"
+                onClick={(e) => e.stopPropagation()}
+                style={{
+                  display: "block",
+                  marginBottom: rhythm(0.25),
+                  color: isDarkMode ? "#5ba3d3" : "#358ccb",
+                  fontWeight: 500,
+                }}
+              >
+                View Demo Video →
+              </a>
+            )}
+            {(item as any).code && (
+              <a
+                href={(item as any).code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="timeline-item-link"
+                onClick={(e) => e.stopPropagation()}
+                style={{
+                  display: "block",
+                  color: isDarkMode ? "#5ba3d3" : "#358ccb",
+                  fontWeight: 500,
+                }}
+              >
+                View Code on GitHub →
+              </a>
+            )}
+          </div>
+        ) : null}
 
         {item.milestones && item.milestones.length > 0 && (
           <div style={{ marginTop: rhythm(1) }}>

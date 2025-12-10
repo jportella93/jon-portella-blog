@@ -1,26 +1,26 @@
 [
   {
     "type": "study",
-    "title": "Bachelor's degree, Communication and Media Studies",
-    "description": "Bachelor's degree in Communication and Media Studies from Universitat de Barcelona.",
-    "link": "https://www.ub.edu",
+    "title": "Bachelor's degree, Audiovisual Communication @ Universitat de Barcelona",
+    "description": "The bachelor's degree in Audiovisual Communication prepares audiovisual professionals for a variety of roles: director, scriptwriter, producer, visual and sound production and post-production designer, researcher, specialist in corporate communication and community manager. \n\nThe bachelor's degree in Audiovisual Communication offers comprehensive training in the skills needed to thrive as an audiovisual professional. Students learn to use the technical tools that are needed to create content, and acquire practice in planning and implementing innovative audiovisual projects, in various formats and supports (audiovisual, radio, sound, text and digital). The subjects of this degree promote entrepreneurship, innovation and creativity through project-based learning. The programme also encourages participation in documentary and fiction film festivals, as well as contests for new audiovisual formats, and it fosters initiatives with social impact. Likewise, it promotes the training of professionals with critical and analytical skills, capable of studying and understanding the media and audiovisual products within the social, economic, political and cultural structure of which they are part.",
+    "link": "https://web.ub.edu/en/web/estudis/w/bachelordegree-g1102",
     "startDate": "2011-09-01",
     "endDate": "2015-06-30",
     "milestones": []
   },
   {
     "type": "study",
-    "title": "Software Engineering Bootcamp",
-    "description": "Software engineering bootcamp at Codeworks. Covered advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking (Internet, HTTP, WebSocket), end-to-end testing, security threats, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, and open source contributions. Back-end frameworks (Node, Express, Koa, GraphQL). Databases (SQL, MongoDB, Redis). Front-end frameworks (Angular, React).",
-    "link": "https://www.codeworks.me",
+    "title": "Software Engineering Immersive @ Codeworks — 12-week intensive full-time bootcamp",
+    "description": "An intensive, outcomes-driven program focused on building production-ready full-stack web applications using modern JavaScript and professional engineering workflows. Curriculum covers advanced JavaScript, data structures & algorithms, networking (HTTP/WebSockets), REST and GraphQL APIs, and software architecture, with hands-on development across Node.js, Express, Koa, React, Angular, SQL, MongoDB, Redis, and Docker. Strong emphasis on testing, security, authentication, and scalable system design. \n\n The program includes multiple real-world individual and team-based projects that replicate professional software development environments, applying Git-based collaboration, CI/CD, and deployment practices. The final phase focuses on portfolio development, system design, and technical interview preparation. Codeworks is known for its selective admissions and strong hiring outcomes, preparing graduates to perform effectively in production engineering teams.",
+    "link": "https://codeworks.me/software-engineering-bootcamp/",
     "startDate": "2018-04-01",
     "endDate": "2018-08-31",
     "milestones": []
   },
   {
     "type": "study",
-    "title": "CS50: Introduction to Computer Science",
-    "description": "CS50: Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. Languages include C, Python, and SQL plus HTML, CSS, and JavaScript. Problem sets inspired by the arts, humanities, social sciences, and sciences.",
+    "title": "CS50: Introduction to Computer Science — @ Harvard / edX",
+    "description": "An intensive, self-paced foundational course in computer science and programming fundamentals, designed for both beginners and those with prior experience. CS50 teaches core concepts including computational thinking, algorithms, data structures, abstraction, resource management, and software engineering principles.\n\nStudents gain practical programming experience in C, Python, SQL, JavaScript, HTML and CSS, progressing from low-level understanding of memory and machine-level concepts (via C) to higher-level web and application development skills (via Python, SQL, JavaScript, HTML/CSS). The curriculum includes weekly problem sets drawing from real-world domains — such as cryptography, finance, forensics, biology or gaming — culminating in a final project that demonstrates the ability to design and implement a complete software application.\n\nCS50 emphasizes strong coding style, correctness, and algorithmic efficiency, helping learners develop not just coding fluency but deeper understanding of how computers work under the hood. The course also connects students to a large global learning community, offering exposure to diverse problem-solving approaches and collaboration opportunities.",
     "link": "https://cs50.harvard.edu",
     "startDate": "2021-01-01",
     "endDate": "2021-03-31",
@@ -180,11 +180,21 @@
   },
   {
     "type": "project",
-    "category": "video",
-    "title": "Clinical charts",
-    "description": "Recording of a live demo of some clinical charts I built while working at Curelator .",
-    "link": "https://www.youtube.com/watch?v=98VJoUg2wdQ",
+    "category": "software",
+    "title": "N1-Headache dashboard",
+    "description": "A clinical dashboard I built while working at Curelator. A feature-rich SPA built with React and alt (Flux). Features custom charts with d3 and a custom WYSIWYG text editor for clinical office notes made with Slate.",
+    "link": "https://dashboard.n1-headache.com/",
+    "demoVideo": "https://www.youtube.com/watch?v=tDGrfd00nVw",
     "endDate": "2021-07-02"
+  },
+  {
+    "type": "project",
+    "category": "software",
+    "title": "N1-Headache website",
+    "description": "A landing page website I built while working at Curelator. Custom wordpress theme with some nice animations and creative styles.",
+    "link": "https://n1-headache.com/",
+    "demoVideo": "https://www.youtube.com/watch?v=osbTpRDBp9g",
+    "endDate": "2019-07-02"
   },
   {
     "type": "project",
@@ -225,14 +235,6 @@
     "description": "Book trailer I produced",
     "link": "https://www.youtube.com/watch?v=aJTIPKAOH-U",
     "endDate": "2013-04-02"
-  },
-  {
-    "type": "project",
-    "category": "video",
-    "title": "Snap in the Bath “Get Away“",
-    "description": "Music video I produced for my band at the time.",
-    "link": "https://www.youtube.com/watch?v=zkvBKlTy-hk",
-    "endDate": "2014-01-02"
   },
   {
     "type": "project",
@@ -415,7 +417,7 @@
     "type": "project",
     "category": "video",
     "title": "Can a book kill a man?",
-    "description": "school research project.",
+    "description": "Some street interviews for a school research project.",
     "link": "https://www.youtube.com/watch?v=lnhALsdwuAs",
     "endDate": "2012-11-11"
   },
@@ -423,7 +425,7 @@
     "type": "project",
     "category": "video",
     "title": "Videocurriculum",
-    "description": "CAV UB",
+    "description": "Video resume / presentation for a University project",
     "link": "https://www.youtube.com/watch?v=YSEsPYo_eHo",
     "endDate": "2012-10-29"
   },
@@ -485,18 +487,15 @@
     "endDate": "2013-04-02"
   },
   {
-    "id": "project-video-4",
     "type": "project",
     "category": "video",
     "title": "\"Cosmic Girl\" (Guitar & Bass cover)",
     "description": "Hey guys, check out my band! www.facebook.com/snap.bath\nOriginal song by Jamiroquai",
     "image": "https://i.ytimg.com/vi/LqoWPcd1CDc/maxresdefault.jpg",
     "link": "https://www.youtube.com/watch?v=LqoWPcd1CDc",
-    "startDate": "2013-11-06",
     "endDate": "2013-12-06"
   },
   {
-    "id": "project-video-5",
     "type": "project",
     "category": "video",
     "title": "Diario de un Follermo esquiando",
@@ -505,7 +504,6 @@
     "endDate": "2013-02-26"
   },
   {
-    "id": "project-video-8",
     "type": "project",
     "category": "video",
     "title": "(Tabs) Still take you home - Arctic monkeys Bass cover",
@@ -514,7 +512,6 @@
     "endDate": "2013-01-20"
   },
   {
-    "id": "etilic-plane",
     "type": "project",
     "category": "music",
     "title": "Snap In The Bath - Etilic plane (demo)",
@@ -523,7 +520,6 @@
     "endDate": "2012-07-25"
   },
   {
-    "id": "dont-stop-your-mind",
     "type": "project",
     "category": "video",
     "title": "Don't stop your mind",
@@ -532,7 +528,6 @@
     "endDate": "2012-05-25"
   },
   {
-    "id": "project-video-10",
     "type": "project",
     "category": "video",
     "title": "Don't stop - Foster the people (Guitar and Bass cover)",
@@ -541,7 +536,6 @@
     "endDate": "2012-05-09"
   },
   {
-    "id": "project-video-11",
     "type": "project",
     "category": "video",
     "title": "The Beatles - Day tripper (Bass&GuitarSolo Cover)",
@@ -550,7 +544,6 @@
     "endDate": "2012-04-11"
   },
   {
-    "id": "project-video-12",
     "type": "project",
     "category": "video",
     "title": "Producciones el sótano - Mil històries",
@@ -559,7 +552,6 @@
     "endDate": "2012-03-09"
   },
   {
-    "id": "project-video-13",
     "type": "project",
     "category": "video",
     "title": "Snap in the Bath live @Razzmatazz Feb 2012",
@@ -568,7 +560,6 @@
     "endDate": "2012-03-05"
   },
   {
-    "id": "project-video-14",
     "type": "project",
     "category": "video",
     "title": "TurismoSkate en Donosti",
@@ -577,7 +568,6 @@
     "endDate": "2012-01-26"
   },
   {
-    "id": "project-video-15",
     "type": "project",
     "category": "video",
     "title": "Esquiada En Boi Tahüll Diciembre 2011",
@@ -586,7 +576,6 @@
     "endDate": "2012-01-25"
   },
   {
-    "id": "project-video-16",
     "type": "project",
     "category": "video",
     "title": "The strokes - Reptilia guitar cover",
@@ -595,7 +584,6 @@
     "endDate": "2012-01-24"
   },
   {
-    "id": "project-video-17",
     "type": "project",
     "category": "video",
     "title": "Arctic Monkeys - Mardy Bum guitar cover",
@@ -604,12 +592,60 @@
     "endDate": "2012-01-21"
   },
   {
-    "id": "project-video-20",
     "type": "project",
     "category": "video",
     "title": "Maximum the hormone - Buiikikaesu! (Bass cover)",
     "description": "Bass cover in my bedroom - There's more stuff prior to this but that's as early as I'm sharing lol",
     "link": "https://www.youtube.com/watch?v=a2Yuogpi3vc",
     "endDate": "2011-11-18"
+  },
+  {
+    "type": "project",
+    "category": "music",
+    "title": "Snap in the Bath - Get Away (live acoustic for Bambusound Documentary)",
+    "description": "Acoustic live performance with my band at the Bambusound Documentary.",
+    "link": "https://www.youtube.com/watch?v=AzMxsnScQj4",
+    "endDate": "2015-03-09"
+  },
+  {
+    "type": "project",
+    "category": "video",
+    "title": "Snap In The Bath: Aventuras en el Estudio de Sonido!",
+    "description": "Joke video with my band at the recording studio.",
+    "link": "https://www.youtube.com/watch?v=nx6v9PCHgek",
+    "endDate": "2015-01-23"
+  },
+  {
+    "type": "project",
+    "category": "music",
+    "title": "Snap in the Bath - This is Not a Love Song (live acoustic @ Alfa Bar Barcelona)",
+    "description": "Acoustic live performance with my band at the Alfa Bar Barcelona.",
+    "link": "https://www.youtube.com/watch?v=Kwi8oUBNU_U",
+    "endDate": "2014-12-16"
+  },
+  {
+    "type": "project",
+    "category": "video",
+    "title": "Snap in the Bath (live @ IKEA) semi-unplugged Full Show",
+    "description": "Live performance with my band at the IKEA band contest.",
+    "link": "https://www.youtube.com/watch?v=MkNCL7XUjok",
+    "endDate": "2014-09-11"
+  },
+  {
+    "type": "project",
+    "category": "music",
+    "title": "Snap in the Bath - This is Not a Love Song (Official Lyric Video)",
+    "description": "Official lyric video for the song 'This is Not a Love Song' by my band. We recorded it in my bedroom / home studio.",
+    "link": "https://www.youtube.com/watch?v=y15Wdh15x6o",
+    "endDate": "2014-07-04"
+  },
+  {
+    "type": "project",
+    "category": "music",
+    "title": "Snap in the Bath - Gas Powered [Official Lyric Video]",
+    "description": "Official lyric video for the song 'Gas Powered' by my band. We recorded it in my bedroom / home studio.",
+    "image": "https://i.ytimg.com/vi/Qvwr9ec7U8c/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=Qvwr9ec7U8c",
+    "endDate": "2014-05-14"
   }
 ]

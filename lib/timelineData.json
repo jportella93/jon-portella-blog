@@ -483,5 +483,133 @@
     "link": "https://jonportella.bandcamp.com/album/guerra-de-lleons",
     "bandcampAlbumId": "3951795121",
     "endDate": "2013-04-02"
+  },
+  {
+    "id": "project-video-4",
+    "type": "project",
+    "category": "video",
+    "title": "\"Cosmic Girl\" (Guitar & Bass cover)",
+    "description": "Hey guys, check out my band! www.facebook.com/snap.bath\nOriginal song by Jamiroquai",
+    "image": "https://i.ytimg.com/vi/LqoWPcd1CDc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=LqoWPcd1CDc",
+    "startDate": "2013-11-06",
+    "endDate": "2013-12-06"
+  },
+  {
+    "id": "project-video-5",
+    "type": "project",
+    "category": "video",
+    "title": "Diario de un Follermo esquiando",
+    "description": "Jokes video snow with a friend",
+    "link": "https://www.youtube.com/watch?v=1PICQ5suktE",
+    "endDate": "2013-02-26"
+  },
+  {
+    "id": "project-video-8",
+    "type": "project",
+    "category": "video",
+    "title": "(Tabs) Still take you home - Arctic monkeys Bass cover",
+    "description": "Bass cover of the song Still take you home by Arctic Monkeys.",
+    "link": "https://www.youtube.com/watch?v=--fxGgXmoPo",
+    "endDate": "2013-01-20"
+  },
+  {
+    "id": "etilic-plane",
+    "type": "project",
+    "category": "music",
+    "title": "Snap In The Bath - Etilic plane (demo)",
+    "description": "First song I ever recorded for my band at the time - good times",
+    "link": "https://www.youtube.com/watch?v=l4OAnpPDak8",
+    "endDate": "2012-07-25"
+  },
+  {
+    "id": "dont-stop-your-mind",
+    "type": "project",
+    "category": "video",
+    "title": "Don't stop your mind",
+    "description": "Surrealist stop motion video for college - I did OST, some editing and cameo",
+    "link": "https://www.youtube.com/watch?v=0Mi7bG2gUVw",
+    "endDate": "2012-05-25"
+  },
+  {
+    "id": "project-video-10",
+    "type": "project",
+    "category": "video",
+    "title": "Don't stop - Foster the people (Guitar and Bass cover)",
+    "description": "Guitar and Bass cover of the song Don't stop by Foster the people.",
+    "link": "https://www.youtube.com/watch?v=3sQhVsEer6E",
+    "endDate": "2012-05-09"
+  },
+  {
+    "id": "project-video-11",
+    "type": "project",
+    "category": "video",
+    "title": "The Beatles - Day tripper (Bass&GuitarSolo Cover)",
+    "description": "Bass and Guitar solo cover of the song Day tripper by The Beatles.",
+    "link": "https://www.youtube.com/watch?v=eNAIh5gs-qg",
+    "endDate": "2012-04-11"
+  },
+  {
+    "id": "project-video-12",
+    "type": "project",
+    "category": "video",
+    "title": "Producciones el sótano - Mil històries",
+    "description": "Jokes music video with my buddies from university, I did music and video editing",
+    "link": "https://www.youtube.com/watch?v=0-1M8-LFSow",
+    "endDate": "2012-03-09"
+  },
+  {
+    "id": "project-video-13",
+    "type": "project",
+    "category": "video",
+    "title": "Snap in the Bath live @Razzmatazz Feb 2012",
+    "description": "Live performance of my band at the time",
+    "link": "https://www.youtube.com/watch?v=oRpaJuYRP80",
+    "endDate": "2012-03-05"
+  },
+  {
+    "id": "project-video-14",
+    "type": "project",
+    "category": "video",
+    "title": "TurismoSkate en Donosti",
+    "description": "Skateboarding video with some friends in Donosti",
+    "link": "https://www.youtube.com/watch?v=zortesCyP-4",
+    "endDate": "2012-01-26"
+  },
+  {
+    "id": "project-video-15",
+    "type": "project",
+    "category": "video",
+    "title": "Esquiada En Boi Tahüll Diciembre 2011",
+    "description": "Snow video",
+    "link": "https://www.youtube.com/watch?v=JPoL0z-vdLk",
+    "endDate": "2012-01-25"
+  },
+  {
+    "id": "project-video-16",
+    "type": "project",
+    "category": "video",
+    "title": "The strokes - Reptilia guitar cover",
+    "description": "Guitar cover of the song Reptilia by The Strokes.",
+    "link": "https://www.youtube.com/watch?v=Rrjp5N3ynRQ",
+    "endDate": "2012-01-24"
+  },
+  {
+    "id": "project-video-17",
+    "type": "project",
+    "category": "video",
+    "title": "Arctic Monkeys - Mardy Bum guitar cover",
+    "description": "Guitar cover of the song Mardy Bum by Arctic Monkeys.",
+    "link": "https://www.youtube.com/watch?v=lwmWswbpfPc",
+    "endDate": "2012-01-21"
+  },
+  {
+    "id": "project-video-20",
+    "type": "project",
+    "category": "video",
+    "title": "Maximum the hormone - Buiikikaesu! (Bass cover)",
+    "description": "Bass cover in my bedroom - There's more stuff prior to this but that's as early as I'm sharing lol",
+    "link": "https://www.youtube.com/watch?v=a2Yuogpi3vc",
+    "endDate": "2011-11-18"
   }
 ]

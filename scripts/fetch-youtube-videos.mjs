@@ -5,13 +5,42 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Read video IDs from videoids file
+// Extract a plain video ID from multiple possible URL formats
+const extractVideoId = (raw) => {
+  const trimmed = raw.trim();
+  if (!trimmed) return null;
+
+  // Already an 11-char ID
+  if (/^[a-zA-Z0-9_-]{11}$/.test(trimmed)) return trimmed;
+
+  try {
+    const url = new URL(trimmed);
+
+    // Standard watch URL: https://www.youtube.com/watch?v=VIDEOID
+    const watchId = url.searchParams.get("v");
+    if (watchId && /^[a-zA-Z0-9_-]{11}$/.test(watchId)) return watchId;
+
+    // Short/other formats: youtu.be/VIDEOID, /embed/VIDEOID, /shorts/VIDEOID, studio links
+    const pathMatch = url.pathname.match(/(?:\/embed\/|\/shorts\/|\/video\/|\/)([a-zA-Z0-9_-]{11})/);
+    if (pathMatch?.[1]) return pathMatch[1];
+  } catch {
+    // Not a URL, fall through
+  }
+
+  return null;
+};
+
+// Read and normalize video IDs from videoids file
 const videoidsPath = path.join(__dirname, "videoids");
-const videoIds = fs
-  .readFileSync(videoidsPath, "utf-8")
-  .split("\n")
-  .map((line) => line.trim())
-  .filter((line) => line.length > 0);
+const videoIds = Array.from(
+  new Set(
+    fs
+      .readFileSync(videoidsPath, "utf-8")
+      .split("\n")
+      .map(extractVideoId)
+      .filter(Boolean)
+  )
+);
 
 console.log(`Found ${videoIds.length} video IDs to fetch`);
 

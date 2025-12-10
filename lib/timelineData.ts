@@ -4,7 +4,11 @@
 import { BASE_PATH } from "./constants";
 import timelineDataJson from "./timelineData.json";
 
-export type TimelineCategory = "software" | "video" | "music";
+export type TimelineCategory =
+  | "software"
+  | "video"
+  | "music"
+  | "music performance";
 
 export interface TimelineMilestone {
   date: string;
@@ -57,6 +61,7 @@ const CATEGORY_EMOJI: Record<TimelineCategory, string> = {
   software: "💻",
   video: "🎬",
   music: "🎵",
+  "music performance": "🎤",
 };
 
 export function getTimelineCategoryEmoji(category?: TimelineCategory): string {

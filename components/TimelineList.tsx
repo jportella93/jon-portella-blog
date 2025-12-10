@@ -255,4 +255,5 @@ const CATEGORY_LABELS: Record<TimelineCategory, string> = {
   software: "Software",
   video: "Video",
   music: "Music",
+  "music performance": "Music Performance",
 };

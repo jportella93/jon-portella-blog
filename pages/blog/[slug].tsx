@@ -7,6 +7,7 @@ import KeyboardNavHint from "../../components/KeyboardNavHint";
 import Layout from "../../components/Layout";
 import ReadingProgressBar from "../../components/ReadingProgressBar";
 import SEO from "../../components/SEO";
+import SubscriptionNotice from "../../components/SubscriptionNotice";
 import {
   getAllPostsMetadata,
   type Post,
@@ -78,6 +79,7 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
         {date ? moment(date).format("MMMM DD, YYYY") : ""}
       </p>
       <div dangerouslySetInnerHTML={{ __html: contentWithoutFirstH1 }} />
+      <SubscriptionNotice />
       <hr
         style={{
           marginBottom: rhythm(1),

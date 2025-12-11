@@ -9,7 +9,6 @@ This is a Next.js static site generator (SSG) blog, migrated from Gatsby, deploy
 - RSS feed generation
 - Typography system
 - All content statically generated - no server required
-- Email newsletter notification on push (GitHub action)
 
 ## Setup
 
@@ -96,26 +95,3 @@ jon-portella-blog/
 - No server-side features are used
 - Images are served from the `public/` directory
 - RSS feed is generated as a static file during build
-
-## Buttondown Email Automation
-
-This repository includes automated email notifications to your Buttondown subscribers when new blog posts are published.
-
-### Setup
-
-1. Create a Buttondown API key at https://buttondown.email/settings/api
-2. Add these secrets to your GitHub repository settings:
-   - `BUTTONDOWN_API_KEY` - Your Buttondown API token
-   - `SITE_URL` - Your site URL
-   - `BASE_PATH` - Base path if not root
-   - `BUTTONDOWN_MAX_BODY` - Max email body length (optional, defaults to 15000)
-   - `BUTTONDOWN_EMAIL_TYPE` - Email type: "public" or "private" (optional, defaults to "public")
-   - `BUTTONDOWN_SEND_IMMEDIATELY` - Set to "true" to auto-send emails (optional, defaults to false for drafts)
-   - `BUTTONDOWN_DRY_RUN` - Set to "true" for testing without sending (optional)
-
-### How it works
-
-- Triggers on pushes to `master`/`main` branches when new `content/blog/**/index.md` files are added
-- Parses post frontmatter and content using gray-matter
-- Creates email with title, spoiler (if present), full post body, and read-online link
-- Sends to Buttondown API as draft (unless `BUTTONDOWN_SEND_IMMEDIATELY=true`)

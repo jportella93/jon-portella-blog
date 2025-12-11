@@ -234,14 +234,25 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <div style={titleStyle}>
                     {post.frontmatter.title || post.slug}
                   </div>
-                  {post.frontmatter.date && (
-                    <p style={dateStyle}>
-                      {new Date(post.frontmatter.date).toLocaleDateString(
-                        "en-US",
-                        { year: "numeric", month: "long", day: "numeric" }
-                      )}
-                    </p>
-                  )}
+                  {(() => {
+                    const formattedDate = post.frontmatter.date
+                      ? new Date(post.frontmatter.date).toLocaleDateString(
+                          "en-US",
+                          { year: "numeric", month: "long", day: "numeric" }
+                        )
+                      : null;
+                    const readingTime = post.frontmatter.readingTimeMinutes;
+                    const meta = [
+                      formattedDate,
+                      readingTime && `${readingTime} min read`,
+                    ]
+                      .filter(Boolean)
+                      .join(" • ");
+
+                    if (!meta) return null;
+
+                    return <p style={dateStyle}>{meta}</p>;
+                  })()}
                   {post.frontmatter.spoiler && (
                     <p style={spoilerStyle}>{post.frontmatter.spoiler}</p>
                   )}

@@ -1,8 +1,25 @@
+import { useEffect, useState } from "react";
 import { rhythm } from "../lib/typography";
 import { useTheme } from "./ThemeProvider";
 
 export default function KeyboardNavHint() {
+  const [hasKeyboard, setHasKeyboard] = useState(false);
   const { isDarkMode } = useTheme();
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const maybeHasKeyboard =
+      "keyboard" in navigator ||
+      window.matchMedia("(any-hover: hover)").matches ||
+      window.matchMedia("(any-pointer: fine)").matches;
+    const hasTouch =
+      "ontouchstart" in window || navigator.maxTouchPoints > 0 || false;
+
+    setHasKeyboard(maybeHasKeyboard || !hasTouch);
+  }, []);
 
   const hintStyle = {
     backgroundColor: isDarkMode
@@ -36,6 +53,10 @@ export default function KeyboardNavHint() {
       isDarkMode ? "rgba(255,255,255,.1)" : "rgba(0,0,0,.1)"
     }`,
   };
+
+  if (!hasKeyboard) {
+    return null;
+  }
 
   return (
     <div style={hintStyle}>

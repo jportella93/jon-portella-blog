@@ -4,7 +4,7 @@ import { EmailIcon, RssIcon } from "./icons";
 
 const links = [
   {
-    url: "mailto:jportella93@gmail.com",
+    url: "mailto:jportella93@gmail.com?subject=jonportella.com%20footer%20email",
     label: "Email",
     icon: <EmailIcon />,
   },

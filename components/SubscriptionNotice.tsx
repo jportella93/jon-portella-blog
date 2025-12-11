@@ -67,6 +67,10 @@ const SubscriptionNotice = () => {
           </Link>
         ))}
       </div>
+      <p style={{ margin: 0, marginTop: rhythm(0.5), fontSize: "0.8em" }}>
+        RSS is the <Link href="/blog/why-i-love-rss/">correct choice</Link>,
+        btw.
+      </p>
     </div>
   );
 };

@@ -38,6 +38,14 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
     siteMetadata.description
   }`;
 
+  const readingTime = post.frontmatter.readingTimeMinutes;
+  const meta = [
+    date ? moment(date).format("MMMM DD, YYYY") : "",
+    readingTime ? `${readingTime} min read` : null,
+  ]
+    .filter(Boolean)
+    .join(" • ");
+
   const [imageUrl, setImageUrl] = React.useState("");
 
   React.useEffect(() => {
@@ -76,7 +84,7 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
           marginTop: rhythm(-1),
         }}
       >
-        {date ? moment(date).format("MMMM DD, YYYY") : ""}
+        {meta}
       </p>
       <div dangerouslySetInnerHTML={{ __html: contentWithoutFirstH1 }} />
       <SubscriptionNotice />

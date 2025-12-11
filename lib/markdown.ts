@@ -7,6 +7,21 @@ import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import { siteMetadata } from "./siteMetadata";
 
+const CHARS_PER_MINUTE = 1000;
+const MIN_READING_TIME_MINUTES = 1;
+
+function calculateReadingTime(content: string): number {
+  const normalizedContent = content.replace(/\s+/g, " ").trim();
+  if (!normalizedContent) {
+    return MIN_READING_TIME_MINUTES;
+  }
+
+  const estimatedMinutes = Math.ceil(
+    normalizedContent.length / CHARS_PER_MINUTE
+  );
+  return Math.max(MIN_READING_TIME_MINUTES, estimatedMinutes);
+}
+
 const postsDirectory = path.join(process.cwd(), "content/blog");
 
 export interface PostFrontmatter {
@@ -14,6 +29,7 @@ export interface PostFrontmatter {
   date?: string | null;
   spoiler?: string;
   hasNewsletterBeenSent: boolean;
+  readingTimeMinutes?: number;
   [key: string]: any;
 }
 
@@ -46,6 +62,7 @@ export function getPostBySlug(slug: string): Post {
 
   const normalizedDate = data.date ? new Date(data.date).toISOString() : null;
   const hasNewsletterBeenSent = data.hasNewsletterBeenSent ?? false;
+  const readingTimeMinutes = calculateReadingTime(content);
 
   // Replace relative image paths with absolute paths for Next.js
   // Include basePath for GitHub Pages compatibility
@@ -85,6 +102,7 @@ export function getPostBySlug(slug: string): Post {
       ...data,
       hasNewsletterBeenSent,
       date: normalizedDate,
+      readingTimeMinutes,
     },
   };
 }
@@ -98,12 +116,13 @@ export function getAllPostsMetadata(): Array<{
     .map((slug) => {
       const fullPath = path.join(postsDirectory, slug, "index.md");
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data } = matter(fileContents);
+      const { data, content } = matter(fileContents);
 
       const normalizedDate = data.date
         ? new Date(data.date).toISOString()
         : null;
       const hasNewsletterBeenSent = data.hasNewsletterBeenSent ?? false;
+      const readingTimeMinutes = calculateReadingTime(content);
 
       return {
         slug,
@@ -111,6 +130,7 @@ export function getAllPostsMetadata(): Array<{
           ...data,
           hasNewsletterBeenSent,
           date: normalizedDate,
+          readingTimeMinutes,
         },
       };
     })

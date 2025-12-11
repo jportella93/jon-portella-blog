@@ -3,7 +3,7 @@ title: Count Total Lines in a Git Repository
 spoiler: >-
   Learn how to count the total number of lines in a Git repository, in one
   minute.
-date: '2021-03-11T13:43:08.802Z'
+date: "2021-03-11T13:43:08.802Z"
 hasNewsletterBeenSent: true
 ---
 
@@ -59,6 +59,6 @@ Here we see:
 
 And in the last row, information on the total of files.
 
-**So our repo has25891 lines**.
+**So our repo has 25891 lines**.
 
 ---

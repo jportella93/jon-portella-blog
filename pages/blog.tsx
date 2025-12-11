@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import SubscriptionNotice from "../components/SubscriptionNotice";
 import { getAllPostsMetadata, type PostFrontmatter } from "../lib/getAllPosts";
 import { rhythm } from "../lib/typography";
 
@@ -12,7 +13,7 @@ export default function BlogIndex({ posts }: BlogIndexProps) {
   return (
     <Layout width="narrow">
       <SEO title="Blog" keywords={["blog", "javascript", "react"]} />
-      {posts.map((post) => {
+      {posts.map((post, index) => {
         const title = post.frontmatter.title || post.slug;
         const date = post.frontmatter.date
           ? new Date(post.frontmatter.date).toLocaleDateString("en-US", {
@@ -39,6 +40,7 @@ export default function BlogIndex({ posts }: BlogIndexProps) {
                 __html: post.frontmatter.spoiler || "",
               }}
             />
+            {index === 2 && <SubscriptionNotice />}
           </div>
         );
       })}

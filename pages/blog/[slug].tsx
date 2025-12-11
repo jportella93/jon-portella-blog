@@ -8,6 +8,7 @@ import Layout from "../../components/Layout";
 import ReadingProgressBar from "../../components/ReadingProgressBar";
 import SEO from "../../components/SEO";
 import SubscriptionNotice from "../../components/SubscriptionNotice";
+import { EmailIcon } from "../../components/icons";
 import {
   getAllPostsMetadata,
   type Post,
@@ -64,6 +65,15 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
     return post.content.replace(/^\s*<h1[^>]*>.*?<\/h1>\s*/i, "");
   }, [post.content]);
 
+  const mailtoLink = React.useMemo(() => {
+    const subject = encodeURIComponent("jonportella.com blog post contact");
+    const body = encodeURIComponent(
+      `Regarding the post ${postTitle} ${postUrl}\n`
+    );
+
+    return `mailto:jportella93@gmail.com?subject=${subject}&body=${body}`;
+  }, [postTitle, postUrl]);
+
   return (
     <Layout width="narrow">
       <ReadingProgressBar />
@@ -87,6 +97,24 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
         {meta}
       </p>
       <div dangerouslySetInnerHTML={{ __html: contentWithoutFirstH1 }} />
+      <hr
+        style={{
+          marginBottom: rhythm(1),
+        }}
+      />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: rhythm(0.5),
+          margin: `${rhythm(1)} 0`,
+        }}
+      >
+        <span>WDYT about this post? I read you</span>
+        <a href={mailtoLink} aria-label="Email about this post">
+          <EmailIcon />
+        </a>
+      </div>
       <SubscriptionNotice />
       <hr
         style={{

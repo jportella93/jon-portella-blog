@@ -3,15 +3,7 @@ import { useEffect } from "react";
 import { useTheme } from "../components/ThemeProvider";
 import { getRandomPost } from "./postsMetadata";
 
-interface UseGlobalKeyboardShortcutsProps {
-  isSearchModalOpen?: boolean;
-  setSearchModalOpen?: (open: boolean) => void;
-}
-
-export function useGlobalKeyboardShortcuts({
-  isSearchModalOpen = false,
-  setSearchModalOpen,
-}: UseGlobalKeyboardShortcutsProps = {}) {
+export function useGlobalKeyboardShortcuts() {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
 
@@ -25,13 +17,6 @@ export function useGlobalKeyboardShortcuts({
         target.contentEditable === "true";
 
       if (isInput) {
-        return;
-      }
-
-      // Prevent default browser search when pressing '/'
-      if (event.key === "/") {
-        event.preventDefault();
-        setSearchModalOpen?.(true);
         return;
       }
 
@@ -74,5 +59,5 @@ export function useGlobalKeyboardShortcuts({
 
     document.addEventListener("keydown", handleKeyPress);
     return () => document.removeEventListener("keydown", handleKeyPress);
-  }, [router, theme, setTheme, setSearchModalOpen]);
+  }, [router, theme, setTheme]);
 }

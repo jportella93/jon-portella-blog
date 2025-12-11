@@ -1,7 +1,10 @@
 ---
 title: Running Code Snippets on Chrome’s Console
-spoiler: A quick guide for web developers on this great time-saver when executing JavaScript on the go.
-date: "2021-03-02T13:47:41.548Z"
+spoiler: >-
+  A quick guide for web developers on this great time-saver when executing
+  JavaScript on the go.
+date: '2021-03-02T13:47:41.548Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/0.png)

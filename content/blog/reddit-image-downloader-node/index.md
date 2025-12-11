@@ -1,7 +1,10 @@
 ---
 title: Downloading Reddit Images in Bulk
-spoiler: Get all the neat desktop goodness from /r/wallpapers with this command line utility built in Node.js
-date: "2019-01-29T15:12:03.284Z"
+spoiler: >-
+  Get all the neat desktop goodness from /r/wallpapers with this command line
+  utility built in Node.js
+date: '2019-01-29T15:12:03.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/several-images-loor-nicolas.jpg)

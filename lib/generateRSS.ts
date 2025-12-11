@@ -60,6 +60,7 @@ export function generateRSS(): void {
       title: post.frontmatter.title,
       spoiler: post.frontmatter.spoiler,
       date: post.frontmatter.date,
+      hasNewsletterBeenSent: post.frontmatter.hasNewsletterBeenSent ?? false,
     },
   }));
 

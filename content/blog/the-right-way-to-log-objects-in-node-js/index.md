@@ -1,7 +1,8 @@
 ---
 title: The Right Way To Log Objects in Node.js
-spoiler: And a few other methods that you can also use, but beware of the caveats!
-date: "2021-03-01T13:47:00.110Z"
+spoiler: 'And a few other methods that you can also use, but beware of the caveats!'
+date: '2021-03-01T13:47:00.110Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/0.png)

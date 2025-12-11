@@ -1,7 +1,8 @@
 ---
 title: Avoid Headaches with Static Code Analysis Tools
-spoiler: Learn to avoid headaches with Static Code Analysis Tools, in one minute.
-date: "2021-03-16T13:44:11.170Z"
+spoiler: 'Learn to avoid headaches with Static Code Analysis Tools, in one minute.'
+date: '2021-03-16T13:44:11.170Z'
+hasNewsletterBeenSent: true
 ---
 
 #### Or how Static Code Analysis Tools make your life and prevent headaches

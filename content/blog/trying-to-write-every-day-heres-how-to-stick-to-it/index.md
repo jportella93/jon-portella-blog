@@ -1,7 +1,10 @@
 ---
 title: Trying To Write Every Day? Here’s How To Stick to It
-spoiler: Many people struggle to build a writing habit. I did too, but I solved it with this simple mantra
-date: "2021-04-21T13:06:03.465Z"
+spoiler: >-
+  Many people struggle to build a writing habit. I did too, but I solved it with
+  this simple mantra
+date: '2021-04-21T13:06:03.465Z'
+hasNewsletterBeenSent: true
 ---
 
 ### Trying To Write Every Day? Here’s How To Stick to It

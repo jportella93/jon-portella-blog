@@ -1,7 +1,8 @@
 ---
 title: Displaying data with variable length
 spoiler: Never trust the design.
-date: "2020-01-15T19:38:03.284Z"
+date: '2020-01-15T19:38:03.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/road-loor-nicolas.jpg)

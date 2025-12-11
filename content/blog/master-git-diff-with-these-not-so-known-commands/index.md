@@ -1,7 +1,8 @@
 ---
 title: Master Git Diff With These Not-So-Known Commands
 spoiler: Save time while reviewing your own pull requests
-date: "2021-03-24T13:59:13.304Z"
+date: '2021-03-24T13:59:13.304Z'
+hasNewsletterBeenSent: true
 ---
 
 #### Spot errors before pushing to save time while reviewing your own pull requests

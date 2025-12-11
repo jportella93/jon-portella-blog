@@ -1,7 +1,8 @@
 ---
 title: Lazy Load Images with LazySizes
-spoiler: Learn how to lazy load images, in one minute.
-date: "2021-03-23T14:17:37.750Z"
+spoiler: 'Learn how to lazy load images, in one minute.'
+date: '2021-03-23T14:17:37.750Z'
+hasNewsletterBeenSent: true
 ---
 
 #### A quick introduction to a library that has better browser support than the loading="lazy" attribute.

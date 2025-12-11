@@ -1,7 +1,8 @@
 ---
 title: Hello World
 spoiler: Mandatory
-date: "2018-12-31T15:12:03.284Z"
+date: '2018-12-31T15:12:03.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/wood-head-loor-nicolas.jpg)

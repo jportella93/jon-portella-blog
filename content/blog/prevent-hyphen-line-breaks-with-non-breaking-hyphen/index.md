@@ -1,7 +1,8 @@
 ---
 title: Prevent Hyphen Line-Breaks with Non-Breaking Hyphen
-spoiler: Learn how to avoid hyphen line-breaks, in one minute.
-date: "2021-03-18T14:27:15.879Z"
+spoiler: 'Learn how to avoid hyphen line-breaks, in one minute.'
+date: '2021-03-18T14:27:15.879Z'
+hasNewsletterBeenSent: true
 ---
 
 #### Learn to dominate your hyphens and control where your content line breaks

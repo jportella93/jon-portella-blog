@@ -1,7 +1,8 @@
 ---
 title: Using JavaScript To Test Browser Support for a CSS Pseudo-Class
-spoiler: An obscure (but effective) way to do CSS feature detection with JavaScript. In the example, we test for a feature that only Microsoft browsers have.
-date: "2021-02-23T13:47:47.254Z"
+spoiler: "An obscure (but effective) way to do CSS feature detection with JavaScript. In the example, we test for a feature that only Microsoft browsers\_have."
+date: '2021-02-23T13:47:47.254Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/0.png)

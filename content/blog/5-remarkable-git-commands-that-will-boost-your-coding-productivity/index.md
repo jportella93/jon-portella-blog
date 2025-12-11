@@ -1,7 +1,10 @@
 ---
 title: 5 Remarkable Git Commands That Will Boost Your Coding Productivity
-spoiler: These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…
-date: "2020-09-29T08:24:58.322Z"
+spoiler: >-
+  These are custom made, they don’t appear in the Git docs! Saved me countless
+  headaches in the last two years…
+date: '2020-09-29T08:24:58.322Z'
+hasNewsletterBeenSent: true
 ---
 
 These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…

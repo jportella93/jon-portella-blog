@@ -1,7 +1,10 @@
 ---
 title: 12 Things I Learned in March 2019
-spoiler: Tips and tricks including but not limited to Pandas, JavaScript sliders and swipers, a flights API, BASH automations and some other nifty ideas.
-date: "2019-03-31T19:38:03.284Z"
+spoiler: >-
+  Tips and tricks including but not limited to Pandas, JavaScript sliders and
+  swipers, a flights API, BASH automations and some other nifty ideas.
+date: '2019-03-31T19:38:03.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/t-loor-nicolas.jpg)

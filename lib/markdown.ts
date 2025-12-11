@@ -13,6 +13,7 @@ export interface PostFrontmatter {
   title?: string;
   date?: string | null;
   spoiler?: string;
+  hasNewsletterBeenSent: boolean;
   [key: string]: any;
 }
 
@@ -42,6 +43,9 @@ export function getPostBySlug(slug: string): Post {
   const fullPath = path.join(postsDirectory, slug, "index.md");
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
+
+  const normalizedDate = data.date ? new Date(data.date).toISOString() : null;
+  const hasNewsletterBeenSent = data.hasNewsletterBeenSent ?? false;
 
   // Replace relative image paths with absolute paths for Next.js
   // Include basePath for GitHub Pages compatibility
@@ -79,7 +83,8 @@ export function getPostBySlug(slug: string): Post {
     content: htmlWithFixedImages,
     frontmatter: {
       ...data,
-      date: data.date ? new Date(data.date).toISOString() : null,
+      hasNewsletterBeenSent,
+      date: normalizedDate,
     },
   };
 }
@@ -95,11 +100,17 @@ export function getAllPostsMetadata(): Array<{
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const { data } = matter(fileContents);
 
+      const normalizedDate = data.date
+        ? new Date(data.date).toISOString()
+        : null;
+      const hasNewsletterBeenSent = data.hasNewsletterBeenSent ?? false;
+
       return {
         slug,
         frontmatter: {
           ...data,
-          date: data.date ? new Date(data.date).toISOString() : null,
+          hasNewsletterBeenSent,
+          date: normalizedDate,
         },
       };
     })

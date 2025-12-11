@@ -1,7 +1,10 @@
 ---
 title: The Ugliest 6 Reasons To Not Enrol In A Coding Bootcamp.
-spoiler: There are some ugly parts that people don’t talk about. Before deciding to enrol, mind all the possible outcomes.
-date: "2020-10-02T10:03:34.981Z"
+spoiler: >-
+  There are some ugly parts that people don’t talk about. Before deciding to
+  enrol, mind all the possible outcomes.
+date: '2020-10-02T10:03:34.981Z'
+hasNewsletterBeenSent: true
 ---
 
 ### The Ugliest 6 Reasons To Not Enroll In A Coding Boot Camp

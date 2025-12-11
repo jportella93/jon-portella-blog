@@ -1,7 +1,10 @@
 ---
 title: CDNs — A Deep Dive
-spoiler: You’ve used them before but you’re not completely sure what they are, here are some answers.
-date: "2021-04-21T23:45:16.803Z"
+spoiler: >-
+  You’ve used them before but you’re not completely sure what they are, here are
+  some answers.
+date: '2021-04-21T23:45:16.803Z'
+hasNewsletterBeenSent: true
 ---
 
 ### CDNs — A Deep Dive

@@ -1,7 +1,8 @@
 ---
 title: Autosave Your Shell Config in a GitHub Gist
 spoiler: Don’t lose your aliases again when switching computers!
-date: "2021-03-05T13:34:17.791Z"
+date: '2021-03-05T13:34:17.791Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/0.png)

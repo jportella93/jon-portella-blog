@@ -1,7 +1,8 @@
 ---
 title: Picking Random Comments On Instagram
 spoiler: A web app to make Instagram contests suck less.
-date: "2019-01-15T15:12:03.284Z"
+date: '2019-01-15T15:12:03.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/i-loor-nicolas.jpg)

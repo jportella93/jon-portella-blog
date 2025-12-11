@@ -1,7 +1,10 @@
 ---
 title: Persist CSS Changes Done in Chrome’s Dev-Tools
-spoiler: Avoid losing all those changes on the elements tab if you accidentally reload your browser
-date: "2021-02-24T13:38:12.609Z"
+spoiler: >-
+  Avoid losing all those changes on the elements tab if you accidentally reload
+  your browser
+date: '2021-02-24T13:38:12.609Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Chrome DevTools interface showing the problem of losing CSS changes on refresh](./images/0.png)

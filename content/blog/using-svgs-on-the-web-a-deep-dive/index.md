@@ -1,7 +1,10 @@
 ---
 title: Using SVGs on the Web — A Deep Dive
-spoiler: There isn’t one best way to implement SVGs on our websites, since each method has its pros and cons. Let’s learn their differences.
-date: "2021-04-28T15:13:21.156Z"
+spoiler: >-
+  There isn’t one best way to implement SVGs on our websites, since each method
+  has its pros and cons. Let’s learn their differences.
+date: '2021-04-28T15:13:21.156Z'
+hasNewsletterBeenSent: true
 ---
 
 ### Using SVGs on the Web — A Deep Dive

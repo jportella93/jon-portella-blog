@@ -1,7 +1,10 @@
 ---
 title: How I Doubled My Income in 3 Months
-spoiler: The story of my career change, and how first choices aren’t usually the best for your future
-date: "2020-09-30T00:00:00.284Z"
+spoiler: >-
+  The story of my career change, and how first choices aren’t usually the best
+  for your future
+date: '2020-09-30T00:00:00.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/hand.jpeg)

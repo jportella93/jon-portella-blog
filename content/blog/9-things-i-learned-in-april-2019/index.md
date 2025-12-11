@@ -1,7 +1,10 @@
 ---
 title: 9 Things I Learned in April 2019
-spoiler: This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, macOS apps, using searchable components and fighting Chrome's autocomplete styling.
-date: "2019-04-30T19:38:03.284Z"
+spoiler: >-
+  This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, macOS
+  apps, using searchable components and fighting Chrome's autocomplete styling.
+date: '2019-04-30T19:38:03.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/9-loor-nicolas.jpg)

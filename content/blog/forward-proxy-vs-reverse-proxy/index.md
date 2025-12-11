@@ -1,7 +1,10 @@
 ---
-title: "Forward Proxy vs. Reverse Proxy"
-spoiler: Understand the difference between forward proxies and reverse proxies, and when to use each one.
-date: "2021-03-17T13:47:39.957Z"
+title: Forward Proxy vs. Reverse Proxy
+spoiler: >-
+  Understand the difference between forward proxies and reverse proxies, and
+  when to use each one.
+date: '2021-03-17T13:47:39.957Z'
+hasNewsletterBeenSent: true
 ---
 
 ### Forward Proxy vs. Reverse Proxy

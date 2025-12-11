@@ -1,7 +1,10 @@
 ---
 title: 6 Things I Learned in May 2019
-spoiler: Some cool React.js libraries, PropTypes, node_modules updates and an Easter Egg.
-date: "2019-05-30T19:38:03.284Z"
+spoiler: >-
+  Some cool React.js libraries, PropTypes, node_modules updates and an Easter
+  Egg.
+date: '2019-05-30T19:38:03.284Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/6-loor-nicolas.jpg)

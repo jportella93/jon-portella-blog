@@ -1,7 +1,8 @@
 ---
-title: "Quick Refactor: Keep Casing in VSCode Search + Replace"
+title: 'Quick Refactor: Keep Casing in VSCode Search + Replace'
 spoiler: A simple Visual Studio Code trick to save precious time while refactoring
-date: "2021-02-25T13:32:08.096Z"
+date: '2021-02-25T13:32:08.096Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/0.png)

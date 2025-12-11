@@ -1,7 +1,8 @@
 ---
 title: Use gist-paste to Save Text Files as GitHub Gists From the Command Line
 spoiler: A quick tip to save time on saving and sharing documents
-date: "2021-03-03T14:00:40.463Z"
+date: '2021-03-03T14:00:40.463Z'
+hasNewsletterBeenSent: true
 ---
 
 ![Presentation image](./images/0.png)

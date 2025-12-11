@@ -1,7 +1,10 @@
 ---
 title: Running Code Snippets on Chrome's Console
-spoiler: Learn how to store and run JavaScript code snippets in Chrome's DevTools for faster testing and debugging.
-date: "2021-04-23T13:58:02.393Z"
+spoiler: >-
+  Learn how to store and run JavaScript code snippets in Chrome's DevTools for
+  faster testing and debugging.
+date: '2021-04-23T13:58:02.393Z'
+hasNewsletterBeenSent: true
 ---
 
 # Running Code Snippets on Chrome's Console

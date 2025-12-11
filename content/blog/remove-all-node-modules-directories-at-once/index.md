@@ -1,7 +1,8 @@
 ---
 title: Remove All node_modules Directories at Once
-spoiler: Learn how to remove all your node_modules directories, in one minute.
-date: "2021-03-15T13:43:28.380Z"
+spoiler: 'Learn how to remove all your node_modules directories, in one minute.'
+date: '2021-03-15T13:43:28.380Z'
+hasNewsletterBeenSent: true
 ---
 
 #### Here’s my one-liner to delete all the JavaScript dependencies of a repo in a flash.

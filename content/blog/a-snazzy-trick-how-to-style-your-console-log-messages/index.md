@@ -1,7 +1,10 @@
 ---
-title: "A Snazzy Trick: How To Style Your console.log() Messages"
-spoiler: A quick guide (with examples) on applying CSS to log messages in the browser’s console
-date: "2021-03-25T13:59:01.112Z"
+title: 'A Snazzy Trick: How To Style Your console.log() Messages'
+spoiler: >-
+  A quick guide (with examples) on applying CSS to log messages in the browser’s
+  console
+date: '2021-03-25T13:59:01.112Z'
+hasNewsletterBeenSent: true
 ---
 
 #### A quick guide (with examples) on applying CSS to log messages in the browser's console.

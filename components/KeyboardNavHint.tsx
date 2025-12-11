@@ -66,7 +66,7 @@ export default function KeyboardNavHint() {
       <kbd style={kbdStyle}>p</kbd> for previous (older) post,
       <kbd style={kbdStyle}>r</kbd> for random post.
       <br />
-      Tap <kbd style={kbdStyle}>/</kbd> to see more shortcuts.
+      Type <kbd style={kbdStyle}>/shortcuts</kbd> to see more shortcuts.
     </div>
   );
 }

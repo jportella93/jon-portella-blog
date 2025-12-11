@@ -1,0 +1,39 @@
+name: Notify Buttondown on new blog posts
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "content/blog/**/index.md"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Buttondown notification
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          BASE_PATH: ${{ secrets.BASE_PATH }}
+          BUTTONDOWN_MAX_BODY: ${{ secrets.BUTTONDOWN_MAX_BODY }}
+          BUTTONDOWN_EMAIL_TYPE: ${{ secrets.BUTTONDOWN_EMAIL_TYPE }}
+          BUTTONDOWN_SEND_IMMEDIATELY: ${{ secrets.BUTTONDOWN_SEND_IMMEDIATELY }}
+          BUTTONDOWN_DRY_RUN: ${{ secrets.BUTTONDOWN_DRY_RUN }}
+        run: npx tsx scripts/buttondown-notify.ts

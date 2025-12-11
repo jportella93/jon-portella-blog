@@ -22,6 +22,10 @@ export default function BlogIndex({ posts }: BlogIndexProps) {
               day: "numeric",
             })
           : "";
+        const readingTime = post.frontmatter.readingTimeMinutes;
+        const meta = [date, readingTime ? `${readingTime} min read` : null]
+          .filter(Boolean)
+          .join(" • ");
 
         return (
           <div key={post.slug}>
@@ -34,7 +38,7 @@ export default function BlogIndex({ posts }: BlogIndexProps) {
                 {title}
               </Link>
             </h3>
-            <small>{date}</small>
+            <small>{meta}</small>
             <p
               dangerouslySetInnerHTML={{
                 __html: post.frontmatter.spoiler || "",

@@ -87,27 +87,34 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
       />
       <ul
         style={{
-          display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-between`,
+          display: `grid`,
+          gap: rhythm(0.5),
           listStyle: `none`,
           padding: 0,
         }}
       >
-        <li>
-          {previous && (
-            <Link href={`/blog/${previous.slug}`} rel="prev">
+        {previous && (
+          <li>
+            <Link
+              href={`/blog/${previous.slug}`}
+              rel="prev"
+              style={{ display: "block" }}
+            >
               ← {previous.frontmatter.title}
             </Link>
-          )}
-        </li>
-        <li>
-          {next && (
-            <Link href={`/blog/${next.slug}`} rel="next">
+          </li>
+        )}
+        {next && (
+          <li>
+            <Link
+              href={`/blog/${next.slug}`}
+              rel="next"
+              style={{ display: "block" }}
+            >
               {next.frontmatter.title} →
             </Link>
-          )}
-        </li>
+          </li>
+        )}
       </ul>
       <KeyboardNavHint />
     </Layout>

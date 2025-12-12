@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { siteMetadata } from "../lib/siteMetadata";
 
@@ -49,12 +48,6 @@ export default function SEO({
       {publishedTime && (
         <meta property="og:article:published_time" content={publishedTime} />
       )}
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:creator" content={siteMetadata.social.twitter} />
-      <meta name="twitter:title" content={title || siteMetadata.title} />
-      <meta name="twitter:description" content={metaDescription} />
 
       {meta.map((m, i) => (
         <meta key={i} {...m} />

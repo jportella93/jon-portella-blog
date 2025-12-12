@@ -11,21 +11,15 @@ export interface SiteMetadata {
   description: string;
   siteUrl: string;
   basePath: string;
-  social: {
-    twitter: string;
-  };
 }
 
 export const siteMetadata: SiteMetadata = {
-  title: "Jon Portella - Full Stack Developer",
+  title: "Jon Portella",
   author: "Jon Portella",
   description:
-    "Welcome to my website! Here you'll find articles and resources written by a Full Stack Developer.",
+    "Personal website of Jon Portella featuring a blog with tech articles and a work/education timeline.",
   siteUrl: siteUrl,
   basePath: basePath,
-  social: {
-    twitter: "jportella93",
-  },
 };
 
 // Helper function to get asset path with base path

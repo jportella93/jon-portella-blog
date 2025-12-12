@@ -110,8 +110,12 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
           margin: `${rhythm(1)} 0`,
         }}
       >
-        <span>WDYT about this post? I read you</span>
-        <a href={mailtoLink} aria-label="Email about this post">
+        <span>WDYT about this post? I read you here:</span>
+        <a
+          href={mailtoLink}
+          aria-label="Email about this post"
+          style={{ display: "inline-flex" }}
+        >
           <EmailIcon />
         </a>
       </div>

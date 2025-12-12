@@ -20,6 +20,11 @@ export function useGlobalKeyboardShortcuts() {
         return;
       }
 
+      // Don't trigger shortcuts if any modifier keys are pressed
+      if (event.ctrlKey || event.altKey || event.metaKey || event.shiftKey) {
+        return;
+      }
+
       // Handle theme toggle
       if (event.key === "t") {
         if (theme === "system") {

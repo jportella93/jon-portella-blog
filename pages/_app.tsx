@@ -4,7 +4,6 @@ import SearchModal from "../components/SearchModal";
 import { ThemeProvider } from "../components/ThemeProvider";
 import { useGlobalKeyboardShortcuts } from "../lib/useGlobalKeyboardShortcuts";
 import "../styles/globals.css";
-import "../styles/timeline.css";
 
 function AppContent({ Component, pageProps }: AppProps) {
   useGlobalKeyboardShortcuts();

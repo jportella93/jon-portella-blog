@@ -1,11 +1,11 @@
 ---
 title: You are using browser events wrong
 spoiler: Stop listening.
-date: '2019-05-15T19:38:03.284Z'
+date: "2019-05-15T19:38:03.284Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/x-loor-nicolas.jpg)
+![Presentation image](https://j-img.jonportella.com/content/blog/you-are-using-browser-events-wrong/images/x-loor-nicolas.jpg)
 
 Will this code work?
 

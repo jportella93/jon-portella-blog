@@ -3,11 +3,11 @@ title: 6 Things I Learned in May 2019
 spoiler: >-
   Some cool React.js libraries, PropTypes, node_modules updates and an Easter
   Egg.
-date: '2019-05-30T19:38:03.284Z'
+date: "2019-05-30T19:38:03.284Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/6-loor-nicolas.jpg)
+![Presentation image](https://j-img.jonportella.com/content/blog/6-things-i-learned-in-may-2019/images/6-loor-nicolas.jpg)
 
 ## 1. How to properly update your Node.js modules to the latest versions
 

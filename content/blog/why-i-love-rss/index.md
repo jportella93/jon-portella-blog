@@ -1,8 +1,8 @@
 ---
 title: Why I love RSS
 spoiler: Email was the problem
-date: '2025-12-11T00:12:36.326Z'
-hasNewsletterBeenSent: true
+date: "2025-12-11T00:12:36.326Z"
+hasNewsletterBeenSent: false
 ---
 
 I used to subscribe to a bunch of blogs and Substacks — mostly engineering-focused newsletters. But I never read them.

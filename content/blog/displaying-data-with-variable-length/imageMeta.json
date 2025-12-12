@@ -1,0 +1,17 @@
+{
+  "https://j-img.jonportella.com/content/blog/displaying-data-with-variable-length/images/road-loor-nicolas.jpg": {
+    "src": "https://j-img.jonportella.com/content/blog/displaying-data-with-variable-length/images/road-loor-nicolas.jpg",
+    "width": 1080,
+    "height": 1303
+  },
+  "https://j-img.jonportella.com/content/blog/displaying-data-with-variable-length/images/example1.png": {
+    "src": "https://j-img.jonportella.com/content/blog/displaying-data-with-variable-length/images/example1.png",
+    "width": 455,
+    "height": 257
+  },
+  "https://j-img.jonportella.com/content/blog/displaying-data-with-variable-length/images/example2.png": {
+    "src": "https://j-img.jonportella.com/content/blog/displaying-data-with-variable-length/images/example2.png",
+    "width": 468,
+    "height": 297
+  }
+}

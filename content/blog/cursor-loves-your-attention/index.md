@@ -1,7 +1,7 @@
 ---
 title: Cursor loves your attention
 spoiler: (Plays agent finished sound)
-date: '2025-11-14T23:59:47.458Z'
+date: "2025-11-14T23:59:47.458Z"
 hasNewsletterBeenSent: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: A human wrote this
 spoiler: And it shows
-date: '2025-11-14T23:48:08.908Z'
+date: "2025-11-14T23:48:08.908Z"
 hasNewsletterBeenSent: true
 ---
 

@@ -3,11 +3,11 @@ title: 9 Things I Learned in April 2019
 spoiler: >-
   This time tips and tricks on CSS Modules, a lot of BASH and GIT stuff, macOS
   apps, using searchable components and fighting Chrome's autocomplete styling.
-date: '2019-04-30T19:38:03.284Z'
+date: "2019-04-30T19:38:03.284Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/9-loor-nicolas.jpg)
+![Presentation image](https://j-img.jonportella.com/content/blog/9-things-i-learned-in-april-2019/images/9-loor-nicolas.jpg)
 
 ## 1. How to use CSS Modules in create-react-app.
 

@@ -1,11 +1,13 @@
 ---
-title: 'How to Land a Job as a Software Engineer: A One-Minute Guide'
+title: "How to Land a Job as a Software Engineer: A One-Minute Guide"
 spoiler: >-
   Landing a job as a software engineer requires more than just technical skills.
   In this one-minute tutorial, I’ll outline the key steps to…
-date: '2023-07-20T01:49:35.194Z'
+date: "2023-07-20T01:49:35.194Z"
 hasNewsletterBeenSent: true
 ---
+
+![Presentation image](https://j-img.jonportella.com/assets/1_H0g4fFQxRs_v6HgcCSW6PQ.webp)
 
 # How to Land a Job as a Software Engineer: A One-Minute Guide
 

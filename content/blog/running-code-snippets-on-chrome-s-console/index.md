@@ -3,11 +3,11 @@ title: Running Code Snippets on Chrome’s Console
 spoiler: >-
   A quick guide for web developers on this great time-saver when executing
   JavaScript on the go.
-date: '2021-03-02T13:47:41.548Z'
+date: "2021-03-02T13:47:41.548Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/running-code-snippets-on-chrome-s-console/images/0.png)
 
 #### THE PROBLEM
 
@@ -57,25 +57,25 @@ Fortunately, Chrome’s DevTools provide functionality for this: [snippets](http
 
 1. Open [Chrome’s DevTools](https://developers.google.com/web/tools/chrome-devtools/open).
 
-![Presentation image](./images/1.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/running-code-snippets-on-chrome-s-console/images/1.png)
 
 2. Press ctrl/cmd + shift + p to show [Chrome’s ](https://developers.google.com/web/tools/chrome-devtools/command-menu)[DevTools](https://developers.google.com/web/tools/chrome-devtools/open)[ command menu](https://developers.google.com/web/tools/chrome-devtools/command-menu):
 
-![Presentation image](./images/2.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/running-code-snippets-on-chrome-s-console/images/2.png)
 
 3. Type “show snippets” and select that option
 
-![Presentation image](./images/3.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/running-code-snippets-on-chrome-s-console/images/3.png)
 
 4. This will reveal the Snippets tab under the sources panel.
 
 Tap on `+ New snippet`
 
-![Presentation image](./images/4.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/running-code-snippets-on-chrome-s-console/images/4.png)
 
 5. Name your snippet and input its content on the right-hand panel.
 
-![Presentation image](./images/5.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/running-code-snippets-on-chrome-s-console/images/5.png)
 
 Now that your snippet is saved, you can press **ctrl/cmd + enter to run iton the page**!
 

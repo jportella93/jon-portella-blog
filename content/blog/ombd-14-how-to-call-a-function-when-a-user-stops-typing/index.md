@@ -1,13 +1,13 @@
 ---
 title: How To Call a Function When a User Stops Typing
 spoiler: We’ll learn how to implement a browser auto-saving draft system in JavaScript
-date: '2021-04-21T13:12:45.974Z'
+date: "2021-04-21T13:12:45.974Z"
 hasNewsletterBeenSent: true
 ---
 
 #### We’ll learn how to implement a browser auto-saving draft system in JavaScript
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1_2yThvMvIebUig8umKb8DKQ.webp)
 
 #### THE PROBLEM
 
@@ -16,12 +16,6 @@ We are implementing a text editor with a Google-Docs-like draft system, where co
 #### A SOLUTION
 
 We are going to use the `keyup` event and `window.setTimeout` .
-
-The key to this snippet is that the `timerId` has to be set declared in the scope of the `keyup` callback, in order to be reassigned to the new timeout id every time the `keyup` callback is fired again.
-
-Here’s a demo on CodePen:
-
-Call function when the user stops typing.
 
 ```javascript
 // Declare a new variable that will get reassigned later with the timeout id
@@ -41,3 +35,7 @@ function renderCurrentTime() {
   document.querySelector("time").textContent = new Date().toLocaleString();
 }
 ```
+
+The key to this snippet is that the `timerId` has to be set declared in the scope of the `keyup` callback, in order to be reassigned to the new timeout id every time the `keyup` callback is fired again.
+
+[Here’s a demo on CodePen](https://codepen.io/jportella93/pen/RwKGaEE)

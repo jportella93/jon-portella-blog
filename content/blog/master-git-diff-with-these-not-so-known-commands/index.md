@@ -1,13 +1,13 @@
 ---
 title: Master Git Diff With These Not-So-Known Commands
 spoiler: Save time while reviewing your own pull requests
-date: '2021-03-24T13:59:13.304Z'
+date: "2021-03-24T13:59:13.304Z"
 hasNewsletterBeenSent: true
 ---
 
 #### Spot errors before pushing to save time while reviewing your own pull requests
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*V9ndOxCf0ALnBYgmxVCkWw.jpg)
 
 #### THE PROBLEM
 
@@ -44,14 +44,17 @@ git diff HEAD
 1. Show changes **since a specific commit**:
 
 ```shell
-git log --oneline# 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit
+git log --oneline
+# 4833545 cleanup
+# c3a1ee6 add navbar
+# ca2f968 initial commit
 ```
 
 ```shell
 git diff ca2f968
 ```
 
-2. Show changes** since the last n commits**, e.g. 2:
+2. Show changes **since the last n commits**, e.g. 2:
 
 ```shell
 git diff HEAD~2
@@ -68,7 +71,10 @@ git diff script.js
 2. Show changes on a **single file since a specific commit**:
 
 ```shell
-git log --oneline# 4833545 cleanup# c3a1ee6 add navbar# ca2f968 initial commit
+git log --oneline
+# 4833545 cleanup
+# c3a1ee6 add navbar
+# ca2f968 initial commit
 ```
 
 ```javascript

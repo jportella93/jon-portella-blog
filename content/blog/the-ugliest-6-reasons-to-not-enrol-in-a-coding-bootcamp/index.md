@@ -3,7 +3,7 @@ title: The Ugliest 6 Reasons To Not Enrol In A Coding Bootcamp.
 spoiler: >-
   There are some ugly parts that people don’t talk about. Before deciding to
   enrol, mind all the possible outcomes.
-date: '2020-10-02T10:03:34.981Z'
+date: "2020-10-02T10:03:34.981Z"
 hasNewsletterBeenSent: true
 ---
 
@@ -11,7 +11,7 @@ hasNewsletterBeenSent: true
 
 #### Here’s my experience as a top European coding boot camp graduate
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/the-ugliest-6-reasons-to-not-enrol-in-a-coding-bootcamp/images/0.png)
 
 There are some ugly partsof coding boot camps that people don’t talk about.
 
@@ -84,5 +84,3 @@ Besides, graduating from the boot camp is only the first step, afterwards, you�
 Before deciding to enroll in a software engineering boot camp, mind all the possible outcomes.
 
 **If you put effort and interest, it’s absolutely doable**. In my experience, one of the best decisions I made. However, every person is different.
-
----

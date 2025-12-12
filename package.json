@@ -8,9 +8,16 @@
     "build": "tsx scripts/generate-rss.ts && next build",
     "start": "next start",
     "create-post": "node scripts/create-blog-post.mjs",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "send-newsletter": "npx tsx scripts/send-newsletter-from-posts.ts",
+    "send-newsletter-test": "npm run send-newsletter -- --dry-run",
+    "gen:image-meta": "tsx scripts/generate-image-meta.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.948.0",
+    "dotenv": "^17.2.3",
     "feed": "^5.1.0",
     "gray-matter": "^4.0.3",
     "kbar": "^0.1.0-beta.48",
@@ -24,9 +31,7 @@
     "remark-html": "^16.0.1",
     "remark-rehype": "^11.1.2",
     "typography": "^0.16.24",
-    "typography-theme-sutro": "^0.16.19",
-    "vis-data": "^8.0.3",
-    "vis-timeline": "^8.4.0"
+    "typography-theme-sutro": "^0.16.19"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",

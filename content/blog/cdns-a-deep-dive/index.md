@@ -3,7 +3,7 @@ title: CDNs — A Deep Dive
 spoiler: >-
   You’ve used them before but you’re not completely sure what they are, here are
   some answers.
-date: '2021-04-21T23:45:16.803Z'
+date: "2021-04-21T23:45:16.803Z"
 hasNewsletterBeenSent: true
 ---
 
@@ -11,13 +11,13 @@ hasNewsletterBeenSent: true
 
 #### You’ve used them before but you’re not completely sure what they are, here are some answers.
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/0_a6-tH4GCnJQ3SlV0.webp)
 
 Single server versus Content Delivery Network (CDN) by [Kanoha](https://en.wikipedia.org/wiki/File:NCDN_-_CDN.png) on Wikimedia Commons
 
 ### What is a CDN?
 
-A **Content Distribution **(or Delivery) **Network **(**CDN**) is a group of servers distributed geographically with the purpose of providing fast delivery of Internet content.
+A **Content Distribution** (or Delivery) **Network** (**CDN**) is a group of servers distributed geographically with the purpose of providing fast delivery of Internet content.
 
 The CDN's servers act as reverse proxies for your origin servers, where the content is hosted.
 
@@ -29,7 +29,7 @@ Servers in a CDN can help provide a better user experience by caching content cl
 
 This reduces the **Round Trip Time (RTT)** which is the number of milliseconds (ms) it takes for a browser to send a request and receive a response back from a server.
 
-![Presentation image](./images/1.png)
+![Presentation image](https://j-img.jonportella.com/assets/0_SFYbhIQXyKNYJDSx.webp)
 
 Without CDN vs with CDN by [Imperva](https://www.imperva.com/learn/performance/what-is-cdn-how-it-works/)
 
@@ -53,7 +53,7 @@ The asset remains cached on the PoP’s cache server until the **time-to-live (T
 
 ### Pros/cons of using a CDN?
 
-The most obvious benefit is the **better UX **caused by the **faster RTT **that comes with using cached content in proximity to the user.
+The most obvious benefit is the **better UX** caused by the **faster RTT** that comes with using cached content in proximity to the user.
 
 Beyond that, using a CDN can result in **increased uptime** on a website. Imagine a traffic overload or a hardware failure that incapacitates your origin server. Having cached content on the distributed CDN’s servers can prevent interruptions on the service for end-users. Moreover, since the content is redundant in the CDN’s servers, a failure in one PoP can be saved by the content on another PoP.
 
@@ -67,8 +67,8 @@ At the time of writing, there are 6 major types of CDN:
 
 - **Free** CDNs, whose task is to serve open source packages. E.g. jsDelivr.
 - **Commercial** CDNs, provide their services to the public at a cost. E.g. Cloudflare.
-- **In-House **CDNs, launched by companies whose business model makes commercial CDN options not worth their costs, so they roll out their own private CDN. E.g. Netflix.
-- **Telco **CDNs, launched by Telecommunications Service Providers (TSPs) in order to serve their own streaming content without leasing commercial CDNs. They’re similar to In-Hose CDNs. E.g. Verizon.
+- **In-House** CDNs, launched by companies whose business model makes commercial CDN options not worth their costs, so they roll out their own private CDN. E.g. Netflix.
+- **Telco** CDNs, launched by Telecommunications Service Providers (TSPs) in order to serve their own streaming content without leasing commercial CDNs. They’re similar to In-Hose CDNs. E.g. Verizon.
 - **Peer to Peer** (P2P) CDNs, used to share assets between individuals who are equally privileged in the application, or peers. E.g. BitTorrent.
 - **Multi** CDNs, leverage the power of several other CDNs. E.g. MetaCDN.
 

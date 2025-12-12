@@ -1,11 +1,11 @@
 ---
 title: How To Use a VPN to Change Your Public IP Address From the Command Line
 spoiler: "A tutorial on setting a VPN and using it from the CLI to hide our IP and\_location"
-date: '2021-03-08T14:03:39.417Z'
+date: "2021-03-08T14:03:39.417Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/how-to-use-a-vpn-to-change-your-public-ip-address-from-the-command-line/images/0.png)
 
 ---
 
@@ -27,7 +27,7 @@ With a [**V**irtual **P**rivate **N**etwork (VPN)](https://en.wikipedia.org/wiki
 
 There are several VPN providers out there, it’s a growing market. I’m going to explain how to use the one that has been more useful for me: Windscribe.
 
-1. Go to [Windscribe](https://windscribe.com/) and create a free account. If you want, you can use my [referral link](https://windscribe.com/yo/kocmap80) so we both get 1GB/month for free.
+1. Go to [Windscribe](https://windscribe.com/) and create an account
 2. To install the CLI in MacOS you can use [homebrew](https://formulae.brew.sh/cask/windscribe) and skip to step #5. To do it in Ubuntu add the Windscribe signing key to apt:
 
 ```shell

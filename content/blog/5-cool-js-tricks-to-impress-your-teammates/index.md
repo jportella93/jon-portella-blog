@@ -1,11 +1,11 @@
 ---
 title: 5 cool JS tricks to impress your teammates
-spoiler: 'Some web-dev wisdom, not just limited to JS!'
-date: '2020-09-25T22:52:57.672Z'
+spoiler: "Some web-dev wisdom, not just limited to JS!"
+date: "2020-09-25T22:52:57.672Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/5-cool-js-tricks-to-impress-your-teammates/images/0.png)
 
 ### 1. Update your NPM modules with one command
 

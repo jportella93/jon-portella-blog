@@ -3,7 +3,7 @@ title: Trying To Write Every Day? Here’s How To Stick to It
 spoiler: >-
   Many people struggle to build a writing habit. I did too, but I solved it with
   this simple mantra
-date: '2021-04-21T13:06:03.465Z'
+date: "2021-04-21T13:06:03.465Z"
 hasNewsletterBeenSent: true
 ---
 
@@ -11,7 +11,7 @@ hasNewsletterBeenSent: true
 
 #### Many people struggle to build a writing habit. I did too, but I solved it with this simple mantra
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1_ZI8EiwRcA0Ax5cXSuhARAg.webp)
 
 In my experience, that’s easy to implement if you follow some simple steps. Keep on reading to know how to exactly how.
 
@@ -79,5 +79,3 @@ So here’s my trick for being able to write every day:
 5. Hit publish. Share your article.
 6. Continue with your day, write any idea for a future article in the topics list.
 7. Repeat from step #2.
-
----

@@ -1,11 +1,11 @@
 ---
 title: The Right Way To Log Objects in Node.js
-spoiler: 'And a few other methods that you can also use, but beware of the caveats!'
-date: '2021-03-01T13:47:00.110Z'
+spoiler: "And a few other methods that you can also use, but beware of the caveats!"
+date: "2021-03-01T13:47:00.110Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/the-right-way-to-log-objects-in-node-js/images/0.png)
 
 ---
 
@@ -43,7 +43,7 @@ const person = {
 
 The common beginner mistake is to just put it through the most basic logging tool that the language provides: `console.log`. However, we have limited depth logging, making`friend` on the third level just appear as `[Object]`:
 
-![Presentation image](./images/1.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/the-right-way-to-log-objects-in-node-js/images/1.png)
 
 Console.log: Hidden third level as `friend: [Object].`
 
@@ -62,7 +62,7 @@ But this approach carries some problems:
 1. Functions will disappear from the output.
 2. You won’t get syntax highlighting, as you’re basically logging a formatted string.
 
-![Presentation image](./images/2.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/the-right-way-to-log-objects-in-node-js/images/2.png)
 
 JSON.stringify: no colors and… where’s is `sayHi()`??
 
@@ -76,4 +76,4 @@ console.dir(person, { depth: null });
 
 That will show all nested objects, including functions, with syntax highlighting.
 
-![Presentation image](./images/3.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/the-right-way-to-log-objects-in-node-js/images/3.png)

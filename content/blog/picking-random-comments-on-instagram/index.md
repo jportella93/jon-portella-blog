@@ -1,11 +1,11 @@
 ---
 title: Picking Random Comments On Instagram
 spoiler: A web app to make Instagram contests suck less.
-date: '2019-01-15T15:12:03.284Z'
+date: "2019-01-15T15:12:03.284Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/i-loor-nicolas.jpg)
+![Presentation image](https://j-img.jonportella.com/content/blog/picking-random-comments-on-instagram/images/i-loor-nicolas.jpg)
 
 So this friend of mine, who is a personal trainer, has a bussiness Instagram account. He did a contest where any follower could comment a picture of his to have a chance to win a pack of training equipment.
 

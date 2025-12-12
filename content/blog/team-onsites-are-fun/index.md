@@ -1,7 +1,7 @@
 ---
 title: Team onsites are fun
 spoiler: Generally on favour of them
-date: '2025-11-14T23:53:45.324Z'
+date: "2025-11-14T23:53:45.324Z"
 hasNewsletterBeenSent: true
 ---
 

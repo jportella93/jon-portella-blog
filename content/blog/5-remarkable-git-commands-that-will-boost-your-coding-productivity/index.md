@@ -3,13 +3,13 @@ title: 5 Remarkable Git Commands That Will Boost Your Coding Productivity
 spoiler: >-
   These are custom made, they don’t appear in the Git docs! Saved me countless
   headaches in the last two years…
-date: '2020-09-29T08:24:58.322Z'
+date: "2020-09-29T08:24:58.322Z"
 hasNewsletterBeenSent: true
 ---
 
 These are custom made, they don’t appear in the Git docs! Saved me countless headaches in the last two years…
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/5-remarkable-git-commands-that-will-boost-your-coding-productivity/images/0.png)
 
 ### 1. Git Commit Work In Progess — gwip
 

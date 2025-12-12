@@ -1,13 +1,13 @@
 ---
 title: Build a 3D Bank Card with Vanilla-tilt.js
-spoiler: 'Learn how to build a 3D bank card, in one minute.'
-date: '2021-03-12T13:55:24.717Z'
+spoiler: "Learn how to build a 3D bank card, in one minute."
+date: "2021-03-12T13:55:24.717Z"
 hasNewsletterBeenSent: true
 ---
 
 #### Make your cards stand-out with this quick JavaScript tutorial
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*exKEw2TkvaV2RA4lmC43EA.png)
 
 [What we are going to build](https://codepen.io/jportella93/pen/eYBxdzv)
 
@@ -15,7 +15,7 @@ hasNewsletterBeenSent: true
 
 The payment form on our website looks a little bit dull. Customers get bored and don’t input their card details. How can we make it more engaging?
 
-Our boring static card.
+[See our boring static card.](https://codepen.io/jportella93/pen/oNYmYvR)
 
 ---
 
@@ -46,6 +46,4 @@ VanillaTilt.init(card, { max: 10, speed: 1000, perspective: 700 });
 
 And that’s really it! Here is our final result:
 
-Our cool cat 3D moving card! Let’s spend all our $$!
-
----
+[Our cool cat 3D moving card! Let’s spend all our $$!](https://codepen.io/jportella93/pen/eYBxdzv)

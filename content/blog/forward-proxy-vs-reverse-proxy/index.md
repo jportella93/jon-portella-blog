@@ -3,7 +3,7 @@ title: Forward Proxy vs. Reverse Proxy
 spoiler: >-
   Understand the difference between forward proxies and reverse proxies, and
   when to use each one.
-date: '2021-03-17T13:47:39.957Z'
+date: "2021-03-17T13:47:39.957Z"
 hasNewsletterBeenSent: true
 ---
 
@@ -11,7 +11,7 @@ hasNewsletterBeenSent: true
 
 #### Despite having similar names, they serve different purposes. Here’s a quick guide.
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*Xu5MchM3qhz8TDoHLMpNDw.jpg)
 
 ---
 
@@ -21,7 +21,7 @@ I came across [this really well-explained article from Cloudflare](https://www.c
 
 A server that sits in front of the client and acts as a middleman. It intercepts the client requests and **forwards** them — hence, the name — on their behalf to another server somewhere on the Internet.
 
-![Presentation image](./images/1.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*5eCo-BFLgjVIgyVnelbOSQ.png)
 
 Forward Proxy Flow, image by [Cloudflare](https://www.cloudflare.com/).
 
@@ -37,7 +37,7 @@ If you want to put it into practice, I wrote a story about the subject, covering
 
 Is a server that sits in front of one or more web servers and acts as a gatekeeper for incoming requests.
 
-![Presentation image](./images/2.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*cJ9RIrycGdcJP9vrF8Iz7g.png)
 
 Reverse Proxy Flow, image by [Cloudflare](https://www.cloudflare.com/).
 
@@ -48,5 +48,3 @@ Some use cases of a Reverse Proxy:
 - **Content Caching**. By distributing proxies in several parts of the world, we can cache content to achieve faster responses. The first request from a different country will be forwarded to the actual server, but subsequent requests from that country will be quickly answered with the cached content on the local reverse proxy.
 - **Protection from Targeted Attacks**. By using a Reverse Proxy, the IP of our final server is never revealed, making it harder for attackers to target them with attacks such as DDoS attacks.
 - **Efficient encryption**. Instead of handling computationally expensive encryptions and decryptions from our server, we can delegate that task to the reverse proxy.
-
----

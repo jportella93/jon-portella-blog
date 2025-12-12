@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+
+Assume dev server is running.
+
+Don't try to build, as it will fail due to sandboxing. Instead run npm run type-check

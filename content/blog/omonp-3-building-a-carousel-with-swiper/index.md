@@ -3,15 +3,15 @@ title: Building a carousel with Swiper
 spoiler: >-
   Let’s build a touch-triggered image slider with lazy loading, navigation, and
   pagination, in one minute.
-date: '2021-04-06T01:28:57.384Z'
+date: "2021-04-06T01:28:57.384Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/0*2I-BjsDuA62R4GQT.jpg)
 
 #### Let’s build a touch-triggered image slider with lazy loading, navigation, and pagination, in one minute.
 
-![Presentation image](./images/1.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*Pb_2envRqd6cvbVOov8fkw.png)
 
 [What we will build](https://codepen.io/jportella93/pen/PoWjaaG)
 
@@ -29,6 +29,11 @@ We are going to use a nice little package called [Swiper](https://www.npmjs.com/
 
 #### 1. Import Swiper’s JavaScript and CSS
 
+```html
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+```
+
 #### 2. Add the layout for Swiper, where basic elements should carry specific class names
 
 - `swiper-container` is the main slider container
@@ -42,25 +47,6 @@ Also, for lazy-loading:
 - Add a class of `swiper-lazy` to images inside `swiper-slide`
 - Add a placeholder of `swiper-lazy-preloader` to show if the image hasn’t been loaded yet
 - Image attribute `src` should be replaced by `data-src` to avoid default loading behavior
-
-#### 3. Initialize Swiper on our script file
-
-- `loop` makes the last slide go back to the first one and vice-versa
-- `lazy.loadPrevNext` pre-loads the next image to avoid showing a loading placeholder if possible
-- `pagination` and `navigation` sets the configuration for these elements
-
-#### 4. Putting it all together
-
-Here’s a quick demo on CodePen. You can check the network tab on the browser’s DevTools and you’ll see image requests being done on-demand as you swipe!
-
-Lazy-loading image swiper with navigation and pagination
-
----
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-```
 
 ```html
 <div class="swiper-container">
@@ -100,6 +86,12 @@ Lazy-loading image swiper with navigation and pagination
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 ```
 
+#### 3. Initialize Swiper on our script file
+
+- `loop` makes the last slide go back to the first one and vice-versa
+- `lazy.loadPrevNext` pre-loads the next image to avoid showing a loading placeholder if possible
+- `pagination` and `navigation` sets the configuration for these elements
+
 ```javascript
 const swiper = new Swiper(".swiper-container", {
   loop: true,
@@ -116,3 +108,9 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 ```
+
+#### 4. Putting it all together
+
+Here’s a quick demo on CodePen. You can check the network tab on the browser’s DevTools and you’ll see image requests being done on-demand as you swipe!
+
+[Lazy-loading image swiper with navigation and pagination](https://codepen.io/jportella93/pen/PoWjaaG)

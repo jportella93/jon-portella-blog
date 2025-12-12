@@ -1,11 +1,11 @@
 ---
 title: Find Out Our Public IP Address and Country From the Command Line
 spoiler: A quick explanation and a couple of handy one-liners
-date: '2021-03-04T13:53:57.939Z'
+date: "2021-03-04T13:53:57.939Z"
 hasNewsletterBeenSent: true
 ---
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/content/blog/find-out-our-public-ip-address-and-country-from-the-command-line/images/0.png)
 
 ---
 

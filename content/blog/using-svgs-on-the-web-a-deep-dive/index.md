@@ -3,7 +3,7 @@ title: Using SVGs on the Web — A Deep Dive
 spoiler: >-
   There isn’t one best way to implement SVGs on our websites, since each method
   has its pros and cons. Let’s learn their differences.
-date: '2021-04-28T15:13:21.156Z'
+date: "2021-04-28T15:13:21.156Z"
 hasNewsletterBeenSent: true
 ---
 
@@ -11,7 +11,7 @@ hasNewsletterBeenSent: true
 
 #### There isn’t one best way to implement SVGs on our websites, since each method has its pros and cons. Learning their differences is a crucial skill for a good Web Developer.
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1_G2eTZRq82FAgaGurt1Rtkw.webp)
 
 **Scalable Vector Graphics (SVG)** allow you to present pictures that are lightweight and can scale without being pixelated.
 
@@ -56,7 +56,11 @@ They can be divided into two groups by methodology:
 
 ### 1. SVG implementation methods related to pointing the browser to the URL of the SVG file.
 
-### 1.1 As an  src
+### 1.1 As an `<img>` src
+
+```html
+<img src="user.svg" alt="User" />
+```
 
 #### Features
 
@@ -75,11 +79,13 @@ They can be divided into two groups by methodology:
 
 - When interactivity is not an issue, for example, if your SVG is not animated on user input.
 
-```html
-<img src="user.svg" alt="User" />
-```
-
 ### 1.2. As a CSS background-image
+
+```css
+.user-svg {
+  background-image: url(user.svg);
+}
+```
 
 #### Features
 
@@ -99,13 +105,11 @@ They can be divided into two groups by methodology:
 - When you can't use an `img` tag.
 - When you prefer to keep the SVG URL in your CSS file rather than in your HTML file.
 
-```css
-.user-svg {
-  background-image: url(user.svg);
-}
-```
+### 1.3 As an `<object>` data
 
-### 1.3 As an  data
+```html
+<object data="user.svg" width="300" height="300"></object>
+```
 
 #### Features
 
@@ -118,27 +122,23 @@ They can be divided into two groups by methodology:
 #### Also, note
 
 - It’s somewhat interactive since it allows setting hyperlinks on parts of the SVG. However, it can’t be modified with JS or CSS.
-- Y[ou can have problems with setting a tabindex attribute](https://wet-boew.github.io/wet-boew-documentation/decision/1.html).
+- [You can have problems with setting a tabindex attribute](https://wet-boew.github.io/wet-boew-documentation/decision/1.html).
 
 #### When to use
 
 - When you need hyperlinks in parts of the SVG.
 
-```html
-<object data="user.svg" width="300" height="300"></object>
-```
-
-### 1.4 & 1.5 As an or an  src
+### 1.4 & 1.5 As an `<iframe>` or an `<embed>` src
 
 These last two methods were used in the past but nowadays their usage has decreased. They are generally not recommended for use.
 
 SVGs used as `iframe` src have raised concerns about hurting SEO. Moreover, using this method we lose the scalability property of the SVG.
 
-And SVGs used as `embed` src were primarily focused on browser plugins like Flash, which most browsers have stopped supporting.
-
 ```html
 <iframe src="user.svg"></iframe>
 ```
+
+And SVGs used as `embed` src were primarily focused on browser plugins like Flash, which most browsers have stopped supporting.
 
 ```html
 <embed src="user.svg" />
@@ -149,6 +149,19 @@ And SVGs used as `embed` src were primarily focused on browser plugins like Flas
 ### 2.1 Inline SVG in HTML
 
 Basically writing the whole SVG code into the HTML document. This is what some popular SVG libraries like d3 do.
+
+```html
+<body>
+  <svg viewBox="-42 0 512 512.002" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"
+    />
+    <path
+      d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"
+    />
+  </svg>
+</body>
+```
 
 #### Features
 
@@ -166,19 +179,6 @@ Basically writing the whole SVG code into the HTML document. This is what some p
 #### When to use
 
 When you need to animate properties on any tag inside the SVG such as color/fill, opacity, and movement.
-
-```html
-<body>
-  <svg viewBox="-42 0 512 512.002" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"
-    />
-    <path
-      d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"
-    />
-  </svg>
-</body>
-```
 
 ### 2.2 As data-uri
 

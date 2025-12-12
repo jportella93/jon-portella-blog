@@ -1,11 +1,13 @@
 ---
-title: 'A Snazzy Trick: How To Style Your console.log() Messages'
+title: "A Snazzy Trick: How To Style Your console.log() Messages"
 spoiler: >-
   A quick guide (with examples) on applying CSS to log messages in the browser’s
   console
-date: '2021-03-25T13:59:01.112Z'
+date: "2021-03-25T13:59:01.112Z"
 hasNewsletterBeenSent: true
 ---
+
+![Presentational content](https://j-img.jonportella.com/assets/1*zONROaYj-u969muwWhn19w.jpg)
 
 #### A quick guide (with examples) on applying CSS to log messages in the browser's console.
 
@@ -18,9 +20,7 @@ console.log("%cHello World!", "color: blue; font-size: 20px;");
 
 Our console messages don't grab users' attention.
 
-```javascript
-console.log("Hello World!");
-```
+![Basic console message](https://j-img.jonportella.com/assets/1*ttB5wT2hI0E7Mp0B97tHhw.png)
 
 A basic console.log message.
 
@@ -30,53 +30,25 @@ How can we make them more engaging?
 
 By including a `%c` in `console.log`'s first argument, and passing some CSS declarations as the second argument, we can style the message on the browser's console.
 
-```javascript
-console.log(
-  "%cHello World!",
-  "color: blue; font-size: 20px; font-weight: bold;"
-);
-```
+![style console message](https://j-img.jonportella.com/assets/1*JXXHnnpj2mEYgLVL2O5fCw.png)
 
 A styled console log message! 🌈
 
 #### Here are some ideas
 
-```javascript
-console.log("%cRed text!", "color: red;");
-console.log("%cBlue text!", "color: blue;");
-console.log("%cGreen text!", "color: green;");
-```
+![color console message](https://j-img.jonportella.com/assets/1*AQXEKkI8SIR931MdJxo6iQ.png)
 
 Change color in your browser's console.
 
-```javascript
-console.log(
-  "%cLarge Comic Sans!",
-  "font-family: Comic Sans MS; font-size: 30px;"
-);
-console.log("%cSmall Monospace!", "font-family: monospace; font-size: 12px;");
-```
+![font family console message](https://j-img.jonportella.com/assets/1*dzMwWlZkyBjr3yr_BdWJpg.png)
 
 Change font-family and font-size in your browser's console.
 
-```javascript
-console.log(
-  "%cRed %cBlue %cGreen",
-  "color: red; font-weight: bold;",
-  "color: blue; font-size: 20px;",
-  "color: green; text-decoration: underline;"
-);
-```
+![several styles](https://j-img.jonportella.com/assets/1*fMwfR-WG818lNokxIZK41g.png)
 
 Apply several styles to the same string.
 
-```javascript
-const style =
-  "background: #222; color: #bada55; padding: 10px; border-radius: 5px;";
-console.log("%cReusable style!", style);
-console.log("%cAnother message!", style);
-console.log("%cAnd another!", style);
-```
+![reuse styles](https://j-img.jonportella.com/assets/1*YkpD6kG1nEqHZaZfd6vGlQ.png)
 
 Reuse console.log styles.
 

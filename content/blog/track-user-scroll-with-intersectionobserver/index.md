@@ -3,13 +3,13 @@ title: Track User Scroll with IntersectionObserver
 spoiler: >-
   Learn how to leverage window.IntersectionObserver to find out how many
   visitors see your content, in one minute.
-date: '2021-03-10T13:32:36.932Z'
+date: "2021-03-10T13:32:36.932Z"
 hasNewsletterBeenSent: true
 ---
 
 #### A tutorial on firing a callback function when an element enters the viewport
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*BbDoWPZKx_NWd-cv6bRJkw.jpg)
 
 #### The problem
 
@@ -24,12 +24,6 @@ Use [window.IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/A
 1. Detect when the section enters the viewport.
 2. Fire a callback that will log that event on our analytics software e.g. [Fathom](https://usefathom.com/), [Matomo](https://matomo.org/), [Google Analytics](https://analytics.google.com/).
 3. Disconnect the observer to avoid logging the event more than once.
-
-Here’s a demo:
-
-Demonstration of window.IntersectionObserver to log user scroll to a certain section.
-
----
 
 ```javascript
 // Feature detection, avoid breaking IE11
@@ -50,3 +44,5 @@ if (IntersectionObserver) {
   });
 }
 ```
+
+[Here’s a demo of window.IntersectionObserver to log user scroll to a certain section.](https://codepen.io/jportella93/pen/YzpRBxp)

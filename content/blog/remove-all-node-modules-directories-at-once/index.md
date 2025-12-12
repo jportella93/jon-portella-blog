@@ -1,13 +1,13 @@
 ---
 title: Remove All node_modules Directories at Once
-spoiler: 'Learn how to remove all your node_modules directories, in one minute.'
-date: '2021-03-15T13:43:28.380Z'
+spoiler: "Learn how to remove all your node_modules directories, in one minute."
+date: "2021-03-15T13:43:28.380Z"
 hasNewsletterBeenSent: true
 ---
 
 #### Here’s my one-liner to delete all the JavaScript dependencies of a repo in a flash.
 
-![Presentation image](./images/0.png)
+![Presentation image](https://j-img.jonportella.com/assets/1*j-XkJcu2xfztRdqG2dxGdA.png)
 
 #### THE PROBLEM
 
@@ -26,7 +26,7 @@ We are going to use Unix's `find` to look for `node_modules` folders in our repo
 1. Go into your repositories directory:
 
 ```shell
-cd
+cd my-repos
 ```
 
 2. List the `node_modules` directories you are going to remove:
@@ -36,7 +36,9 @@ find . -type d -name node_modules
 ```
 
 ```bash
-# ./example-repo/node_modules# ./example-repo/node_modules/node-libs-browser/node_modules# ...
+# ./example-repo/node_modules
+# ./example-repo/node_modules/node-libs-browser/node_modules
+# ...
 ```
 
 3. Let’s use `xargs` to pass these paths to `rm` :
@@ -49,9 +51,7 @@ find . -type d -name node_modules | xargs rm -rf
 
 ```css
 find . -type d -name node_modules
-```
 
-```bash
 # Empty
 ```
 

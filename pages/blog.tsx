@@ -13,6 +13,7 @@ export default function BlogIndex({ posts }: BlogIndexProps) {
   return (
     <Layout>
       <SEO title="Blog" keywords={["blog", "javascript", "react"]} />
+      <h1>Jon Portella's Blog</h1>
       {posts.map((post, index) => {
         const title = post.frontmatter.title || post.slug;
         const date = post.frontmatter.date

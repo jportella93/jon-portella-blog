@@ -5,7 +5,6 @@ import {
   type TimelineProject,
   timelineDataNested,
 } from "../lib/timelineData";
-import { rhythm, scale } from "../lib/typography";
 import { getTimelineDomId } from "./specific/timeline/permalink";
 import { TimelineItemRenderer } from "./specific/timeline/TimelineItemRenderer";
 import { TimelineProjectRenderer } from "./specific/timeline/TimelineProjectRenderer";
@@ -103,11 +102,8 @@ export default function Timeline() {
   }, [combinedItems, getDisplayTitle]);
 
   return (
-    <div
-      style={{ width: "100%", marginTop: rhythm(2) }}
-      data-timeline-container
-    >
-      <h1 style={{ ...scale(1.2), marginBottom: rhythm(1.5) }}>Timeline</h1>
+    <div data-timeline-container>
+      <h1>Timeline</h1>
 
       <TimelineScrollContextBar items={scrollContextItems} />
 

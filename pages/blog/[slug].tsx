@@ -124,7 +124,7 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
   }, [postTitle, postUrl]);
 
   return (
-    <Layout width="narrow">
+    <Layout>
       <ReadingProgressBar />
       <SEO
         title={postTitle}

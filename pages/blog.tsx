@@ -11,7 +11,7 @@ interface BlogIndexProps {
 
 export default function BlogIndex({ posts }: BlogIndexProps) {
   return (
-    <Layout width="narrow">
+    <Layout>
       <SEO title="Blog" keywords={["blog", "javascript", "react"]} />
       {posts.map((post, index) => {
         const title = post.frontmatter.title || post.slug;

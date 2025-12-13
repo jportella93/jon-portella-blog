@@ -39,6 +39,7 @@ const SubscriptionNotice = () => {
   return (
     <div
       style={{
+        display: "inline-block",
         marginBottom: rhythm(2),
         padding: rhythm(1),
         border: "1px solid",

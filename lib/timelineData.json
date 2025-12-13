@@ -1,525 +1,5 @@
 [
   {
-    "id": "bachelors-audiovisual-communication-universitat-barcelona",
-    "type": "study",
-    "shortTitle": "University",
-    "title": "Bachelor's degree, Audiovisual Communication @ Universitat de Barcelona",
-    "description": "The bachelor's degree in Audiovisual Communication prepares audiovisual professionals for a variety of roles: director, scriptwriter, producer, visual and sound production and post-production designer, researcher, specialist in corporate communication and community manager. \n\nThe bachelor's degree in Audiovisual Communication offers comprehensive training in the skills needed to thrive as an audiovisual professional. Students learn to use the technical tools that are needed to create content, and acquire practice in planning and implementing innovative audiovisual projects, in various formats and supports (audiovisual, radio, sound, text and digital). The subjects of this degree promote entrepreneurship, innovation and creativity through project-based learning. The programme also encourages participation in documentary and fiction film festivals, as well as contests for new audiovisual formats, and it fosters initiatives with social impact. Likewise, it promotes the training of professionals with critical and analytical skills, capable of studying and understanding the media and audiovisual products within the social, economic, political and cultural structure of which they are part.",
-    "link": "https://web.ub.edu/en/web/estudis/w/bachelordegree-g1102",
-    "startDate": "2011-09-01",
-    "endDate": "2015-06-30",
-    "projects": [
-      {
-        "id": "javi-tximak-barber-video",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "Javi Tximak the Barber",
-        "description": "Video promotion for a local barber shop I produced.",
-        "link": "https://www.youtube.com/watch?v=o4g7cQGY6pU",
-        "endDate": "2012-06-02"
-      },
-      {
-        "id": "los-diletantes-antonia-romero-book-trailer",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "Los Diletantes de Antonia Romero",
-        "description": "Book trailer I produced. I did the sound recording and mixing, my buddy did photography and animation and his GF did the acting / voiceover.",
-        "link": "https://www.youtube.com/watch?v=aJTIPKAOH-U",
-        "endDate": "2013-04-02"
-      },
-      {
-        "id": "ub-international-womens-day-video",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "UB - Dia internacional de les Dones",
-        "description": "Video promoting the International Women's Day event at the University of Barcelona. Part of a part-time job I had during University, making videos promoting University events.",
-        "link": "https://www.youtube.com/watch?v=I_ytX1YKk3M",
-        "endDate": "2013-03-02"
-      },
-      {
-        "id": "cluster-edutech-companies-video",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "Clúster Edutech - Empresas de tecnologia educativa",
-        "description": "Video promoting a group of educational technology companies I produced. I got this gig through my university's internship, as the company was part of this cluster of companies. Was fun because I had a pretty decend budget and could actually hire a bunch of buddies to help me out.",
-        "link": "https://www.youtube.com/watch?v=T6zJyz-HraY",
-        "endDate": "2015-04-02"
-      },
-      {
-        "id": "tecnosis-videoart-piece",
-        "type": "project",
-        "category": "video",
-        "title": "Tecnosis",
-        "description": "Videoart piece for a University project. It's body horror stuff so don't watch it if you're sensitive. I did sound and lighting.",
-        "link": "https://www.youtube.com/watch?v=yJPS-5GfovQ",
-        "endDate": "2014-10-02"
-      },
-      {
-        "id": "snap-in-the-bath-concert-video-summary",
-        "type": "project",
-        "category": "video",
-        "title": "Snap in the Bath - Videoresumen",
-        "description": "Video summarizing a music concert my band at the time played with a guest band from Portugal, was a lot of fun!",
-        "link": "https://www.youtube.com/watch?v=MVjupBbDi1o",
-        "endDate": "2015-01-02"
-      },
-      {
-        "id": "mydocumenta-tutorial-video",
-        "type": "project",
-        "category": "video",
-        "title": "No más trabajos de clase aburridos! Cómo crear tu proyecto mydocumenta",
-        "description": "Video tutorial showing how to create a project with mydocumenta. Part of my University internship, I had to record some video tutorials for a webapp. Funny how I ended up building webapps later on.",
-        "link": "https://www.youtube.com/watch?v=hmNYwJbywz0",
-        "endDate": "2014-11-02"
-      },
-      {
-        "id": "university-animation-project",
-        "type": "project",
-        "category": "video",
-        "title": "Animation",
-        "description": "For a University project in the animation subject. Didn't really like animating too much.",
-        "link": "https://www.youtube.com/watch?v=ykLdat_ndhw",
-        "endDate": "2013-01-20"
-      },
-      {
-        "id": "ritmo-madre-documentary",
-        "type": "project",
-        "category": "video",
-        "title": "Ritmo Madre",
-        "description": "A short documentary for a University project in the documentary subject. I got highest grade in the class for this one.",
-        "link": "https://www.youtube.com/watch?v=rZ6s8PDI9tg",
-        "endDate": "2014-12-14"
-      },
-      {
-        "id": "el-super-show-tv-show",
-        "type": "project",
-        "category": "video",
-        "title": "El Super Show",
-        "description": "A short TV show for a University project in the TV show subject. We actually went to a real TV studio and recorded the show. I did the sound mixing and cameo.",
-        "link": "https://www.youtube.com/watch?v=zzUw3tzz-gg",
-        "endDate": "2014-06-29"
-      },
-      {
-        "id": "nunca-imagine-que-serias-tu-short-film",
-        "type": "project",
-        "category": "video",
-        "title": "Nunca imaginé que serías tu",
-        "description": "A short film for a University project in the audiovisual production subject.",
-        "link": "https://www.youtube.com/watch?v=QXOcW7k-p-M",
-        "endDate": "2014-03-12"
-      },
-      {
-        "id": "youtube-upload-tutorial-video",
-        "type": "project",
-        "category": "video",
-        "title": "Tutorial para subir videos a youtube",
-        "description": "Short comedy video about how to upload videos to YouTube. For a University project.",
-        "link": "https://www.youtube.com/watch?v=t6HVDe1e5KE",
-        "endDate": "2013-05-03"
-      },
-      {
-        "id": "can-a-book-kill-a-man-intro",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "Intro for a school research project regarding John Lennon's murder",
-        "description": "Intro to a school research project.",
-        "link": "https://www.youtube.com/watch?v=PAilNL4J97Y",
-        "endDate": "2013-04-28"
-      },
-      {
-        "id": "dextro-energy-drink-tv-spot",
-        "type": "project",
-        "category": "video",
-        "title": "Dextro, Energy Drink",
-        "description": "A short TV spot for a University project in the TV show subject. Announcing some kind of energy drink. Having fun with rotoscoping and other video editing techniques.",
-        "link": "https://www.youtube.com/watch?v=cRnu3UUBtnc",
-        "endDate": "2013-04-18"
-      },
-      {
-        "id": "ambrosio-tiene-hambre-comedy-news",
-        "type": "project",
-        "category": "video",
-        "title": "Ambrosio tiene hambre",
-        "description": "A comedy news piece for a University project in the TV news subject. Fun fact: buddy playing the jouranlist became a very successful journalist, same as buddy playing the actor became a very successful actor.",
-        "link": "https://www.youtube.com/watch?v=lL0gwV6lTko",
-        "endDate": "2013-01-28"
-      },
-      {
-        "id": "el-encantador-movie-teaser",
-        "type": "project",
-        "category": "video",
-        "title": "\"El Encantador\" Teaser",
-        "description": "A movie teaser for a University project in the audiovisual production subject.",
-        "link": "https://www.youtube.com/watch?v=JkLvf5fW8w0",
-        "endDate": "2013-01-09"
-      },
-      {
-        "id": "can-a-book-kill-a-man-street-interviews",
-        "type": "project",
-        "category": "video",
-        "title": "Can a book kill a man?",
-        "description": "Some street interviews for a school research project regarding John Lennon's murder.",
-        "link": "https://www.youtube.com/watch?v=lnhALsdwuAs",
-        "endDate": "2012-11-11"
-      },
-      {
-        "id": "video-resume-presentation",
-        "type": "project",
-        "category": "video",
-        "title": "Videocurriculum",
-        "description": "Video resume / presentation for a University project, cringe",
-        "link": "https://www.youtube.com/watch?v=YSEsPYo_eHo",
-        "endDate": "2012-10-29"
-      },
-      {
-        "id": "caracoles-con-pajarita-comedy-short-film",
-        "type": "project",
-        "category": "video",
-        "title": "78 Caracoles con Pajarita - Cortometraje de comedia",
-        "description": "A short comedy film for a University project in the audiovisual production subject. I did camera operation and audio engineering.",
-        "link": "https://www.youtube.com/watch?v=RXSGbaZgUds",
-        "endDate": "2013-06-13"
-      },
-      {
-        "id": "cadena-de-valores-cleaning-company-tv-spot",
-        "type": "project",
-        "category": "video",
-        "projectRelation": "side",
-        "title": "Cadena de Valores KH-7 ZAS!",
-        "description": "A TV spot for a cleaning company, I did boom mic operation and also cameo in the video. This was actually my first paid job as a freelancer.",
-        "link": "https://www.youtube.com/watch?v=cfDd1nk6iNY",
-        "endDate": "2012-06-29"
-      },
-      {
-        "id": "bambusound-music-documentary",
-        "type": "project",
-        "category": "video",
-        "title": "Bambusound, el documental",
-        "description": "A music documentary for University project, I conceived the idea, did sound and OST production. Also interviewed the musicians. My band at the time was actually featured in the documentary.",
-        "link": "https://www.youtube.com/watch?v=ZFNF4Xx5gF8",
-        "endDate": "2014-09-30"
-      },
-      {
-        "id": "itaca-band-ojala-music-video",
-        "type": "project",
-        "category": "video",
-        "projectRelation": "side",
-        "title": "Itaca Band - Ojalá (Videoclip Oficial)",
-        "description": "A music videoclip for a local band, I did boom mic operation (poorly)",
-        "link": "https://www.youtube.com/watch?v=IMunDXoTKdU",
-        "endDate": "2012-10-15"
-      },
-      {
-        "id": "snap-in-the-bath-get-away-music-video",
-        "type": "project",
-        "category": "video",
-        "title": "Snap in the Bath - Get Away [Official Music Video]",
-        "description": "A music videoclip my band at the time, I made the whole video, acting, recording of the song, playing guitar, and backing vocals. This was really fun!",
-        "link": "https://www.youtube.com/watch?v=3BicGzmKJHw",
-        "endDate": "2014-03-03"
-      },
-      {
-        "id": "get-away-music-video-making-of",
-        "type": "project",
-        "category": "video",
-        "title": "Get Away - Making of",
-        "description": "The making of the music videoclip for my band I did the whole video and acting.",
-        "link": "https://www.youtube.com/watch?v=xp_fQcDMkA4",
-        "endDate": "2014-03-08"
-      },
-      {
-        "id": "guerra-de-lleons-soundtrack",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "music",
-        "title": "Guerra de Lleons",
-        "description": "Songs composed and produced for my University's buddy play 'Guerra de Lleons'. First time doing some bit more serious stuff with Logic Pro.",
-        "link": "https://jonportella.bandcamp.com/album/guerra-de-lleons",
-        "bandcampAlbumId": "3951795121",
-        "endDate": "2013-04-02"
-      },
-      {
-        "id": "diario-de-un-follermo-esquiando-video",
-        "type": "project",
-        "category": "video",
-        "projectRelation": "side",
-        "title": "Diario de un Follermo esquiando",
-        "description": "Jokes video snow with a friend, more fun editing with Final Cut Pro.",
-        "link": "https://www.youtube.com/watch?v=1PICQ5suktE",
-        "endDate": "2013-02-26"
-      },
-      {
-        "id": "snap-in-the-bath-etilic-plane-demo",
-        "type": "project",
-        "category": "music",
-        "projectRelation": "side",
-        "title": "Snap In The Bath - Etilic plane (demo)",
-        "description": "First song I ever recorded for my band at the time - good times",
-        "link": "https://www.youtube.com/watch?v=l4OAnpPDak8",
-        "endDate": "2012-07-25"
-      },
-      {
-        "id": "dont-stop-your-mind-stop-motion-video",
-        "type": "project",
-        "category": "video",
-        "title": "Don't stop your mind",
-        "description": "Surrealist stop motion video for college - I did OST, some editing and cameo",
-        "link": "https://www.youtube.com/watch?v=0Mi7bG2gUVw",
-        "endDate": "2012-05-25"
-      },
-      {
-        "id": "producciones-el-sotano-mil-historias-music-video",
-        "type": "project",
-        "category": "video",
-        "title": "Producciones el sótano - Mil històries",
-        "description": "Jokes music video with my buddies from university, I did music and video editing",
-        "link": "https://www.youtube.com/watch?v=0-1M8-LFSow",
-        "endDate": "2012-03-09"
-      },
-      {
-        "id": "turismoskate-donosti-video",
-        "type": "project",
-        "category": "video",
-        "projectRelation": "side",
-        "title": "TurismoSkate en Donosti",
-        "description": "Skateboarding video with some friends in Donosti, having teenager fun times.",
-        "link": "https://www.youtube.com/watch?v=zortesCyP-4",
-        "endDate": "2012-01-26"
-      },
-      {
-        "id": "esquiada-boi-taull-diciembre-2011",
-        "type": "project",
-        "category": "video",
-        "projectRelation": "side",
-        "title": "Esquiada En Boi Tahüll Diciembre 2011",
-        "description": "Snow video 0 trying out video Final Cut Pro editing software and a GoPro 3 camera.",
-        "link": "https://www.youtube.com/watch?v=JPoL0z-vdLk",
-        "endDate": "2011-12-30"
-      },
-      {
-        "id": "snap-in-the-bath-this-is-not-a-love-song-lyric-video",
-        "type": "project",
-        "category": "music",
-        "projectRelation": "side",
-        "title": "Snap in the Bath - This is Not a Love Song (Official Lyric Video)",
-        "description": "Official lyric video for the song 'This is Not a Love Song' by my band. We recorded it in my bedroom / home studio.",
-        "link": "https://www.youtube.com/watch?v=y15Wdh15x6o",
-        "endDate": "2014-07-04"
-      },
-      {
-        "id": "snap-in-the-bath-gas-powered-lyric-video",
-        "type": "project",
-        "category": "music",
-        "projectRelation": "side",
-        "title": "Snap in the Bath - Gas Powered [Official Lyric Video]",
-        "description": "Official lyric video for the song 'Gas Powered' by my band. We recorded it in my bedroom / home studio.",
-        "image": "https://i.ytimg.com/vi/Qvwr9ec7U8c/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=Qvwr9ec7U8c",
-        "endDate": "2014-05-14"
-      },
-      {
-        "id": "cosmic-girl-guitar-bass-cover",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "\"Cosmic Girl\" (Guitar & Bass cover)",
-        "description": "A guitar and bass cover of the song Cosmic Girl by Jamiroquai.",
-        "image": "https://i.ytimg.com/vi/LqoWPcd1CDc/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=LqoWPcd1CDc",
-        "endDate": "2013-12-06"
-      },
-      {
-        "id": "profile-picture-2013",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2013.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2013-01-01"
-      },
-      {
-        "id": "profile-picture-2014",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2014.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2014-01-01"
-      },
-      {
-        "id": "profile-picture-2015",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2015.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2015-01-01"
-      },
-      {
-        "id": "still-take-you-home-arctic-monkeys-bass-cover",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "(Tabs) Still take you home - Arctic monkeys Bass cover",
-        "description": "Bass cover of the song Still take you home by Arctic Monkeys.",
-        "link": "https://www.youtube.com/watch?v=--fxGgXmoPo",
-        "endDate": "2013-01-20"
-      },
-      {
-        "id": "dont-stop-foster-the-people-guitar-bass-cover",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "Don't stop - Foster the people (Guitar and Bass cover)",
-        "description": "Guitar and Bass cover of the song Don't stop by Foster the people.",
-        "link": "https://www.youtube.com/watch?v=3sQhVsEer6E",
-        "endDate": "2012-05-09"
-      },
-      {
-        "id": "day-tripper-beatles-bass-guitar-cover",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "The Beatles - Day tripper (Bass&GuitarSolo Cover)",
-        "description": "Bass and Guitar solo cover of the song Day tripper by The Beatles.",
-        "link": "https://www.youtube.com/watch?v=eNAIh5gs-qg",
-        "endDate": "2012-04-11"
-      },
-      {
-        "id": "snap-in-the-bath-live-razzmatazz-feb-2012",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "Snap in the Bath live @Razzmatazz Feb 2012",
-        "description": "Live performance of my band at the time",
-        "link": "https://www.youtube.com/watch?v=oRpaJuYRP80",
-        "endDate": "2012-03-05"
-      },
-      {
-        "id": "reptilia-strokes-guitar-cover",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "The strokes - Reptilia guitar cover",
-        "description": "Guitar cover of the song Reptilia by The Strokes. For this one I actually climbed high on the rooftop, was scary but worth it.",
-        "link": "https://www.youtube.com/watch?v=Rrjp5N3ynRQ",
-        "endDate": "2012-01-24"
-      },
-      {
-        "id": "mardy-bum-arctic-monkeys-guitar-cover",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "Arctic Monkeys - Mardy Bum guitar cover",
-        "description": "Guitar cover of the song Mardy Bum by Arctic Monkeys. Recorded on my rooftop, more rooftop to come after this.",
-        "link": "https://www.youtube.com/watch?v=lwmWswbpfPc",
-        "endDate": "2012-01-21"
-      },
-      {
-        "id": "snap-in-the-bath-get-away-live-acoustic-bambusound",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "music performance",
-        "title": "Snap in the Bath - Get Away (live acoustic for Bambusound Documentary)",
-        "description": "Acoustic live performance with my band at the Bambusound Documentary.",
-        "link": "https://www.youtube.com/watch?v=AzMxsnScQj4",
-        "endDate": "2015-03-09"
-      },
-      {
-        "id": "snap-in-the-bath-this-is-not-a-love-song-live-acoustic-alfa-bar",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "Snap in the Bath - This is Not a Love Song (live acoustic @ Alfa Bar Barcelona)",
-        "description": "Acoustic live performance with my band at the Alfa Bar Barcelona.",
-        "link": "https://www.youtube.com/watch?v=Kwi8oUBNU_U",
-        "endDate": "2014-12-16"
-      },
-      {
-        "id": "snap-in-the-bath-live-ikea-semi-unplugged",
-        "type": "project",
-        "category": "music performance",
-        "projectRelation": "side",
-        "title": "Snap in the Bath (live @ IKEA) semi-unplugged Full Show",
-        "description": "Live performance with my band at the IKEA band contest.",
-        "link": "https://www.youtube.com/watch?v=MkNCL7XUjok",
-        "endDate": "2014-09-11"
-      },
-      {
-        "id": "sonopro-study",
-        "type": "study",
-        "title": "Sound Engineering Technician Course @ Sonopro Academy Barcelona",
-        "description": "Intensive 3-module sound engineering technician course at Sonopro Academy Barcelona that helped me professionalize my passion for music and start getting into technical aspects of music production. Module 1: Sound properties, acoustics, Pro Tools fundamentals, project setup, EQ, dynamics (compression/multicompression/limiters/de-essers), reverb, delays, modulation, distortion, phase relationships, and comprehensive microphone techniques. Module 2: Sound capture fundamentals, professional recording of voices/wind instruments/percussion/strings, advanced recording techniques, Pro Tools mastery, pitch correction, vocal/drum/acoustic/electronic instrument processing, advanced automation, ear training through technical analysis, and mixing foundations. Module 3: Advanced acoustics (3 levels), music theory for audio professionals, sound spatialization concepts, Pro Tools template systems, continued ear training, professional mixing techniques, analog/digital console operation, group/VCAs management, and sophisticated automation. State-of-the-art recording studios and hands-on training. Mentored by active industry professionals currently working in premier recording facilities and major live events.",
-        "link": "https://sonoproacademy.com/cursos/barcelona/curso-tecnico-sonido/",
-        "startDate": "2012-10-01",
-        "endDate": "2013-06-01"
-      }
-    ]
-  },
-  {
-    "id": "software-engineering-bootcamp-codeworks",
-    "type": "study",
-    "shortTitle": "Coding Bootcamp",
-    "title": "Software Engineering Immersive @ Codeworks — 12-week intensive full-time bootcamp",
-    "description": "An intensive, outcomes-driven program focused on building production-ready full-stack web applications using modern JavaScript and professional engineering workflows. Curriculum covers advanced JavaScript, data structures & algorithms, networking (HTTP/WebSockets), REST and GraphQL APIs, and software architecture, with hands-on development across Node.js, Express, Koa, React, Angular, SQL, MongoDB, Redis, and Docker. Strong emphasis on testing, security, authentication, and scalable system design. \n\n The program includes multiple real-world individual and team-based projects that replicate professional software development environments, applying Git-based collaboration, CI/CD, and deployment practices. The final phase focuses on portfolio development, system design, and technical interview preparation. Codeworks is known for its selective admissions and strong hiring outcomes, preparing graduates to perform effectively in production engineering teams.",
-    "link": "https://codeworks.me/software-engineering-bootcamp/",
-    "startDate": "2018-04-01",
-    "endDate": "2018-08-31",
-    "projects": [
-      {
-        "id": "bitcoin-collab-fullstack-web-app",
-        "type": "project",
-        "category": "software",
-        "title": "Bitcoin Collab: Fullstack Web App",
-        "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
-        "code": "https://github.com/jportella93/collab-frontend",
-        "endDate": "2018-07-01"
-      },
-      {
-        "id": "nanny-express-fullstack-web-app",
-        "type": "project",
-        "category": "software",
-        "title": "Nanny Express: Fullstack Web App",
-        "description": "Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
-        "code": "https://github.com/jportella93/Nanny-Express-client",
-        "endDate": "2018-06-01"
-      },
-      {
-        "id": "find-a-hobby-fullstack-web-app",
-        "type": "project",
-        "category": "software",
-        "title": "Find a Hobby!: Fullstack Web App",
-        "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB.",
-        "code": "https://github.com/jportella93/find-a-hobby-client",
-        "endDate": "2018-06-01"
-      },
-      {
-        "id": "flickr-gallery-web-app",
-        "type": "project",
-        "category": "software",
-        "projectRelation": "side",
-        "title": "Flickr Gallery",
-        "description": "Web app to explore the most recent images uploaded to Flickr worldwide. I built from the ground up and deployed the whole project myself. Tech stack: React, Redux, Koa, Flickr API.",
-        "code": "https://jportella93.github.io/flickr-gallery/",
-        "endDate": "2018-08-01"
-      },
-      {
-        "id": "blackjack-web-app",
-        "type": "project",
-        "category": "software",
-        "title": "Jon Portella's Blackjack: Web App",
-        "description": "As the last test in order to get admitted in Codeworks, the full stack JavaScript bootcamp I did back in 2018, I had one week to create and deliver a blackjack game. This was my first ever JavaScript + CSS + HTML project.",
-        "link": "/blog/creating-a-blackjack-game",
-        "endDate": "2018-04-01"
-      }
-    ]
-  },
-  {
     "id": "senior-software-engineer-pinterest",
     "type": "job",
     "title": "Senior Software Engineer at Pinterest",
@@ -530,87 +10,6 @@
     "endDate": null,
     "projects": [
       {
-        "id": "brand-lockup-ios",
-        "type": "project",
-        "category": "software",
-        "title": "Brand lockup (iOS)",
-        "description": "First iOS project - Brand awareness on product detail page by showing brand separated from merchant, and allowing to follow brands",
-        "endDate": "2023-03-03",
-        "image": "https://j-img.jonportella.com/assets/brand-lockup.png"
-      },
-      {
-        "id": "product-detail-page-ipad-ios",
-        "type": "project",
-        "category": "software",
-        "title": "Product detail page on iPad (iOS)",
-        "description": "Another iOS project, porting the product page to iPad specific UI",
-        "endDate": "2023-03-11",
-        "demoVideo": "https://www.youtube.com/shorts/w_H7v6kXy_4"
-      },
-      {
-        "id": "shop-by-brand-module-ui-iteration",
-        "type": "project",
-        "category": "software",
-        "title": "Shop by brand module UI iteration",
-        "description": "A visual refresh on a search module that serves as entry point to merchant-specific searches",
-        "endDate": "2023-05-26",
-        "image": "https://j-img.jonportella.com/assets/shop-by-brand-module-ui-iteration.png"
-      },
-      {
-        "id": "styles-for-you-module-ui-iteration",
-        "type": "project",
-        "category": "software",
-        "title": "Styles for you module UI iteration",
-        "description": "A visual refresh of a module that serves as entry point to style-specific searches",
-        "endDate": "2023-06-22",
-        "image": "https://j-img.jonportella.com/assets/styles-for-you-module-ui-iteration.png"
-      },
-      {
-        "id": "two-column-modules-masonry",
-        "type": "project",
-        "category": "software",
-        "title": "2-column modules in Masonry",
-        "description": "This was a historic one - Up until now, ALL elements in the quintessential Pinterest grid had spanned exactly one column. This made sense, since one column items make whitespace management easy. However, there was a design hunger for experimenting with multi-column modules. With the web platform folks, we managed to pull off the first 2-column module (shop by brand in the video). More importantly, this paved the way for a bunch of new multi-column experiences in the Pinterest grid that came later",
-        "endDate": "2023-08-15",
-        "demoVideo": "https://www.youtube.com/watch?v=48LqfM3UEAI"
-      },
-      {
-        "id": "bulk-actions-pin-builder",
-        "type": "project",
-        "category": "software",
-        "title": "Bulk actions in Pin Builder",
-        "description": "This project brought me temporarily with a different team who needed a skilled web engineer to enable functionality to create/edit/delete multiple pin drafts at the same time on the Pin Builder surface.",
-        "endDate": "2023-12-01",
-        "demoVideo": "https://www.youtube.com/watch?v=bucA2BLqojM"
-      },
-      {
-        "id": "search-shopping-filters",
-        "type": "project",
-        "category": "software",
-        "title": "Search shopping filters",
-        "description": "Added product price, brand, merchant and on sale filters for shopping searches.",
-        "endDate": "2024-05-27",
-        "demoVideo": "https://www.youtube.com/watch?v=uwy7DSqgpYk"
-      },
-      {
-        "id": "shopping-units",
-        "type": "project",
-        "category": "software",
-        "title": "Shopping Units",
-        "description": "Adding a new GPT-powered shopping module on search and related pins surfaces, entry point to a product-only feed.",
-        "endDate": "2024-10-07",
-        "image": "https://j-img.jonportella.com/assets/shopping-units.png"
-      },
-      {
-        "id": "ways-to-style-it-module-ui-iteration",
-        "type": "project",
-        "category": "software",
-        "title": "Ways to style it module UI iteration",
-        "description": "Visual refresh for a module that provides outfit completions",
-        "endDate": "2024-11-01",
-        "image": "https://j-img.jonportella.com/assets/ways-to-style-it-module-ui-iteration.jpg"
-      },
-      {
         "id": "timeline-blog-project",
         "type": "project",
         "category": "software",
@@ -619,43 +18,6 @@
         "description": "What started out as a simple resume-like page, became an exhaustive timeline of my professional life and side projects. I compiled in a JSON file all the projects I've worked on, the jobs I've had, the studies I've done, and the personal projects I've worked on. Then I created some renderers to display them in a vertical timeline format. I did some iterations using a visualization library called vis-timeline, with more interactions animations etc, but the UX was not great on mobile, so I ended up creating a custom solution with UX first principles in mind. I structured with some overarching projects (University, main job at the time, etc) and nested projects I did during those periods. I took great care on adding demos to each project and links to where they can be tested (still some pending). Also added an automatic feed from the blog posts to the timeline, so it's always up to date with my writings. Finally, I added some links to each project card, so it's easy to share a particular point in the timeline with a link.",
         "link": "https://jonportella.com/timeline",
         "endDate": "2025-12-20"
-      },
-      {
-        "id": "genai-interests-tuner",
-        "type": "project",
-        "category": "software",
-        "title": "GenAI interests tuner",
-        "description": "This was a fun one because a ton of users were asking for a way to stop getting AI images on Pinterest so once we published it there was a fantastic user and media reception.",
-        "link": "https://www.theverge.com/news/801093/pinterest-tuner-tool-ai-content-categories",
-        "endDate": "2025-08-27",
-        "image": "https://j-img.jonportella.com/assets/genai-interests-tuner.png"
-      },
-      {
-        "id": "recipe-video-module-ui-iteration",
-        "type": "project",
-        "category": "software",
-        "title": "Recipe video module UI iteration",
-        "description": "Visual refresh of a module focused on recipe videos, building on the n-columns Masonry project mentioned before.",
-        "endDate": "2025-09-01",
-        "image": "https://j-img.jonportella.com/assets/recipe-video-module-ui-iteration.png"
-      },
-      {
-        "id": "explicit-user-feedback",
-        "type": "project",
-        "category": "software",
-        "title": "Explicit user feedback",
-        "description": "Replacing the \"Hide\" option on Pin overflow menu for \"See less like this\" and adding a \"See more like this\" option, providing a mechanism for user to give explicit feedback on the content served.",
-        "endDate": "2025-10-01",
-        "image": "https://j-img.jonportella.com/assets/explicit-user-feedback.png"
-      },
-      {
-        "id": "holiday-shopping-landing-page",
-        "type": "project",
-        "category": "software",
-        "title": "Holiday shopping landing page",
-        "description": "A gift guide experience for the holiday season, with ideas for presents for each persona.",
-        "endDate": "2025-10-06",
-        "demoVideo": "https://www.youtube.com/shorts/Z_OjTbNaqj4"
       },
       {
         "id": "pinterest-predicts-2026-landing-page",
@@ -676,33 +38,77 @@
         "demoVideo": "https://www.youtube.com/watch?v=36URafFFT-A"
       },
       {
-        "id": "eloquent-js-mentoring-project",
+        "id": "holiday-shopping-landing-page",
         "type": "project",
-        "projectRelation": "side",
         "category": "software",
-        "title": "Eloquent JS Mentoring",
-        "description": "A mentoring project and website around the Eloquent JavaScript book, to be used as portfolio aimed to tech recruiters. I mentored a junior engineer friend (and he got hired!!). Built with Next.js.",
-        "link": "https://eloquent-js-theta.vercel.app/",
-        "code": "https://github.com/jon-oscar/eloquent-js",
-        "endDate": "2023-10-01"
+        "title": "Holiday shopping landing page",
+        "description": "A gift guide experience for the holiday season, with ideas for presents for each persona.",
+        "endDate": "2025-10-06",
+        "demoVideo": "https://www.youtube.com/shorts/Z_OjTbNaqj4"
       },
       {
-        "id": "profile-picture-2022",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2022.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2022-01-01"
+        "id": "explicit-user-feedback",
+        "type": "project",
+        "category": "software",
+        "title": "Explicit user feedback",
+        "description": "Replacing the \"Hide\" option on Pin overflow menu for \"See less like this\" and adding a \"See more like this\" option, providing a mechanism for user to give explicit feedback on the content served.",
+        "endDate": "2025-10-01",
+        "image": "https://j-img.jonportella.com/assets/explicit-user-feedback.png"
       },
       {
-        "id": "profile-picture-2023",
+        "id": "recipe-video-module-ui-iteration",
+        "type": "project",
+        "category": "software",
+        "title": "Recipe video module UI iteration",
+        "description": "Visual refresh of a module focused on recipe videos, building on the n-columns Masonry project mentioned before.",
+        "endDate": "2025-09-01",
+        "image": "https://j-img.jonportella.com/assets/recipe-video-module-ui-iteration.png"
+      },
+      {
+        "id": "genai-interests-tuner",
+        "type": "project",
+        "category": "software",
+        "title": "GenAI interests tuner",
+        "description": "This was a fun one because a ton of users were asking for a way to stop getting AI images on Pinterest so once we published it there was a fantastic user and media reception.",
+        "link": "https://www.theverge.com/news/801093/pinterest-tuner-tool-ai-content-categories",
+        "endDate": "2025-08-27",
+        "image": "https://j-img.jonportella.com/assets/genai-interests-tuner.png"
+      },
+      {
+        "id": "profile-picture-2025",
         "type": "profile-picture",
         "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2023.jpeg",
+        "image": "https://j-img.jonportella.com/assets/2025.jpeg",
         "link": null,
         "startDate": null,
-        "endDate": "2023-01-01"
+        "endDate": "2025-01-01"
+      },
+      {
+        "id": "ways-to-style-it-module-ui-iteration",
+        "type": "project",
+        "category": "software",
+        "title": "Ways to style it module UI iteration",
+        "description": "Visual refresh for a module that provides outfit completions",
+        "endDate": "2024-11-01",
+        "image": "https://j-img.jonportella.com/assets/ways-to-style-it-module-ui-iteration.jpg"
+      },
+      {
+        "id": "shopping-units",
+        "type": "project",
+        "category": "software",
+        "title": "Shopping Units",
+        "description": "Adding a new GPT-powered shopping module on search and related pins surfaces, entry point to a product-only feed.",
+        "endDate": "2024-10-07",
+        "image": "https://j-img.jonportella.com/assets/shopping-units.png"
+      },
+      {
+        "id": "search-shopping-filters",
+        "type": "project",
+        "category": "software",
+        "title": "Search shopping filters",
+        "description": "Added product price, brand, merchant and on sale filters for shopping searches.",
+        "endDate": "2024-05-27",
+        "demoVideo": "https://www.youtube.com/watch?v=uwy7DSqgpYk"
       },
       {
         "id": "profile-picture-2024",
@@ -714,13 +120,87 @@
         "endDate": "2024-01-01"
       },
       {
-        "id": "profile-picture-2025",
+        "id": "bulk-actions-pin-builder",
+        "type": "project",
+        "category": "software",
+        "title": "Bulk actions in Pin Builder",
+        "description": "This project brought me temporarily with a different team who needed a skilled web engineer to enable functionality to create/edit/delete multiple pin drafts at the same time on the Pin Builder surface.",
+        "endDate": "2023-12-01",
+        "demoVideo": "https://www.youtube.com/watch?v=bucA2BLqojM"
+      },
+      {
+        "id": "eloquent-js-mentoring-project",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "software",
+        "title": "Eloquent JS Mentoring",
+        "description": "A mentoring project and website around the Eloquent JavaScript book, to be used as portfolio aimed to tech recruiters. I mentored a junior engineer friend (and he got hired!!). Built with Next.js.",
+        "link": "https://eloquent-js-theta.vercel.app/",
+        "code": "https://github.com/jon-oscar/eloquent-js",
+        "endDate": "2023-10-01"
+      },
+      {
+        "id": "two-column-modules-masonry",
+        "type": "project",
+        "category": "software",
+        "title": "2-column modules in Masonry",
+        "description": "This was a historic one - Up until now, ALL elements in the quintessential Pinterest grid had spanned exactly one column. This made sense, since one column items make whitespace management easy. However, there was a design hunger for experimenting with multi-column modules. With the web platform folks, we managed to pull off the first 2-column module (shop by brand in the video). More importantly, this paved the way for a bunch of new multi-column experiences in the Pinterest grid that came later",
+        "endDate": "2023-08-15",
+        "demoVideo": "https://www.youtube.com/watch?v=48LqfM3UEAI"
+      },
+      {
+        "id": "styles-for-you-module-ui-iteration",
+        "type": "project",
+        "category": "software",
+        "title": "Styles for you module UI iteration",
+        "description": "A visual refresh of a module that serves as entry point to style-specific searches",
+        "endDate": "2023-06-22",
+        "image": "https://j-img.jonportella.com/assets/styles-for-you-module-ui-iteration.png"
+      },
+      {
+        "id": "shop-by-brand-module-ui-iteration",
+        "type": "project",
+        "category": "software",
+        "title": "Shop by brand module UI iteration",
+        "description": "A visual refresh on a search module that serves as entry point to merchant-specific searches",
+        "endDate": "2023-05-26",
+        "image": "https://j-img.jonportella.com/assets/shop-by-brand-module-ui-iteration.png"
+      },
+      {
+        "id": "product-detail-page-ipad-ios",
+        "type": "project",
+        "category": "software",
+        "title": "Product detail page on iPad (iOS)",
+        "description": "Another iOS project, porting the product page to iPad specific UI",
+        "endDate": "2023-03-11",
+        "demoVideo": "https://www.youtube.com/shorts/w_H7v6kXy_4"
+      },
+      {
+        "id": "brand-lockup-ios",
+        "type": "project",
+        "category": "software",
+        "title": "Brand lockup (iOS)",
+        "description": "First iOS project - Brand awareness on product detail page by showing brand separated from merchant, and allowing to follow brands",
+        "endDate": "2023-03-03",
+        "image": "https://j-img.jonportella.com/assets/brand-lockup.png"
+      },
+      {
+        "id": "profile-picture-2023",
         "type": "profile-picture",
         "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2025.jpeg",
+        "image": "https://j-img.jonportella.com/assets/2023.jpeg",
         "link": null,
         "startDate": null,
-        "endDate": "2025-01-01"
+        "endDate": "2023-01-01"
+      },
+      {
+        "id": "profile-picture-2022",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2022.jpeg",
+        "link": null,
+        "startDate": null,
+        "endDate": "2022-01-01"
       }
     ]
   },
@@ -735,6 +215,147 @@
     "endDate": "2021-08-31",
     "projects": [
       {
+        "id": "n1-headache-dashboard",
+        "type": "project",
+        "category": "software",
+        "title": "N1-Headache dashboard",
+        "description": "A clinical dashboard I built while working at Curelator. A feature-rich SPA built with React and alt (Flux). Features custom charts with d3 and a custom WYSIWYG text editor for clinical office notes made with Slate.",
+        "link": "https://dashboard.n1-headache.com/",
+        "demoVideo": "https://www.youtube.com/watch?v=tDGrfd00nVw",
+        "endDate": "2021-07-02"
+      },
+      {
+        "id": "oxidia-backpack-advertisement",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "OXIDIA experience",
+        "description": "Advertisement video for the OXIDIA backpack I produced.",
+        "link": "https://www.youtube.com/watch?v=2v6PIpQAT2g",
+        "endDate": "2021-01-02"
+      },
+      {
+        "id": "oxidia-mini-tutorial-video",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "OXIDIA tutorial MINi EN",
+        "description": "Tutorial video for the OXIDIA MINi backpack I produced.",
+        "link": "https://www.youtube.com/watch?v=3dPmBW85dbQ",
+        "endDate": "2021-01-02"
+      },
+      {
+        "id": "oxidia-maxi-tutorial-video",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "OXIDIA tutorial MAXi EN",
+        "description": "Tutorial video for the OXIDIA MAXi backpack I produced.",
+        "link": "https://www.youtube.com/watch?v=V5iJLUPkDyU",
+        "endDate": "2021-01-02"
+      },
+      {
+        "id": "cs50-introduction-computer-science-harvard",
+        "type": "study",
+        "title": "CS50: Introduction to Computer Science — @ Harvard / edX",
+        "description": "An intensive, self-paced foundational course in computer science and programming fundamentals, designed for both beginners and those with prior experience. CS50 teaches core concepts including computational thinking, algorithms, data structures, abstraction, resource management, and software engineering principles.\n\nStudents gain practical programming experience in C, Python, SQL, JavaScript, HTML and CSS, progressing from low-level understanding of memory and machine-level concepts (via C) to higher-level web and application development skills (via Python, SQL, JavaScript, HTML/CSS). The curriculum includes weekly problem sets drawing from real-world domains — such as cryptography, finance, forensics, biology or gaming — culminating in a final project that demonstrates the ability to design and implement a complete software application.\n\nCS50 emphasizes strong coding style, correctness, and algorithmic efficiency, helping learners develop not just coding fluency but deeper understanding of how computers work under the hood. The course also connects students to a large global learning community, offering exposure to diverse problem-solving approaches and collaboration opportunities.",
+        "link": "https://cs50.harvard.edu",
+        "startDate": "2021-01-01",
+        "endDate": "2021-03-31",
+        "projects": []
+      },
+      {
+        "id": "profile-picture-2021",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2021.jpeg",
+        "link": null,
+        "startDate": null,
+        "endDate": "2021-01-01"
+      },
+      {
+        "id": "paperymp3-song",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "music",
+        "title": "Papery.mp3",
+        "description": "A song I made - Inspired by the Money Heist Netflix show",
+        "link": "https://jonportella.bandcamp.com/album/papery",
+        "bandcampAlbumId": "1960663173",
+        "endDate": "2020-08-01"
+      },
+      {
+        "id": "make-me-drink-real-time-online-game",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "software",
+        "title": "Make Me Drink - Real Time Online Game",
+        "description": "Weekend project - My version of the game couple battles, using websockets for real time online multiplayer. Front-end built with Gatsby and web sockets for real-time gameplay.",
+        "code": "https://github.com/jportella93/make-me-drink-client",
+        "endDate": "2020-05-01"
+      },
+      {
+        "id": "vizviz-trippy-visualizations-p5js",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "software",
+        "title": "VizViz: Trippy Visualisations with p5.js",
+        "description": "Website to make trippy visualisations using p5.js. Built over a weekend after being inspired by Processing visualisations. Features local storage for saving state, draggable canvas and controls. Initially built with d3.js but switched to p5.js for better performance. Deployed on Netlify.",
+        "code": "https://github.com/jportella93/vizviz",
+        "link": "https://vizviz.netlify.app",
+        "demoVideo": "https://www.youtube.com/watch?v=tFouYFk-Ri8",
+        "endDate": "2020-05-01"
+      },
+      {
+        "id": "profile-picture-2020",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2020.jpeg",
+        "link": null,
+        "startDate": null,
+        "endDate": "2020-01-01"
+      },
+      {
+        "id": "instructor-codeworks",
+        "type": "job",
+        "title": "Instructor at Codeworks",
+        "description": "Codeworks is an immersive coding bootcamp with campuses in Austin, Barcelona, New York, Berlin, London, and Toronto. Its Software Engineering Immersive program covers advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking, end-to-end testing, security, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, open source contributions, back-end frameworks (Node, Express, Koa, GraphQL), databases (SQL, MongoDB, Redis), and front-end frameworks (Angular, React). Responsibilities: Give a lecture once a week about the current course subject, train new Teaching Assistants, answer help requests from all students, host Q&A sessions and exercise reviews, support senior students throughout their coding projects (brainstorming, code reviews, demos), prepare senior students for their job search.",
+        "link": "https://www.codeworks.me",
+        "startDate": "2019-10-01",
+        "endDate": "2020-11-30",
+        "projects": []
+      },
+      {
+        "id": "streetymp3-song",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "music",
+        "title": "Streety.mp3",
+        "description": "A song I made - playing a sound similar to the Game Boy Advanced's startup sound",
+        "link": "https://www.youtube.com/watch?v=gtrizPMyBGE",
+        "endDate": "2019-09-24"
+      },
+      {
+        "id": "thingymp3-song",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "music",
+        "title": "Thingy.mp3",
+        "description": "A song I made - It had been a while without producing music and set myself to complete this one in one evening",
+        "link": "https://www.youtube.com/watch?v=-JnVWZCRfJk",
+        "endDate": "2019-08-21"
+      },
+      {
+        "id": "n1-headache-website",
+        "type": "project",
+        "category": "software",
+        "title": "N1-Headache website",
+        "description": "A landing page website I built while working at Curelator. Custom wordpress theme with some nice animations and creative styles.",
+        "link": "https://n1-headache.com/",
+        "demoVideo": "https://www.youtube.com/watch?v=osbTpRDBp9g",
+        "endDate": "2019-07-02"
+      },
+      {
         "id": "instagram-random-comment-picker",
         "type": "project",
         "projectRelation": "side",
@@ -744,6 +365,15 @@
         "link": "https://jonportella.com/free-instagram-random-comment-picker",
         "demoVideo": "https://www.youtube.com/watch?v=0x2O-_BgDe8",
         "code": "https://github.com/jportella93/jon-portella-blog/blob/f63a506ffad76809525e3af63c487880db9958eb/components/specific/InstagramCommentPickerApp.tsx",
+        "endDate": "2019-01-01"
+      },
+      {
+        "id": "profile-picture-2019",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2019.jpeg",
+        "link": null,
+        "startDate": null,
         "endDate": "2019-01-01"
       },
       {
@@ -777,156 +407,64 @@
         "description": "There are some cool wallpapers on Reddit. At some point, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion. This picking and downloading process was kind of tedious, so I've built a small Node.js program to automate it.",
         "link": "/blog/reddit-image-downloader-node",
         "endDate": "2018-11-01"
-      },
+      }
+    ]
+  },
+  {
+    "id": "software-engineering-bootcamp-codeworks",
+    "type": "study",
+    "shortTitle": "Coding Bootcamp",
+    "title": "Software Engineering Immersive @ Codeworks — 12-week intensive full-time bootcamp",
+    "description": "An intensive, outcomes-driven program focused on building production-ready full-stack web applications using modern JavaScript and professional engineering workflows. Curriculum covers advanced JavaScript, data structures & algorithms, networking (HTTP/WebSockets), REST and GraphQL APIs, and software architecture, with hands-on development across Node.js, Express, Koa, React, Angular, SQL, MongoDB, Redis, and Docker. Strong emphasis on testing, security, authentication, and scalable system design. \n\n The program includes multiple real-world individual and team-based projects that replicate professional software development environments, applying Git-based collaboration, CI/CD, and deployment practices. The final phase focuses on portfolio development, system design, and technical interview preparation. Codeworks is known for its selective admissions and strong hiring outcomes, preparing graduates to perform effectively in production engineering teams.",
+    "link": "https://codeworks.me/software-engineering-bootcamp/",
+    "startDate": "2018-04-01",
+    "endDate": "2018-08-31",
+    "projects": [
       {
-        "id": "oxidia-backpack-advertisement",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "OXIDIA experience",
-        "description": "Advertisement video for the OXIDIA backpack I produced.",
-        "link": "https://www.youtube.com/watch?v=2v6PIpQAT2g",
-        "endDate": "2021-01-02"
-      },
-      {
-        "id": "oxidia-mini-tutorial-video",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "OXIDIA tutorial MINi EN",
-        "description": "Tutorial video for the OXIDIA MINi backpack I produced.",
-        "link": "https://www.youtube.com/watch?v=3dPmBW85dbQ",
-        "endDate": "2021-01-02"
-      },
-      {
-        "id": "oxidia-maxi-tutorial-video",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "video",
-        "title": "OXIDIA tutorial MAXi EN",
-        "description": "Tutorial video for the OXIDIA MAXi backpack I produced.",
-        "link": "https://www.youtube.com/watch?v=V5iJLUPkDyU",
-        "endDate": "2021-01-02"
-      },
-      {
-        "id": "n1-headache-dashboard",
+        "id": "flickr-gallery-web-app",
         "type": "project",
         "category": "software",
-        "title": "N1-Headache dashboard",
-        "description": "A clinical dashboard I built while working at Curelator. A feature-rich SPA built with React and alt (Flux). Features custom charts with d3 and a custom WYSIWYG text editor for clinical office notes made with Slate.",
-        "link": "https://dashboard.n1-headache.com/",
-        "demoVideo": "https://www.youtube.com/watch?v=tDGrfd00nVw",
-        "endDate": "2021-07-02"
+        "projectRelation": "side",
+        "title": "Flickr Gallery",
+        "description": "Web app to explore the most recent images uploaded to Flickr worldwide. I built from the ground up and deployed the whole project myself. Tech stack: React, Redux, Koa, Flickr API.",
+        "code": "https://jportella93.github.io/flickr-gallery/",
+        "endDate": "2018-08-01"
       },
       {
-        "id": "cs50-introduction-computer-science-harvard",
-        "type": "study",
-        "title": "CS50: Introduction to Computer Science — @ Harvard / edX",
-        "description": "An intensive, self-paced foundational course in computer science and programming fundamentals, designed for both beginners and those with prior experience. CS50 teaches core concepts including computational thinking, algorithms, data structures, abstraction, resource management, and software engineering principles.\n\nStudents gain practical programming experience in C, Python, SQL, JavaScript, HTML and CSS, progressing from low-level understanding of memory and machine-level concepts (via C) to higher-level web and application development skills (via Python, SQL, JavaScript, HTML/CSS). The curriculum includes weekly problem sets drawing from real-world domains — such as cryptography, finance, forensics, biology or gaming — culminating in a final project that demonstrates the ability to design and implement a complete software application.\n\nCS50 emphasizes strong coding style, correctness, and algorithmic efficiency, helping learners develop not just coding fluency but deeper understanding of how computers work under the hood. The course also connects students to a large global learning community, offering exposure to diverse problem-solving approaches and collaboration opportunities.",
-        "link": "https://cs50.harvard.edu",
-        "startDate": "2021-01-01",
-        "endDate": "2021-03-31",
-        "projects": []
-      },
-      {
-        "id": "instructor-codeworks",
-        "type": "job",
-        "title": "Instructor at Codeworks",
-        "description": "Codeworks is an immersive coding bootcamp with campuses in Austin, Barcelona, New York, Berlin, London, and Toronto. Its Software Engineering Immersive program covers advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking, end-to-end testing, security, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, open source contributions, back-end frameworks (Node, Express, Koa, GraphQL), databases (SQL, MongoDB, Redis), and front-end frameworks (Angular, React). Responsibilities: Give a lecture once a week about the current course subject, train new Teaching Assistants, answer help requests from all students, host Q&A sessions and exercise reviews, support senior students throughout their coding projects (brainstorming, code reviews, demos), prepare senior students for their job search.",
-        "link": "https://www.codeworks.me",
-        "startDate": "2019-10-01",
-        "endDate": "2020-11-30",
-        "projects": []
-      },
-      {
-        "id": "n1-headache-website",
+        "id": "bitcoin-collab-fullstack-web-app",
         "type": "project",
         "category": "software",
-        "title": "N1-Headache website",
-        "description": "A landing page website I built while working at Curelator. Custom wordpress theme with some nice animations and creative styles.",
-        "link": "https://n1-headache.com/",
-        "demoVideo": "https://www.youtube.com/watch?v=osbTpRDBp9g",
-        "endDate": "2019-07-02"
+        "title": "Bitcoin Collab: Fullstack Web App",
+        "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
+        "code": "https://github.com/jportella93/collab-frontend",
+        "endDate": "2018-07-01"
       },
       {
-        "id": "make-me-drink-real-time-online-game",
+        "id": "nanny-express-fullstack-web-app",
         "type": "project",
-        "projectRelation": "side",
         "category": "software",
-        "title": "Make Me Drink - Real Time Online Game",
-        "description": "Weekend project - My version of the game couple battles, using websockets for real time online multiplayer. Front-end built with Gatsby and web sockets for real-time gameplay.",
-        "code": "https://github.com/jportella93/make-me-drink-client",
-        "endDate": "2020-05-01"
+        "title": "Nanny Express: Fullstack Web App",
+        "description": "Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
+        "code": "https://github.com/jportella93/Nanny-Express-client",
+        "endDate": "2018-06-01"
       },
       {
-        "id": "vizviz-trippy-visualizations-p5js",
+        "id": "find-a-hobby-fullstack-web-app",
         "type": "project",
-        "projectRelation": "side",
         "category": "software",
-        "title": "VizViz: Trippy Visualisations with p5.js",
-        "description": "Website to make trippy visualisations using p5.js. Built over a weekend after being inspired by Processing visualisations. Features local storage for saving state, draggable canvas and controls. Initially built with d3.js but switched to p5.js for better performance. Deployed on Netlify.",
-        "code": "https://github.com/jportella93/vizviz",
-        "link": "https://vizviz.netlify.app",
-        "demoVideo": "https://www.youtube.com/watch?v=tFouYFk-Ri8",
-        "endDate": "2020-05-01"
+        "title": "Find a Hobby!: Fullstack Web App",
+        "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB.",
+        "code": "https://github.com/jportella93/find-a-hobby-client",
+        "endDate": "2018-06-01"
       },
       {
-        "id": "streetymp3-song",
+        "id": "blackjack-web-app",
         "type": "project",
-        "projectRelation": "side",
-        "category": "music",
-        "title": "Streety.mp3",
-        "description": "A song I made - playing a sound similar to the Game Boy Advanced's startup sound",
-        "link": "https://www.youtube.com/watch?v=gtrizPMyBGE",
-        "endDate": "2019-09-24"
-      },
-      {
-        "id": "thingymp3-song",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "music",
-        "title": "Thingy.mp3",
-        "description": "A song I made - It had been a while without producing music and set myself to complete this one in one evening",
-        "link": "https://www.youtube.com/watch?v=-JnVWZCRfJk",
-        "endDate": "2019-08-21"
-      },
-      {
-        "id": "paperymp3-song",
-        "type": "project",
-        "projectRelation": "side",
-        "category": "music",
-        "title": "Papery.mp3",
-        "description": "A song I made - Inspired by the Money Heist Netflix show",
-        "link": "https://jonportella.bandcamp.com/album/papery",
-        "bandcampAlbumId": "1960663173",
-        "endDate": "2020-08-01"
-      },
-      {
-        "id": "profile-picture-2019",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2019.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2019-01-01"
-      },
-      {
-        "id": "profile-picture-2020",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2020.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2020-01-01"
-      },
-      {
-        "id": "profile-picture-2021",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2021.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2021-01-01"
+        "category": "software",
+        "title": "Jon Portella's Blackjack: Web App",
+        "description": "As the last test in order to get admitted in Codeworks, the full stack JavaScript bootcamp I did back in 2018, I had one week to create and deliver a blackjack game. This was my first ever JavaScript + CSS + HTML project.",
+        "link": "/blog/creating-a-blackjack-game",
+        "endDate": "2018-04-01"
       }
     ]
   },
@@ -940,6 +478,33 @@
     "startDate": "2015-12-01",
     "endDate": "2018-05-31",
     "projects": [
+      {
+        "id": "sharkeye-scooter-advertisement",
+        "type": "project",
+        "category": "video",
+        "title": "Sharkeye Scooter",
+        "description": "Video promoting a scooter.",
+        "link": "https://www.youtube.com/watch?v=yrQrYD9wR8E",
+        "endDate": "2018-01-02"
+      },
+      {
+        "id": "profile-picture-2018",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2018.jpeg",
+        "link": null,
+        "startDate": null,
+        "endDate": "2018-01-01"
+      },
+      {
+        "id": "audiovisual-engineer-portfolio-reel",
+        "type": "project",
+        "category": "video",
+        "title": "Audiovisual Engineer Portfolio",
+        "description": "Summary reel of my work as an Audiovisual Engineer in live events and conferences.",
+        "link": "https://www.youtube.com/watch?v=z3fHTJysMvA",
+        "endDate": "2017-12-05"
+      },
       {
         "id": "audiovisual-engineer-eikonos-barcelona",
         "type": "job",
@@ -959,33 +524,6 @@
         "endDate": "2017-05-01"
       },
       {
-        "id": "audiovisual-engineer-portfolio-reel",
-        "type": "project",
-        "category": "video",
-        "title": "Audiovisual Engineer Portfolio",
-        "description": "Summary reel of my work as an Audiovisual Engineer in live events and conferences.",
-        "link": "https://www.youtube.com/watch?v=z3fHTJysMvA",
-        "endDate": "2017-12-05"
-      },
-      {
-        "id": "sharkeye-scooter-advertisement",
-        "type": "project",
-        "category": "video",
-        "title": "Sharkeye Scooter",
-        "description": "Video promoting a scooter.",
-        "link": "https://www.youtube.com/watch?v=yrQrYD9wR8E",
-        "endDate": "2018-01-02"
-      },
-      {
-        "id": "liljeez-g-swagg-music-video",
-        "type": "project",
-        "category": "video",
-        "title": "Lil'Jeez G Swagg Explicit ft  Dj Crazy Cool",
-        "description": "Music video I produced for a local artist.",
-        "link": "https://www.youtube.com/watch?v=czyNnWxcO_0",
-        "endDate": "2016-01-02"
-      },
-      {
         "id": "barcelona-about-a-girl-rental-ad",
         "type": "project",
         "category": "video",
@@ -993,24 +531,6 @@
         "description": "Video promoting rental apartments in Barcelona.",
         "link": "https://www.youtube.com/watch?v=w4dnywqCEXs",
         "endDate": "2017-01-02"
-      },
-      {
-        "id": "reyes-magos-juguetes-soundtrack",
-        "type": "project",
-        "category": "music",
-        "title": "La Fábrica de Juguetes de los Reyes Magos de Oriente fabra i coats",
-        "description": "Art installation, I produced the original soundtrack.",
-        "link": "https://www.youtube.com/watch?v=06vY0iEj5hw",
-        "endDate": "2016-12-02"
-      },
-      {
-        "id": "profile-picture-2016",
-        "type": "profile-picture",
-        "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2016.jpeg",
-        "link": null,
-        "startDate": null,
-        "endDate": "2016-01-01"
       },
       {
         "id": "profile-picture-2017",
@@ -1022,13 +542,31 @@
         "endDate": "2017-01-01"
       },
       {
-        "id": "profile-picture-2018",
+        "id": "reyes-magos-juguetes-soundtrack",
+        "type": "project",
+        "category": "music",
+        "title": "La Fábrica de Juguetes de los Reyes Magos de Oriente fabra i coats",
+        "description": "Art installation, I produced the original soundtrack.",
+        "link": "https://www.youtube.com/watch?v=06vY0iEj5hw",
+        "endDate": "2016-12-02"
+      },
+      {
+        "id": "liljeez-g-swagg-music-video",
+        "type": "project",
+        "category": "video",
+        "title": "Lil'Jeez G Swagg Explicit ft  Dj Crazy Cool",
+        "description": "Music video I produced for a local artist.",
+        "link": "https://www.youtube.com/watch?v=czyNnWxcO_0",
+        "endDate": "2016-01-02"
+      },
+      {
+        "id": "profile-picture-2016",
         "type": "profile-picture",
         "title": "Me around this time",
-        "image": "https://j-img.jonportella.com/assets/2018.jpeg",
+        "image": "https://j-img.jonportella.com/assets/2016.jpeg",
         "link": null,
         "startDate": null,
-        "endDate": "2018-01-01"
+        "endDate": "2016-01-01"
       },
       {
         "id": "big-pistachio-comedy-movie-teaser",
@@ -1038,6 +576,468 @@
         "description": "A comedy/adventure movie teaser about a man obsessed with pistachios. I did boom mic operation and audio engineering.",
         "link": "https://www.youtube.com/watch?v=3xdMyi43hyg",
         "endDate": "2015-11-15"
+      }
+    ]
+  },
+  {
+    "id": "bachelors-audiovisual-communication-universitat-barcelona",
+    "type": "study",
+    "shortTitle": "University",
+    "title": "Bachelor's degree, Audiovisual Communication @ Universitat de Barcelona",
+    "description": "The bachelor's degree in Audiovisual Communication prepares audiovisual professionals for a variety of roles: director, scriptwriter, producer, visual and sound production and post-production designer, researcher, specialist in corporate communication and community manager. \n\nThe bachelor's degree in Audiovisual Communication offers comprehensive training in the skills needed to thrive as an audiovisual professional. Students learn to use the technical tools that are needed to create content, and acquire practice in planning and implementing innovative audiovisual projects, in various formats and supports (audiovisual, radio, sound, text and digital). The subjects of this degree promote entrepreneurship, innovation and creativity through project-based learning. The programme also encourages participation in documentary and fiction film festivals, as well as contests for new audiovisual formats, and it fosters initiatives with social impact. Likewise, it promotes the training of professionals with critical and analytical skills, capable of studying and understanding the media and audiovisual products within the social, economic, political and cultural structure of which they are part.",
+    "link": "https://web.ub.edu/en/web/estudis/w/bachelordegree-g1102",
+    "startDate": "2011-09-01",
+    "endDate": "2015-06-30",
+    "projects": [
+      {
+        "id": "cluster-edutech-companies-video",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "Clúster Edutech - Empresas de tecnologia educativa",
+        "description": "Video promoting a group of educational technology companies I produced. I got this gig through my university's internship, as the company was part of this cluster of companies. Was fun because I had a pretty decend budget and could actually hire a bunch of buddies to help me out.",
+        "link": "https://www.youtube.com/watch?v=T6zJyz-HraY",
+        "endDate": "2015-04-02"
+      },
+      {
+        "id": "snap-in-the-bath-get-away-live-acoustic-bambusound",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "music performance",
+        "title": "Snap in the Bath - Get Away (live acoustic for Bambusound Documentary)",
+        "description": "Acoustic live performance with my band at the Bambusound Documentary.",
+        "link": "https://www.youtube.com/watch?v=AzMxsnScQj4",
+        "endDate": "2015-03-09"
+      },
+      {
+        "id": "snap-in-the-bath-concert-video-summary",
+        "type": "project",
+        "category": "video",
+        "title": "Snap in the Bath - Videoresumen",
+        "description": "Video summarizing a music concert my band at the time played with a guest band from Portugal, was a lot of fun!",
+        "link": "https://www.youtube.com/watch?v=MVjupBbDi1o",
+        "endDate": "2015-01-02"
+      },
+      {
+        "id": "profile-picture-2015",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2015.jpeg",
+        "link": null,
+        "startDate": null,
+        "endDate": "2015-01-01"
+      },
+      {
+        "id": "snap-in-the-bath-this-is-not-a-love-song-live-acoustic-alfa-bar",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "Snap in the Bath - This is Not a Love Song (live acoustic @ Alfa Bar Barcelona)",
+        "description": "Acoustic live performance with my band at the Alfa Bar Barcelona.",
+        "link": "https://www.youtube.com/watch?v=Kwi8oUBNU_U",
+        "endDate": "2014-12-16"
+      },
+      {
+        "id": "ritmo-madre-documentary",
+        "type": "project",
+        "category": "video",
+        "title": "Ritmo Madre",
+        "description": "A short documentary for a University project in the documentary subject. I got highest grade in the class for this one.",
+        "link": "https://www.youtube.com/watch?v=rZ6s8PDI9tg",
+        "endDate": "2014-12-14"
+      },
+      {
+        "id": "mydocumenta-tutorial-video",
+        "type": "project",
+        "category": "video",
+        "title": "No más trabajos de clase aburridos! Cómo crear tu proyecto mydocumenta",
+        "description": "Video tutorial showing how to create a project with mydocumenta. Part of my University internship, I had to record some video tutorials for a webapp. Funny how I ended up building webapps later on.",
+        "link": "https://www.youtube.com/watch?v=hmNYwJbywz0",
+        "endDate": "2014-11-02"
+      },
+      {
+        "id": "tecnosis-videoart-piece",
+        "type": "project",
+        "category": "video",
+        "title": "Tecnosis",
+        "description": "Videoart piece for a University project. It's body horror stuff so don't watch it if you're sensitive. I did sound and lighting.",
+        "link": "https://www.youtube.com/watch?v=yJPS-5GfovQ",
+        "endDate": "2014-10-02"
+      },
+      {
+        "id": "bambusound-music-documentary",
+        "type": "project",
+        "category": "video",
+        "title": "Bambusound, el documental",
+        "description": "A music documentary for University project, I conceived the idea, did sound and OST production. Also interviewed the musicians. My band at the time was actually featured in the documentary.",
+        "link": "https://www.youtube.com/watch?v=ZFNF4Xx5gF8",
+        "endDate": "2014-09-30"
+      },
+      {
+        "id": "snap-in-the-bath-live-ikea-semi-unplugged",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "Snap in the Bath (live @ IKEA) semi-unplugged Full Show",
+        "description": "Live performance with my band at the IKEA band contest.",
+        "link": "https://www.youtube.com/watch?v=MkNCL7XUjok",
+        "endDate": "2014-09-11"
+      },
+      {
+        "id": "snap-in-the-bath-this-is-not-a-love-song-lyric-video",
+        "type": "project",
+        "category": "music",
+        "projectRelation": "side",
+        "title": "Snap in the Bath - This is Not a Love Song (Official Lyric Video)",
+        "description": "Official lyric video for the song 'This is Not a Love Song' by my band. We recorded it in my bedroom / home studio.",
+        "link": "https://www.youtube.com/watch?v=y15Wdh15x6o",
+        "endDate": "2014-07-04"
+      },
+      {
+        "id": "el-super-show-tv-show",
+        "type": "project",
+        "category": "video",
+        "title": "El Super Show",
+        "description": "A short TV show for a University project in the TV show subject. We actually went to a real TV studio and recorded the show. I did the sound mixing and cameo.",
+        "link": "https://www.youtube.com/watch?v=zzUw3tzz-gg",
+        "endDate": "2014-06-29"
+      },
+      {
+        "id": "snap-in-the-bath-gas-powered-lyric-video",
+        "type": "project",
+        "category": "music",
+        "projectRelation": "side",
+        "title": "Snap in the Bath - Gas Powered [Official Lyric Video]",
+        "description": "Official lyric video for the song 'Gas Powered' by my band. We recorded it in my bedroom / home studio.",
+        "image": "https://i.ytimg.com/vi/Qvwr9ec7U8c/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=Qvwr9ec7U8c",
+        "endDate": "2014-05-14"
+      },
+      {
+        "id": "nunca-imagine-que-serias-tu-short-film",
+        "type": "project",
+        "category": "video",
+        "title": "Nunca imaginé que serías tu",
+        "description": "A short film for a University project in the audiovisual production subject.",
+        "link": "https://www.youtube.com/watch?v=QXOcW7k-p-M",
+        "endDate": "2014-03-12"
+      },
+      {
+        "id": "get-away-music-video-making-of",
+        "type": "project",
+        "category": "video",
+        "title": "Get Away - Making of",
+        "description": "The making of the music videoclip for my band I did the whole video and acting.",
+        "link": "https://www.youtube.com/watch?v=xp_fQcDMkA4",
+        "endDate": "2014-03-08"
+      },
+      {
+        "id": "snap-in-the-bath-get-away-music-video",
+        "type": "project",
+        "category": "video",
+        "title": "Snap in the Bath - Get Away [Official Music Video]",
+        "description": "A music videoclip my band at the time, I made the whole video, acting, recording of the song, playing guitar, and backing vocals. This was really fun!",
+        "link": "https://www.youtube.com/watch?v=3BicGzmKJHw",
+        "endDate": "2014-03-03"
+      },
+      {
+        "id": "profile-picture-2014",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2014.jpeg",
+        "link": null,
+        "startDate": null,
+        "endDate": "2014-01-01"
+      },
+      {
+        "id": "cosmic-girl-guitar-bass-cover",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "\"Cosmic Girl\" (Guitar & Bass cover)",
+        "description": "A guitar and bass cover of the song Cosmic Girl by Jamiroquai.",
+        "image": "https://i.ytimg.com/vi/LqoWPcd1CDc/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=LqoWPcd1CDc",
+        "endDate": "2013-12-06"
+      },
+      {
+        "id": "caracoles-con-pajarita-comedy-short-film",
+        "type": "project",
+        "category": "video",
+        "title": "78 Caracoles con Pajarita - Cortometraje de comedia",
+        "description": "A short comedy film for a University project in the audiovisual production subject. I did camera operation and audio engineering.",
+        "link": "https://www.youtube.com/watch?v=RXSGbaZgUds",
+        "endDate": "2013-06-13"
+      },
+      {
+        "id": "youtube-upload-tutorial-video",
+        "type": "project",
+        "category": "video",
+        "title": "Tutorial para subir videos a youtube",
+        "description": "Short comedy video about how to upload videos to YouTube. For a University project.",
+        "link": "https://www.youtube.com/watch?v=t6HVDe1e5KE",
+        "endDate": "2013-05-03"
+      },
+      {
+        "id": "can-a-book-kill-a-man-intro",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "Intro for a school research project regarding John Lennon's murder",
+        "description": "Intro to a school research project.",
+        "link": "https://www.youtube.com/watch?v=PAilNL4J97Y",
+        "endDate": "2013-04-28"
+      },
+      {
+        "id": "dextro-energy-drink-tv-spot",
+        "type": "project",
+        "category": "video",
+        "title": "Dextro, Energy Drink",
+        "description": "A short TV spot for a University project in the TV show subject. Announcing some kind of energy drink. Having fun with rotoscoping and other video editing techniques.",
+        "link": "https://www.youtube.com/watch?v=cRnu3UUBtnc",
+        "endDate": "2013-04-18"
+      },
+      {
+        "id": "los-diletantes-antonia-romero-book-trailer",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "Los Diletantes de Antonia Romero",
+        "description": "Book trailer I produced. I did the sound recording and mixing, my buddy did photography and animation and his GF did the acting / voiceover.",
+        "link": "https://www.youtube.com/watch?v=aJTIPKAOH-U",
+        "endDate": "2013-04-02"
+      },
+      {
+        "id": "guerra-de-lleons-soundtrack",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "music",
+        "title": "Guerra de Lleons",
+        "description": "Songs composed and produced for my University's buddy play 'Guerra de Lleons'. First time doing some bit more serious stuff with Logic Pro.",
+        "link": "https://jonportella.bandcamp.com/album/guerra-de-lleons",
+        "bandcampAlbumId": "3951795121",
+        "endDate": "2013-04-02"
+      },
+      {
+        "id": "ub-international-womens-day-video",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "UB - Dia internacional de les Dones",
+        "description": "Video promoting the International Women's Day event at the University of Barcelona. Part of a part-time job I had during University, making videos promoting University events.",
+        "link": "https://www.youtube.com/watch?v=I_ytX1YKk3M",
+        "endDate": "2013-03-02"
+      },
+      {
+        "id": "diario-de-un-follermo-esquiando-video",
+        "type": "project",
+        "category": "video",
+        "projectRelation": "side",
+        "title": "Diario de un Follermo esquiando",
+        "description": "Jokes video snow with a friend, more fun editing with Final Cut Pro.",
+        "link": "https://www.youtube.com/watch?v=1PICQ5suktE",
+        "endDate": "2013-02-26"
+      },
+      {
+        "id": "ambrosio-tiene-hambre-comedy-news",
+        "type": "project",
+        "category": "video",
+        "title": "Ambrosio tiene hambre",
+        "description": "A comedy news piece for a University project in the TV news subject. Fun fact: buddy playing the jouranlist became a very successful journalist, same as buddy playing the actor became a very successful actor.",
+        "link": "https://www.youtube.com/watch?v=lL0gwV6lTko",
+        "endDate": "2013-01-28"
+      },
+      {
+        "id": "university-animation-project",
+        "type": "project",
+        "category": "video",
+        "title": "Animation",
+        "description": "For a University project in the animation subject. Didn't really like animating too much.",
+        "link": "https://www.youtube.com/watch?v=ykLdat_ndhw",
+        "endDate": "2013-01-20"
+      },
+      {
+        "id": "still-take-you-home-arctic-monkeys-bass-cover",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "(Tabs) Still take you home - Arctic monkeys Bass cover",
+        "description": "Bass cover of the song Still take you home by Arctic Monkeys.",
+        "link": "https://www.youtube.com/watch?v=--fxGgXmoPo",
+        "endDate": "2013-01-20"
+      },
+      {
+        "id": "el-encantador-movie-teaser",
+        "type": "project",
+        "category": "video",
+        "title": "\"El Encantador\" Teaser",
+        "description": "A movie teaser for a University project in the audiovisual production subject.",
+        "link": "https://www.youtube.com/watch?v=JkLvf5fW8w0",
+        "endDate": "2013-01-09"
+      },
+      {
+        "id": "profile-picture-2013",
+        "type": "profile-picture",
+        "title": "Me around this time",
+        "image": "https://j-img.jonportella.com/assets/2013.jpeg",
+        "link": null,
+        "startDate": null,
+        "endDate": "2013-01-01"
+      },
+      {
+        "id": "can-a-book-kill-a-man-street-interviews",
+        "type": "project",
+        "category": "video",
+        "title": "Can a book kill a man?",
+        "description": "Some street interviews for a school research project regarding John Lennon's murder.",
+        "link": "https://www.youtube.com/watch?v=lnhALsdwuAs",
+        "endDate": "2012-11-11"
+      },
+      {
+        "id": "video-resume-presentation",
+        "type": "project",
+        "category": "video",
+        "title": "Videocurriculum",
+        "description": "Video resume / presentation for a University project, cringe",
+        "link": "https://www.youtube.com/watch?v=YSEsPYo_eHo",
+        "endDate": "2012-10-29"
+      },
+      {
+        "id": "itaca-band-ojala-music-video",
+        "type": "project",
+        "category": "video",
+        "projectRelation": "side",
+        "title": "Itaca Band - Ojalá (Videoclip Oficial)",
+        "description": "A music videoclip for a local band, I did boom mic operation (poorly)",
+        "link": "https://www.youtube.com/watch?v=IMunDXoTKdU",
+        "endDate": "2012-10-15"
+      },
+      {
+        "id": "sonopro-study",
+        "type": "study",
+        "title": "Sound Engineering Technician Course @ Sonopro Academy Barcelona",
+        "description": "Intensive 3-module sound engineering technician course at Sonopro Academy Barcelona that helped me professionalize my passion for music and start getting into technical aspects of music production. Module 1: Sound properties, acoustics, Pro Tools fundamentals, project setup, EQ, dynamics (compression/multicompression/limiters/de-essers), reverb, delays, modulation, distortion, phase relationships, and comprehensive microphone techniques. Module 2: Sound capture fundamentals, professional recording of voices/wind instruments/percussion/strings, advanced recording techniques, Pro Tools mastery, pitch correction, vocal/drum/acoustic/electronic instrument processing, advanced automation, ear training through technical analysis, and mixing foundations. Module 3: Advanced acoustics (3 levels), music theory for audio professionals, sound spatialization concepts, Pro Tools template systems, continued ear training, professional mixing techniques, analog/digital console operation, group/VCAs management, and sophisticated automation. State-of-the-art recording studios and hands-on training. Mentored by active industry professionals currently working in premier recording facilities and major live events.",
+        "link": "https://sonoproacademy.com/cursos/barcelona/curso-tecnico-sonido/",
+        "startDate": "2012-10-01",
+        "endDate": "2013-06-01"
+      },
+      {
+        "id": "snap-in-the-bath-etilic-plane-demo",
+        "type": "project",
+        "category": "music",
+        "projectRelation": "side",
+        "title": "Snap In The Bath - Etilic plane (demo)",
+        "description": "First song I ever recorded for my band at the time - good times",
+        "link": "https://www.youtube.com/watch?v=l4OAnpPDak8",
+        "endDate": "2012-07-25"
+      },
+      {
+        "id": "cadena-de-valores-cleaning-company-tv-spot",
+        "type": "project",
+        "category": "video",
+        "projectRelation": "side",
+        "title": "Cadena de Valores KH-7 ZAS!",
+        "description": "A TV spot for a cleaning company, I did boom mic operation and also cameo in the video. This was actually my first paid job as a freelancer.",
+        "link": "https://www.youtube.com/watch?v=cfDd1nk6iNY",
+        "endDate": "2012-06-29"
+      },
+      {
+        "id": "javi-tximak-barber-video",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "Javi Tximak the Barber",
+        "description": "Video promotion for a local barber shop I produced.",
+        "link": "https://www.youtube.com/watch?v=o4g7cQGY6pU",
+        "endDate": "2012-06-02"
+      },
+      {
+        "id": "dont-stop-your-mind-stop-motion-video",
+        "type": "project",
+        "category": "video",
+        "title": "Don't stop your mind",
+        "description": "Surrealist stop motion video for college - I did OST, some editing and cameo",
+        "link": "https://www.youtube.com/watch?v=0Mi7bG2gUVw",
+        "endDate": "2012-05-25"
+      },
+      {
+        "id": "dont-stop-foster-the-people-guitar-bass-cover",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "Don't stop - Foster the people (Guitar and Bass cover)",
+        "description": "Guitar and Bass cover of the song Don't stop by Foster the people.",
+        "link": "https://www.youtube.com/watch?v=3sQhVsEer6E",
+        "endDate": "2012-05-09"
+      },
+      {
+        "id": "day-tripper-beatles-bass-guitar-cover",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "The Beatles - Day tripper (Bass&GuitarSolo Cover)",
+        "description": "Bass and Guitar solo cover of the song Day tripper by The Beatles.",
+        "link": "https://www.youtube.com/watch?v=eNAIh5gs-qg",
+        "endDate": "2012-04-11"
+      },
+      {
+        "id": "producciones-el-sotano-mil-historias-music-video",
+        "type": "project",
+        "category": "video",
+        "title": "Producciones el sótano - Mil històries",
+        "description": "Jokes music video with my buddies from university, I did music and video editing",
+        "link": "https://www.youtube.com/watch?v=0-1M8-LFSow",
+        "endDate": "2012-03-09"
+      },
+      {
+        "id": "snap-in-the-bath-live-razzmatazz-feb-2012",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "Snap in the Bath live @Razzmatazz Feb 2012",
+        "description": "Live performance of my band at the time",
+        "link": "https://www.youtube.com/watch?v=oRpaJuYRP80",
+        "endDate": "2012-03-05"
+      },
+      {
+        "id": "turismoskate-donosti-video",
+        "type": "project",
+        "category": "video",
+        "projectRelation": "side",
+        "title": "TurismoSkate en Donosti",
+        "description": "Skateboarding video with some friends in Donosti, having teenager fun times.",
+        "link": "https://www.youtube.com/watch?v=zortesCyP-4",
+        "endDate": "2012-01-26"
+      },
+      {
+        "id": "reptilia-strokes-guitar-cover",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "The strokes - Reptilia guitar cover",
+        "description": "Guitar cover of the song Reptilia by The Strokes. For this one I actually climbed high on the rooftop, was scary but worth it.",
+        "link": "https://www.youtube.com/watch?v=Rrjp5N3ynRQ",
+        "endDate": "2012-01-24"
+      },
+      {
+        "id": "mardy-bum-arctic-monkeys-guitar-cover",
+        "type": "project",
+        "category": "music performance",
+        "projectRelation": "side",
+        "title": "Arctic Monkeys - Mardy Bum guitar cover",
+        "description": "Guitar cover of the song Mardy Bum by Arctic Monkeys. Recorded on my rooftop, more rooftop to come after this.",
+        "link": "https://www.youtube.com/watch?v=lwmWswbpfPc",
+        "endDate": "2012-01-21"
+      },
+      {
+        "id": "esquiada-boi-taull-diciembre-2011",
+        "type": "project",
+        "category": "video",
+        "projectRelation": "side",
+        "title": "Esquiada En Boi Tahüll Diciembre 2011",
+        "description": "Snow video 0 trying out video Final Cut Pro editing software and a GoPro 3 camera.",
+        "link": "https://www.youtube.com/watch?v=JPoL0z-vdLk",
+        "endDate": "2011-12-30"
       }
     ]
   }

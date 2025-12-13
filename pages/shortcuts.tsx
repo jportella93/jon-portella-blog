@@ -30,7 +30,7 @@ export default function ShortcutsPage() {
   );
 
   return (
-    <Layout width="narrow">
+    <Layout>
       <SEO
         title="Keyboard Shortcuts"
         description="Keyboard shortcuts available on this site"

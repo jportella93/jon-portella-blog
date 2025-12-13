@@ -34,6 +34,7 @@ export default function KeyboardNavHint() {
     marginTop: rhythm(1),
     marginBottom: rhythm(1),
     fontSize: "14px",
+    display: "inline-block",
   };
 
   const kbdStyle = {

@@ -45,6 +45,10 @@ html.dark blockquote {
   border-left-color: #5ba3d3 !important;
 }
 
+html.dark hr {
+  background: #e0e0e0;
+}
+
 /* System preference - only apply when no explicit theme class is set */
 @media (prefers-color-scheme: dark) {
   html:not(.light):not(.dark) body {
@@ -59,6 +63,10 @@ html.dark blockquote {
   html:not(.light):not(.dark) blockquote {
     color: #e0e0e0 !important;
     border-left-color: #5ba3d3 !important;
+  }
+
+  html:not(.light):not(.dark) hr {
+    background: #e0e0e0;
   }
 }
 

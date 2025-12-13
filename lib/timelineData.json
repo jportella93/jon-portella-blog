@@ -1,6 +1,6 @@
 [
   {
-    "id": "study-0-bachelors-degree-audiovisual-communication-universitat-de-barcelona",
+    "id": "bachelors-audiovisual-communication-universitat-barcelona",
     "type": "study",
     "shortTitle": "University",
     "title": "Bachelor's degree, Audiovisual Communication @ Universitat de Barcelona",
@@ -10,7 +10,7 @@
     "endDate": "2015-06-30",
     "projects": [
       {
-        "id": "project-24-javi-tximak-the-barber",
+        "id": "javi-tximak-barber-video",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -20,7 +20,7 @@
         "endDate": "2012-06-02"
       },
       {
-        "id": "project-25-los-diletantes-de-antonia-romero",
+        "id": "los-diletantes-antonia-romero-book-trailer",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -30,7 +30,7 @@
         "endDate": "2013-04-02"
       },
       {
-        "id": "project-26-ub-dia-internacional-de-les-dones",
+        "id": "ub-international-womens-day-video",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -40,7 +40,7 @@
         "endDate": "2013-03-02"
       },
       {
-        "id": "project-27-clster-edutech-empresas-de-tecnologia-educativa",
+        "id": "cluster-edutech-companies-video",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -50,7 +50,7 @@
         "endDate": "2015-04-02"
       },
       {
-        "id": "project-28-tecnosis",
+        "id": "tecnosis-videoart-piece",
         "type": "project",
         "category": "video",
         "title": "Tecnosis",
@@ -59,7 +59,7 @@
         "endDate": "2014-10-02"
       },
       {
-        "id": "project-32-snap-in-the-bath-videoresumen",
+        "id": "snap-in-the-bath-concert-video-summary",
         "type": "project",
         "category": "video",
         "title": "Snap in the Bath - Videoresumen",
@@ -68,7 +68,7 @@
         "endDate": "2015-01-02"
       },
       {
-        "id": "project-34-no-mas-trabajos-de-clase-aburridos-como-crear-tu-proyecto-mydocumenta",
+        "id": "mydocumenta-tutorial-video",
         "type": "project",
         "category": "video",
         "title": "No más trabajos de clase aburridos! Cómo crear tu proyecto mydocumenta",
@@ -77,7 +77,7 @@
         "endDate": "2014-11-02"
       },
       {
-        "id": "project-39-animation",
+        "id": "university-animation-project",
         "type": "project",
         "category": "video",
         "title": "Animation",
@@ -86,7 +86,7 @@
         "endDate": "2013-01-20"
       },
       {
-        "id": "project-40-ritmo-madre",
+        "id": "ritmo-madre-documentary",
         "type": "project",
         "category": "video",
         "title": "Ritmo Madre",
@@ -95,7 +95,7 @@
         "endDate": "2014-12-14"
       },
       {
-        "id": "project-41-el-super-show",
+        "id": "el-super-show-tv-show",
         "type": "project",
         "category": "video",
         "title": "El Super Show",
@@ -104,7 +104,7 @@
         "endDate": "2014-06-29"
       },
       {
-        "id": "project-42-nunca-imagine-que-serias-tu",
+        "id": "nunca-imagine-que-serias-tu-short-film",
         "type": "project",
         "category": "video",
         "title": "Nunca imaginé que serías tu",
@@ -113,7 +113,7 @@
         "endDate": "2014-03-12"
       },
       {
-        "id": "project-43-tutorial-para-subir-videos-a-youtube",
+        "id": "youtube-upload-tutorial-video",
         "type": "project",
         "category": "video",
         "title": "Tutorial para subir videos a youtube",
@@ -122,7 +122,7 @@
         "endDate": "2013-05-03"
       },
       {
-        "id": "project-44-can-a-book-kill-a-man-intro",
+        "id": "can-a-book-kill-a-man-intro",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -132,7 +132,7 @@
         "endDate": "2013-04-28"
       },
       {
-        "id": "project-45-dextro-energy-drink",
+        "id": "dextro-energy-drink-tv-spot",
         "type": "project",
         "category": "video",
         "title": "Dextro, Energy Drink",
@@ -141,7 +141,7 @@
         "endDate": "2013-04-18"
       },
       {
-        "id": "project-46-ambrosio-tiene-hambre",
+        "id": "ambrosio-tiene-hambre-comedy-news",
         "type": "project",
         "category": "video",
         "title": "Ambrosio tiene hambre",
@@ -150,7 +150,7 @@
         "endDate": "2013-01-28"
       },
       {
-        "id": "project-47-el-encantador-teaser",
+        "id": "el-encantador-movie-teaser",
         "type": "project",
         "category": "video",
         "title": "\"El Encantador\" Teaser",
@@ -159,7 +159,7 @@
         "endDate": "2013-01-09"
       },
       {
-        "id": "project-48-can-a-book-kill-a-man",
+        "id": "can-a-book-kill-a-man-street-interviews",
         "type": "project",
         "category": "video",
         "title": "Can a book kill a man?",
@@ -168,7 +168,7 @@
         "endDate": "2012-11-11"
       },
       {
-        "id": "project-49-videocurriculum",
+        "id": "video-resume-presentation",
         "type": "project",
         "category": "video",
         "title": "Videocurriculum",
@@ -177,7 +177,7 @@
         "endDate": "2012-10-29"
       },
       {
-        "id": "project-50-78-caracoles-con-pajarita-cortometraje-de-comedia",
+        "id": "caracoles-con-pajarita-comedy-short-film",
         "type": "project",
         "category": "video",
         "title": "78 Caracoles con Pajarita - Cortometraje de comedia",
@@ -186,7 +186,7 @@
         "endDate": "2013-06-13"
       },
       {
-        "id": "project-51-cadena-de-valores-kh-7-zas",
+        "id": "cadena-de-valores-cleaning-company-tv-spot",
         "type": "project",
         "category": "video",
         "projectRelation": "side",
@@ -196,7 +196,7 @@
         "endDate": "2012-06-29"
       },
       {
-        "id": "project-52-bambusound-el-documental",
+        "id": "bambusound-music-documentary",
         "type": "project",
         "category": "video",
         "title": "Bambusound, el documental",
@@ -205,7 +205,7 @@
         "endDate": "2014-09-30"
       },
       {
-        "id": "project-53-itaca-band-ojal-videoclip-oficial",
+        "id": "itaca-band-ojala-music-video",
         "type": "project",
         "category": "video",
         "projectRelation": "side",
@@ -215,7 +215,7 @@
         "endDate": "2012-10-15"
       },
       {
-        "id": "project-54-snap-in-the-bath-get-away-official-music-video",
+        "id": "snap-in-the-bath-get-away-music-video",
         "type": "project",
         "category": "video",
         "title": "Snap in the Bath - Get Away [Official Music Video]",
@@ -224,7 +224,7 @@
         "endDate": "2014-03-03"
       },
       {
-        "id": "project-55-get-away-making-of",
+        "id": "get-away-music-video-making-of",
         "type": "project",
         "category": "video",
         "title": "Get Away - Making of",
@@ -233,7 +233,7 @@
         "endDate": "2014-03-08"
       },
       {
-        "id": "project-56-guerra-de-lleons",
+        "id": "guerra-de-lleons-soundtrack",
         "type": "project",
         "projectRelation": "side",
         "category": "music",
@@ -244,7 +244,7 @@
         "endDate": "2013-04-02"
       },
       {
-        "id": "project-58-diario-de-un-follermo-esquiando",
+        "id": "diario-de-un-follermo-esquiando-video",
         "type": "project",
         "category": "video",
         "projectRelation": "side",
@@ -254,7 +254,7 @@
         "endDate": "2013-02-26"
       },
       {
-        "id": "project-60-snap-in-the-bath-etilic-plane-demo",
+        "id": "snap-in-the-bath-etilic-plane-demo",
         "type": "project",
         "category": "music",
         "projectRelation": "side",
@@ -264,7 +264,7 @@
         "endDate": "2012-07-25"
       },
       {
-        "id": "project-61-dont-stop-your-mind",
+        "id": "dont-stop-your-mind-stop-motion-video",
         "type": "project",
         "category": "video",
         "title": "Don't stop your mind",
@@ -273,7 +273,7 @@
         "endDate": "2012-05-25"
       },
       {
-        "id": "project-64-producciones-el-stano-mil-histries",
+        "id": "producciones-el-sotano-mil-historias-music-video",
         "type": "project",
         "category": "video",
         "title": "Producciones el sótano - Mil històries",
@@ -282,7 +282,7 @@
         "endDate": "2012-03-09"
       },
       {
-        "id": "project-66-turismoskate-en-donosti",
+        "id": "turismoskate-donosti-video",
         "type": "project",
         "category": "video",
         "projectRelation": "side",
@@ -292,7 +292,7 @@
         "endDate": "2012-01-26"
       },
       {
-        "id": "project-67-esquiada-en-boi-tahll-diciembre-2011",
+        "id": "esquiada-boi-taull-diciembre-2011",
         "type": "project",
         "category": "video",
         "projectRelation": "side",
@@ -302,7 +302,7 @@
         "endDate": "2011-12-30"
       },
       {
-        "id": "project-75-snap-in-the-bath-this-is-not-a-love-song-official-lyric-video",
+        "id": "snap-in-the-bath-this-is-not-a-love-song-lyric-video",
         "type": "project",
         "category": "music",
         "projectRelation": "side",
@@ -312,7 +312,7 @@
         "endDate": "2014-07-04"
       },
       {
-        "id": "project-76-snap-in-the-bath-gas-powered-official-lyric-video",
+        "id": "snap-in-the-bath-gas-powered-lyric-video",
         "type": "project",
         "category": "music",
         "projectRelation": "side",
@@ -323,7 +323,7 @@
         "endDate": "2014-05-14"
       },
       {
-        "id": "project-57-cosmic-girl-guitar-bass-cover",
+        "id": "cosmic-girl-guitar-bass-cover",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -361,7 +361,7 @@
         "endDate": "2015-01-01"
       },
       {
-        "id": "project-59-tabs-still-take-you-home-arctic-monkeys-bass-cover",
+        "id": "still-take-you-home-arctic-monkeys-bass-cover",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -371,7 +371,7 @@
         "endDate": "2013-01-20"
       },
       {
-        "id": "project-62-dont-stop-foster-the-people-guitar-and-bass-cover",
+        "id": "dont-stop-foster-the-people-guitar-bass-cover",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -381,7 +381,7 @@
         "endDate": "2012-05-09"
       },
       {
-        "id": "project-63-the-beatles-day-tripper-bassguitarsolo-cover",
+        "id": "day-tripper-beatles-bass-guitar-cover",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -391,7 +391,7 @@
         "endDate": "2012-04-11"
       },
       {
-        "id": "project-65-snap-in-the-bath-live-razzmatazz-feb-2012",
+        "id": "snap-in-the-bath-live-razzmatazz-feb-2012",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -401,7 +401,7 @@
         "endDate": "2012-03-05"
       },
       {
-        "id": "project-68-the-strokes-reptilia-guitar-cover",
+        "id": "reptilia-strokes-guitar-cover",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -411,7 +411,7 @@
         "endDate": "2012-01-24"
       },
       {
-        "id": "project-69-arctic-monkeys-mardy-bum-guitar-cover",
+        "id": "mardy-bum-arctic-monkeys-guitar-cover",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -421,7 +421,7 @@
         "endDate": "2012-01-21"
       },
       {
-        "id": "project-71-snap-in-the-bath-get-away-live-acoustic-for-bambusound-documentary",
+        "id": "snap-in-the-bath-get-away-live-acoustic-bambusound",
         "type": "project",
         "projectRelation": "side",
         "category": "music performance",
@@ -431,7 +431,7 @@
         "endDate": "2015-03-09"
       },
       {
-        "id": "project-73-snap-in-the-bath-this-is-not-a-love-song-live-acoustic-alfa-bar-barcelona",
+        "id": "snap-in-the-bath-this-is-not-a-love-song-live-acoustic-alfa-bar",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -441,7 +441,7 @@
         "endDate": "2014-12-16"
       },
       {
-        "id": "project-74-snap-in-the-bath-live-ikea-semi-unplugged-full-show",
+        "id": "snap-in-the-bath-live-ikea-semi-unplugged",
         "type": "project",
         "category": "music performance",
         "projectRelation": "side",
@@ -462,7 +462,7 @@
     ]
   },
   {
-    "id": "study-1-software-engineering-immersive-codeworks-12-week-intensive-full-time-bootcamp",
+    "id": "software-engineering-bootcamp-codeworks",
     "type": "study",
     "shortTitle": "Coding Bootcamp",
     "title": "Software Engineering Immersive @ Codeworks — 12-week intensive full-time bootcamp",
@@ -472,7 +472,7 @@
     "endDate": "2018-08-31",
     "projects": [
       {
-        "id": "project-15-bitcoin-collab-fullstack-web-app",
+        "id": "bitcoin-collab-fullstack-web-app",
         "type": "project",
         "category": "software",
         "title": "Bitcoin Collab: Fullstack Web App",
@@ -481,7 +481,7 @@
         "endDate": "2018-07-01"
       },
       {
-        "id": "project-16-nanny-express-fullstack-web-app",
+        "id": "nanny-express-fullstack-web-app",
         "type": "project",
         "category": "software",
         "title": "Nanny Express: Fullstack Web App",
@@ -490,7 +490,7 @@
         "endDate": "2018-06-01"
       },
       {
-        "id": "project-17-find-a-hobby-fullstack-web-app",
+        "id": "find-a-hobby-fullstack-web-app",
         "type": "project",
         "category": "software",
         "title": "Find a Hobby!: Fullstack Web App",
@@ -499,7 +499,7 @@
         "endDate": "2018-06-01"
       },
       {
-        "id": "project-14-flickr-gallery",
+        "id": "flickr-gallery-web-app",
         "type": "project",
         "category": "software",
         "projectRelation": "side",
@@ -509,7 +509,7 @@
         "endDate": "2018-08-01"
       },
       {
-        "id": "project-18-jon-portellas-blackjack-web-app",
+        "id": "blackjack-web-app",
         "type": "project",
         "category": "software",
         "title": "Jon Portella's Blackjack: Web App",
@@ -520,7 +520,7 @@
     ]
   },
   {
-    "id": "job-3-senior-software-engineer-at-pinterest",
+    "id": "senior-software-engineer-pinterest",
     "type": "job",
     "title": "Senior Software Engineer at Pinterest",
     "shortTitle": "Pinterest",
@@ -530,7 +530,7 @@
     "endDate": null,
     "projects": [
       {
-        "id": "project-1-brand-lockup-ios",
+        "id": "brand-lockup-ios",
         "type": "project",
         "category": "software",
         "title": "Brand lockup (iOS)",
@@ -539,7 +539,7 @@
         "image": "https://j-img.jonportella.com/assets/brand-lockup.png"
       },
       {
-        "id": "project-2-product-detail-page-ipad-ios",
+        "id": "product-detail-page-ipad-ios",
         "type": "project",
         "category": "software",
         "title": "Product detail page on iPad (iOS)",
@@ -548,7 +548,7 @@
         "demoVideo": "https://www.youtube.com/shorts/w_H7v6kXy_4"
       },
       {
-        "id": "project-3-shop-by-brand-module-ui-iteration",
+        "id": "shop-by-brand-module-ui-iteration",
         "type": "project",
         "category": "software",
         "title": "Shop by brand module UI iteration",
@@ -557,7 +557,7 @@
         "image": "https://j-img.jonportella.com/assets/shop-by-brand-module-ui-iteration.png"
       },
       {
-        "id": "project-4-styles-for-you-module-ui-iteration",
+        "id": "styles-for-you-module-ui-iteration",
         "type": "project",
         "category": "software",
         "title": "Styles for you module UI iteration",
@@ -566,7 +566,7 @@
         "image": "https://j-img.jonportella.com/assets/styles-for-you-module-ui-iteration.png"
       },
       {
-        "id": "project-5-2-column-modules-masonry",
+        "id": "two-column-modules-masonry",
         "type": "project",
         "category": "software",
         "title": "2-column modules in Masonry",
@@ -575,7 +575,7 @@
         "demoVideo": "https://www.youtube.com/watch?v=48LqfM3UEAI"
       },
       {
-        "id": "project-6-bulk-actions-pin-builder",
+        "id": "bulk-actions-pin-builder",
         "type": "project",
         "category": "software",
         "title": "Bulk actions in Pin Builder",
@@ -584,7 +584,7 @@
         "demoVideo": "https://www.youtube.com/watch?v=bucA2BLqojM"
       },
       {
-        "id": "project-7-search-shopping-filters",
+        "id": "search-shopping-filters",
         "type": "project",
         "category": "software",
         "title": "Search shopping filters",
@@ -593,7 +593,7 @@
         "demoVideo": "https://www.youtube.com/watch?v=uwy7DSqgpYk"
       },
       {
-        "id": "project-8-shopping-units",
+        "id": "shopping-units",
         "type": "project",
         "category": "software",
         "title": "Shopping Units",
@@ -602,7 +602,7 @@
         "image": "https://j-img.jonportella.com/assets/shopping-units.png"
       },
       {
-        "id": "project-9-ways-to-style-it-module-ui-iteration",
+        "id": "ways-to-style-it-module-ui-iteration",
         "type": "project",
         "category": "software",
         "title": "Ways to style it module UI iteration",
@@ -611,7 +611,17 @@
         "image": "https://j-img.jonportella.com/assets/ways-to-style-it-module-ui-iteration.jpg"
       },
       {
-        "id": "project-10-genai-interests-tuner",
+        "id": "timeline-blog-project",
+        "type": "project",
+        "category": "software",
+        "projectRelation": "side",
+        "title": "Jon Portella Blog: Timeline",
+        "description": "What started out as a simple resume-like page, became an exhaustive timeline of my professional life and side projects. I compiled in a JSON file all the projects I've worked on, the jobs I've had, the studies I've done, and the personal projects I've worked on. Then I created some renderers to display them in a vertical timeline format. I did some iterations using a visualization library called vis-timeline, with more interactions animations etc, but the UX was not great on mobile, so I ended up creating a custom solution with UX first principles in mind. I structured with some overarching projects (University, main job at the time, etc) and nested projects I did during those periods. I took great care on adding demos to each project and links to where they can be tested (still some pending). Also added an automatic feed from the blog posts to the timeline, so it's always up to date with my writings. Finally, I added some links to each project card, so it's easy to share a particular point in the timeline with a link.",
+        "link": "https://jonportella.com/timeline",
+        "endDate": "2025-12-20"
+      },
+      {
+        "id": "genai-interests-tuner",
         "type": "project",
         "category": "software",
         "title": "GenAI interests tuner",
@@ -621,7 +631,7 @@
         "image": "https://j-img.jonportella.com/assets/genai-interests-tuner.png"
       },
       {
-        "id": "project-11-recipe-video-module-ui-iteration",
+        "id": "recipe-video-module-ui-iteration",
         "type": "project",
         "category": "software",
         "title": "Recipe video module UI iteration",
@@ -630,7 +640,7 @@
         "image": "https://j-img.jonportella.com/assets/recipe-video-module-ui-iteration.png"
       },
       {
-        "id": "project-12-explicit-user-feedback",
+        "id": "explicit-user-feedback",
         "type": "project",
         "category": "software",
         "title": "Explicit user feedback",
@@ -639,7 +649,7 @@
         "image": "https://j-img.jonportella.com/assets/explicit-user-feedback.png"
       },
       {
-        "id": "project-13-holiday-shopping-landing-page",
+        "id": "holiday-shopping-landing-page",
         "type": "project",
         "category": "software",
         "title": "Holiday shopping landing page",
@@ -648,7 +658,7 @@
         "demoVideo": "https://www.youtube.com/shorts/Z_OjTbNaqj4"
       },
       {
-        "id": "project-predicts-landing-page",
+        "id": "pinterest-predicts-2026-landing-page",
         "type": "project",
         "category": "software",
         "title": "Pinterest Predicts 2026 landing page",
@@ -657,7 +667,7 @@
         "demoVideo": "https://www.youtube.com/watch?v=fYYq_u-QXqU"
       },
       {
-        "id": "project-14-pin-peek-zoom-on-pins",
+        "id": "pin-peek-zoom-on-pins",
         "type": "project",
         "category": "software",
         "title": "Pin Peek - Zoom on Pins",
@@ -666,7 +676,7 @@
         "demoVideo": "https://www.youtube.com/watch?v=36URafFFT-A"
       },
       {
-        "id": "project-15-eloquent-js-mentoring",
+        "id": "eloquent-js-mentoring-project",
         "type": "project",
         "projectRelation": "side",
         "category": "software",
@@ -715,7 +725,7 @@
     ]
   },
   {
-    "id": "job-4-full-stack-engineer-at-curelator-inc",
+    "id": "full-stack-engineer-curelator",
     "type": "job",
     "title": "Full Stack Engineer at Curelator Inc.",
     "shortTitle": "Curelator",
@@ -725,7 +735,7 @@
     "endDate": "2021-08-31",
     "projects": [
       {
-        "id": "project-10-instagram-random-comment-picker",
+        "id": "instagram-random-comment-picker",
         "type": "project",
         "projectRelation": "side",
         "category": "software",
@@ -737,7 +747,7 @@
         "endDate": "2019-01-01"
       },
       {
-        "id": "project-11-jon-portella-blog",
+        "id": "jon-portella-blog",
         "type": "project",
         "projectRelation": "side",
         "category": "software",
@@ -748,7 +758,7 @@
         "endDate": "2018-12-01"
       },
       {
-        "id": "project-12-uma-zuastis-blog",
+        "id": "uma-zuasti-blog",
         "type": "project",
         "projectRelation": "side",
         "category": "software",
@@ -759,7 +769,7 @@
         "endDate": "2018-12-01"
       },
       {
-        "id": "project-13-reddit-bulk-image-downloader",
+        "id": "reddit-bulk-image-downloader",
         "type": "project",
         "projectRelation": "side",
         "category": "software",
@@ -769,7 +779,7 @@
         "endDate": "2018-11-01"
       },
       {
-        "id": "project-21-oxidia-experience",
+        "id": "oxidia-backpack-advertisement",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -779,7 +789,7 @@
         "endDate": "2021-01-02"
       },
       {
-        "id": "project-22-oxidia-tutorial-mini-en",
+        "id": "oxidia-mini-tutorial-video",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -789,7 +799,7 @@
         "endDate": "2021-01-02"
       },
       {
-        "id": "project-23-oxidia-tutorial-maxi-en",
+        "id": "oxidia-maxi-tutorial-video",
         "type": "project",
         "projectRelation": "side",
         "category": "video",
@@ -799,7 +809,7 @@
         "endDate": "2021-01-02"
       },
       {
-        "id": "project-19-n1-headache-dashboard",
+        "id": "n1-headache-dashboard",
         "type": "project",
         "category": "software",
         "title": "N1-Headache dashboard",
@@ -809,7 +819,7 @@
         "endDate": "2021-07-02"
       },
       {
-        "id": "study-2-cs50-introduction-to-computer-science-harvard-edx",
+        "id": "cs50-introduction-computer-science-harvard",
         "type": "study",
         "title": "CS50: Introduction to Computer Science — @ Harvard / edX",
         "description": "An intensive, self-paced foundational course in computer science and programming fundamentals, designed for both beginners and those with prior experience. CS50 teaches core concepts including computational thinking, algorithms, data structures, abstraction, resource management, and software engineering principles.\n\nStudents gain practical programming experience in C, Python, SQL, JavaScript, HTML and CSS, progressing from low-level understanding of memory and machine-level concepts (via C) to higher-level web and application development skills (via Python, SQL, JavaScript, HTML/CSS). The curriculum includes weekly problem sets drawing from real-world domains — such as cryptography, finance, forensics, biology or gaming — culminating in a final project that demonstrates the ability to design and implement a complete software application.\n\nCS50 emphasizes strong coding style, correctness, and algorithmic efficiency, helping learners develop not just coding fluency but deeper understanding of how computers work under the hood. The course also connects students to a large global learning community, offering exposure to diverse problem-solving approaches and collaboration opportunities.",
@@ -819,7 +829,7 @@
         "projects": []
       },
       {
-        "id": "job-5-instructor-at-codeworks",
+        "id": "instructor-codeworks",
         "type": "job",
         "title": "Instructor at Codeworks",
         "description": "Codeworks is an immersive coding bootcamp with campuses in Austin, Barcelona, New York, Berlin, London, and Toronto. Its Software Engineering Immersive program covers advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking, end-to-end testing, security, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, open source contributions, back-end frameworks (Node, Express, Koa, GraphQL), databases (SQL, MongoDB, Redis), and front-end frameworks (Angular, React). Responsibilities: Give a lecture once a week about the current course subject, train new Teaching Assistants, answer help requests from all students, host Q&A sessions and exercise reviews, support senior students throughout their coding projects (brainstorming, code reviews, demos), prepare senior students for their job search.",
@@ -829,7 +839,7 @@
         "projects": []
       },
       {
-        "id": "project-20-n1-headache-website",
+        "id": "n1-headache-website",
         "type": "project",
         "category": "software",
         "title": "N1-Headache website",
@@ -839,7 +849,7 @@
         "endDate": "2019-07-02"
       },
       {
-        "id": "project-8-make-me-drink-real-time-online-game",
+        "id": "make-me-drink-real-time-online-game",
         "type": "project",
         "projectRelation": "side",
         "category": "software",
@@ -849,7 +859,7 @@
         "endDate": "2020-05-01"
       },
       {
-        "id": "project-9-vizviz-trippy-visualisations-with-p5js",
+        "id": "vizviz-trippy-visualizations-p5js",
         "type": "project",
         "projectRelation": "side",
         "category": "software",
@@ -861,7 +871,7 @@
         "endDate": "2020-05-01"
       },
       {
-        "id": "project-35-streetymp3",
+        "id": "streetymp3-song",
         "type": "project",
         "projectRelation": "side",
         "category": "music",
@@ -871,7 +881,7 @@
         "endDate": "2019-09-24"
       },
       {
-        "id": "project-36-thingymp3",
+        "id": "thingymp3-song",
         "type": "project",
         "projectRelation": "side",
         "category": "music",
@@ -881,7 +891,7 @@
         "endDate": "2019-08-21"
       },
       {
-        "id": "project-37-paperymp3",
+        "id": "paperymp3-song",
         "type": "project",
         "projectRelation": "side",
         "category": "music",
@@ -921,17 +931,35 @@
     ]
   },
   {
-    "id": "job-6-audiovisual-engineer-artist-self-employed",
+    "id": "audiovisual-engineer-freelance",
     "type": "job",
     "title": "Audiovisual Engineer / Artist (Self-employed)",
     "shortTitle": "Freelance Audiovisual",
-    "description": "Figuring myself out after graduating from university. Lots of creative work in this period: advertising, short films, music composition and production, graphic design. Pivoted to a more technical role towards the end, specializing in live events doing video/audio systems set up and operation for conferences, shows and art installations.",
+    "description": "Figuring myself out after graduating from university. Lots of creative work in this period: advertising, short films, music composition and production, graphic design. Pivoted to a more technical role towards the end, specializing in live events doing video/audio systems set up and operation for conferences, shows and art installations. Finally, I decided I neeed a career change and started looking for education in the tech industry.",
     "link": null,
     "startDate": "2015-12-01",
     "endDate": "2018-05-31",
     "projects": [
       {
-        "id": "project-38-audiovisual-engineer-portfolio",
+        "id": "audiovisual-engineer-eikonos-barcelona",
+        "type": "job",
+        "title": "Audiovisual Engineer @ Eikonos Barcelona",
+        "description": "After my brief stay in Vancouver, I moved back to Barcelona and swapped doing freelancing on live events for a full-time job at an event company called Eikonos. From my freelancing experience, this was one of the companies with the most interesting projects and people to work with. I grew a lot there, and did really cool projects like the MotoGP world championship, music festivals, TV, movies, etc. I worked there for the best part of that year until at some point the crazy hours, traveling and lack of sleep started to take a toll on me and my personal life, so I decided to move on.",
+        "link": "https://eikonos.com",
+        "startDate": "2017-05-01",
+        "endDate": "2017-12-01"
+      },
+      {
+        "id": "audiovisual-engineer-fmav-vancouver",
+        "type": "job",
+        "title": "Audiovisual Engineer @ FMAV Vancouver",
+        "description": "Decided to try moving out from Barcelona to Vancouver, worked a few months as an Audiovisual Engineer for FMAV. This was a medium-sized company that provided audiovisuals for events and conferences, it got aquired in 2018 by another company. I got to learn what's like to be an immigrant and how to adapt to a new culture and a new country. Although I missed my friends and family and didn't stay long, it was a valuable experience.",
+        "link": "https://www.crunchbase.com/organization/fmav",
+        "startDate": "2017-03-01",
+        "endDate": "2017-05-01"
+      },
+      {
+        "id": "audiovisual-engineer-portfolio-reel",
         "type": "project",
         "category": "video",
         "title": "Audiovisual Engineer Portfolio",
@@ -940,7 +968,7 @@
         "endDate": "2017-12-05"
       },
       {
-        "id": "project-33-sharkeye-scooter",
+        "id": "sharkeye-scooter-advertisement",
         "type": "project",
         "category": "video",
         "title": "Sharkeye Scooter",
@@ -949,7 +977,7 @@
         "endDate": "2018-01-02"
       },
       {
-        "id": "project-29-liljeez-g-swagg-explicit-ft-dj-crazy-cool",
+        "id": "liljeez-g-swagg-music-video",
         "type": "project",
         "category": "video",
         "title": "Lil'Jeez G Swagg Explicit ft  Dj Crazy Cool",
@@ -958,7 +986,7 @@
         "endDate": "2016-01-02"
       },
       {
-        "id": "project-31-barcelona-about-a-girl",
+        "id": "barcelona-about-a-girl-rental-ad",
         "type": "project",
         "category": "video",
         "title": "Barcelona - About a Girl",
@@ -967,7 +995,7 @@
         "endDate": "2017-01-02"
       },
       {
-        "id": "project-30-la-fabrica-de-juguetes-de-los-reyes-magos-de-oriente-fabra-i-coats",
+        "id": "reyes-magos-juguetes-soundtrack",
         "type": "project",
         "category": "music",
         "title": "La Fábrica de Juguetes de los Reyes Magos de Oriente fabra i coats",
@@ -1003,7 +1031,7 @@
         "endDate": "2018-01-01"
       },
       {
-        "id": "big-pistachio",
+        "id": "big-pistachio-comedy-movie-teaser",
         "type": "project",
         "category": "video",
         "title": "The Big Pistachio",

@@ -453,8 +453,10 @@
         "type": "project",
         "category": "software",
         "title": "Find a Hobby!: Fullstack Web App",
-        "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB.",
+        "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up in a few days as my Codeworks solo project, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB, Redis, Raccon.",
         "code": "https://github.com/jportella93/find-a-hobby-client",
+        "demoVideo": "https://www.youtube.com/watch?v=Ni5OnHiVEME",
+        "link": "https://find-a-hobby.jonportella.com",
         "endDate": "2018-06-01"
       },
       {

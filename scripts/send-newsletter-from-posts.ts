@@ -43,7 +43,6 @@ const BUTTONDOWN_API_BASE = "https://api.buttondown.email/v1";
 
 const isDryRun = process.argv.includes("--dry-run");
 const apiKey = process.env.BUTTONDOWN_API_KEY;
-const draftEmail = process.env.BUTTONDOWN_DRAFT_EMAIL;
 
 function ensureEnv() {
   if (isDryRun) {
@@ -53,12 +52,6 @@ function ensureEnv() {
   if (!apiKey) {
     throw new Error(
       "Missing BUTTONDOWN_API_KEY. Add it to your environment before running."
-    );
-  }
-
-  if (!draftEmail) {
-    throw new Error(
-      "Missing BUTTONDOWN_DRAFT_EMAIL. Add it to your environment before running."
     );
   }
 }
@@ -253,20 +246,6 @@ async function createDraftEmail(
   });
 }
 
-async function sendTestEmail(emailId: string): Promise<void> {
-  await buttondownRequest(`/emails/${emailId}/send-draft`, {
-    method: "POST",
-    body: JSON.stringify({ recipients: [draftEmail] }),
-  });
-}
-
-async function sendEmail(emailId: string): Promise<void> {
-  await buttondownRequest(`/emails/${emailId}`, {
-    method: "PATCH",
-    body: JSON.stringify({ status: "about_to_send" }),
-  });
-}
-
 async function markPostsAsSent(posts: PostForEmail[]): Promise<void> {
   await Promise.all(
     posts.map(async (post) => {
@@ -303,35 +282,24 @@ async function main() {
 
     const email = buildEmailContent(selected);
 
-    console.log("\n--- Email preview ---");
-    console.log(`Subject: ${email.subject}`);
-    console.log(`\nBody:\n${email.body}`);
-    console.log("--- End preview ---\n");
-
     if (isDryRun) {
       console.log("[Dry-run] Skipping Buttondown API calls and file updates.");
       return;
     }
 
     const draft = await createDraftEmail(email);
-    console.log(`Created Buttondown draft email (id: ${draft.id}).`);
-
-    await sendTestEmail(draft.id);
-    console.log(`Sent draft/test email to ${draftEmail}.`);
+    console.log(`Review draft at: https://buttondown.email/emails/${draft.id}`);
 
     const approved = await confirmSend(
-      "Send this email to all subscribers? (y/N): "
+      "Mark these posts as sent (draft created for manual review)? (y/N): "
     );
 
     if (!approved) {
       console.log(
-        "Approval declined. Draft left as-is; no subscribers emailed."
+        "Posts not marked as sent. You can review the draft and send manually."
       );
       return;
     }
-
-    await sendEmail(draft.id);
-    console.log("Email sent to subscribers.");
 
     await markPostsAsSent(selected);
     console.log("Marked selected posts as sent.");

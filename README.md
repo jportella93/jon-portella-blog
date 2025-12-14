@@ -26,6 +26,26 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
+## Creating Blog Posts
+
+1. **Create a new post:**
+   ```bash
+   npm run create-post
+   ```
+   This will prompt you for the post title (first line), spoiler (second line), and content (remaining lines). It creates a new directory in `content/blog/` with the post structure.
+
+2. **Add images (optional):**
+   Place any images for your post in the `images/` subdirectory that was created in your post directory (e.g., `content/blog/your-post-slug/images/`). Reference images in your markdown using relative paths like `./images/your-image.jpg` or `images/your-image.jpg`.
+
+3. **Process images:**
+   ```bash
+   npm run process-images
+   ```
+   This script will:
+   - Upload all local images referenced in your post to Cloudflare R2
+   - Replace local image references with remote URLs
+   - Generate image metadata (dimensions, etc.) for proper display
+
 ## Build
 
 Build the static site:

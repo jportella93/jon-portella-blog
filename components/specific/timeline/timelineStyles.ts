@@ -3,6 +3,7 @@ export const THEME_COLORS = {
   job: { light: "#9c27b0", dark: "#ba68c8" },
   project: { light: "#4caf50", dark: "#66bb6a" },
   profile: { light: "#ff9800", dark: "#ffb74d" },
+  milestone: { light: "#f44336", dark: "#ef5350" }, // Red color for milestones
 } as const;
 
 export const getTypeColor = (type: string, isDarkMode: boolean) => {
@@ -21,6 +22,10 @@ export const getTypeColor = (type: string, isDarkMode: boolean) => {
         : THEME_COLORS.profile.light;
     case "blog-post":
       return isDarkMode ? "#b39ddb" : "#9c88ff"; // Purple color for blog posts
+    case "milestone":
+      return isDarkMode
+        ? THEME_COLORS.milestone.dark
+        : THEME_COLORS.milestone.light;
     default:
       return isDarkMode ? "#5ba3d3" : "#358ccb";
   }

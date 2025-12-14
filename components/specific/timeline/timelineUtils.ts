@@ -51,6 +51,7 @@ export const getProjectRelationLabel = (
 ): string => {
   if (item.type === "profile-picture") return "";
   if (item.type === "blog-post") return "Blog post";
+  if (item.type === "milestone") return "";
   if (item.type === "study") return "Side studies";
   if (item.type !== "project") return "Side role";
   if (item.projectRelation === "role" && isNested) return "";

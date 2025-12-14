@@ -2,11 +2,13 @@ import { useEffect, useMemo, useState } from "react";
 import {
   type TimelineItem,
   type TimelineMainItem,
+  type TimelineMilestoneItem,
   type TimelineProject,
   timelineDataNested,
 } from "../lib/timelineData";
 import { getTimelineDomId } from "./specific/timeline/permalink";
 import { TimelineItemRenderer } from "./specific/timeline/TimelineItemRenderer";
+import { TimelineMilestoneRenderer } from "./specific/timeline/TimelineMilestoneRenderer";
 import { TimelineProjectRenderer } from "./specific/timeline/TimelineProjectRenderer";
 import { TimelineScrollContextBar } from "./specific/timeline/TimelineScrollContextBar";
 import {
@@ -45,12 +47,17 @@ export default function Timeline() {
     const standaloneProjects = timelineDataNested.filter(
       (item): item is TimelineProject => item.type === "project"
     );
+    const milestoneItems = timelineDataNested.filter(
+      (item): item is TimelineMilestoneItem => item.type === "milestone"
+    );
 
-    return [...mainItems, ...standaloneProjects].sort((a, b) => {
-      const dateA = new Date(getSortDate(a));
-      const dateB = new Date(getSortDate(b));
-      return dateB.getTime() - dateA.getTime();
-    });
+    return [...mainItems, ...standaloneProjects, ...milestoneItems].sort(
+      (a, b) => {
+        const dateA = new Date(getSortDate(a));
+        const dateB = new Date(getSortDate(b));
+        return dateB.getTime() - dateA.getTime();
+      }
+    );
   }, []);
 
   const scrollContextItems = useMemo(() => {
@@ -64,6 +71,14 @@ export default function Timeline() {
     combinedItems.forEach((item) => {
       if (item.type === "project") {
         // Standalone project
+        items.push({
+          domId: getTimelineDomId(item.id),
+          dateLabel: formatDateRange(item.startDate, item.endDate),
+          overarchingTitle: getDisplayTitle(item),
+          subTitle: "",
+        });
+      } else if (item.type === "milestone") {
+        // Standalone milestone
         items.push({
           domId: getTimelineDomId(item.id),
           dateLabel: formatDateRange(item.startDate, item.endDate),
@@ -113,6 +128,12 @@ export default function Timeline() {
             <TimelineProjectRenderer
               key={item.id}
               project={item}
+              isFirst={index === 0}
+            />
+          ) : item.type === "milestone" ? (
+            <TimelineMilestoneRenderer
+              key={item.id}
+              milestone={item}
               isFirst={index === 0}
             />
           ) : (

@@ -79,8 +79,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2025.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2025-01-01"
       },
       {
@@ -115,8 +113,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2024.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2024-01-01"
       },
       {
@@ -189,8 +185,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2023.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2023-01-01"
       },
       {
@@ -198,9 +192,13 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2022.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2022-01-01"
+      },
+      {
+        "id": "milestone-moved-toronto-2021",
+        "type": "milestone",
+        "title": "Moved to Tornto, Canada",
+        "endDate": "2021-08-01"
       }
     ]
   },
@@ -269,9 +267,13 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2021.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2021-01-01"
+      },
+      {
+        "id": "milestone-moved-bogota-2020",
+        "type": "milestone",
+        "title": "Moved to Bogota, Colombia",
+        "endDate": "2020-10-01"
       },
       {
         "id": "paperymp3-song",
@@ -311,8 +313,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2020.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2020-01-01"
       },
       {
@@ -372,8 +372,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2019.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2019-01-01"
       },
       {
@@ -476,7 +474,6 @@
     "title": "Audiovisual Engineer / Artist (Self-employed)",
     "shortTitle": "Freelance Audiovisual",
     "description": "Figuring myself out after graduating from university. Lots of creative work in this period: advertising, short films, music composition and production, graphic design. Pivoted to a more technical role towards the end, specializing in live events doing video/audio systems set up and operation for conferences, shows and art installations. Finally, I decided I neeed a career change and started looking for education in the tech industry.",
-    "link": null,
     "startDate": "2015-12-01",
     "endDate": "2018-05-31",
     "projects": [
@@ -494,8 +491,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2018.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2018-01-01"
       },
       {
@@ -513,8 +508,14 @@
         "title": "Audiovisual Engineer @ Eikonos Barcelona",
         "description": "After my brief stay in Vancouver, I moved back to Barcelona and swapped doing freelancing on live events for a full-time job at an event company called Eikonos. From my freelancing experience, this was one of the companies with the most interesting projects and people to work with. I grew a lot there, and did really cool projects like the MotoGP world championship, music festivals, TV, movies, etc. I worked there for the best part of that year until at some point the crazy hours, traveling and lack of sleep started to take a toll on me and my personal life, so I decided to move on.",
         "link": "https://eikonos.com",
-        "startDate": "2017-05-01",
+        "startDate": "2017-05-03",
         "endDate": "2017-12-01"
+      },
+      {
+        "id": "milestone-moved-barcelona-2017",
+        "type": "milestone",
+        "title": "Moved to Barcelona, Spain",
+        "endDate": "2017-05-02"
       },
       {
         "id": "audiovisual-engineer-fmav-vancouver",
@@ -522,8 +523,14 @@
         "title": "Audiovisual Engineer @ FMAV Vancouver",
         "description": "Decided to try moving out from Barcelona to Vancouver, worked a few months as an Audiovisual Engineer for FMAV. This was a medium-sized company that provided audiovisuals for events and conferences, it got aquired in 2018 by another company. I got to learn what's like to be an immigrant and how to adapt to a new culture and a new country. Although I missed my friends and family and didn't stay long, it was a valuable experience.",
         "link": "https://www.crunchbase.com/organization/fmav",
-        "startDate": "2017-03-01",
+        "startDate": "2017-03-02",
         "endDate": "2017-05-01"
+      },
+      {
+        "id": "milestone-moved-vancouver-2017",
+        "type": "milestone",
+        "title": "Moved to Vancouver, Canada",
+        "endDate": "2017-03-01"
       },
       {
         "id": "barcelona-about-a-girl-rental-ad",
@@ -539,8 +546,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2017.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2017-01-01"
       },
       {
@@ -566,8 +571,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2016.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2016-01-01"
       },
       {
@@ -625,8 +628,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2015.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2015-01-01"
       },
       {
@@ -747,8 +748,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2014.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2014-01-01"
       },
       {
@@ -882,8 +881,6 @@
         "type": "profile-picture",
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2013.jpeg",
-        "link": null,
-        "startDate": null,
         "endDate": "2013-01-01"
       },
       {

@@ -128,8 +128,8 @@ function buildEmailContent(posts: PostForEmail[]): EmailPayload {
   const titles = posts.map((post) => post.frontmatter.title || post.slug);
   const subject =
     posts.length === 1
-      ? `New on the blog: ${titles[0]}`
-      : `New on the blog: ${titles.join(", ")}`;
+      ? `New on Jon Portella's Blog: ${titles[0]}`
+      : `New on Jon Portella's Blog: ${titles[0]} and more`;
 
   const intro =
     posts.length === 1
@@ -148,7 +148,7 @@ function buildEmailContent(posts: PostForEmail[]): EmailPayload {
     return `## ${title}${date ? ` (${date})` : ""}\n\n${spoiler}Read on the site: ${url}\n\n${content}`;
   });
 
-  const body = `${intro}\n\n${sections.join("\n\n---\n\n")}\n\nThanks for reading!\n\n— ${siteMetadata.author}`;
+  const body = `${intro}\n\n${sections.join("\n\n---\n\n")}\n\nThanks for reading!\n\n— ${siteMetadata.author}\n\n{{ subscribe_form }}`;
 
   return { subject, body };
 }

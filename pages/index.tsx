@@ -26,8 +26,7 @@ export default function Index() {
         section for some of my writings on tech and other topics.
       </p>
       <p>
-        And if you want to get in touch, you can find my contact information in
-        the footer.
+        And if you want to get in touch, you can find my email in the footer.
       </p>
       <p>Hope you enjoy your stay!</p>
     </Layout>

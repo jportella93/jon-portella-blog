@@ -113,12 +113,22 @@ export function getPostBySlug(slug: string): Post {
     }
   );
 
+  // Replace relative links (starting with /) with full site URL
+  const siteUrl = siteMetadata.siteUrl || "";
+  const contentWithFixedLinks = contentWithFixedImages.replace(
+    /\[([^\]]+)\]\((\/[^)]+)\)/g,
+    (match, linkText, linkPath) => {
+      const fullUrl = siteUrl ? `${siteUrl}${linkPath}` : linkPath;
+      return `[${linkText}](${fullUrl})`;
+    }
+  );
+
   // Process markdown to HTML
   let processedContent = remark()
     .use(remarkRehype)
     .use(rehypePrismPlus)
     .use(rehypeStringify)
-    .processSync(contentWithFixedImages);
+    .processSync(contentWithFixedLinks);
 
   // Also fix any img src attributes in the HTML that might have been missed
   // This handles cases where images are in HTML format in the markdown
@@ -131,9 +141,18 @@ export function getPostBySlug(slug: string): Post {
     }
   );
 
+  // Fix any HTML links (href attributes) that start with /
+  const htmlWithFixedLinks = htmlWithFixedImages.replace(
+    /<a([^>]*)\shref="(\/[^"]+)"/g,
+    (match, attrs, linkPath) => {
+      const fullUrl = siteUrl ? `${siteUrl}${linkPath}` : linkPath;
+      return `<a${attrs} href="${fullUrl}"`;
+    }
+  );
+
   // Read image metadata and wrap image-only paragraphs with skeleton containers
   const imageMeta = getImageMetaForPost(slug);
-  const htmlWithWrappedImages = htmlWithFixedImages.replace(
+  const htmlWithWrappedImages = htmlWithFixedLinks.replace(
     /<p>\s*(?:<a[^>]*>\s*)?(<img[^>]*>)\s*(?:<\/a>\s*)?<\/p>/gi,
     (match, imgTag) => {
       // Skip if already wrapped

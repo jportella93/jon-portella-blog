@@ -28,7 +28,10 @@ export function useTimelineFilters() {
         });
       }
     });
-    return Array.from(types).sort();
+    // Exclude job and study types from filters
+    return Array.from(types)
+      .filter((type) => type !== "job" && type !== "study")
+      .sort();
   }, []);
 
   // Helper function to get all available categories from project items (excluding "writing")

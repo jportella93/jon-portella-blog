@@ -237,6 +237,7 @@ const TYPE_EMOJI: Record<string, string> = {
   job: "💼",
   "profile-picture": "📸",
   milestone: "📍",
+  "blog-post": "✍️",
 };
 
 export function getTimelineCategoryEmoji(category?: TimelineCategory): string {

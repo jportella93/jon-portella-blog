@@ -11,10 +11,12 @@ interface ScrollContextItem {
 
 interface TimelineScrollContextBarProps {
   items: ScrollContextItem[];
+  onClick?: () => void;
 }
 
 export function TimelineScrollContextBar({
   items,
+  onClick,
 }: TimelineScrollContextBarProps) {
   const { isDarkMode } = useTheme();
   const [activeItem, setActiveItem] = useState<ScrollContextItem | null>(null);
@@ -93,6 +95,7 @@ export function TimelineScrollContextBar({
       ? "0 2px 16px rgba(0,0,0,0.4)"
       : "0 2px 16px rgba(0,0,0,0.15)",
     borderRadius: rhythm(1),
+    cursor: onClick ? "pointer" : "default",
   };
 
   const dateStyle: React.CSSProperties = {
@@ -109,7 +112,7 @@ export function TimelineScrollContextBar({
   };
 
   return (
-    <div style={barStyle}>
+    <div style={barStyle} onClick={onClick}>
       <span style={dateStyle}>{activeItem.dateLabel}</span>
       <span style={titleStyle}>
         {activeItem.overarchingTitle}

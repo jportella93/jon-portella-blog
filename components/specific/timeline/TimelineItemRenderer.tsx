@@ -1,4 +1,4 @@
-import type { TimelineMainItem } from "../../../lib/timelineData";
+import type { TimelineItem, TimelineMainItem } from "../../../lib/timelineData";
 import {
   getTimelineCategoryEmoji,
   getTimelineTypeEmoji,
@@ -18,17 +18,24 @@ import {
 interface TimelineItemRendererProps {
   item: TimelineMainItem;
   isFirst?: boolean;
+  shouldShowItem?: (item: TimelineItem) => boolean;
 }
 
 export const TimelineItemRenderer = ({
   item,
   isFirst = false,
+  shouldShowItem,
 }: TimelineItemRendererProps) => {
   const { isDarkMode } = useTheme();
   const children = item.projects ?? [];
 
   // Sort all nested items chronologically (newest first), interleaving all types
   const orderedNested = [...children].sort(compareTimelineItemsNewestFirst);
+
+  // Filter nested items based on filter state (if shouldShowItem is provided)
+  const filteredNested = shouldShowItem
+    ? orderedNested.filter(shouldShowItem)
+    : orderedNested;
 
   const domId = getTimelineDomId(item.id);
 
@@ -96,7 +103,7 @@ export const TimelineItemRenderer = ({
 
       <TimelineDetails item={item} isFirst={isFirst} />
 
-      {orderedNested.length > 0 && (
+      {filteredNested.length > 0 && (
         <div style={{ marginTop: rhythm(1) }}>
           <div
             style={{
@@ -108,7 +115,7 @@ export const TimelineItemRenderer = ({
           >
             Concurrent work
           </div>
-          {orderedNested.map((child, childIndex) => (
+          {filteredNested.map((child, childIndex) => (
             <div
               id={getTimelineDomId(child.id)}
               key={child.id}

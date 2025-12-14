@@ -7,6 +7,7 @@ import {
   timelineDataNested,
 } from "../lib/timelineData";
 import { getTimelineDomId } from "./specific/timeline/permalink";
+import { TimelineFilterMenu } from "./specific/timeline/TimelineFilterMenu";
 import { TimelineItemRenderer } from "./specific/timeline/TimelineItemRenderer";
 import { TimelineMilestoneRenderer } from "./specific/timeline/TimelineMilestoneRenderer";
 import { TimelineProjectRenderer } from "./specific/timeline/TimelineProjectRenderer";
@@ -16,9 +17,22 @@ import {
   formatDateRange,
   getSortDate,
 } from "./specific/timeline/timelineUtils";
+import { useTimelineFilters } from "./specific/timeline/useTimelineFilters";
 
 export default function Timeline() {
   const [isNarrowScreen, setIsNarrowScreen] = useState(false);
+
+  // Filter state and handlers
+  const {
+    selectedTypes,
+    selectedCategories,
+    isFilterMenuOpen,
+    setIsFilterMenuOpen,
+    getAllAvailableTypes,
+    getAllAvailableCategories,
+    shouldShowItem,
+    updateFilters,
+  } = useTimelineFilters();
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -98,11 +112,11 @@ export default function Timeline() {
           subTitle: "",
         });
 
-        // Add nested items (already sorted in TimelineItemRenderer)
+        // Add nested items that pass the filter (already sorted in TimelineItemRenderer)
         const orderedNested = [...children].sort(
           compareTimelineItemsNewestFirst
         );
-        orderedNested.forEach((child) => {
+        orderedNested.filter(shouldShowItem).forEach((child) => {
           items.push({
             domId: getTimelineDomId(child.id),
             dateLabel: formatDateRange(child.startDate, child.endDate),
@@ -114,13 +128,26 @@ export default function Timeline() {
     });
 
     return items;
-  }, [combinedItems, getDisplayTitle]);
+  }, [combinedItems, getDisplayTitle, shouldShowItem]);
 
   return (
     <div data-timeline-container>
       <h1>Timeline</h1>
 
-      <TimelineScrollContextBar items={scrollContextItems} />
+      <TimelineScrollContextBar
+        items={scrollContextItems}
+        onClick={() => setIsFilterMenuOpen(!isFilterMenuOpen)}
+      />
+
+      <TimelineFilterMenu
+        isOpen={isFilterMenuOpen}
+        selectedTypes={selectedTypes}
+        selectedCategories={selectedCategories}
+        availableTypes={getAllAvailableTypes}
+        availableCategories={getAllAvailableCategories}
+        onUpdateFilters={updateFilters}
+        onClose={() => setIsFilterMenuOpen(false)}
+      />
 
       <div>
         {combinedItems.map((item, index) =>
@@ -141,6 +168,7 @@ export default function Timeline() {
               key={item.id}
               item={item}
               isFirst={index === 0}
+              shouldShowItem={shouldShowItem}
             />
           )
         )}

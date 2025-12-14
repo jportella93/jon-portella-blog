@@ -2,7 +2,7 @@
 title: Why I love RSS
 spoiler: Email was the problem
 date: "2025-12-11T00:12:36.326Z"
-hasNewsletterBeenSent: false
+hasNewsletterBeenSent: true
 ---
 
 I used to subscribe to a bunch of blogs and Substacks — mostly engineering-focused newsletters. But I never read them.
@@ -16,4 +16,4 @@ Now — whenever I feel like reading, I open Inoreader. My email stays for actua
 
 This small change turned information from being pushed to me into something I pull when I’m ready. Learning became enjoyable again.
 
-So basically I added a [RSS feed to this blog](/rss.xml).
+So basically I added a [RSS feed to this blog](https://jonportella.com/rss.xml).

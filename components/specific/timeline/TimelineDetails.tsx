@@ -5,7 +5,11 @@ import { rhythm } from "../../../lib/typography";
 import { DemoVideoEmbed } from "./DemoVideoEmbed";
 import { GitHubEmbed } from "./GitHubEmbed";
 import { LazyIframe } from "./LazyIframe";
-import { getVimeoVideoId, getYouTubeVideoId } from "./timelineUtils";
+import {
+  getGitHubEmbedUrl,
+  getVimeoVideoId,
+  getYouTubeVideoId,
+} from "./timelineUtils";
 
 interface TimelineDetailsProps {
   item: TimelineItem;
@@ -22,7 +26,9 @@ export const TimelineDetails = ({
       item.code ||
       getYouTubeVideoId(item.link) ||
       getVimeoVideoId(item.link) ||
-      item.bandcampAlbumId
+      item.bandcampAlbumId ||
+      // Check for GitHub embed in project link when no code property exists
+      (item.type === "project" && !item.code && getGitHubEmbedUrl(item.link))
     );
   };
 
@@ -51,6 +57,18 @@ export const TimelineDetails = ({
           />
         );
       });
+    }
+
+    // Check for GitHub embed in project link when no code property exists
+    if (item.type === "project" && !item.code && getGitHubEmbedUrl(item.link)) {
+      embeds.push(
+        <GitHubEmbed
+          key="github-link"
+          repoUrl={item.link}
+          disableLazy={!isFirst}
+          loading={isFirst ? "eager" : "lazy"}
+        />
+      );
     }
 
     const youtubeVideoId = getYouTubeVideoId(item.link);

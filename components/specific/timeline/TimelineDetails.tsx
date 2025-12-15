@@ -115,10 +115,13 @@ export const TimelineDetails = ({
     }
 
     if (item.bandcampAlbumId) {
+      const trackParam = item.bandCampTrackId
+        ? `/track=${item.bandCampTrackId}`
+        : "";
       embeds.push(
         <LazyIframe
           key="bandcamp"
-          src={`https://bandcamp.com/EmbeddedPlayer/album=${item.bandcampAlbumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/`}
+          src={`https://bandcamp.com/EmbeddedPlayer/album=${item.bandcampAlbumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false${trackParam}/transparent=true/`}
           title="Bandcamp embed"
           width="100%"
           height="470px"

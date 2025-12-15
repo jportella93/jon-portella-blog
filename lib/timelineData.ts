@@ -29,6 +29,7 @@ interface TimelineItemBase {
   image: string | null;
   link: string | null;
   bandcampAlbumId?: string;
+  bandCampTrackId?: string;
   demoVideo?: string;
   code?: string;
   category?: TimelineCategory;

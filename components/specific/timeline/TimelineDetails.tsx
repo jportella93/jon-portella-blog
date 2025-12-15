@@ -40,14 +40,17 @@ export const TimelineDetails = ({
     }
 
     if (item.code) {
-      embeds.push(
-        <GitHubEmbed
-          key="code"
-          repoUrl={item.code}
-          disableLazy={!isFirst}
-          loading={isFirst ? "eager" : "lazy"}
-        />
-      );
+      const codeUrls = Array.isArray(item.code) ? item.code : [item.code];
+      codeUrls.forEach((url, index) => {
+        embeds.push(
+          <GitHubEmbed
+            key={`code-${index}`}
+            repoUrl={url}
+            disableLazy={!isFirst && index > 0}
+            loading={isFirst && index === 0 ? "eager" : "lazy"}
+          />
+        );
+      });
     }
 
     const youtubeVideoId = getYouTubeVideoId(item.link);

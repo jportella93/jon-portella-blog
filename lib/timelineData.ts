@@ -31,7 +31,7 @@ interface TimelineItemBase {
   bandcampAlbumId?: string;
   bandCampTrackId?: string;
   demoVideo?: string;
-  code?: string;
+  code?: string | string[];
   category?: TimelineCategory;
   parentId?: string;
   parentType?: "study" | "job";

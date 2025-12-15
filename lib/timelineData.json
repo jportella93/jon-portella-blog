@@ -780,7 +780,7 @@
         "category": "music",
         "projectRelation": "side",
         "title": "Snap in the Bath - Gas Powered [Official Lyric Video]",
-        "description": "Official lyric video for the song 'Gas Powered' by my band. We recorded it in my bedroom / home studio.",
+        "description": "Official lyric video for the song 'Gas Powered' by my band. We recorded it in my bedroom / home studio. Getting quite metal with this one.",
         "image": "https://i.ytimg.com/vi/Qvwr9ec7U8c/maxresdefault.jpg",
         "link": "https://www.youtube.com/watch?v=Qvwr9ec7U8c",
         "endDate": "2014-05-14"
@@ -810,6 +810,17 @@
         "title": "Snap in the Bath - Get Away [Official Music Video]",
         "description": "A music videoclip my band at the time, I made the whole video, acting, recording of the song, playing guitar, and backing vocals. This was really fun!",
         "link": "https://www.youtube.com/watch?v=3BicGzmKJHw",
+        "endDate": "2014-03-03"
+      },
+      {
+        "id": "snap-in-the-bath-get-away-song",
+        "type": "project",
+        "category": "music",
+        "title": "Snap in the Bath - Get Away",
+        "description": "The first \"real\" song by my band at the time, we recorded it in my bedroom / home studio.",
+        "link": "https://snapinthebath.bandcamp.com/album/snap-in-the-bath",
+        "bandcampAlbumId": "1646814533",
+        "bandCampTrackId": "2094001291",
         "endDate": "2014-03-03"
       },
       {

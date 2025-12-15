@@ -151,7 +151,9 @@ export const TimelineItemRenderer = ({
                       const categoryPart =
                         child.type === "profile-picture"
                           ? ` · ${getTimelineTypeEmoji(child.type)}`
-                          : ` · ${getTimelineCategoryEmoji(child.category)}`;
+                          : child.type === "award"
+                            ? ` · ${getTimelineTypeEmoji(child.type)}`
+                            : ` · ${getTimelineCategoryEmoji(child.category)}`;
                       const prefix = label
                         ? `${label}${categoryPart}`
                         : categoryPart.slice(3); // Remove leading " · " if no label

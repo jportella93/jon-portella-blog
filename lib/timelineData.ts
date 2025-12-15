@@ -73,11 +73,18 @@ export interface TimelineMilestoneItem extends TimelineItemBase {
   endDate: string;
 }
 
+export interface TimelineAwardItem extends TimelineItemBase {
+  type: "award";
+  startDate: null;
+  endDate: string;
+}
+
 export type TimelineChildItem =
   | TimelineProject
   | TimelineSideItem
   | TimelineProfilePicture
-  | TimelineBlogPost;
+  | TimelineBlogPost
+  | TimelineAwardItem;
 
 export interface TimelineMainItem extends TimelineItemBase {
   type: "study" | "job";
@@ -91,7 +98,8 @@ export type TimelineTreeItem =
   | TimelineProject
   | TimelineProfilePicture
   | TimelineBlogPost
-  | TimelineMilestoneItem;
+  | TimelineMilestoneItem
+  | TimelineAwardItem;
 
 export type TimelineItem = TimelineTreeItem;
 
@@ -238,6 +246,7 @@ const TYPE_EMOJI: Record<string, string> = {
   "profile-picture": "📸",
   milestone: "📍",
   "blog-post": "✍️",
+  award: "🏆",
 };
 
 export function getTimelineCategoryEmoji(category?: TimelineCategory): string {
@@ -267,7 +276,7 @@ export function getAllTimelineDates(): string[] {
 
 // Helper function to get items by type
 export function getItemsByType(
-  type: "study" | "job" | "project" | "profile-picture" | "milestone"
+  type: "study" | "job" | "project" | "profile-picture" | "milestone" | "award"
 ): TimelineItem[] {
   return timelineData.filter((item) => item.type === type);
 }

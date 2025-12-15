@@ -4,6 +4,7 @@ export const THEME_COLORS = {
   project: { light: "#4caf50", dark: "#66bb6a" },
   profile: { light: "#ff9800", dark: "#ffb74d" },
   milestone: { light: "#f44336", dark: "#ef5350" }, // Red color for milestones
+  award: { light: "#ffeb3b", dark: "#fdd835" }, // Yellow/gold color for awards
 } as const;
 
 export const getTypeColor = (type: string, isDarkMode: boolean) => {
@@ -26,6 +27,8 @@ export const getTypeColor = (type: string, isDarkMode: boolean) => {
       return isDarkMode
         ? THEME_COLORS.milestone.dark
         : THEME_COLORS.milestone.light;
+    case "award":
+      return isDarkMode ? THEME_COLORS.award.dark : THEME_COLORS.award.light;
     default:
       return isDarkMode ? "#5ba3d3" : "#358ccb";
   }

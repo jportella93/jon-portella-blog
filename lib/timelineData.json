@@ -75,6 +75,17 @@
         "image": "https://j-img.jonportella.com/assets/genai-interests-tuner.png"
       },
       {
+        "id": "pinterest-makeathon-august-2025-1st-prize",
+        "type": "award",
+        "title": "Pinterest Makeathon - 1st Prize (Internal Tools)",
+        "description": "First prize on Pinterest's internal makeathon in the internal tools category. Built an efficient tool to bridge the gap on grabbing debugging entity data.",
+        "image": null,
+        "link": null,
+        "startDate": null,
+        "endDate": "2025-08-01",
+        "milestones": []
+      },
+      {
         "id": "profile-picture-2025",
         "type": "profile-picture",
         "title": "Me around this time",
@@ -91,6 +102,17 @@
         "image": "https://j-img.jonportella.com/assets/ways-to-style-it-module-ui-iteration.jpg"
       },
       {
+        "id": "pinterest-makeathon-november-2024-2nd-prize",
+        "type": "award",
+        "title": "Pinterest Makeathon - 2nd Prize (Internal Tools)",
+        "description": "Second prize on Pinterest's internal makeathon in the internal tools category. Built an internal web developer tool with a UX focus used to override HTTP request headers and A/B experiments.",
+        "image": null,
+        "link": null,
+        "startDate": null,
+        "endDate": "2024-11-01",
+        "milestones": []
+      },
+      {
         "id": "shopping-units",
         "type": "project",
         "category": "software",
@@ -98,6 +120,17 @@
         "description": "Adding a new GPT-powered shopping module on search and related pins surfaces, entry point to a product-only feed.",
         "endDate": "2024-10-07",
         "image": "https://j-img.jonportella.com/assets/shopping-units.png"
+      },
+      {
+        "id": "pinterest-docathon-august-2024-1st-prize",
+        "type": "award",
+        "title": "Pinterest Docathon - 1st Prize (Best Documentation)",
+        "description": "First prize on Pinterest's internal docathon for best documentation on the in-house web developer tools.",
+        "image": null,
+        "link": null,
+        "startDate": null,
+        "endDate": "2024-08-01",
+        "milestones": []
       },
       {
         "id": "search-shopping-filters",
@@ -436,6 +469,17 @@
         "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
         "code": "https://github.com/jportella93/collab-frontend",
         "endDate": "2018-07-01"
+      },
+      {
+        "id": "facebook-pre-community-challenge-2nd-prize",
+        "type": "award",
+        "title": "Facebook Pre Community Challenge - 2nd Prize",
+        "description": "2nd Prize on a 48h hackaton. Teamed with one developer and built a game of Pong that is meant to be shown on a public screen, such as cinema or auditorium. Participants use their smartphones as controllers and must collaborate to beat the other team.",
+        "image": null,
+        "link": null,
+        "startDate": null,
+        "endDate": "2018-07-01",
+        "milestones": []
       },
       {
         "id": "nanny-express-fullstack-web-app",

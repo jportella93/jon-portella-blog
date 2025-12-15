@@ -29,9 +29,11 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ## Creating Blog Posts
 
 1. **Create a new post:**
+
    ```bash
    npm run create-post
    ```
+
    This will prompt you for the post title (first line), spoiler (second line), and content (remaining lines). It creates a new directory in `content/blog/` with the post structure.
 
 2. **Add images (optional):**

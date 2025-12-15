@@ -233,6 +233,17 @@
         "endDate": "2023-01-01"
       },
       {
+        "id": "somthin",
+        "type": "project",
+        "category": "software",
+        "projectRelation": "side",
+        "title": "Somthin",
+        "description": "An experimental website, exploring some good old multi page applications (I basically had only done modern single page applications up until this point), I scanned some of my drawings and add them as background images, I also did some experiments with template renderings, dark theme, visits counting, and session management.",
+        "link": "https://github.com/jportella93/somthin",
+        "demoVideo": "https://www.youtube.com/watch?v=2GMVN4PJWQM",
+        "endDate": "2022-05-11"
+      },
+      {
         "id": "profile-picture-2022",
         "type": "profile-picture",
         "title": "Me around this time",
@@ -304,6 +315,15 @@
         "endDate": "2021-01-02"
       },
       {
+        "id": "cs-50-exercises",
+        "link": "https://github.com/jportella93/CS50",
+        "endDate": "2021-06-14",
+        "description": "My solutions to some of the exercises of the CS50 course by Harvard University. Mostly in C.",
+        "type": "project",
+        "category": "software",
+        "title": "CS50 Exercises"
+      },
+      {
         "id": "cs50-introduction-computer-science-harvard",
         "type": "study",
         "title": "CS50: Introduction to Computer Science — @ Harvard / edX",
@@ -313,6 +333,16 @@
         "endDate": "2021-03-31"
       },
       {
+        "id": "jpengineering",
+        "link": "https://jpengineering.netlify.app",
+        "demoVideo": "https://www.youtube.com/watch?v=JY7PodVNVFI",
+        "endDate": "2021-01-02",
+        "description": "A website from a Netlify template I built for my future engineering company which never actually happened. It's a simple unfinished website with some BS facts and a portfolio of my projects and a contact form.",
+        "type": "project",
+        "category": "software",
+        "title": "JP Engineering"
+      },
+      {
         "id": "profile-picture-2021",
         "type": "profile-picture",
         "title": "Me around this time",
@@ -320,10 +350,48 @@
         "endDate": "2021-01-01"
       },
       {
+        "id": "recetas-quick",
+        "link": "https://recetas-quick.netlify.app/",
+        "code": "https://github.com/jportella93/recetas-quick",
+        "demoVideo": "https://www.youtube.com/watch?v=E-ikz5U-9QY",
+        "endDate": "2020-11-01",
+        "description": "A website from a Netlify project template, I just uploaded a bunch of recipes I had stored in a note so I could access them easily. The idea is to show recipes without ads or any other distractions.",
+        "type": "project",
+        "category": "software",
+        "title": "Recetas Quick"
+      },
+      {
+        "id": "poke-scrapper",
+        "link": "https://github.com/jportella93/poke-scrapper",
+        "endDate": "2020-10-24",
+        "description": "A simple Node.js script I built as an ad-hoc project to help my Codeworks students with a project. It's fetches on a loop the data of some Pokémon from the PokéAPI and saves it to a JSON file.",
+        "type": "project",
+        "category": "software",
+        "title": "PokéScrapper"
+      },
+      {
+        "id": "restaurant-express-handlebars",
+        "link": "https://github.com/jportella93/restaurant-express-handlebars",
+        "endDate": "2020-10-19",
+        "description": "A simple website I built for one of my lectures as instructor at Codeworks, to teach my students about Model View Controller (MVC) architecture.",
+        "type": "project",
+        "category": "software",
+        "title": "Restaurant Express Handlebars"
+      },
+      {
         "id": "milestone-moved-bogota-2020",
         "type": "milestone",
         "title": "Moved to Bogota, Colombia",
         "endDate": "2020-10-01"
+      },
+      {
+        "id": "dogcomponents",
+        "link": "https://github.com/jportella93/dogcomponents",
+        "endDate": "2020-10-01",
+        "description": "A simple website I built for one of my lectures as instructor at Codeworks, to teach my students about Web Components.",
+        "type": "project",
+        "category": "software",
+        "title": "Dog Components"
       },
       {
         "id": "paperymp3-song",
@@ -411,6 +479,26 @@
         "endDate": "2019-07-02"
       },
       {
+        "id": "kiwi-hack-travel-hackathon",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "software",
+        "title": "Meet me There - Kiwi Hack Travel Hackathon",
+        "description": "A web app to find flights to meet up between two people from different origins in some intermediate destination. Built in 24 hours for the kiwi.com Kiwi Hack Travel hackathon with 3 other engineers that I met right there. We didn't win anything. Interestingly, other 2 teams had the same idea and one of them actually won the 1st prize.",
+        "link": "https://github.com/jportella93/hack-travel-2019/",
+        "endDate": "2019-03-16"
+      },
+      {
+        "id": "node-pwned-checker",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "software",
+        "title": "Node pwned checker",
+        "description": "A Node.js program to check if your credentials have been pwned. Find if your password is in a cracked passwords list. Locally, without sending your password to a server.",
+        "link": "https://github.com/jportella93/node-pwned-checker",
+        "endDate": "2019-03-16"
+      },
+      {
         "id": "instagram-random-comment-picker",
         "type": "project",
         "projectRelation": "side",
@@ -486,7 +574,11 @@
         "projectRelation": "side",
         "title": "Flickr Gallery",
         "description": "Web app to explore the most recent images uploaded to Flickr worldwide. I built from the ground up and deployed the whole project myself. Tech stack: React, Redux, Koa, Flickr API.",
-        "code": "https://jportella93.github.io/flickr-gallery/",
+        "link": "https://jportella93.github.io/flickr-gallery/",
+        "code": [
+          "https://github.com/jportella93/flickr-gallery",
+          "https://github.com/jportella93/flickr-gallery-server"
+        ],
         "endDate": "2018-08-01"
       },
       {
@@ -494,15 +586,31 @@
         "type": "project",
         "category": "software",
         "title": "Bitcoin Collab: Fullstack Web App",
-        "description": "A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
-        "code": "https://github.com/jportella93/collab-frontend",
+        "description": "Final project for Codeworks, my team was composed of me and 5 other students, we came up with the idea and built it in 2 weeks following the Agile methodology. It's a Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting. For this project I designed and wrote the server API to interact with the Bitcoin blockchain network, including its documentation and tests. The API is based on the Bitcore library. It allows users to create Bitcoin wallets, make transactions and check the historic of transactions of an account. On the front end I worked on the React-Redux integration, and the components logic. Tech Stack: Bitcore, React, Redux, Jest.",
+        "code": [
+          "https://github.com/jportella93/collab-frontend",
+          "https://github.com/jportella93/collab-backend"
+        ],
         "endDate": "2018-07-01"
       },
       {
         "id": "facebook-pre-community-challenge-2nd-prize",
         "type": "award",
         "title": "Facebook Pre Community Challenge - 2nd Prize",
-        "description": "2nd Prize on a 48h hackaton. Teamed with one developer and built a game of Pong that is meant to be shown on a public screen, such as cinema or auditorium. Participants use their smartphones as controllers and must collaborate to beat the other team.",
+        "description": "2nd Prize on a 48h hackaton. Teamed with another Codeworksstudent and built a game of Pong that is meant to be shown on a public screen, such as cinema or auditorium. Participants use their smartphones as controllers and must collaborate to beat the other team.",
+        "endDate": "2018-07-01",
+        "image": "https://j-img.jonportella.com/assets/IMG_20180708_223621_283.jpeg"
+      },
+      {
+        "id": "react-team-up",
+        "type": "project",
+        "category": "software",
+        "title": "React Team Up",
+        "description": "Client for a pong-like web game platform meant to be played in public screens, where players have to team up against other players in the spot. Built with another Codeworks student in 48 hours for the Facebook Pre-Community Challenge hackathon. We got 2nd prize.",
+        "code": [
+          "https://github.com/jportella93/react-team-up-frontend",
+          "https://github.com/jportella93/react-team-up-backend"
+        ],
         "endDate": "2018-07-01"
       },
       {
@@ -510,17 +618,32 @@
         "type": "project",
         "category": "software",
         "title": "Nanny Express: Fullstack Web App",
-        "description": "Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
-        "code": "https://github.com/jportella93/Nanny-Express-client",
+        "description": "Legacy project for Codeworks, my team was composed of me and 2 other students, we took a solo project of another student and redesigned it, added best practices fro client-side state management and facebook authentication. Nanny Express is a platform for parents to find and share contact details of their nannies. Parents connect through Facebook, and can see the contact details of nannies posted by their friends. Nanny Express is open source and free to use. Worked in a team of 3 developers, to redesign the server and client, making the app responsive, improving code modularity, restructuring the API interaction, and upgrading the project scalability. Tech stack: Koa, MongoDB, React, Redux, Facebook Auth, OnsenUI.",
+        "code": [
+          "https://github.com/jportella93/Nanny-Express-client",
+          "https://github.com/jportella93/Nanny-Express-server"
+        ],
         "endDate": "2018-06-01"
+      },
+      {
+        "id": "algorithms-codeworks-meetup",
+        "type": "project",
+        "category": "software",
+        "title": "Algorithms for Codeworks Meetup",
+        "description": "3 algorithm challenges for a meetup I presented, organized by Codeworks. People from outside the bootcamp came and we had a little competition to see who could solve the challenges the fastest.",
+        "code": "https://github.com/jportella93/codeworks-algorithms-7-june-2018",
+        "endDate": "2018-06-07"
       },
       {
         "id": "find-a-hobby-fullstack-web-app",
         "type": "project",
         "category": "software",
         "title": "Find a Hobby!: Fullstack Web App",
-        "description": "Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. I built the app from the ground up in a few days as my Codeworks solo project, including the web client and the server and database integration. Tech Stack: React, Koa, MongoDB, Redis, Raccon.",
-        "code": "https://github.com/jportella93/find-a-hobby-client",
+        "description": "Solo project for Codeworks. I designed and built the app in 3 days. Find a Hobby! is a crowdsourced web app that will help you discover the most amazing thing to spend your leisure time on. It features a recommendation engine that learns from user interaction, and provides accurate suggestions. Tech Stack: React, Koa, MongoDB, Redis, Raccon.",
+        "code": [
+          "https://github.com/jportella93/find-a-hobby-client",
+          "https://github.com/jportella93/find-a-hobby-server"
+        ],
         "demoVideo": "https://www.youtube.com/watch?v=Ni5OnHiVEME",
         "link": "https://find-a-hobby.jonportella.com",
         "endDate": "2018-06-01"

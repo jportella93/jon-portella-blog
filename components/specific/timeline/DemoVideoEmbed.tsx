@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { rhythm } from "../../../lib/typography";
 import { useTheme } from "../../ThemeProvider";
 import { LazyIframe } from "./LazyIframe";
-import { getYouTubeVideoId } from "./timelineUtils";
+import { getVimeoVideoId, getYouTubeVideoId } from "./timelineUtils";
 
 interface DemoVideoEmbedProps {
   videoUrl?: string | null;
@@ -16,7 +16,10 @@ export const DemoVideoEmbed = ({
 }: DemoVideoEmbedProps): ReactElement | null => {
   const { isDarkMode } = useTheme();
   const linkColor = isDarkMode ? "#5ba3d3" : "#358ccb";
-  const videoId = getYouTubeVideoId(videoUrl ?? null);
+  const youtubeVideoId = getYouTubeVideoId(videoUrl ?? null);
+  const vimeoVideoId = getVimeoVideoId(videoUrl ?? null);
+  const videoId = youtubeVideoId || vimeoVideoId;
+  const isVimeo = !!vimeoVideoId && !youtubeVideoId;
   const hasLoadedRef = useRef(false);
   const [loadError, setLoadError] = useState(false);
 
@@ -68,11 +71,19 @@ export const DemoVideoEmbed = ({
     >
       <LazyIframe
         key="demoVideo"
-        src={`https://www.youtube.com/embed/${videoId}`}
+        src={
+          isVimeo
+            ? `https://player.vimeo.com/video/${videoId}`
+            : `https://www.youtube.com/embed/${videoId}`
+        }
         title="Demo video"
         width="100%"
         height="100%"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow={
+          isVimeo
+            ? "autoplay; fullscreen; picture-in-picture"
+            : "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        }
         allowFullScreen
         disableLazy={isFirst}
         style={{

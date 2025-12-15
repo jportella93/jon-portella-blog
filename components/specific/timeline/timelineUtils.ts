@@ -35,6 +35,19 @@ export const getYouTubeVideoId = (url: string | null): string | null => {
   return null;
 };
 
+export const getVimeoVideoId = (url: string | null): string | null => {
+  if (!url) return null;
+  const patterns = [
+    /vimeo\.com\/(?:video\/)?(\d+)/,
+    /player\.vimeo\.com\/video\/(\d+)/,
+  ];
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match) return match[1];
+  }
+  return null;
+};
+
 export const getGitHubEmbedUrl = (codeUrl: string | null): string | null => {
   if (!codeUrl) return null;
   const githubPattern = /github\.com\/([^\/]+)\/([^\/]+?)(?:\/|$)/;

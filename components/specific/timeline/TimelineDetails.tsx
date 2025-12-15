@@ -5,7 +5,7 @@ import { rhythm } from "../../../lib/typography";
 import { DemoVideoEmbed } from "./DemoVideoEmbed";
 import { GitHubEmbed } from "./GitHubEmbed";
 import { LazyIframe } from "./LazyIframe";
-import { getYouTubeVideoId } from "./timelineUtils";
+import { getVimeoVideoId, getYouTubeVideoId } from "./timelineUtils";
 
 interface TimelineDetailsProps {
   item: TimelineItem;
@@ -21,6 +21,7 @@ export const TimelineDetails = ({
       item.demoVideo ||
       item.code ||
       getYouTubeVideoId(item.link) ||
+      getVimeoVideoId(item.link) ||
       item.bandcampAlbumId
     );
   };
@@ -68,6 +69,38 @@ export const TimelineDetails = ({
             width="100%"
             height="100%"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            disableLazy={isFirst}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              borderRadius: "8px",
+            }}
+          />
+        </div>
+      );
+    }
+
+    const vimeoVideoId = getVimeoVideoId(item.link);
+    if (vimeoVideoId) {
+      embeds.push(
+        <div
+          key="vimeo"
+          style={{
+            position: "relative",
+            width: "100%",
+            height: 0,
+            paddingBottom: "56.25%", // 16:9 aspect ratio
+            marginBottom: embeds.length > 0 ? rhythm(0.75) : 0,
+          }}
+        >
+          <LazyIframe
+            src={`https://player.vimeo.com/video/${vimeoVideoId}`}
+            title="Vimeo video player"
+            width="100%"
+            height="100%"
+            allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
             disableLazy={isFirst}
             style={{

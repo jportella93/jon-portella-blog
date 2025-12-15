@@ -7,7 +7,6 @@
     "description": "Part of the Toronto-based Product Experience team, full stack engineer with a front end web focus and some iOS experience. Tech lead, mentor and creator of several company-wide cross-functional initiatives. I moved to Toronto for the role. Note that the projects shown here are just a sample of the public work I did, not all of it. Tech Stack/Tools: JavaScript, TypeScript, Flow, React, Redux, Jest, React Testing Library, RESTful APIs, GraphQL, Relay, Enzyme, Cypress, Python, Flask, Apache Thrift, Docker, Figma, Phabricator, Kibana, Gestalt, Objective-C, Texture, Plank.",
     "link": "https://www.pinterest.com",
     "startDate": "2021-08-01",
-    "endDate": null,
     "projects": [
       {
         "id": "timeline-blog-project",
@@ -79,11 +78,7 @@
         "type": "award",
         "title": "Pinterest Makeathon - 1st Prize (Internal Tools)",
         "description": "First prize on Pinterest's internal makeathon in the internal tools category. Built an efficient tool to bridge the gap on grabbing debugging entity data.",
-        "image": null,
-        "link": null,
-        "startDate": null,
-        "endDate": "2025-08-01",
-        "milestones": []
+        "endDate": "2025-08-01"
       },
       {
         "id": "profile-picture-2025",
@@ -106,11 +101,7 @@
         "type": "award",
         "title": "Pinterest Makeathon - 2nd Prize (Internal Tools)",
         "description": "Second prize on Pinterest's internal makeathon in the internal tools category. Built an internal web developer tool with a UX focus used to override HTTP request headers and A/B experiments.",
-        "image": null,
-        "link": null,
-        "startDate": null,
-        "endDate": "2024-11-01",
-        "milestones": []
+        "endDate": "2024-11-01"
       },
       {
         "id": "shopping-units",
@@ -126,11 +117,7 @@
         "type": "award",
         "title": "Pinterest Docathon - 1st Prize (Best Documentation)",
         "description": "First prize on Pinterest's internal docathon for best documentation on the in-house web developer tools.",
-        "image": null,
-        "link": null,
-        "startDate": null,
-        "endDate": "2024-08-01",
-        "milestones": []
+        "endDate": "2024-08-01"
       },
       {
         "id": "search-shopping-filters",
@@ -147,6 +134,12 @@
         "title": "Me around this time",
         "image": "https://j-img.jonportella.com/assets/2024.jpeg",
         "endDate": "2024-01-01"
+      },
+      {
+        "id": "job-title-change-senior-software-engineer-pinterest",
+        "type": "milestone",
+        "title": "Job title change: promoted to Senior Software Engineer @ Pinterest",
+        "endDate": "2023-12-31"
       },
       {
         "id": "bulk-actions-pin-builder",
@@ -230,7 +223,13 @@
       {
         "id": "milestone-moved-toronto-2021",
         "type": "milestone",
-        "title": "Moved to Tornto, Canada",
+        "title": "Moved to Toronto, Canada",
+        "endDate": "2021-08-02"
+      },
+      {
+        "id": "job-title-change-mid-senior-software-engineer-pinterest",
+        "type": "milestone",
+        "title": "Job title change: hired as Mid-Senior Software Engineer @ Pinterest",
         "endDate": "2021-08-01"
       }
     ]
@@ -292,8 +291,7 @@
         "description": "An intensive, self-paced foundational course in computer science and programming fundamentals, designed for both beginners and those with prior experience. CS50 teaches core concepts including computational thinking, algorithms, data structures, abstraction, resource management, and software engineering principles.\n\nStudents gain practical programming experience in C, Python, SQL, JavaScript, HTML and CSS, progressing from low-level understanding of memory and machine-level concepts (via C) to higher-level web and application development skills (via Python, SQL, JavaScript, HTML/CSS). The curriculum includes weekly problem sets drawing from real-world domains — such as cryptography, finance, forensics, biology or gaming — culminating in a final project that demonstrates the ability to design and implement a complete software application.\n\nCS50 emphasizes strong coding style, correctness, and algorithmic efficiency, helping learners develop not just coding fluency but deeper understanding of how computers work under the hood. The course also connects students to a large global learning community, offering exposure to diverse problem-solving approaches and collaboration opportunities.",
         "link": "https://cs50.harvard.edu",
         "startDate": "2021-01-01",
-        "endDate": "2021-03-31",
-        "projects": []
+        "endDate": "2021-03-31"
       },
       {
         "id": "profile-picture-2021",
@@ -355,8 +353,13 @@
         "description": "Codeworks is an immersive coding bootcamp with campuses in Austin, Barcelona, New York, Berlin, London, and Toronto. Its Software Engineering Immersive program covers advanced JavaScript, HTML/CSS, unit testing, data structures, algorithms, complexity analysis, networking, end-to-end testing, security, authentication, automated tasks, advanced state management, continuous deployment, DevOps (Docker), systems architecture, open source contributions, back-end frameworks (Node, Express, Koa, GraphQL), databases (SQL, MongoDB, Redis), and front-end frameworks (Angular, React). Responsibilities: Give a lecture once a week about the current course subject, train new Teaching Assistants, answer help requests from all students, host Q&A sessions and exercise reviews, support senior students throughout their coding projects (brainstorming, code reviews, demos), prepare senior students for their job search.",
         "link": "https://www.codeworks.me",
         "startDate": "2019-10-01",
-        "endDate": "2020-11-30",
-        "projects": []
+        "endDate": "2020-11-30"
+      },
+      {
+        "id": "job-title-change-full-stack-engineer-curelator",
+        "type": "milestone",
+        "title": "Job title change: Promoted to Full Stack Engineer @ Curelator",
+        "endDate": "2019-12-01"
       },
       {
         "id": "streetymp3-song",
@@ -438,6 +441,12 @@
         "description": "There are some cool wallpapers on Reddit. At some point, I started saving them on a folder on my computer in order to display them on my desktop in a random fashion. This picking and downloading process was kind of tedious, so I've built a small Node.js program to automate it.",
         "link": "/blog/reddit-image-downloader-node",
         "endDate": "2018-11-01"
+      },
+      {
+        "id": "job-title-change-web-developer-curelator",
+        "type": "milestone",
+        "title": "Job title change: Hired as Web Developer @ Curelator",
+        "endDate": "2018-09-01"
       }
     ]
   },
@@ -475,11 +484,7 @@
         "type": "award",
         "title": "Facebook Pre Community Challenge - 2nd Prize",
         "description": "2nd Prize on a 48h hackaton. Teamed with one developer and built a game of Pong that is meant to be shown on a public screen, such as cinema or auditorium. Participants use their smartphones as controllers and must collaborate to beat the other team.",
-        "image": null,
-        "link": null,
-        "startDate": null,
-        "endDate": "2018-07-01",
-        "milestones": []
+        "endDate": "2018-07-01"
       },
       {
         "id": "nanny-express-fullstack-web-app",
@@ -625,6 +630,26 @@
         "description": "A comedy/adventure movie teaser about a man obsessed with pistachios. I did boom mic operation and audio engineering.",
         "link": "https://www.youtube.com/watch?v=3xdMyi43hyg",
         "endDate": "2015-11-15"
+      },
+      {
+        "id": "crearsa-el-equipo-de-pincho",
+        "type": "project",
+        "projectRelation": "side",
+        "category": "video",
+        "title": "creaRSA - El equipo de pincho",
+        "description": "Documentary web series about assisted interventions with therapy dogs for people with disabilities, focused on the day-to-day work and therapeutic goals of the participants.",
+        "link": "https://vimeo.com/254678574",
+        "endDate": "2015-06-01"
+      },
+      {
+        "id": "volunteer-camera-operator-crearsa",
+        "type": "job",
+        "projectRelation": "side",
+        "title": "Volunteer Camera Operator @ creaRSA",
+        "description": "Volunteer Camera operator for creaRSA, a non-profit social initiative cooperative based in Barcelona that specializes in communication, production, and training related to Audiovisual Social Responsibility (RSA).",
+        "link": "https://www.crearsa.com/",
+        "startDate": "2015-05-01",
+        "endDate": "2015-08-31"
       }
     ]
   },

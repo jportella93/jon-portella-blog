@@ -5,7 +5,6 @@ import { rhythm } from "../../../lib/typography";
 import { DemoVideoEmbed } from "./DemoVideoEmbed";
 import { GitHubEmbed } from "./GitHubEmbed";
 import { LazyIframe } from "./LazyIframe";
-import { TimelineMilestones } from "./TimelineMilestones";
 import { getYouTubeVideoId } from "./timelineUtils";
 
 interface TimelineDetailsProps {
@@ -138,8 +137,6 @@ export const TimelineDetails = ({
           />
         </div>
       )}
-
-      <TimelineMilestones item={item} />
     </div>
   );
 };

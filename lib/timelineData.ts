@@ -28,7 +28,6 @@ interface TimelineItemBase {
   description: string;
   image: string | null;
   link: string | null;
-  milestones: TimelineMilestone[];
   bandcampAlbumId?: string;
   demoVideo?: string;
   code?: string;
@@ -266,9 +265,6 @@ export function getAllTimelineDates(): string[] {
   timelineData.forEach((item) => {
     if (item.startDate) dates.add(item.startDate);
     if (item.endDate) dates.add(item.endDate);
-    item.milestones?.forEach((milestone) => {
-      if (milestone.date) dates.add(milestone.date);
-    });
   });
 
   return Array.from(dates).sort();

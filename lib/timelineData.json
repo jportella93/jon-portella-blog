@@ -37,6 +37,15 @@
         "demoVideo": "https://www.youtube.com/watch?v=36URafFFT-A"
       },
       {
+        "id": "terracitas-android-app",
+        "type": "project",
+        "category": "software",
+        "title": "Terracitas Android App",
+        "description": "Android app for Terracitas.app, built with Kotlin and Jetpack Compose. It allows users to discover bars and restaurants with outdoor terraces across Spain, and to easily find great places to eat or drink outdoors, wherever they are.",
+        "link": "https://play.google.com/store/apps/details?id=com.terracitas.app",
+        "endDate": "2025-11-01"
+      },
+      {
         "id": "holiday-shopping-landing-page",
         "type": "project",
         "category": "software",
@@ -81,6 +90,16 @@
         "endDate": "2025-08-01"
       },
       {
+        "id": "terracitas-webapp",
+        "type": "project",
+        "category": "software",
+        "title": "Terracitas.app",
+        "description": "Terracitas.app is a location-aware web app for discovering bars and restaurants with outdoor terraces across Spain. \n\n It curates patios and terraces, focusing on quality, atmosphere, and outdoor experience rather than exhaustive listings.\n\n Search results and the home feed adapt to the user’s location, while each terrace has its own shareable page.\n\n The web app helps people easily find great places to eat or drink outdoors, wherever they are.",
+        "link": "https://terracitas.app",
+        "demoVideo": "https://www.youtube.com/watch?v=eMUaR_KNw0g",
+        "endDate": "2025-08-01"
+      },
+      {
         "id": "profile-picture-2025",
         "type": "profile-picture",
         "title": "Me around this time",
@@ -97,10 +116,10 @@
         "image": "https://j-img.jonportella.com/assets/ways-to-style-it-module-ui-iteration.jpg"
       },
       {
-        "id": "pinterest-makeathon-november-2024-2nd-prize",
+        "id": "pinterest-docathon-august-2024-1st-prize",
         "type": "award",
-        "title": "Pinterest Makeathon - 2nd Prize (Internal Tools)",
-        "description": "Second prize on Pinterest's internal makeathon in the internal tools category. Built an internal web developer tool with a UX focus used to override HTTP request headers and A/B experiments.",
+        "title": "Pinterest Docathon - 1st Prize (Best Documentation)",
+        "description": "First prize on Pinterest's internal docathon for best documentation on the in-house web developer tools.",
         "endDate": "2024-11-01"
       },
       {
@@ -113,10 +132,10 @@
         "image": "https://j-img.jonportella.com/assets/shopping-units.png"
       },
       {
-        "id": "pinterest-docathon-august-2024-1st-prize",
+        "id": "pinterest-makeathon-november-2024-2nd-prize",
         "type": "award",
-        "title": "Pinterest Docathon - 1st Prize (Best Documentation)",
-        "description": "First prize on Pinterest's internal docathon for best documentation on the in-house web developer tools.",
+        "title": "Pinterest Makeathon - 2nd Prize (Internal Tools)",
+        "description": "Second prize on Pinterest's internal makeathon in the internal tools category. Built an internal web developer tool with a UX focus used to override HTTP request headers and A/B experiments.",
         "endDate": "2024-08-01"
       },
       {

@@ -5,7 +5,7 @@ date: "2025-12-17T20:56:57.300Z"
 hasNewsletterBeenSent: false
 ---
 
-I was recently putting together a résumé-style page with everything I’ve done: studies, jobs, side projects. I tried to be exhaustive, so I went all the way back to university, before my pivot to software, and included a lot of half-cooked things too.
+I was recently putting together [a résumé-style](https://jonportella.com/timeline) page with everything I’ve done: studies, jobs, side projects. I tried to be exhaustive, so I went all the way back to university, before my pivot to software, and included a lot of half-cooked things too.
 
 What surprised me is how much I’ve actually put out there over the years. Even when things weren’t fully formed.
 
@@ -64,3 +64,5 @@ Looking back at the last 15 years, there’s a clear pattern: I like making thin
 A lot of people are worried about AI replacing their jobs. I’m not that worried. I like building. Even if the tools change — even if most of the code is written with LLMs — the act of shaping something, guiding it, deciding what to build still excites me. Acting as a product manager for an LLM feels natural to me.
 
 So yeah. Let’s see what the next 15 years look like.
+
+[(See all the projects in the timeline)](https://jonportella.com/timeline)

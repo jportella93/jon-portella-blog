@@ -12,7 +12,7 @@ const Kofi = () => (
       width={580}
       height={146}
       style={{ width: "auto", height: "28px" }}
-      priority
+      loading="lazy"
     />
   </a>
 );

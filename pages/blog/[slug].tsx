@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import { BASE_PATH } from "../../lib/constants";
 import KeyboardNavHint from "../../components/KeyboardNavHint";
 import Layout from "../../components/Layout";
 import ReadingProgressBar from "../../components/ReadingProgressBar";
@@ -34,6 +35,8 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
   const router = useRouter();
   const { title: postTitle, spoiler, date } = post.frontmatter;
   const postUrl = siteMetadata.siteUrl + router.asPath;
+  const basePath = BASE_PATH;
+  const cssPath = basePath ? `${basePath}/code-syntax.css` : "/code-syntax.css";
 
   useKeyboardNavigation({
     previous: previous?.slug,
@@ -159,6 +162,7 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: structuredData }}
         />
+        <link rel="stylesheet" href={cssPath} />
       </Head>
       <SEO
         title={postTitle}

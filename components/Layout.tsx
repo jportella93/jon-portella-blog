@@ -21,7 +21,7 @@ export default function Layout({ children }: LayoutProps) {
       }}
     >
       <Navbar location={router.pathname} />
-      <div
+      <main
         style={{
           maxWidth: rhythm(32),
           marginLeft: `auto`,
@@ -29,7 +29,7 @@ export default function Layout({ children }: LayoutProps) {
         }}
       >
         {children}
-      </div>
+      </main>
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "tsx scripts/generate-rss.ts && next build",
+    "build": "tsx scripts/generate-rss.ts && tsx scripts/generate-sitemap.ts && next build",
     "start": "next start",
     "create-post": "node scripts/create-blog-post.mjs",
     "process-images": "tsx scripts/process-post-images.ts",

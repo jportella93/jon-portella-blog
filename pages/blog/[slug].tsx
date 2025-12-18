@@ -1,5 +1,6 @@
 import moment from "moment";
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -16,6 +17,10 @@ import {
 } from "../../lib/getAllPosts";
 import { getPostBySlug } from "../../lib/markdown";
 import { siteMetadata } from "../../lib/siteMetadata";
+import {
+  generateArticleSchema,
+  type ArticleSchema,
+} from "../../lib/structuredData";
 import { rhythm, scale } from "../../lib/typography";
 import { useKeyboardNavigation } from "../../lib/useKeyboardNavigation";
 
@@ -48,6 +53,29 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
     .join(" • ");
 
   const [imageUrl, setImageUrl] = React.useState("");
+
+  // Generate structured data for the article
+  const articleSchema: ArticleSchema = {
+    headline: postTitle,
+    description: spoiler || postDescriptionMetaTag,
+    image: imageUrl || undefined,
+    datePublished: date || new Date().toISOString(),
+    dateModified: date || new Date().toISOString(), // Could be enhanced with lastModified if available
+    author: {
+      "@type": "Person",
+      name: siteMetadata.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteMetadata.title,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
+  };
+
+  const structuredData = generateArticleSchema(articleSchema);
 
   React.useEffect(() => {
     if (typeof document !== "undefined") {
@@ -126,11 +154,19 @@ export default function BlogPost({ post, previous, next }: BlogPostProps) {
   return (
     <Layout>
       <ReadingProgressBar />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: structuredData }}
+        />
+      </Head>
       <SEO
         title={postTitle}
         description={postDescriptionMetaTag}
         url={postUrl}
+        canonical={postUrl}
         image={imageUrl}
+        imageAlt={postTitle}
         type="article"
         publishedTime={date || undefined}
       />

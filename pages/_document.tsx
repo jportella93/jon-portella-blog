@@ -9,6 +9,7 @@ export default function Document() {
   return (
     <Html suppressHydrationWarning>
       <Head>
+        <meta charSet="utf-8" />
         <style dangerouslySetInnerHTML={{ __html: typography.toString() }} />
         <link rel="stylesheet" href={cssPath} />
       </Head>

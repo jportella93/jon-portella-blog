@@ -1,8 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import SubscriptionNotice from "../components/SubscriptionNotice";
 import { getAllPostsMetadata, type PostFrontmatter } from "../lib/getAllPosts";
+import { siteMetadata } from "../lib/siteMetadata";
+import {
+  generateCollectionPageSchema,
+  type CollectionPageSchema,
+} from "../lib/structuredData";
 import { rhythm } from "../lib/typography";
 
 interface BlogIndexProps {
@@ -10,9 +16,49 @@ interface BlogIndexProps {
 }
 
 export default function BlogIndex({ posts }: BlogIndexProps) {
+  const blogUrl = `${siteMetadata.siteUrl}/blog`;
+
+  const collectionSchema: CollectionPageSchema = {
+    name: "Jon Portella's Blog",
+    description:
+      "Technical blog posts about JavaScript, React, web development, and software engineering.",
+    url: blogUrl,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: posts.length,
+      itemListElement: posts.map((post, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${siteMetadata.siteUrl}/blog/${post.slug}`,
+        name: post.frontmatter.title || post.slug,
+        description: post.frontmatter.spoiler || "",
+      })),
+    },
+  };
+
+  const structuredData = generateCollectionPageSchema(collectionSchema);
+
   return (
     <Layout>
-      <SEO title="Blog" keywords={["blog", "javascript", "react"]} />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: structuredData }}
+        />
+      </Head>
+      <SEO
+        title="Blog"
+        description="Technical blog posts about JavaScript, React, web development, and software engineering."
+        canonical={blogUrl}
+        keywords={[
+          "blog",
+          "javascript",
+          "react",
+          "web development",
+          "software engineering",
+          "technical writing",
+        ]}
+      />
       <h1>Jon Portella's Blog</h1>
       {posts.map((post, index) => {
         const title = post.frontmatter.title || post.slug;

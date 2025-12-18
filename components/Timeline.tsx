@@ -40,7 +40,8 @@ export default function Timeline() {
   const isFullMode =
     selectedTypes.size === getAllAvailableTypes.length &&
     selectedCategories.size === getAllAvailableCategories.length;
-  const isCondensedMode = selectedTypes.size === 0 && selectedCategories.size === 0;
+  const isCondensedMode =
+    selectedTypes.size === 0 && selectedCategories.size === 0;
 
   const setFullMode = () => {
     updateFilters(
@@ -173,7 +174,9 @@ export default function Timeline() {
             display: "inline-flex",
             borderRadius: 999,
             border: `1px solid ${isDarkMode ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.12)"}`,
-            background: isDarkMode ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.04)",
+            background: isDarkMode
+              ? "rgba(255,255,255,0.06)"
+              : "rgba(0,0,0,0.04)",
             padding: 2,
             gap: 2,
           }}
@@ -220,11 +223,7 @@ export default function Timeline() {
                   ? "#5ba3d3"
                   : "#358ccb"
                 : "transparent",
-              color: isFullMode
-                ? "#fff"
-                : isDarkMode
-                  ? "#e0e0e0"
-                  : "#2b303a",
+              color: isFullMode ? "#fff" : isDarkMode ? "#e0e0e0" : "#2b303a",
               transition: "background 0.15s ease, color 0.15s ease",
             }}
           >

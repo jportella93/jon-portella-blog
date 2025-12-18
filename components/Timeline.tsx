@@ -159,7 +159,7 @@ export default function Timeline() {
           gap: rhythm(1 / 2),
           // `h1` normally has a top margin from Typography.js, but wrapping it in a
           // flex container prevents margin-collapsing. Add explicit top spacing.
-          marginTop: rhythm(1),
+          marginTop: rhythm(2),
           marginBottom: rhythm(1),
           flexWrap: "wrap",
         }}

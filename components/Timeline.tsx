@@ -6,6 +6,7 @@ import {
   type TimelineProject,
   timelineDataNested,
 } from "../lib/timelineData";
+import { rhythm } from "../lib/typography";
 import { getTimelineDomId } from "./specific/timeline/permalink";
 import { TimelineFilterMenu } from "./specific/timeline/TimelineFilterMenu";
 import { TimelineItemRenderer } from "./specific/timeline/TimelineItemRenderer";
@@ -18,8 +19,10 @@ import {
   getSortDate,
 } from "./specific/timeline/timelineUtils";
 import { useTimelineFilters } from "./specific/timeline/useTimelineFilters";
+import { useTheme } from "./ThemeProvider";
 
 export default function Timeline() {
+  const { isDarkMode } = useTheme();
   const [isNarrowScreen, setIsNarrowScreen] = useState(false);
 
   // Filter state and handlers
@@ -33,6 +36,22 @@ export default function Timeline() {
     shouldShowItem,
     updateFilters,
   } = useTimelineFilters();
+
+  const isFullMode =
+    selectedTypes.size === getAllAvailableTypes.length &&
+    selectedCategories.size === getAllAvailableCategories.length;
+  const isCondensedMode = selectedTypes.size === 0 && selectedCategories.size === 0;
+
+  const setFullMode = () => {
+    updateFilters(
+      new Set(getAllAvailableTypes),
+      new Set(getAllAvailableCategories)
+    );
+  };
+
+  const setCondensedMode = () => {
+    updateFilters(new Set(), new Set());
+  };
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -132,7 +151,84 @@ export default function Timeline() {
 
   return (
     <div data-timeline-container>
-      <h1>Timeline</h1>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: rhythm(1 / 2),
+          marginBottom: rhythm(1),
+          flexWrap: "wrap",
+        }}
+      >
+        <h1 style={{ margin: 0 }}>Timeline</h1>
+
+        <div
+          role="group"
+          aria-label="Timeline mode"
+          style={{
+            display: "inline-flex",
+            borderRadius: 999,
+            border: `1px solid ${isDarkMode ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.12)"}`,
+            background: isDarkMode ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.04)",
+            padding: 2,
+            gap: 2,
+          }}
+        >
+          <button
+            type="button"
+            aria-pressed={isCondensedMode}
+            onClick={setCondensedMode}
+            style={{
+              border: "none",
+              borderRadius: 999,
+              padding: "6px 10px",
+              fontSize: "12px",
+              fontWeight: 600,
+              cursor: "pointer",
+              background: isCondensedMode
+                ? isDarkMode
+                  ? "#5ba3d3"
+                  : "#358ccb"
+                : "transparent",
+              color: isCondensedMode
+                ? "#fff"
+                : isDarkMode
+                  ? "#e0e0e0"
+                  : "#2b303a",
+              transition: "background 0.15s ease, color 0.15s ease",
+            }}
+          >
+            Condensed mode
+          </button>
+          <button
+            type="button"
+            aria-pressed={isFullMode}
+            onClick={setFullMode}
+            style={{
+              border: "none",
+              borderRadius: 999,
+              padding: "6px 10px",
+              fontSize: "12px",
+              fontWeight: 600,
+              cursor: "pointer",
+              background: isFullMode
+                ? isDarkMode
+                  ? "#5ba3d3"
+                  : "#358ccb"
+                : "transparent",
+              color: isFullMode
+                ? "#fff"
+                : isDarkMode
+                  ? "#e0e0e0"
+                  : "#2b303a",
+              transition: "background 0.15s ease, color 0.15s ease",
+            }}
+          >
+            Full
+          </button>
+        </div>
+      </div>
 
       <TimelineScrollContextBar
         items={scrollContextItems}

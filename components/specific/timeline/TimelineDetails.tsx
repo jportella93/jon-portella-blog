@@ -179,16 +179,27 @@ export const TimelineDetails = ({
       {embedContent}
 
       {shouldShowImage && item.image && (
-        <div style={{ margin: `${rhythm(0.75)} 0` }}>
+        <div
+          style={{
+            margin: `${rhythm(0.75)} 0`,
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
+          }}
+        >
           <Image
             src={item.image}
             alt={item.title}
             width={300}
             height={200}
             style={{
-              objectFit: "cover",
+              // Keep aspect ratio; never exceed viewport height; left-align when height-constrained.
+              objectFit: "contain",
               borderRadius: "8px",
-              width: "100%",
+              display: "block",
+              maxHeight: "100vh",
+              maxWidth: "100%",
+              width: "auto",
               height: "auto",
             }}
           />

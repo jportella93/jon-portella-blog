@@ -18,6 +18,9 @@ export default function Layout({ children }: LayoutProps) {
         marginRight: `auto`,
         maxWidth: rhythm(32),
         padding: `${rhythm(1)} ${rhythm(1)}`,
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <Navbar location={router.pathname} />
@@ -26,6 +29,8 @@ export default function Layout({ children }: LayoutProps) {
           maxWidth: rhythm(32),
           marginLeft: `auto`,
           marginRight: `auto`,
+          width: "100%",
+          flex: "1 0 auto",
         }}
       >
         {children}

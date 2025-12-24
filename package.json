@@ -9,7 +9,7 @@
     "start": "next start",
     "create-post": "node scripts/create-blog-post.mjs",
     "process-images": "tsx scripts/process-post-images.ts",
-    "type-check": "tsc --noEmit",
+    "type-check": "tsx scripts/generate-rss.ts && tsc --noEmit",
     "send-newsletter": "npx tsx scripts/send-newsletter-from-posts.ts",
     "format": "prettier --write .",
     "analyze": "ANALYZE=true next build --webpack"

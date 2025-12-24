@@ -34,21 +34,17 @@ export default function VisitCounter() {
           signal: abortController.signal,
         });
 
-        if (!res.ok) {
-          if (res.status === 403) {
-            if (!cancelled) {
-              setState({
-                kind: "unavailable",
-                reason: "Enable 'allow using the visitor counter' in GoatCounter settings.",
-              });
-            }
-            return;
+        if (res.status === 403) {
+          if (!cancelled) {
+            setState({
+              kind: "unavailable",
+              reason: "Enable 'allow using the visitor counter' in GoatCounter settings.",
+            });
           }
-
-          if (!cancelled) setState({ kind: "unavailable" });
           return;
         }
 
+        // GoatCounter may respond with 404 even though the body contains JSON counts.
         const data = (await res.json()) as unknown;
         const count = extractGoatCounterCount(data as never);
         if (!cancelled) {

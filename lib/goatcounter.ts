@@ -26,22 +26,30 @@ export function getGoatCounterCounterUrl(path: string): string {
 
 export type GoatCounterCounterResponse =
   | number
+  | string
   | {
-      count?: number;
-      hits?: number;
-      visits?: number;
-      total?: number;
+      count?: number | string;
+      count_unique?: number | string;
+      hits?: number | string;
+      visits?: number | string;
+      total?: number | string;
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       [k: string]: any;
     };
 
 export function extractGoatCounterCount(data: GoatCounterCounterResponse): number | null {
   if (typeof data === "number" && Number.isFinite(data)) return data;
+  if (typeof data === "string") {
+    const n = Number.parseInt(data, 10);
+    return Number.isFinite(n) ? n : null;
+  }
   if (!data || typeof data !== "object") return null;
 
   const maybe =
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (data as any).count ??
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (data as any).count_unique ??
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (data as any).visits ??
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -49,7 +57,12 @@ export function extractGoatCounterCount(data: GoatCounterCounterResponse): numbe
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (data as any).total;
 
-  return typeof maybe === "number" && Number.isFinite(maybe) ? maybe : null;
+  if (typeof maybe === "number" && Number.isFinite(maybe)) return maybe;
+  if (typeof maybe === "string") {
+    const n = Number.parseInt(maybe, 10);
+    return Number.isFinite(n) ? n : null;
+  }
+  return null;
 }
 
 export {};

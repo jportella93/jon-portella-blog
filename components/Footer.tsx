@@ -1,5 +1,6 @@
 import { rhythm } from "../lib/typography";
 import Kofi from "./Kofi";
+import VisitCounter from "./VisitCounter";
 import { EmailIcon, RssIcon } from "./icons";
 
 const links = [
@@ -86,6 +87,7 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
+      <VisitCounter />
     </footer>
   );
 }

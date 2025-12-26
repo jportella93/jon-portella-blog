@@ -386,7 +386,7 @@
       },
       {
         "id": "dogcomponents",
-        "link": "https://github.com/jportella93/dogcomponents",
+        "link": "https://dogcomponents.jonportella.com",
         "endDate": "2020-10-01",
         "description": "A simple website I built for one of my lectures as instructor at Codeworks, to teach my students about Web Components.",
         "type": "project",
@@ -422,7 +422,7 @@
         "title": "VizViz: Trippy Visualisations with p5.js",
         "description": "Website to make trippy visualisations using p5.js. Built over a weekend after being inspired by Processing visualisations. Features local storage for saving state, draggable canvas and controls. Initially built with d3.js but switched to p5.js for better performance. Deployed on Netlify.",
         "code": "https://github.com/jportella93/vizviz",
-        "link": "https://vizviz.netlify.app",
+        "link": "https://vizviz.jonportella.com",
         "demoVideo": "https://www.youtube.com/watch?v=tFouYFk-Ri8",
         "endDate": "2020-05-01"
       },

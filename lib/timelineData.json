@@ -387,6 +387,7 @@
       {
         "id": "dogcomponents",
         "link": "https://dogcomponents.jonportella.com",
+        "code": "https://github.com/jportella93/dogcomponents",
         "endDate": "2020-10-01",
         "description": "A simple website I built for one of my lectures as instructor at Codeworks, to teach my students about Web Components.",
         "type": "project",
